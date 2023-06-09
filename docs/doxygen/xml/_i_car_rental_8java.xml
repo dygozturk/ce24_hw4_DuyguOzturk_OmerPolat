@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_i_car_rental_8java" kind="file" language="Java">
+    <compoundname>ICarRental.java</compoundname>
+    <innerclass refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental" prot="public">ce204_hw4_librar_factoryMethod::ICarRental</innerclass>
+    <innernamespace refid="namespacece204__hw4__librar__factory_method">ce204_hw4_librar_factoryMethod</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_librar_factoryMethod;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental" kindref="compound">ICarRental</ref><sp/>{</highlight></codeline>
+<codeline lineno="24" refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a470564ae1acc72a56f9da859e7fbe544" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a470564ae1acc72a56f9da859e7fbe544" kindref="member">rentCar</ref>();</highlight></codeline>
+<codeline lineno="25" refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab08a61a94185cc2967d9cb975514a479" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab08a61a94185cc2967d9cb975514a479" kindref="member">getMileage</ref>();</highlight></codeline>
+<codeline lineno="26" refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a263723196391b6845e85098c395d0513" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a263723196391b6845e85098c395d0513" kindref="member">getBrand</ref>();</highlight></codeline>
+<codeline lineno="27" refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1aad1fe28068b41bf28eea614dfdc3b28d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1aad1fe28068b41bf28eea614dfdc3b28d" kindref="member">getModel</ref>();</highlight></codeline>
+<codeline lineno="28" refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac2b7d6af3ddb7a42e59f5659daa591f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac2b7d6af3ddb7a42e59f5659daa591f2" kindref="member">getYear</ref>();</highlight></codeline>
+<codeline lineno="29" refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a6f00dcc4543718dc14f88892a5f3f8a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a6f00dcc4543718dc14f88892a5f3f8a0" kindref="member">getFuelType</ref>();</highlight></codeline>
+<codeline lineno="30" refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac7f6764c5548aee0a4ec38ae7e60f64a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac7f6764c5548aee0a4ec38ae7e60f64a" kindref="member">getGear</ref>();</highlight></codeline>
+<codeline lineno="31" refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a582d42c11aecaa28201f588e983348a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a582d42c11aecaa28201f588e983348a0" kindref="member">getColor</ref>();</highlight></codeline>
+<codeline lineno="32" refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab945e114f5aa7b0236b6a702037cd2fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab945e114f5aa7b0236b6a702037cd2fd" kindref="member">getPrice</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+    </programlisting>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/ICarRental.java"/>
+  </compounddef>
+</doxygen>

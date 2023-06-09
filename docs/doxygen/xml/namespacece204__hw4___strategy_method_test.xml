@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="namespacece204__hw4___strategy_method_test" kind="namespace" language="Java">
+    <compoundname>ce204_hw4_StrategyMethodTest</compoundname>
+    <innerclass refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test" prot="public">ce204_hw4_StrategyMethodTest::ce204_hw4_CashPaymentTest</innerclass>
+    <innerclass refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___credit_card_method_test" prot="public">ce204_hw4_StrategyMethodTest::ce204_hw4_CreditCardMethodTest</innerclass>
+    <innerclass refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___online_payment_test" prot="public">ce204_hw4_StrategyMethodTest::ce204_hw4_OnlinePaymentTest</innerclass>
+    <innerclass refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___payment_processor_test" prot="public">ce204_hw4_StrategyMethodTest::ce204_hw4_PaymentProcessorTest</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/test/java/ce204_hw4_StrategyMethodTest/ce204_hw4_CashPaymentTest.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

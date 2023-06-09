@@ -1,0 +1,84 @@
+\hypertarget{classce204__hw4__library__strategy_method_1_1_payment_processor}{}\doxysection{ce204\+\_\+hw4\+\_\+library\+\_\+strategy\+Method.\+Payment\+Processor Class Reference}
+\label{classce204__hw4__library__strategy_method_1_1_payment_processor}\index{ce204\_hw4\_library\_strategyMethod.PaymentProcessor@{ce204\_hw4\_library\_strategyMethod.PaymentProcessor}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_payment_processor_a0c510654f245fc801112034e836abffa}{set\+Payment\+Strategy}} (\mbox{\hyperlink{interfacece204__hw4__library__strategy_method_1_1_payment_strategy}{Payment\+Strategy}} payment\+Strategy)
+\item 
+void \mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_payment_processor_a2e7706e302f4ff51acba5b91216919b5}{process\+Payment}} (double amount)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_payment_processor}{Payment\+Processor}} class is responsible for processing payments using a payment strategy. 
+
+Definition at line \mbox{\hyperlink{_payment_processor_8java_source_l00006}{6}} of file \mbox{\hyperlink{_payment_processor_8java_source}{Payment\+Processor.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4__library__strategy_method_1_1_payment_processor_a2e7706e302f4ff51acba5b91216919b5}\label{classce204__hw4__library__strategy_method_1_1_payment_processor_a2e7706e302f4ff51acba5b91216919b5}} 
+\index{ce204\_hw4\_library\_strategyMethod.PaymentProcessor@{ce204\_hw4\_library\_strategyMethod.PaymentProcessor}!processPayment@{processPayment}}
+\index{processPayment@{processPayment}!ce204\_hw4\_library\_strategyMethod.PaymentProcessor@{ce204\_hw4\_library\_strategyMethod.PaymentProcessor}}
+\doxysubsubsection{\texorpdfstring{processPayment()}{processPayment()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+library\+\_\+strategy\+Method.\+Payment\+Processor.\+process\+Payment (\begin{DoxyParamCaption}\item[{double}]{amount }\end{DoxyParamCaption})}
+
+Processes a payment using the specified amount.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & the amount to be paid \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_payment_processor_8java_source_l00022}{22}} of file \mbox{\hyperlink{_payment_processor_8java_source}{Payment\+Processor.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__strategy_method_1_1_payment_processor_l00022}00022                                               \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__strategy_method_1_1_payment_processor_l00023}00023         paymentStrategy.\mbox{\hyperlink{interfacece204__hw4__library__strategy_method_1_1_payment_strategy_af085ea0d70d8419e3ef857d77b4e2202}{pay}}(amount);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__strategy_method_1_1_payment_processor_l00024}00024     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{interfacece204__hw4__library__strategy_method_1_1_payment_strategy_af085ea0d70d8419e3ef857d77b4e2202}{ce204\+\_\+hw4\+\_\+library\+\_\+strategy\+Method.\+Payment\+Strategy.\+pay()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_car_rental_app_8java_source_l00021}{ce204\+\_\+hw4\+\_\+library\+\_\+app.\+Car\+Rental\+App.\+main()}}, and \mbox{\hyperlink{ce204__hw4___payment_processor_test_8java_source_l00015}{ce204\+\_\+hw4\+\_\+\+Strategy\+Method\+Test.\+ce204\+\_\+hw4\+\_\+\+Payment\+Processor\+Test.\+test\+Process\+Payment()}}.
+
+\mbox{\Hypertarget{classce204__hw4__library__strategy_method_1_1_payment_processor_a0c510654f245fc801112034e836abffa}\label{classce204__hw4__library__strategy_method_1_1_payment_processor_a0c510654f245fc801112034e836abffa}} 
+\index{ce204\_hw4\_library\_strategyMethod.PaymentProcessor@{ce204\_hw4\_library\_strategyMethod.PaymentProcessor}!setPaymentStrategy@{setPaymentStrategy}}
+\index{setPaymentStrategy@{setPaymentStrategy}!ce204\_hw4\_library\_strategyMethod.PaymentProcessor@{ce204\_hw4\_library\_strategyMethod.PaymentProcessor}}
+\doxysubsubsection{\texorpdfstring{setPaymentStrategy()}{setPaymentStrategy()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+library\+\_\+strategy\+Method.\+Payment\+Processor.\+set\+Payment\+Strategy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacece204__hw4__library__strategy_method_1_1_payment_strategy}{Payment\+Strategy}}}]{payment\+Strategy }\end{DoxyParamCaption})}
+
+Sets the payment strategy to be used for processing payments.
+
+
+\begin{DoxyParams}{Parameters}
+{\em payment\+Strategy} & the payment strategy to be set \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_payment_processor_8java_source_l00014}{14}} of file \mbox{\hyperlink{_payment_processor_8java_source}{Payment\+Processor.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__strategy_method_1_1_payment_processor_l00014}00014                                                                     \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__strategy_method_1_1_payment_processor_l00015}00015         this.paymentStrategy = paymentStrategy;}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__strategy_method_1_1_payment_processor_l00016}00016     \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{_car_rental_app_8java_source_l00021}{ce204\+\_\+hw4\+\_\+library\+\_\+app.\+Car\+Rental\+App.\+main()}}, and \mbox{\hyperlink{ce204__hw4___payment_processor_test_8java_source_l00015}{ce204\+\_\+hw4\+\_\+\+Strategy\+Method\+Test.\+ce204\+\_\+hw4\+\_\+\+Payment\+Processor\+Test.\+test\+Process\+Payment()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204-\/hw4/src/main/java/ce204\+\_\+hw4\+\_\+library\+\_\+strategy\+Method/\mbox{\hyperlink{_payment_processor_8java}{Payment\+Processor.\+java}}\end{DoxyCompactItemize}

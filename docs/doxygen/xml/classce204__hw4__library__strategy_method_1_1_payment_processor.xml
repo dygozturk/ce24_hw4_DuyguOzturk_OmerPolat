@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classce204__hw4__library__strategy_method_1_1_payment_processor" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_library_strategyMethod::PaymentProcessor</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__library__strategy_method_1_1_payment_processor_1a4503c34abf693cf76967452267901e1d" prot="private" static="no" mutable="no">
+        <type><ref refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy" kindref="compound">PaymentStrategy</ref></type>
+        <definition>PaymentStrategy ce204_hw4_library_strategyMethod.PaymentProcessor.paymentStrategy</definition>
+        <argsstring></argsstring>
+        <name>paymentStrategy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/PaymentProcessor.java" line="7" column="25" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/PaymentProcessor.java" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__library__strategy_method_1_1_payment_processor_1a0c510654f245fc801112034e836abffa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library_strategyMethod.PaymentProcessor.setPaymentStrategy</definition>
+        <argsstring>(PaymentStrategy paymentStrategy)</argsstring>
+        <name>setPaymentStrategy</name>
+        <param>
+          <type><ref refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy" kindref="compound">PaymentStrategy</ref></type>
+          <declname>paymentStrategy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the payment strategy to be used for processing payments.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>paymentStrategy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the payment strategy to be set </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/PaymentProcessor.java" line="14" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/PaymentProcessor.java" bodystart="14" bodyend="16"/>
+        <referencedby refid="classce204__hw4__library__app_1_1_car_rental_app_1a0aa572d1694837e2aff70ecef4200e0a" compoundref="_car_rental_app_8java" startline="21" endline="135">ce204_hw4_library_app.CarRentalApp.main</referencedby>
+        <referencedby refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___payment_processor_test_1ad2370fed2956fa049091ce868e3a786e" compoundref="ce204__hw4___payment_processor_test_8java" startline="15" endline="30">ce204_hw4_StrategyMethodTest.ce204_hw4_PaymentProcessorTest.testProcessPayment</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__library__strategy_method_1_1_payment_processor_1a2e7706e302f4ff51acba5b91216919b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library_strategyMethod.PaymentProcessor.processPayment</definition>
+        <argsstring>(double amount)</argsstring>
+        <name>processPayment</name>
+        <param>
+          <type>double</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Processes a payment using the specified amount.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the amount to be paid </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/PaymentProcessor.java" line="22" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/PaymentProcessor.java" bodystart="22" bodyend="24"/>
+        <references refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy_1af085ea0d70d8419e3ef857d77b4e2202">ce204_hw4_library_strategyMethod.PaymentStrategy.pay</references>
+        <referencedby refid="classce204__hw4__library__app_1_1_car_rental_app_1a0aa572d1694837e2aff70ecef4200e0a" compoundref="_car_rental_app_8java" startline="21" endline="135">ce204_hw4_library_app.CarRentalApp.main</referencedby>
+        <referencedby refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___payment_processor_test_1ad2370fed2956fa049091ce868e3a786e" compoundref="ce204__hw4___payment_processor_test_8java" startline="15" endline="30">ce204_hw4_StrategyMethodTest.ce204_hw4_PaymentProcessorTest.testProcessPayment</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classce204__hw4__library__strategy_method_1_1_payment_processor" kindref="compound">PaymentProcessor</ref> class is responsible for processing payments using a payment strategy. </para>
+    </detaileddescription>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/PaymentProcessor.java" line="6" column="7" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/PaymentProcessor.java" bodystart="6" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__library__strategy_method_1_1_payment_processor_1a4503c34abf693cf76967452267901e1d" prot="private" virt="non-virtual"><scope>ce204_hw4_library_strategyMethod::PaymentProcessor</scope><name>paymentStrategy</name></member>
+      <member refid="classce204__hw4__library__strategy_method_1_1_payment_processor_1a2e7706e302f4ff51acba5b91216919b5" prot="public" virt="non-virtual"><scope>ce204_hw4_library_strategyMethod::PaymentProcessor</scope><name>processPayment</name></member>
+      <member refid="classce204__hw4__library__strategy_method_1_1_payment_processor_1a0c510654f245fc801112034e836abffa" prot="public" virt="non-virtual"><scope>ce204_hw4_library_strategyMethod::PaymentProcessor</scope><name>setPaymentStrategy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

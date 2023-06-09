@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="interfacece204__hw4__library__strategy_method_1_1_payment_strategy" kind="interface" language="Java" prot="public">
+    <compoundname>ce204_hw4_library_strategyMethod::PaymentStrategy</compoundname>
+    <derivedcompoundref refid="classce204__hw4__library__strategy_method_1_1_cash_payment" prot="public" virt="non-virtual">ce204_hw4_library_strategyMethod.CashPayment</derivedcompoundref>
+    <derivedcompoundref refid="classce204__hw4__library__strategy_method_1_1_credit_card_payment" prot="public" virt="non-virtual">ce204_hw4_library_strategyMethod.CreditCardPayment</derivedcompoundref>
+    <derivedcompoundref refid="classce204__hw4__library__strategy_method_1_1_online_payment" prot="public" virt="non-virtual">ce204_hw4_library_strategyMethod.OnlinePayment</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacece204__hw4__library__strategy_method_1_1_payment_strategy_1af085ea0d70d8419e3ef857d77b4e2202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library_strategyMethod.PaymentStrategy.pay</definition>
+        <argsstring>(double amount)</argsstring>
+        <name>pay</name>
+        <reimplementedby refid="classce204__hw4__library__strategy_method_1_1_cash_payment_1a9f25c20e9ee799ad9644277a22671e72">pay</reimplementedby>
+        <reimplementedby refid="classce204__hw4__library__strategy_method_1_1_credit_card_payment_1a2bc90463e75c78e82243b319d1fda24d">pay</reimplementedby>
+        <reimplementedby refid="classce204__hw4__library__strategy_method_1_1_online_payment_1a21c226a27a34e195dfefba2b5cd5ac05">pay</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Performs a payment transaction.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the amount to be paid </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/PaymentStrategy.java" line="13" column="6"/>
+        <referencedby refid="classce204__hw4__library__strategy_method_1_1_payment_processor_1a2e7706e302f4ff51acba5b91216919b5" compoundref="_payment_processor_8java" startline="22" endline="24">ce204_hw4_library_strategyMethod.PaymentProcessor.processPayment</referencedby>
+        <referencedby refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test_1acf691a5be2da8edcf40953fcef780a35" compoundref="ce204__hw4___cash_payment_test_8java" startline="17" endline="30">ce204_hw4_StrategyMethodTest.ce204_hw4_CashPaymentTest.testPay</referencedby>
+        <referencedby refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___credit_card_method_test_1ae0d4c2b1eed8e2fccbcb9a5dea411472" compoundref="ce204__hw4___credit_card_method_test_8java" startline="18" endline="34">ce204_hw4_StrategyMethodTest.ce204_hw4_CreditCardMethodTest.testPay</referencedby>
+        <referencedby refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___online_payment_test_1a9da40a482bc035516e7903334aaec887" compoundref="ce204__hw4___online_payment_test_8java" startline="17" endline="32">ce204_hw4_StrategyMethodTest.ce204_hw4_OnlinePaymentTest.testPay</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy" kindref="compound">PaymentStrategy</ref> interface represents a payment strategy. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ce204_hw4_library_strategyMethod.PaymentStrategy</label>
+        <link refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy"/>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_library_strategyMethod.CashPayment</label>
+        <link refid="classce204__hw4__library__strategy_method_1_1_cash_payment"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ce204_hw4_library_strategyMethod.CreditCardPayment</label>
+        <link refid="classce204__hw4__library__strategy_method_1_1_credit_card_payment"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ce204_hw4_library_strategyMethod.OnlinePayment</label>
+        <link refid="classce204__hw4__library__strategy_method_1_1_online_payment"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/PaymentStrategy.java" line="6" column="18" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/PaymentStrategy.java" bodystart="6" bodyend="15"/>
+    <listofallmembers>
+      <member refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy_1af085ea0d70d8419e3ef857d77b4e2202" prot="public" virt="non-virtual"><scope>ce204_hw4_library_strategyMethod::PaymentStrategy</scope><name>pay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

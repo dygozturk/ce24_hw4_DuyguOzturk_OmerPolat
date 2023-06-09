@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="namespacece204__hw4__library__app" kind="namespace" language="Java">
+    <compoundname>ce204_hw4_library_app</compoundname>
+    <innerclass refid="classce204__hw4__library__app_1_1_car_rental_app" prot="public">ce204_hw4_library_app::CarRentalApp</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library_app/CarRentalApp.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

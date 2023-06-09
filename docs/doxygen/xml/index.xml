@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.2" xml:lang="en-US">
+  <compound refid="classce204__hw4__library__app_1_1_car_rental_app" kind="class"><name>ce204_hw4_library_app::CarRentalApp</name>
+    <member refid="classce204__hw4__library__app_1_1_car_rental_app_1a0aa572d1694837e2aff70ecef4200e0a" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="classce204__hw4__library__observe_method_1_1_car_reservation_system" kind="class"><name>ce204_hw4_library_observeMethod::CarReservationSystem</name>
+    <member refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1a13bf1619e9b8a36fac8444fde42d05e5" kind="variable"><name>reservationSubject</name></member>
+    <member refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1a9b84a5f7d8fb4499b3b4d86795266687" kind="function"><name>makeReservation</name></member>
+    <member refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1a8f9bc51a53ddec3a2d671ef1df883b13" kind="function"><name>addUser</name></member>
+    <member refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1ae56b0afc951ea678d41502d0324a12be" kind="function"><name>removeUser</name></member>
+    <member refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1a24275a5646ae9592523000203f79a3fc" kind="function"><name>getObservers</name></member>
+  </compound>
+  <compound refid="classce204__hw4__library__strategy_method_1_1_cash_payment" kind="class"><name>ce204_hw4_library_strategyMethod::CashPayment</name>
+    <member refid="classce204__hw4__library__strategy_method_1_1_cash_payment_1a9f25c20e9ee799ad9644277a22671e72" kind="function"><name>pay</name></member>
+  </compound>
+  <compound refid="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test" kind="class"><name>ce204_hw4_observerMethodTest::ce204_hw4_CarReservationSystemTest</name>
+    <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1ab4156cdc03d4309ceb1d3e51ff51ef5c" kind="variable"><name>carReservationSystem</name></member>
+    <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1ab3775cc5d05046cf6dd621a95523e907" kind="variable"><name>outputStreamCaptor</name></member>
+    <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1ae57dc98d613b522f1111461615c33236" kind="variable"><name>reservationSystem</name></member>
+    <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1a2ed47f3854331d3d7516b75e84ad49b9" kind="variable"><name>user1</name></member>
+    <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1a526dd5dc21d72126aed6396cb2eb67bf" kind="variable"><name>user2</name></member>
+    <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1a8e98972581ac490c0115a4b5f5780426" kind="function"><name>setup</name></member>
+    <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1a80cf919a6ba2f585d906511ee03a7a26" kind="function"><name>testMakeReservation</name></member>
+    <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1a864c80b64a3407f9ced5e1b6baa5c95f" kind="function"><name>setup1</name></member>
+    <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1af82d044ad14d449beab4b4ab908093f5" kind="function"><name>testRemoveUser</name></member>
+  </compound>
+  <compound refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test" kind="class"><name>ce204_hw4_StrategyMethodTest::ce204_hw4_CashPaymentTest</name>
+    <member refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test_1acf691a5be2da8edcf40953fcef780a35" kind="function"><name>testPay</name></member>
+  </compound>
+  <compound refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___credit_card_method_test" kind="class"><name>ce204_hw4_StrategyMethodTest::ce204_hw4_CreditCardMethodTest</name>
+    <member refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___credit_card_method_test_1ae0d4c2b1eed8e2fccbcb9a5dea411472" kind="function"><name>testPay</name></member>
+  </compound>
+  <compound refid="classce204__hw4___economy_car_test" kind="class"><name>ce204_hw4_EconomyCarTest</name>
+    <member refid="classce204__hw4___economy_car_test_1a14a7e97d5757e8d597af7c6140451a9d" kind="variable"><name>carRental</name></member>
+    <member refid="classce204__hw4___economy_car_test_1a65147b18f052e06dbc0de16a10772aa7" kind="function"><name>setUp</name></member>
+    <member refid="classce204__hw4___economy_car_test_1aa30760ac87ed8bf2e24eaa85f4e57dff" kind="function"><name>testGetMileage</name></member>
+    <member refid="classce204__hw4___economy_car_test_1ac7bbf9835c454f751e8ca422576d3273" kind="function"><name>testGetBrand</name></member>
+    <member refid="classce204__hw4___economy_car_test_1a4fc1697cdf7e6292f842094c88a7b169" kind="function"><name>testGetModel</name></member>
+    <member refid="classce204__hw4___economy_car_test_1aaeaee374341c7d448cbd038f42181dbc" kind="function"><name>testGetYear</name></member>
+    <member refid="classce204__hw4___economy_car_test_1a1e0e0a79a52d8cfb1d7760204d634f0e" kind="function"><name>testGetFuelType</name></member>
+    <member refid="classce204__hw4___economy_car_test_1a31a340d636cbcb9a3603aa61c9a676d8" kind="function"><name>testGetGear</name></member>
+    <member refid="classce204__hw4___economy_car_test_1a55fd124461993057de5ea700e7a8ed28" kind="function"><name>testGetColor</name></member>
+    <member refid="classce204__hw4___economy_car_test_1aab3443603af41f3136ceb9e86bf586b5" kind="function"><name>testGetPrice</name></member>
+    <member refid="classce204__hw4___economy_car_test_1ac042a6859b220ad12fcb807230d5b93d" kind="function"><name>testRentCar</name></member>
+    <member refid="classce204__hw4___economy_car_test_1a46381e9de4eeea0024795ce2e78f707e" kind="function"><name>captureSystemOut</name></member>
+  </compound>
+  <compound refid="classce204__hw4___luxury_car_test" kind="class"><name>ce204_hw4_LuxuryCarTest</name>
+    <member refid="classce204__hw4___luxury_car_test_1abf122090bccdf0ad5f18bd422e620a20" kind="variable"><name>carRental</name></member>
+    <member refid="classce204__hw4___luxury_car_test_1a5ce939467d5c7bbe63ad55da67810d63" kind="function"><name>setUp</name></member>
+    <member refid="classce204__hw4___luxury_car_test_1aab651ed914b43db1d62649b41bbf8875" kind="function"><name>testGetMileage</name></member>
+    <member refid="classce204__hw4___luxury_car_test_1a0d76585a1eab1cbcdeb97f4071ea9a8a" kind="function"><name>testGetBrand</name></member>
+    <member refid="classce204__hw4___luxury_car_test_1a7e9b2a38e03d38a0f6042ac12007afd3" kind="function"><name>testGetModel</name></member>
+    <member refid="classce204__hw4___luxury_car_test_1a5fe277a8e5b47ad6da43fc2baa7b2731" kind="function"><name>testGetYear</name></member>
+    <member refid="classce204__hw4___luxury_car_test_1a70936de4dd3a75e42c800b21224efab1" kind="function"><name>testGetFuelType</name></member>
+    <member refid="classce204__hw4___luxury_car_test_1a2ea7f3c2c59c606d27149591af9326ba" kind="function"><name>testGetGear</name></member>
+    <member refid="classce204__hw4___luxury_car_test_1a776631c9e7d4f022e320d9d34dc8ec7d" kind="function"><name>testGetColor</name></member>
+    <member refid="classce204__hw4___luxury_car_test_1a02624f1341bd5c838a0e5d1ee4ba0237" kind="function"><name>testGetPrice</name></member>
+    <member refid="classce204__hw4___luxury_car_test_1a120be8ec9717099f925b7abf5a8c4bda" kind="function"><name>testRentCar</name></member>
+    <member refid="classce204__hw4___luxury_car_test_1ae7d5d6b4a398e3eecbf3fcb6e2c8d96c" kind="function"><name>captureSystemOut</name></member>
+  </compound>
+  <compound refid="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test" kind="class"><name>ce204_hw4_MainAppTest::ce204_hw4_MainAppTest</name>
+    <member refid="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1a10455d867794b33da8af566f9e637b18" kind="function"><name>testCarRentalApp1</name></member>
+    <member refid="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1ae1d481362c6bc5b7db64ddf6cdb0827c" kind="function"><name>testCarRentalApp2</name></member>
+    <member refid="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1acbdae85591ffb77c5189ed25d27720fa" kind="function"><name>testCarRentalApp3</name></member>
+    <member refid="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1ab976accf861f03d35918ba34663b8e35" kind="function"><name>testCarRentalApp4</name></member>
+    <member refid="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1a6aa62bc4f64fe2173a829b37b23033a3" kind="function"><name>testCarRentalApp5</name></member>
+    <member refid="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1aa94ea7388e5f8e9bb3dacf44c584533c" kind="function"><name>testCarRentalWithEconomyCarAndCreditCardPayment</name></member>
+  </compound>
+  <compound refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___online_payment_test" kind="class"><name>ce204_hw4_StrategyMethodTest::ce204_hw4_OnlinePaymentTest</name>
+    <member refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___online_payment_test_1a9da40a482bc035516e7903334aaec887" kind="function"><name>testPay</name></member>
+  </compound>
+  <compound refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___payment_processor_test" kind="class"><name>ce204_hw4_StrategyMethodTest::ce204_hw4_PaymentProcessorTest</name>
+    <member refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___payment_processor_test_1ad2370fed2956fa049091ce868e3a786e" kind="function"><name>testProcessPayment</name></member>
+  </compound>
+  <compound refid="classce204__hw4___rental_factory_test" kind="class"><name>ce204_hw4_RentalFactoryTest</name>
+    <member refid="classce204__hw4___rental_factory_test_1a0a630f2d36b643d206b32d63dfcd33a1" kind="function"><name>testCreateRental_EconomyCar</name></member>
+    <member refid="classce204__hw4___rental_factory_test_1a81f30749cbc899e9b46f74b526493771" kind="function"><name>testCreateRental_LuxuryCar</name></member>
+    <member refid="classce204__hw4___rental_factory_test_1ae6a4a1d1f9a715e99fe4cd64af074eb5" kind="function"><name>testCreateRental_SuvCar</name></member>
+  </compound>
+  <compound refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test" kind="class"><name>ce204_hw4_observerMethodTest::ce204_hw4_ReservationSubjectTest</name>
+    <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1a562b22547fa060156d270f113420ccc2" kind="variable"><name>subject</name></member>
+    <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1aabd59df3e54df4f96ef489067a318740" kind="variable"><name>outputStreamCaptor</name></member>
+    <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1a5d9e23380d83f5ed8fcbcd35e1510dd8" kind="function"><name>setUp</name></member>
+    <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1a120731f7626e8df0c82729bbf4b5d950" kind="function"><name>testAttachObserver</name></member>
+    <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1afbc57ea7101e9691bd49b78c252fc63e" kind="function"><name>testDetachObserver</name></member>
+    <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1ac8978c56c9f08d219868d2819c550d22" kind="function"><name>testNotifyObservers</name></member>
+  </compound>
+  <compound refid="classce204__hw4___s_u_v_car_test" kind="class"><name>ce204_hw4_SUVCarTest</name>
+    <member refid="classce204__hw4___s_u_v_car_test_1ade97a7ef1552a439dbbc61251544ba0d" kind="variable"><name>carRental</name></member>
+    <member refid="classce204__hw4___s_u_v_car_test_1a4fc04bc1db274b387a919e33c27ec211" kind="function"><name>setUp</name></member>
+    <member refid="classce204__hw4___s_u_v_car_test_1a2d0b3d498f8ecc607d4e33d214cb451b" kind="function"><name>testGetMileage</name></member>
+    <member refid="classce204__hw4___s_u_v_car_test_1ae20cf799e8724f24dca814f850e8181a" kind="function"><name>testGetBrand</name></member>
+    <member refid="classce204__hw4___s_u_v_car_test_1a2ff3e3c685b3f5f040d2af8ec358f936" kind="function"><name>testGetModel</name></member>
+    <member refid="classce204__hw4___s_u_v_car_test_1a844c4e10542d37a6bf07c6596f2d409d" kind="function"><name>testGetYear</name></member>
+    <member refid="classce204__hw4___s_u_v_car_test_1a5fd1fd4fe81c1bd6ff62caf8ae2f3087" kind="function"><name>testGetFuelType</name></member>
+    <member refid="classce204__hw4___s_u_v_car_test_1a9c23a880ef20516a0285d83fc109cc3c" kind="function"><name>testGetGear</name></member>
+    <member refid="classce204__hw4___s_u_v_car_test_1a541b4e37d9c4d29f84a18e38a496828a" kind="function"><name>testGetColor</name></member>
+    <member refid="classce204__hw4___s_u_v_car_test_1ac8fd696065f8a5198e27a05cd0bae20a" kind="function"><name>testGetPrice</name></member>
+    <member refid="classce204__hw4___s_u_v_car_test_1ac923a39513b4b95899ee8071db4aa973" kind="function"><name>testRentCar</name></member>
+    <member refid="classce204__hw4___s_u_v_car_test_1a5a5b2539e5fb417f4d1158e7c9d1bda2" kind="function"><name>captureSystemOut</name></member>
+  </compound>
+  <compound refid="classce204__hw4__observer_method_test_1_1ce204__hw4___user_test" kind="class"><name>ce204_hw4_observerMethodTest::ce204_hw4_UserTest</name>
+    <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_1a0bcd3abed384708b8483ca9eec5e3680" kind="variable"><name>user</name></member>
+    <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_1ab2d17e04c1a3e9666b10c8973077389a" kind="variable"><name>outputStreamCaptor</name></member>
+    <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_1a6344aa4ffc082a1f7295ea112aafdeaf" kind="function"><name>setup</name></member>
+    <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_1af92f848c9f15c25fbe24c44da2ce111c" kind="function"><name>testNotifyReservation1</name></member>
+  </compound>
+  <compound refid="classce204__hw4__library__strategy_method_1_1_credit_card_payment" kind="class"><name>ce204_hw4_library_strategyMethod::CreditCardPayment</name>
+    <member refid="classce204__hw4__library__strategy_method_1_1_credit_card_payment_1a7c2e773b5b504e26ffd06f5be31ba067" kind="variable"><name>cardNumber</name></member>
+    <member refid="classce204__hw4__library__strategy_method_1_1_credit_card_payment_1ab0a4a5582212567b28b49438b0683555" kind="variable"><name>expirationDate</name></member>
+    <member refid="classce204__hw4__library__strategy_method_1_1_credit_card_payment_1adf6b554b33477b3921ef3cff69ecf184" kind="variable"><name>cvv</name></member>
+    <member refid="classce204__hw4__library__strategy_method_1_1_credit_card_payment_1a0546c622741e85747836dc1bf66a36b2" kind="function"><name>CreditCardPayment</name></member>
+    <member refid="classce204__hw4__library__strategy_method_1_1_credit_card_payment_1a2bc90463e75c78e82243b319d1fda24d" kind="function"><name>pay</name></member>
+  </compound>
+  <compound refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental" kind="class"><name>ce204_hw4_librar_factoryMethod::EconomyCarRental</name>
+    <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1ae9c3312bd3def00028ce026860644fed" kind="variable"><name>mileage</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1aa8ab6be3fe3ea6ccde9499ccb783ca50" kind="variable"><name>brand</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1ad3b73d7540561d55e316c0b8c5eba5ea" kind="variable"><name>model</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1ab68fbda9997d70e7a9e01ebf6e430a6f" kind="variable"><name>year</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1accb3ce32a48c693db20651f4208c12eb" kind="variable"><name>fuelType</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1acc9d0badf0262b338de40a985b5abb00" kind="variable"><name>gear</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a39748d879426a5f34dd42c8365a9ae12" kind="variable"><name>color</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a07f37e934bb8c2e61ff34f6faa6d746e" kind="variable"><name>price</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a6d7d6a6a98aba6e57a0ed37020e990ed" kind="function"><name>EconomyCarRental</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1ac88ed002b6c5afca106922c8c4019006" kind="function"><name>rentCar</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a66ceab4b5be5a7b5cf2911143d6ca61f" kind="function"><name>getPrice</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a4fc29e64fa09a7e8d5b5d9f58fe85c46" kind="function"><name>getMileage</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1af52a381f0d758fb8ae58f735472a9fd8" kind="function"><name>getBrand</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a5ac31705b8dea7bbf355f8e50fdcb6f3" kind="function"><name>getModel</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a779ac8350c666ca29bf8aa38e772cd15" kind="function"><name>getYear</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a8d8edbbc257702d582305b8b03f3d7e3" kind="function"><name>getFuelType</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1aa93287ae84d14ac5e73065b1d937d828" kind="function"><name>getGear</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1ad5e38b0bae601b998e3cd1cff18ca95c" kind="function"><name>getColor</name></member>
+  </compound>
+  <compound refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental" kind="interface"><name>ce204_hw4_librar_factoryMethod::ICarRental</name>
+    <member refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a470564ae1acc72a56f9da859e7fbe544" kind="function"><name>rentCar</name></member>
+    <member refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab08a61a94185cc2967d9cb975514a479" kind="function"><name>getMileage</name></member>
+    <member refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a263723196391b6845e85098c395d0513" kind="function"><name>getBrand</name></member>
+    <member refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1aad1fe28068b41bf28eea614dfdc3b28d" kind="function"><name>getModel</name></member>
+    <member refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac2b7d6af3ddb7a42e59f5659daa591f2" kind="function"><name>getYear</name></member>
+    <member refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a6f00dcc4543718dc14f88892a5f3f8a0" kind="function"><name>getFuelType</name></member>
+    <member refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac7f6764c5548aee0a4ec38ae7e60f64a" kind="function"><name>getGear</name></member>
+    <member refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a582d42c11aecaa28201f588e983348a0" kind="function"><name>getColor</name></member>
+    <member refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab945e114f5aa7b0236b6a702037cd2fd" kind="function"><name>getPrice</name></member>
+  </compound>
+  <compound refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental" kind="class"><name>ce204_hw4_librar_factoryMethod::LuxuryCarRental</name>
+    <member refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a16e7ef61df2e287e99059217178de796" kind="variable"><name>mileage</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1acfb4aa32345f87a79c50dc2f36ec3c86" kind="variable"><name>brand</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a3f92b3a302d9cda242d71af85d772f82" kind="variable"><name>model</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a1140521844b7de0a36a5e02b2d1f940c" kind="variable"><name>year</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a1f2811bb94c3b8af334e12ef7d92e5f5" kind="variable"><name>fuelType</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1abb2541e2a4bb9e2989d6d36a7490778b" kind="variable"><name>gear</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a736a773b24a21141b79ffeace904f9fc" kind="variable"><name>color</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a824f108bde5df9043529464a4d223353" kind="variable"><name>price</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a4c98f8fcb49179b2b6e1c8481a833d4a" kind="function"><name>LuxuryCarRental</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a7815ff6e4d53356749122c6e5da5a1ca" kind="function"><name>rentCar</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a0dfa71209b6f192a29859d999fe770ec" kind="function"><name>getMileage</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1af756b8ca1c484d172be16d248ac5c5a1" kind="function"><name>getPrice</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1ab2b2f7ebd4613b9a575cf005ef2cfd7c" kind="function"><name>getBrand</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a6f1e819a003d13cc0d88deb27ae1f33d" kind="function"><name>getModel</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1af1f558414033e6fb24b79f7de6c388c3" kind="function"><name>getYear</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a9cbaa8d573e1082d39020d2ab4e507ef" kind="function"><name>getFuelType</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a489cad10f1f5b047bc4b881eb51f5b34" kind="function"><name>getGear</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a4fa9453e690d04f9f56a7c24331877a5" kind="function"><name>getColor</name></member>
+  </compound>
+  <compound refid="classce204__hw4__library__strategy_method_1_1_online_payment" kind="class"><name>ce204_hw4_library_strategyMethod::OnlinePayment</name>
+    <member refid="classce204__hw4__library__strategy_method_1_1_online_payment_1a24e8ec06893bbb7e52cec4ac13aace49" kind="variable"><name>email</name></member>
+    <member refid="classce204__hw4__library__strategy_method_1_1_online_payment_1a1e5ea10308151b056166ecb98e6a33c8" kind="variable"><name>password</name></member>
+    <member refid="classce204__hw4__library__strategy_method_1_1_online_payment_1a72535300863efe84a2e573c7bda36bfb" kind="function"><name>OnlinePayment</name></member>
+    <member refid="classce204__hw4__library__strategy_method_1_1_online_payment_1a21c226a27a34e195dfefba2b5cd5ac05" kind="function"><name>pay</name></member>
+  </compound>
+  <compound refid="classce204__hw4__library__strategy_method_1_1_payment_processor" kind="class"><name>ce204_hw4_library_strategyMethod::PaymentProcessor</name>
+    <member refid="classce204__hw4__library__strategy_method_1_1_payment_processor_1a4503c34abf693cf76967452267901e1d" kind="variable"><name>paymentStrategy</name></member>
+    <member refid="classce204__hw4__library__strategy_method_1_1_payment_processor_1a0c510654f245fc801112034e836abffa" kind="function"><name>setPaymentStrategy</name></member>
+    <member refid="classce204__hw4__library__strategy_method_1_1_payment_processor_1a2e7706e302f4ff51acba5b91216919b5" kind="function"><name>processPayment</name></member>
+  </compound>
+  <compound refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy" kind="interface"><name>ce204_hw4_library_strategyMethod::PaymentStrategy</name>
+    <member refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy_1af085ea0d70d8419e3ef857d77b4e2202" kind="function"><name>pay</name></member>
+  </compound>
+  <compound refid="classce204__hw4__librar__factory_method_1_1_rental_factory" kind="class"><name>ce204_hw4_librar_factoryMethod::RentalFactory</name>
+    <member refid="classce204__hw4__librar__factory_method_1_1_rental_factory_1aa515da981a8c5c23e0a743ec4fc513e1" kind="function"><name>createRental</name></member>
+  </compound>
+  <compound refid="interfacece204__hw4__library__observe_method_1_1_reservation_observer" kind="interface"><name>ce204_hw4_library_observeMethod::ReservationObserver</name>
+    <member refid="interfacece204__hw4__library__observe_method_1_1_reservation_observer_1a5a8d6fd379819b1f5680db9a68f2335b" kind="function"><name>notifyReservation</name></member>
+  </compound>
+  <compound refid="classce204__hw4__library__observe_method_1_1_reservation_subject" kind="class"><name>ce204_hw4_library_observeMethod::ReservationSubject</name>
+    <member refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1addf4be051d0549fe684938ea4129ee4d" kind="variable"><name>observers</name></member>
+    <member refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa5bc7d55d910b0efcf17d73e4b4208b4" kind="function"><name>attachObserver</name></member>
+    <member refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1ad83da46cd3e6c48892ab9977431a0119" kind="function"><name>detachObserver</name></member>
+    <member refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1a03f17c8905dc7057cb0d5732baa5b6b6" kind="function"><name>notifyObservers</name></member>
+    <member refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa22630ff680d49ba4b7ac1732673c432" kind="function"><name>getObservers</name></member>
+  </compound>
+  <compound refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental" kind="class"><name>ce204_hw4_librar_factoryMethod::SuvCarRental</name>
+    <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a794265b4f9aa218ce658522b9f975216" kind="variable"><name>mileage</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a57e59e7e362a641ed18836e6e433497b" kind="variable"><name>brand</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ace371e52c892431ddd3356bf0267810e" kind="variable"><name>model</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a4eb587afcc6a84dec104f8dd8c1cec7b" kind="variable"><name>year</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ae79f2aab4078ea9438677394dfe81de1" kind="variable"><name>fuelType</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a3dead6254e6a64a938c8fdb487093786" kind="variable"><name>gear</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a231123c1499a4b9c632100e3ba99ac4e" kind="variable"><name>color</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ad8e7724563eeb4931fa9fa6790f1d710" kind="variable"><name>price</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a59b24d2942eaa09af5ca885fd81bf726" kind="function"><name>SuvCarRental</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a2e5a8f6ba64d7677bf5c8318036f614f" kind="function"><name>rentCar</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ada8ece9a8aa91d4c76c0387ef51e4054" kind="function"><name>getPrice</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a323e477c1f6203f6b25cd8419a659537" kind="function"><name>getMileage</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ab2bcfff54b8b56723990077de1deb436" kind="function"><name>getBrand</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1aa60b9df84332fad51befd8693bbea361" kind="function"><name>getModel</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ad5dd663b5569480d534eb684aaaaabd3" kind="function"><name>getYear</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ad72b42e7d98fe280c62605dc99f65fb8" kind="function"><name>getFuelType</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ad206fb8962d1558e56ff79f12066a0c7" kind="function"><name>getGear</name></member>
+    <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a8e9828b9833dbaebba25dd29e1781c74" kind="function"><name>getColor</name></member>
+  </compound>
+  <compound refid="classce204__hw4__library__observe_method_1_1_user" kind="class"><name>ce204_hw4_library_observeMethod::User</name>
+    <member refid="classce204__hw4__library__observe_method_1_1_user_1a5e05e4467ab34d3248628398dbed6511" kind="variable"><name>name</name></member>
+    <member refid="classce204__hw4__library__observe_method_1_1_user_1a54062c752c12a2fd6e7ad3eff56aed56" kind="function"><name>User</name></member>
+    <member refid="classce204__hw4__library__observe_method_1_1_user_1a2b5033b9d7ddc2775daf614919fb25b1" kind="function"><name>notifyReservation</name></member>
+  </compound>
+  <compound refid="namespacece204__hw4__librar__factory_method" kind="namespace"><name>ce204_hw4_librar_factoryMethod</name>
+  </compound>
+  <compound refid="namespacece204__hw4__library__app" kind="namespace"><name>ce204_hw4_library_app</name>
+  </compound>
+  <compound refid="namespacece204__hw4__library__observe_method" kind="namespace"><name>ce204_hw4_library_observeMethod</name>
+  </compound>
+  <compound refid="namespacece204__hw4__library__strategy_method" kind="namespace"><name>ce204_hw4_library_strategyMethod</name>
+  </compound>
+  <compound refid="namespacece204__hw4___main_app_test" kind="namespace"><name>ce204_hw4_MainAppTest</name>
+  </compound>
+  <compound refid="namespacece204__hw4__observer_method_test" kind="namespace"><name>ce204_hw4_observerMethodTest</name>
+  </compound>
+  <compound refid="namespacece204__hw4___strategy_method_test" kind="namespace"><name>ce204_hw4_StrategyMethodTest</name>
+  </compound>
+  <compound refid="namespacejava_1_1lang" kind="namespace"><name>java::lang</name>
+  </compound>
+  <compound refid="namespaceorg_1_1junit_1_1_assert" kind="namespace"><name>org::junit::Assert</name>
+  </compound>
+  <compound refid="_economy_car_rental_8java" kind="file"><name>EconomyCarRental.java</name>
+  </compound>
+  <compound refid="_i_car_rental_8java" kind="file"><name>ICarRental.java</name>
+  </compound>
+  <compound refid="_luxury_car_rental_8java" kind="file"><name>LuxuryCarRental.java</name>
+  </compound>
+  <compound refid="_rental_factory_8java" kind="file"><name>RentalFactory.java</name>
+  </compound>
+  <compound refid="_suv_car_rental_8java" kind="file"><name>SuvCarRental.java</name>
+  </compound>
+  <compound refid="_car_rental_app_8java" kind="file"><name>CarRentalApp.java</name>
+  </compound>
+  <compound refid="_car_reservation_system_8java" kind="file"><name>CarReservationSystem.java</name>
+  </compound>
+  <compound refid="_reservation_observer_8java" kind="file"><name>ReservationObserver.java</name>
+  </compound>
+  <compound refid="_reservation_subject_8java" kind="file"><name>ReservationSubject.java</name>
+  </compound>
+  <compound refid="_user_8java" kind="file"><name>User.java</name>
+  </compound>
+  <compound refid="_cash_payment_8java" kind="file"><name>CashPayment.java</name>
+  </compound>
+  <compound refid="_credit_card_payment_8java" kind="file"><name>CreditCardPayment.java</name>
+  </compound>
+  <compound refid="_online_payment_8java" kind="file"><name>OnlinePayment.java</name>
+  </compound>
+  <compound refid="_payment_processor_8java" kind="file"><name>PaymentProcessor.java</name>
+  </compound>
+  <compound refid="_payment_strategy_8java" kind="file"><name>PaymentStrategy.java</name>
+  </compound>
+  <compound refid="overview_8md" kind="file"><name>overview.md</name>
+  </compound>
+  <compound refid="readme_8md" kind="file"><name>readme.md</name>
+  </compound>
+  <compound refid="ce204__hw4___economy_car_test_8java" kind="file"><name>ce204_hw4_EconomyCarTest.java</name>
+  </compound>
+  <compound refid="ce204__hw4___luxury_car_test_8java" kind="file"><name>ce204_hw4_LuxuryCarTest.java</name>
+  </compound>
+  <compound refid="ce204__hw4___main_app_test_8java" kind="file"><name>ce204_hw4_MainAppTest.java</name>
+  </compound>
+  <compound refid="ce204__hw4___car_reservation_system_test_8java" kind="file"><name>ce204_hw4_CarReservationSystemTest.java</name>
+  </compound>
+  <compound refid="ce204__hw4___reservation_subject_test_8java" kind="file"><name>ce204_hw4_ReservationSubjectTest.java</name>
+  </compound>
+  <compound refid="ce204__hw4___user_test_8java" kind="file"><name>ce204_hw4_UserTest.java</name>
+  </compound>
+  <compound refid="ce204__hw4___rental_factory_test_8java" kind="file"><name>ce204_hw4_RentalFactoryTest.java</name>
+  </compound>
+  <compound refid="ce204__hw4___cash_payment_test_8java" kind="file"><name>ce204_hw4_CashPaymentTest.java</name>
+  </compound>
+  <compound refid="ce204__hw4___credit_card_method_test_8java" kind="file"><name>ce204_hw4_CreditCardMethodTest.java</name>
+  </compound>
+  <compound refid="ce204__hw4___online_payment_test_8java" kind="file"><name>ce204_hw4_OnlinePaymentTest.java</name>
+  </compound>
+  <compound refid="ce204__hw4___payment_processor_test_8java" kind="file"><name>ce204_hw4_PaymentProcessorTest.java</name>
+  </compound>
+  <compound refid="ce204__hw4___s_u_v_car_test_8java" kind="file"><name>ce204_hw4_SUVCarTest.java</name>
+  </compound>
+  <compound refid="md_ce204_hw4_src_site_markdown_overview" kind="page"><name>md_ce204_hw4_src_site_markdown_overview</name>
+  </compound>
+  <compound refid="md_ce204_hw4_src_site_markdown_readme" kind="page"><name>md_ce204_hw4_src_site_markdown_readme</name>
+  </compound>
+  <compound refid="dir_cb1b6a87b6929dae7f978163507bbf53" kind="dir"><name>ce204-hw4</name>
+  </compound>
+  <compound refid="dir_c70208678c22c832bba467ddf3b849e2" kind="dir"><name>ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod</name>
+  </compound>
+  <compound refid="dir_fcf5408aca3dc87e6bc28b2653172f9c" kind="dir"><name>ce204-hw4/src/main/java/ce204_hw4_library_app</name>
+  </compound>
+  <compound refid="dir_6da63eafc0293709a9b4f639363a4548" kind="dir"><name>ce204-hw4/src/main/java/ce204_hw4_library_observeMethod</name>
+  </compound>
+  <compound refid="dir_7dabdd3d3a9bce4f3e16bb59ff7fefc5" kind="dir"><name>ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod</name>
+  </compound>
+  <compound refid="dir_6e7a7d2bfd55c0131291d54b90b2f8ce" kind="dir"><name>ce204-hw4/src/test/java/ce204_hw4_MainAppTest</name>
+  </compound>
+  <compound refid="dir_05c502d22b767c8463b6aab5bc3575dc" kind="dir"><name>ce204-hw4/src/test/java/ce204_hw4_observerMethodTest</name>
+  </compound>
+  <compound refid="dir_83d8f6843c4c838eed002a1a6f74b545" kind="dir"><name>ce204-hw4/src/test/java/ce204_hw4_StrategyMethodTest</name>
+  </compound>
+  <compound refid="dir_2c01955520d01da46a4fe23c24b6980a" kind="dir"><name>ce204-hw4/src/main/java</name>
+  </compound>
+  <compound refid="dir_0d3b3e54966595e6355119ab1982937c" kind="dir"><name>ce204-hw4/src/test/java</name>
+  </compound>
+  <compound refid="dir_3cea23a4409f375f4bd3a903cd33913e" kind="dir"><name>ce204-hw4/src/main</name>
+  </compound>
+  <compound refid="dir_4a53aee1a4bb759571abcac4e57451e6" kind="dir"><name>ce204-hw4/src/site/markdown</name>
+  </compound>
+  <compound refid="dir_6ff07ddc5011175dcb26efd3c7fd4724" kind="dir"><name>ce204-hw4/src/site</name>
+  </compound>
+  <compound refid="dir_9155b33c8e191f41b940a86931c3aa76" kind="dir"><name>ce204-hw4/src</name>
+  </compound>
+  <compound refid="dir_ad974eb00650998de56945bb6be4d206" kind="dir"><name>ce204-hw4/src/test</name>
+  </compound>
+</doxygenindex>

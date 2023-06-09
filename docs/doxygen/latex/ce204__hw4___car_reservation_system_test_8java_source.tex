@@ -1,0 +1,79 @@
+\hypertarget{ce204__hw4___car_reservation_system_test_8java_source}{}\doxysection{ce204\+\_\+hw4\+\_\+\+Car\+Reservation\+System\+Test.\+java}
+\label{ce204__hw4___car_reservation_system_test_8java_source}\index{ce204-\/hw4/src/test/java/ce204\_hw4\_observerMethodTest/ce204\_hw4\_CarReservationSystemTest.java@{ce204-\/hw4/src/test/java/ce204\_hw4\_observerMethodTest/ce204\_hw4\_CarReservationSystemTest.java}}
+\mbox{\hyperlink{ce204__hw4___car_reservation_system_test_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00001}\mbox{\hyperlink{namespacece204__hw4__observer_method_test}{00001}} \textcolor{keyword}{package }ce204\_hw4\_observerMethodTest;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00003}00003 \textcolor{keyword}{import} org.junit.Assert;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00004}00004 \textcolor{keyword}{import} org.junit.Before;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00005}00005 \textcolor{keyword}{import} org.junit.Test;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00006}00006 \textcolor{keyword}{import} \mbox{\hyperlink{namespacece204__hw4__library__observe_method}{ce204\_hw4\_library\_observeMethod}}.*;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00008}00008 \textcolor{keyword}{import} \textcolor{keyword}{static} org.junit.Assert.assertEquals;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00009}00009 \textcolor{keyword}{import} \textcolor{keyword}{static} org.junit.Assert.assertTrue;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00011}00011 \textcolor{keyword}{import} java.io.ByteArrayOutputStream;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00012}00012 \textcolor{keyword}{import} java.io.PrintStream;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00013}00013 \textcolor{keyword}{import} java.time.\mbox{\hyperlink{classjava_1_1time_1_1_local_date}{LocalDate}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00014}00014 \textcolor{keyword}{import} java.time.format.DateTimeFormatter;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00015}00015 \textcolor{keyword}{import} java.util.List;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00017}\mbox{\hyperlink{classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test}{00017}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test}{ce204\_hw4\_CarReservationSystemTest}} \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00019}00019      \textcolor{keyword}{private} \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system}{CarReservationSystem}} carReservationSystem;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00020}00020         \textcolor{keyword}{private} ByteArrayOutputStream outputStreamCaptor;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00025}00025         @Before}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00026}\mbox{\hyperlink{classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_a8e98972581ac490c0115a4b5f5780426}{00026}}         \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_a8e98972581ac490c0115a4b5f5780426}{setup}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00027}00027             carReservationSystem = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system}{CarReservationSystem}}();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00028}00028             outputStreamCaptor = \textcolor{keyword}{new} ByteArrayOutputStream();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00029}00029             System.setOut(\textcolor{keyword}{new} PrintStream(outputStreamCaptor));}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00030}00030         \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00035}00035         @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00036}\mbox{\hyperlink{classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_a80cf919a6ba2f585d906511ee03a7a26}{00036}}         \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_a80cf919a6ba2f585d906511ee03a7a26}{testMakeReservation}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00037}00037             \textcolor{comment}{// Arrange}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00038}00038             LocalDate startDate = LocalDate.now();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00039}00039             \textcolor{keywordtype}{int} rentalDays = 5;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00040}00040             LocalDate endDate = startDate.plusDays(rentalDays);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00041}00041             DateTimeFormatter formatter = DateTimeFormatter.ofPattern(\textcolor{stringliteral}{"{}dd.MM.yyyy"{}});}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00042}00042             String expectedMessage = \textcolor{stringliteral}{"{}New reservation: Your rental period is from "{}}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00043}00043                     + startDate.format(formatter) + \textcolor{stringliteral}{"{} to "{}} + endDate.format(formatter) + \textcolor{stringliteral}{"{}."{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00044}00044             \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_user}{User}} user1 = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_user}{User}}(\textcolor{stringliteral}{"{}John"{}});}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00045}00045             carReservationSystem.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system_a8f9bc51a53ddec3a2d671ef1df883b13}{addUser}}(user1);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00047}00047             \textcolor{comment}{// Act}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00048}00048             carReservationSystem.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system_a9b84a5f7d8fb4499b3b4d86795266687}{makeReservation}}(startDate, rentalDays);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00050}00050             \textcolor{comment}{// Assert}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00051}00051             String expectedOutput = \textcolor{stringliteral}{"{}John: "{}} + expectedMessage;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00052}00052             Assert.assertEquals(expectedOutput, outputStreamCaptor.toString().trim());}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00053}00053         \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00055}00055         \textcolor{keyword}{private} \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system}{CarReservationSystem}} reservationSystem;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00056}00056         \textcolor{keyword}{private} \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_user}{User}} user1;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00057}00057         \textcolor{keyword}{private} \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_user}{User}} user2;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00062}00062         @Before}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00063}\mbox{\hyperlink{classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_a864c80b64a3407f9ced5e1b6baa5c95f}{00063}}         \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_a864c80b64a3407f9ced5e1b6baa5c95f}{setup1}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00064}00064             reservationSystem = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system}{CarReservationSystem}}();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00065}00065             user1 = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_user}{User}}(\textcolor{stringliteral}{"{}John"{}});}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00066}00066             user2 = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_user}{User}}(\textcolor{stringliteral}{"{}Jane"{}});}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00067}00067             reservationSystem.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system_a8f9bc51a53ddec3a2d671ef1df883b13}{addUser}}(user1);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00068}00068             reservationSystem.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system_a8f9bc51a53ddec3a2d671ef1df883b13}{addUser}}(user2);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00069}00069         \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00074}00074         @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00075}\mbox{\hyperlink{classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_af82d044ad14d449beab4b4ab908093f5}{00075}}         \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_af82d044ad14d449beab4b4ab908093f5}{testRemoveUser}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00076}00076             \textcolor{comment}{// Arrange}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00078}00078             \textcolor{comment}{// Act}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00079}00079             reservationSystem.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system_ae56b0afc951ea678d41502d0324a12be}{removeUser}}(user1);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00081}00081             \textcolor{comment}{// Assert}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00082}00082             Assert.assertFalse(reservationSystem.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system_a24275a5646ae9592523000203f79a3fc}{getObservers}}().contains(user1));}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00083}00083             Assert.assertTrue(reservationSystem.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system_a24275a5646ae9592523000203f79a3fc}{getObservers}}().contains(user2));}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00084}00084         \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___car_reservation_system_test_8java_source_l00085}00085 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,1057 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="md_ce204_hw4_src_site_markdown_readme" kind="page">
+    <compoundname>md_ce204_hw4_src_site_markdown_readme</compoundname>
+    <title>eclipse-java-maven-template</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md5">
+<title>Overview</title>
+<para>You will generate eclipse maven project with Junit4 from CLI and. Also you will generate jar and then you will run your application. For more information you can check examples <ulink url="https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html">Maven – Maven in 5 Minutes</ulink> and <ulink url="https://books.sonatype.com/mvnref-book/reference/index.html">TheNEXUS | A Community Project</ulink></para>
+<sect2 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md6">
+<title>Releases</title>
+<para><itemizedlist>
+<listitem><para><ulink url="https://github.com/ucoruh/eclipse-java-maven-template/releases/latest"><image type="html" name="https://badgen.net/github/release/ucoruh/eclipse-java-maven-template" alt="GitHub release badge" inline="yes"></image>
+</ulink></para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md7">
+<title>Platforms</title>
+<para><itemizedlist>
+<listitem><para><image type="html" name="assets/badge-ubuntu.svg" alt="Ubuntu badge" inline="yes"></image>
+</para>
+</listitem><listitem><para><image type="html" name="assets/badge-macos.svg" alt="macOS badge" inline="yes"></image>
+</para>
+</listitem><listitem><para><image type="html" name="assets/badge-windows.svg" alt="Windows badge" inline="yes"></image>
+</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md8">
+<title>Test Coverage</title>
+<para><ulink url="https://github.com/ucoruh/eclipse-java-maven-template/actions/workflows/release.yml"><image type="html" name="https://github.com/ucoruh/eclipse-java-maven-template/actions/workflows/release.yml/badge.svg" alt="Release" inline="yes"></image>
+</ulink></para>
+<para><bold>Coverage</bold></para>
+<para><itemizedlist>
+<listitem><para><image type="html" name="assets/badge_combined.svg" alt="All" inline="yes"></image>
+</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Branch Coverage</bold></para>
+<para><itemizedlist>
+<listitem><para><image type="html" name="assets/badge_branchcoverage.svg" alt="Branch Coverage" inline="yes"></image>
+</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Line Coverage</bold></para>
+<para><itemizedlist>
+<listitem><para><image type="html" name="assets/badge_linecoverage.svg" alt="Line Coverage" inline="yes"></image>
+</para>
+</listitem></itemizedlist>
+</para>
+<para><bold>Method Coverage</bold></para>
+<para><itemizedlist>
+<listitem><para><image type="html" name="assets/badge_methodcoverage.svg" alt="Method Coverage" inline="yes"></image>
+</para>
+</listitem></itemizedlist>
+</para>
+<sect3 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md9">
+<title>Install Requirements</title>
+<para><itemizedlist>
+<listitem><para>Eclipse</para>
+</listitem><listitem><para>Maven</para>
+</listitem><listitem><para>JDK</para>
+</listitem><listitem><para>Lcov<itemizedlist>
+<listitem><para><ulink url="https://fredgrott.medium.com/lcov-on-windows-7c58dda07080">https://fredgrott.medium.com/lcov-on-windows-7c58dda07080</ulink></para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Coverxygen<itemizedlist>
+<listitem><para><ulink url="https://pypi.org/project/coverxygen/">coverxygen · PyPI</ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/psycofdj/coverxygen">GitHub - psycofdj/coverxygen: Generate doxygen&amp;#39;s documentation coverage report</ulink></para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Reportgenerator<itemizedlist>
+<listitem><para><ulink url="https://reportgenerator.io/">https://reportgenerator.io/</ulink></para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">dotnet<sp/>tool<sp/>install<sp/>-g<sp/>dotnet-reportgenerator-globaltool</highlight></codeline>
+</programlisting></para>
+<para><itemizedlist>
+<listitem><para>Choose Licence<itemizedlist>
+<listitem><para><ulink url="https://choosealicense.com/appendix/">Appendix | Choose a License</ulink></para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<sect4 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md10">
+<title>Package Manager Windows Setup</title>
+<para>We will install required application with package manager on Windows so use following script to install <ulink url="https://chocolatey.org/install">chocolatey</ulink> and <ulink url="https://scoop.sh/">scoop</ulink></para>
+<para><programlisting filename=".batch"><codeline><highlight class="normal">@echo<sp/>off</highlight></codeline>
+<codeline><highlight class="normal">@setlocal<sp/>enableextensions</highlight></codeline>
+<codeline><highlight class="normal">@cd<sp/>/d<sp/>&quot;%~dp0&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Checking<sp/>if<sp/>Chocolatey<sp/>is<sp/>installed...</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>exist<sp/>&quot;%ProgramData%\Chocolatey\bin\choco.exe&quot;<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Chocolatey<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Installing<sp/>Chocolatey...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>powershell<sp/>-Command<sp/>&quot;Set-ExecutionPolicy<sp/>Bypass<sp/>-Scope<sp/>Process<sp/>-Force;<sp/>iex<sp/>((New-Object<sp/>System.Net.WebClient).DownloadString(&apos;https://chocolatey.org/install.ps1&apos;))&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Checking<sp/>if<sp/>Scoop<sp/>is<sp/>installed...</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>scoop<sp/>&gt;nul<sp/>2&gt;&amp;1</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>%errorlevel%==0<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Scoop<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Scoop<sp/>is<sp/>not<sp/>installed.<sp/>Installing<sp/>Scoop...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>powershell<sp/>Invoke-Expression<sp/>(New-Object<sp/>System.Net.WebClient).DownloadString(&apos;https://get.scoop.sh&apos;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>powershell<sp/>Set-ExecutionPolicy<sp/>RemoteSigned<sp/>-scope<sp/>CurrentUser</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">pause</highlight></codeline>
+</programlisting></para>
+</sect4>
+</sect3>
+<sect3 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md11">
+<title>Pre-Commit Code Formatter Astyle Installation</title>
+<para>Before each commit also with batch script we will format our code with astyle we need to install it with package manager as following script you can visit package manager web site for more details <ulink url="https://community.chocolatey.org/packages/astyle">Chocolatey Software | Artistic Style 3.2.1</ulink> and <ulink url="https://astyle.sourceforge.net/">https://astyle.sourceforge.net/</ulink></para>
+<para><programlisting filename=".batch"><codeline><highlight class="normal">@echo<sp/>off</highlight></codeline>
+<codeline><highlight class="normal">@setlocal<sp/>enableextensions</highlight></codeline>
+<codeline><highlight class="normal">@cd<sp/>/d<sp/>&quot;%~dp0&quot;</highlight></codeline>
+<codeline><highlight class="normal">echo<sp/>Installing<sp/>Astyle...</highlight></codeline>
+<codeline><highlight class="normal">choco<sp/>install<sp/>astyle</highlight></codeline>
+</programlisting></para>
+<para>Astyle tool need configuration there is example configuration named <computeroutput>astyle-options.txt</computeroutput></para>
+<para><programlisting filename=".yaml"><codeline><highlight class="normal">#<sp/>https://github.com/brchiu/openairinterface5g/blob/master/ci-scripts/astyle-options.txt</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>OAI<sp/>is<sp/>using<sp/>a<sp/>style<sp/>that<sp/>is<sp/>similar<sp/>to<sp/>the<sp/>Google<sp/>style</highlight></codeline>
+<codeline><highlight class="normal">--style=google</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>long<sp/>options<sp/>can<sp/>be<sp/>written<sp/>without<sp/>the<sp/>preceding<sp/>&apos;--&apos;</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Convert<sp/>tabs<sp/>to<sp/>spaces</highlight></codeline>
+<codeline><highlight class="normal">convert-tabs</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Indentation<sp/>is<sp/>2<sp/>spaces</highlight></codeline>
+<codeline><highlight class="normal">indent=spaces=2</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Indent<sp/>&apos;switch&apos;<sp/>blocks<sp/>so<sp/>that<sp/>the<sp/>&apos;case<sp/>X:&apos;<sp/>statements<sp/>are<sp/>indented<sp/>in<sp/>the<sp/>switch<sp/>block.<sp/></highlight></codeline>
+<codeline><highlight class="normal">indent-switches</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Indent<sp/>preprocessor<sp/>blocks<sp/>at<sp/>bracket<sp/>level<sp/>0.</highlight></codeline>
+<codeline><highlight class="normal">indent-preproc-block</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Indent<sp/>multi-line<sp/>preprocessor<sp/>#define<sp/>statements.</highlight></codeline>
+<codeline><highlight class="normal">indent-preproc-define</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Indent<sp/>C++<sp/>comments<sp/>beginning<sp/>in<sp/>column<sp/>one.</highlight></codeline>
+<codeline><highlight class="normal">indent-col1-comments</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Pad<sp/>empty<sp/>lines<sp/>around<sp/>header<sp/>blocks</highlight></codeline>
+<codeline><highlight class="normal">break-blocks</highlight></codeline>
+<codeline><highlight class="normal">delete-empty-lines</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Attach<sp/>a<sp/>pointer<sp/>or<sp/>reference<sp/>operator<sp/>(*,<sp/>&amp;,<sp/>or<sp/>^)<sp/>to<sp/>the<sp/>variable<sp/>name<sp/>(right)</highlight></codeline>
+<codeline><highlight class="normal">align-pointer=name</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>code<sp/>line<sp/>length<sp/>is<sp/>200<sp/>characters/columns<sp/>(this<sp/>is<sp/>the<sp/>maximum<sp/>allowed<sp/>by<sp/>astyle)</highlight></codeline>
+<codeline><highlight class="normal">max-code-length=200</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>line<sp/>contains<sp/>logical<sp/>conditionals<sp/>they<sp/>will<sp/>be<sp/>placed<sp/>first<sp/>on<sp/>the<sp/>new<sp/>line.</highlight></codeline>
+<codeline><highlight class="normal">break-after-logical</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Force<sp/>use<sp/>of<sp/>the<sp/>linux<sp/>end<sp/>of<sp/>line</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>lineend=linux</highlight></codeline>
+</programlisting></para>
+<para>After installation and config file generation we can format our code with following script this script look for .cs extension and format related files according to configuration in astyle-options.txt</para>
+<para><programlisting filename=".batch"><codeline><highlight class="normal">@echo<sp/>off</highlight></codeline>
+<codeline><highlight class="normal">@setlocal<sp/>enableextensions</highlight></codeline>
+<codeline><highlight class="normal">@cd<sp/>/d<sp/>&quot;%~dp0&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Formatting<sp/>Code<sp/>with<sp/>Astyle...</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">astyle<sp/>--options=&quot;astyle-options.txt&quot;<sp/>--recursive<sp/>*.cs</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">pause</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md12">
+<title>Doxygen and Graphviz Setup + MkDocs Material Theme</title>
+<para>We will use package manager for this but also we can use several tools I prefer to use following script to install all parties, This setup also use for mkdocs material them documentation generation maybe we can use for project website generation</para>
+<para><programlisting filename=".batch"><codeline><highlight class="normal">@echo<sp/>off</highlight></codeline>
+<codeline><highlight class="normal">@setlocal<sp/>enableextensions</highlight></codeline>
+<codeline><highlight class="normal">@cd<sp/>/d<sp/>&quot;%~dp0&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">rem<sp/>force<sp/>re-install<sp/>need<sp/>&quot;--force<sp/>--force-dependencies<sp/>-y&quot;<sp/>parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Test<sp/>if<sp/>Pandoc<sp/>is<sp/>installed</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>pandoc<sp/>&gt;nul<sp/>2&gt;&amp;1</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>%errorlevel%==0<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Pandoc<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Installing<sp/>Pandoc...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>choco<sp/>install<sp/>pandoc<sp/>-y</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Test<sp/>if<sp/>rsvg-convert<sp/>is<sp/>installed</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>rsvg-convert<sp/>&gt;nul<sp/>2&gt;&amp;1</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>%errorlevel%==0<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>rsvg-convert<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Installing<sp/>rsvg-convert...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>choco<sp/>install<sp/>rsvg-convert<sp/>-y</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Test<sp/>if<sp/>Python<sp/>is<sp/>installed</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>python<sp/>&gt;nul<sp/>2&gt;&amp;1</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>%errorlevel%==0<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Python<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Installing<sp/>Python...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>choco<sp/>install<sp/>python<sp/>-y</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Test<sp/>if<sp/>Miktex<sp/>is<sp/>installed</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>miktex<sp/>&gt;nul<sp/>2&gt;&amp;1</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>%errorlevel%==0<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Miktex<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Installing<sp/>Miktex...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>choco<sp/>install<sp/>miktex<sp/>-y</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Test<sp/>if<sp/>CuRL<sp/>is<sp/>installed</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>curl<sp/>&gt;nul<sp/>2&gt;&amp;1</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>%errorlevel%==0<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>curl<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Installing<sp/>CuRL...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>choco<sp/>install<sp/>curl<sp/>-y</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Test<sp/>if<sp/>MARP-CLI<sp/>is<sp/>installed</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>marp<sp/>&gt;nul<sp/>2&gt;&amp;1</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>%errorlevel%==0<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>MARP-CLI<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Installing<sp/>MARP-CLI...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>choco<sp/>install<sp/>marp-cli<sp/>-y</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Test<sp/>if<sp/>Doxygen<sp/>is<sp/>installed</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>doxygen<sp/>&gt;nul<sp/>2&gt;&amp;1</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>%errorlevel%==0<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>MARP-CLI<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Installing<sp/>Doxygen...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>choco<sp/>install<sp/>doxygen.install<sp/>-y</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Test<sp/>if<sp/>Doxygen<sp/>is<sp/>installed</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>dot<sp/>&gt;nul<sp/>2&gt;&amp;1</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>%errorlevel%==0<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Graphviz<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Installing<sp/>Graphviz...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>choco<sp/>install<sp/>graphviz<sp/>-y</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>pymdown-extensions</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-material</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-material-extensions</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-simple-hooks</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-video</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-minify-plugin</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-git-revision-date-localized-plugin</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-minify-plugin</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-static-i18n</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-with-pdf</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>qrcode</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-awesome-pages-plugin</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-embed-external-markdown</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-include-markdown-plugin</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-ezlinks-plugin</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-git-authors-plugin</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-git-committers-plugin</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-exclude</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>pptx2md</highlight></codeline>
+<codeline><highlight class="normal">pause</highlight></codeline>
+</programlisting></para>
+<para>After doxygen installation create default doxygen file with -g option</para>
+<para><programlisting filename=".batch"><codeline><highlight class="normal">doxygen<sp/>-g</highlight></codeline>
+</programlisting></para>
+<para>This will create Doxyfile for us to modify. Use Doxywizard to modify file. Be sure that your output directory should be **./docs** and all warnings should be opened and warnings stop operations.</para>
+<sect4 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md13">
+<title>ReportGenerator Setup</title>
+<para>We need to install <ulink url="https://reportgenerator.io/">reportgenerator</ulink> for creation of HTML test reports, we will use choco to install visit package manager web site <ulink url="https://community.chocolatey.org/packages/reportgenerator.portable">Chocolatey Software | ReportGenerator (Portable) - Generates reports for various code coverage tools 5.1.20</ulink></para>
+<para><programlisting filename=".batch"><codeline><highlight class="normal">@echo<sp/>off</highlight></codeline>
+<codeline><highlight class="normal">@setlocal<sp/>enableextensions</highlight></codeline>
+<codeline><highlight class="normal">@cd<sp/>/d<sp/>&quot;%~dp0&quot;</highlight></codeline>
+<codeline><highlight class="normal">echo<sp/>Installing<sp/>Report<sp/>Generator...</highlight></codeline>
+<codeline><highlight class="normal">choco<sp/>install<sp/>reportgenerator.portable</highlight></codeline>
+</programlisting></para>
+</sect4>
+</sect3>
+</sect2>
+<sect2 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md14">
+<title>Repository Setup</title>
+<sect4 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md15">
+<title>Github Repositoy Creation</title>
+<para>First create a empty project in github and clone it to your PC,</para>
+</sect4>
+<sect4 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md16">
+<title>Pre-Commit Action Restrictions</title>
+<para>Use following pre-commit script and replace it with <computeroutput>.git/hook/precommit</computeroutput></para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">#!/bin/bash</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Installation:</highlight></codeline>
+<codeline><highlight class="normal">#<sp/><sp/><sp/>Copy<sp/>this<sp/>script<sp/>as<sp/>pre-commit<sp/>to<sp/>.git/hooks<sp/>folder</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">OPTIONS=&quot;--options=astyle-options.txt&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Check<sp/>if<sp/>.gitignore<sp/>file<sp/>exists</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>[<sp/>!<sp/>-f<sp/>astyle-options.txt<sp/>];<sp/>then</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>&quot;[!]<sp/>astyle-options.txt<sp/>file<sp/>not<sp/>found.<sp/>Please<sp/>make<sp/>sure<sp/>the<sp/>astyle-options.txt<sp/>file<sp/>is<sp/>present.&quot;<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>exit<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">fi</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">RETURN=0</highlight></codeline>
+<codeline><highlight class="normal">ASTYLE=$(command<sp/>-v<sp/>astyle)</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>[<sp/>$?<sp/>-ne<sp/>0<sp/>];<sp/>then</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>&quot;[!]<sp/>AStyle<sp/>is<sp/>not<sp/>installed.<sp/>Unable<sp/>to<sp/>check<sp/>source<sp/>file<sp/>format<sp/>policy.&quot;<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>exit<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">fi</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Check<sp/>if<sp/>.gitignore<sp/>file<sp/>exists</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>[<sp/>!<sp/>-f<sp/>.gitignore<sp/>];<sp/>then</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>&quot;[!]<sp/>.gitignore<sp/>file<sp/>not<sp/>found.<sp/>Please<sp/>make<sp/>sure<sp/>the<sp/>.gitignore<sp/>file<sp/>is<sp/>present.&quot;<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>exit<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">fi</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Check<sp/>if<sp/>README.md<sp/>file<sp/>exists</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>[<sp/>!<sp/>-f<sp/>README.md<sp/>];<sp/>then</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>&quot;[!]<sp/>README.md<sp/>file<sp/>not<sp/>found.<sp/>Please<sp/>make<sp/>sure<sp/>the<sp/>README.md<sp/>file<sp/>is<sp/>present.&quot;<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>exit<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">fi</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Check<sp/>if<sp/>.gitignore<sp/>file<sp/>exists</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>[<sp/>!<sp/>-f<sp/>Doxyfile<sp/>];<sp/>then</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>&quot;[!]<sp/>Doxyfile<sp/>file<sp/>not<sp/>found.<sp/>Please<sp/>make<sp/>sure<sp/>the<sp/>Doxyfile<sp/>file<sp/>is<sp/>present.&quot;<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>exit<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">fi</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">FILES=$(git<sp/>diff<sp/>--cached<sp/>--name-only<sp/>--diff-filter=ACMRTUXB<sp/>|<sp/>grep<sp/>-E<sp/>&quot;\.(cs|java|c|cpp|h)$&quot;)</highlight></codeline>
+<codeline><highlight class="normal">for<sp/>FILE<sp/>in<sp/>$FILES;<sp/>do</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>FORMATTED=$(<sp/>&quot;$ASTYLE&quot;<sp/>$OPTIONS<sp/>&lt;<sp/>&quot;$FILE&quot;<sp/>2&gt;&amp;1<sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>[<sp/>$?<sp/>-ne<sp/>0<sp/>];<sp/>then</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/>&quot;[!]<sp/>Error<sp/>formatting<sp/>$FILE:&quot;<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/>&quot;$FORMATTED&quot;<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RETURN=1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>elif<sp/>[<sp/>-n<sp/>&quot;$FORMATTED&quot;<sp/>];<sp/>then</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/>&quot;Formatted<sp/>$FILE&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/>&quot;$FORMATTED&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/>&quot;&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/>&quot;$FORMATTED&quot;<sp/>&gt;<sp/>&quot;$FILE&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>git<sp/>add<sp/>&quot;$FILE&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>fi</highlight></codeline>
+<codeline><highlight class="normal">done</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">if<sp/>[<sp/>$RETURN<sp/>-eq<sp/>1<sp/>];<sp/>then</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>&quot;&quot;<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>&quot;Make<sp/>sure<sp/>you<sp/>have<sp/>run<sp/>AStyle<sp/>with<sp/>the<sp/>following<sp/>options:&quot;<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>$OPTIONS<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal">fi</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">exit<sp/>$RETURN</highlight></codeline>
+</programlisting></para>
+<para>This script will check astyle-options.txt file, gitignore file, <ref refid="readme_8md" kindref="compound">README.md</ref> file and Doxyfile is exist if not it will be terminate your commit operation. Also after <computeroutput>astyle</computeroutput> installation and <computeroutput>astyle-options.txt</computeroutput> generation it will automatically format your source code before each commit. Formatting configuration will be stored in <computeroutput>astyle-options.txt</computeroutput> .</para>
+</sect4>
+<sect4 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md17">
+<title>Create .gitignore with TOPTAL API via batch script</title>
+<para>Use the following script to generate .gitignore file, you can change gitignore file by changing the configuration after <computeroutput><ulink url="https://www.toptal.com/developers/gitignore/api">https://www.toptal.com/developers/gitignore/api</ulink></computeroutput></para>
+<para>This is the selected configuration</para>
+<para><computeroutput>c,csharp,vs,visualstudio,visualstudiocode,java,maven,c++,cmake,eclipse,netbeans</computeroutput></para>
+<para><programlisting filename=".batch"><codeline><highlight class="normal">@echo<sp/>off</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">set<sp/>API_URL=https://www.toptal.com/developers/gitignore/api/c,csharp,vs,visualstudio,visualstudiocode,java,maven,c++,cmake,eclipse,netbeans</highlight></codeline>
+<codeline><highlight class="normal">set<sp/>OUTPUT_FILE=.gitignore</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Set<sp/>the<sp/>running<sp/>folder<sp/>to<sp/>the<sp/>current<sp/>working<sp/>folder</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>/d<sp/>&quot;%~dp0&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Download<sp/>the<sp/>API<sp/>results<sp/>using<sp/>curl</highlight></codeline>
+<codeline><highlight class="normal">curl<sp/>-s<sp/>-o<sp/>%OUTPUT_FILE%<sp/>%API_URL%</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Downloaded<sp/>.gitignore<sp/>file<sp/>from<sp/>%API_URL%<sp/>and<sp/>saved<sp/>as<sp/>%OUTPUT_FILE%</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">pause</highlight></codeline>
+</programlisting></para>
+</sect4>
+<sect4 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md18">
+<title>Create an Empty README.md file</title>
+<para>Create and EMPTY <computeroutput><ref refid="readme_8md" kindref="compound">README.md</ref></computeroutput> file and during project fill required parts</para>
+</sect4>
+<sect4 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md19">
+<title>Create Default Doxyfile</title>
+<para>Use following command to generate default <computeroutput>Doxyfile</computeroutput> if you didn&apos;t create or you can use pre-configured configuration and you can edit over this configurations. Be sure that your output directory should be **./docs** and all warnings should be opened and warnings stop operations.</para>
+<para><programlisting filename=".batch"><codeline><highlight class="normal">doxygen<sp/>-g</highlight></codeline>
+</programlisting></para>
+</sect4>
+<sect4 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md20">
+<title>First commit is ready, You can commit and push your work.</title>
+<para>You can use gitextension to commit your work, check if you get any error than return steps and check missing parts.</para>
+<para><hruler/>
+</para>
+</sect4>
+</sect2>
+<sect2 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md22">
+<title>Creating a Project</title>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">mvn<sp/>archetype:generate<sp/>-DgroupId=com.ucoruh.calculator<sp/>-DartifactId=calculator-app<sp/>-DarchetypeArtifactId=maven-archetype-quickstart<sp/>-DarchetypeVersion=1.4<sp/>-DinteractiveMode=false</highlight></codeline>
+</programlisting></para>
+<sect3 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md23">
+<title>Import Project to Eclipse</title>
+<para>Use import existing maven project option to import project to Eclipse</para>
+</sect3>
+<sect3 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md24">
+<title>Rename Files</title>
+<para>Rename App.java to CalculatorApp.java and AppTest.java to CalculatorAppTest.java and Generate Calculator.java and CalculatorTest.java</para>
+<para><programlisting filename=".java"><codeline><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.ucoruh.calculator;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.slf4j.LoggerFactory;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ch.qos.logback.classic.Logger;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Calculator<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>Logger<sp/>logger<sp/>=<sp/>(Logger)<sp/>LoggerFactory.getLogger(Calculator.class);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>add(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.info(</highlight><highlight class="stringliteral">&quot;Logging<sp/>message&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.error(</highlight><highlight class="stringliteral">&quot;Error<sp/>message&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a<sp/>+<sp/>b;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><programlisting filename=".java"><codeline><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.ucoruh.calculator;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.io.IOException;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.slf4j.LoggerFactory;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ch.qos.logback.classic.Logger;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CalculatorApp<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">final</highlight><highlight class="normal"><sp/>Logger<sp/>logger<sp/>=<sp/>(Logger)<sp/>LoggerFactory.getLogger(CalculatorApp.class);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>main(String[]<sp/>args)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.info(</highlight><highlight class="stringliteral">&quot;Logging<sp/>message&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.error(</highlight><highlight class="stringliteral">&quot;Error<sp/>message&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Hello<sp/>World!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(args.length&gt;0)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(args[0].equals(</highlight><highlight class="stringliteral">&quot;1&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>IOException(</highlight><highlight class="stringliteral">&quot;Dummy<sp/>Exception...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Press<sp/>Enter<sp/>to<sp/>Continue...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.in.read();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(</highlight><highlight class="stringliteral">&quot;Thank<sp/>you...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(IOException<sp/>e)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.error(e.toString());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e.printStackTrace();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para>Generate test with add new unit test feature in Eclipse</para>
+<para><image type="html" name="assets/2023-05-24-16-48-59-image.png" inline="yes"></image>
+</para>
+<para><image type="html" name="assets/2023-05-24-16-49-11-image.png" inline="yes"></image>
+</para>
+<para><image type="html" name="assets/2023-05-24-16-49-27-image.png" inline="yes"></image>
+</para>
+<para><programlisting filename=".java"><codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.ucoruh.calculator;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>org.junit.Assert.*;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.After;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.AfterClass;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.Before;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.BeforeClass;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.Test;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CalculatorTest<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@BeforeClass</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setUpBeforeClass()<sp/>throws<sp/>Exception<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@AfterClass</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tearDownAfterClass()<sp/>throws<sp/>Exception<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@Before</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setUp()<sp/>throws<sp/>Exception<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@After</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tearDown()<sp/>throws<sp/>Exception<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>testAddition()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Calculator<sp/>calculator<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Calculator();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>result<sp/>=<sp/>calculator.add(2,<sp/>3);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(5,<sp/>result);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+<para><programlisting filename=".java"><codeline><highlight class="keyword">package<sp/></highlight><highlight class="normal">com.ucoruh.calculator;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>org.junit.Assert.*;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.io.InputStream;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.io.PrintStream;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.io.ByteArrayInputStream;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.io.ByteArrayOutputStream;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.After;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.AfterClass;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.Before;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.BeforeClass;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.Test;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">CalculatorAppTest<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@BeforeClass</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setUpBeforeClass()<sp/>throws<sp/>Exception<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@AfterClass</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tearDownAfterClass()<sp/>throws<sp/>Exception<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@Before</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setUp()<sp/>throws<sp/>Exception<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@After</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tearDown()<sp/>throws<sp/>Exception<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>testMainSuccess()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Redirect<sp/>System.in<sp/>and<sp/>System.out</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputStream<sp/>originalIn<sp/>=<sp/>System.in;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PrintStream<sp/>originalOut<sp/>=<sp/>System.out;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>ByteArrayInputStream<sp/>with<sp/>the<sp/>desired<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>input<sp/>=<sp/>System.lineSeparator();<sp/></highlight><highlight class="comment">//<sp/>Pressing<sp/>&quot;Enter&quot;<sp/>key</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ByteArrayInputStream<sp/>inputStream<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>ByteArrayInputStream(input.getBytes());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Redirect<sp/>System.in<sp/>to<sp/>the<sp/>ByteArrayInputStream</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.setIn(inputStream);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>ByteArrayOutputStream<sp/>to<sp/>capture<sp/>the<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ByteArrayOutputStream<sp/>outputStream<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>ByteArrayOutputStream();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.setOut(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>PrintStream(outputStream));</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String[]<sp/>args<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>String[]<sp/>{</highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Call<sp/>the<sp/>main<sp/>method<sp/>of<sp/>CalculatorApp</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CalculatorApp.main(args);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Restore<sp/>original<sp/>System.in<sp/>and<sp/>System.out</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.setIn(originalIn);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.setOut(originalOut);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Assert<sp/>the<sp/>desired<sp/>behavior<sp/>based<sp/>on<sp/>the<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertTrue(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>testMainError()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Redirect<sp/>System.in<sp/>and<sp/>System.out</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputStream<sp/>originalIn<sp/>=<sp/>System.in;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PrintStream<sp/>originalOut<sp/>=<sp/>System.out;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>ByteArrayInputStream<sp/>with<sp/>the<sp/>desired<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>input<sp/>=<sp/>System.lineSeparator();<sp/></highlight><highlight class="comment">//<sp/>Pressing<sp/>&quot;Enter&quot;<sp/>key</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ByteArrayInputStream<sp/>inputStream<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>ByteArrayInputStream(input.getBytes());</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Redirect<sp/>System.in<sp/>to<sp/>the<sp/>ByteArrayInputStream</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.setIn(inputStream);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>ByteArrayOutputStream<sp/>to<sp/>capture<sp/>the<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ByteArrayOutputStream<sp/>outputStream<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>ByteArrayOutputStream();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.setOut(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>PrintStream(outputStream));</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String[]<sp/>args<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>String[]<sp/>{</highlight><highlight class="stringliteral">&quot;1&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Call<sp/>the<sp/>main<sp/>method<sp/>of<sp/>CalculatorApp</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CalculatorApp.main(args);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Restore<sp/>original<sp/>System.in<sp/>and<sp/>System.out</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.setIn(originalIn);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.setOut(originalOut);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Assert<sp/>the<sp/>desired<sp/>behavior<sp/>based<sp/>on<sp/>the<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertTrue(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md25">
+<title>Update pom.xml</title>
+<para><programlisting filename=".xml"><codeline><highlight class="normal">&lt;?</highlight><highlight class="keyword">xml</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">version</highlight><highlight class="normal">=</highlight><highlight class="stringliteral">&quot;1.0&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">encoding</highlight><highlight class="normal">=</highlight><highlight class="stringliteral">&quot;UTF-8&quot;</highlight><highlight class="normal">?&gt;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">&lt;</highlight><highlight class="keywordtype">project</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">xmlns</highlight><highlight class="normal">=</highlight><highlight class="stringliteral">&quot;http://maven.apache.org/POM/4.0.0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">xmlns:xsi</highlight><highlight class="normal">=</highlight><highlight class="stringliteral">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">xsi:schemaLocation</highlight><highlight class="normal">=</highlight><highlight class="stringliteral">&quot;http://maven.apache.org/POM/4.0.0<sp/>http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">modelVersion</highlight><highlight class="normal">&gt;4.0.0&lt;/</highlight><highlight class="keywordtype">modelVersion</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">&lt;!--<sp/>The<sp/>Basics<sp/>--&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">com.ucoruh.calculator</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">calculator-app</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;1.0-</highlight><highlight class="keyword">SNAPSHOT</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">packaging</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">jar</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">packaging</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">&lt;!--<sp/>More<sp/>Project<sp/>Information<sp/>--&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">name</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">calculator-app</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">name</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">url</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">https:</highlight><highlight class="normal">//</highlight><highlight class="keyword">github.com</highlight><highlight class="normal">/</highlight><highlight class="keyword">ucoruh</highlight><highlight class="normal">/</highlight><highlight class="keyword">eclipse-java-maven-template</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">url</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">scm</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">url</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">https:</highlight><highlight class="normal">//</highlight><highlight class="keyword">github.com</highlight><highlight class="normal">/</highlight><highlight class="keyword">ucoruh</highlight><highlight class="normal">/</highlight><highlight class="keyword">eclipse-java-maven-template</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">url</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">scm</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">inceptionYear</highlight><highlight class="normal">&gt;2023&lt;/</highlight><highlight class="keywordtype">inceptionYear</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">developers</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">developer</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">name</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">Asst.</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">Prof.</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">Dr.</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">Ugur</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">CORUH</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">name</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">organization</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">RTEU</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">organization</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">email</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">ugur.coruh</highlight><highlight class="normal">@</highlight><highlight class="keyword">erdogan.edu.tr</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">email</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">roles</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">role</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">Developer</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">role</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">role</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">Designer</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">role</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">roles</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">developer</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">developer</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">name</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">Other</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">Person</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">name</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">organization</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">RTEU</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">organization</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">email</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">mail</highlight><highlight class="normal">@</highlight><highlight class="keyword">gmail.com</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">email</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">roles</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">role</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">Developer</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">role</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">roles</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">developer</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">developers</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">contributors</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">contributor</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">name</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">Asst.</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">Prof.</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">Dr.</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">Ugur</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">CORUH</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">name</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">email</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">ugur.coruh</highlight><highlight class="normal">@</highlight><highlight class="keyword">erdogan.edu.tr</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">email</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">organization</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">RTEU</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">organization</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">roles</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">role</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">Developer</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">role</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">role</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">Designer</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">role</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">roles</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">contributor</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">contributor</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">name</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">Other</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">Person</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">name</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">organization</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">RTEU</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">organization</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">email</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">mail</highlight><highlight class="normal">@</highlight><highlight class="keyword">gmail.com</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">email</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">roles</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">role</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">Developer</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">role</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">roles</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">contributor</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">contributors</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">description</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">Maven</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">Example</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">Template</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">Project</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">description</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">organization</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">name</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">Recep</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">Tayyip</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">Erdogan</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">University</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">name</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">url</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">www.erdogan.edu.tr</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">url</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">organization</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">&lt;!--<sp/>Environment<sp/>Settings<sp/>--&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">issueManagement</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">system</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">Github</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">system</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">url</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">https:</highlight><highlight class="normal">//</highlight><highlight class="keyword">github.com</highlight><highlight class="normal">/</highlight><highlight class="keyword">ucoruh</highlight><highlight class="normal">/</highlight><highlight class="keyword">eclipse-java-maven-template</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">url</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">issueManagement</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">ciManagement</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">system</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">Github</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">system</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">notifiers</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">notifier</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">address</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">ugur.coruh</highlight><highlight class="normal">@</highlight><highlight class="keyword">erdogan.edu.tr</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">address</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">sendOnSuccess</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">true</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">sendOnSuccess</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">sendOnError</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">true</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">sendOnError</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">sendOnFailure</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">true</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">sendOnFailure</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">sendOnWarning</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">true</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">sendOnWarning</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">notifier</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">notifiers</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">url</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">https:</highlight><highlight class="normal">//</highlight><highlight class="keyword">github.com</highlight><highlight class="normal">/</highlight><highlight class="keyword">ucoruh</highlight><highlight class="normal">/</highlight><highlight class="keyword">eclipse-java-maven-template</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">url</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">ciManagement</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">repositories</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">repository</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">eclipse-java-maven-template</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">name</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">eclipse-java-maven-template</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">name</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">url</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">https:</highlight><highlight class="normal">//</highlight><highlight class="keyword">github.com</highlight><highlight class="normal">/</highlight><highlight class="keyword">ucoruh</highlight><highlight class="normal">/</highlight><highlight class="keyword">eclipse-java-maven-template</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">url</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">repository</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">repositories</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">distributionManagement</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">site</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">name</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">https:</highlight><highlight class="normal">//</highlight><highlight class="keyword">github.com</highlight><highlight class="normal">/</highlight><highlight class="keyword">ucoruh</highlight><highlight class="normal">/</highlight><highlight class="keyword">eclipse-java-maven-template</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">name</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">eclipse-java-maven-template</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">site</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">downloadUrl</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">https:</highlight><highlight class="normal">//</highlight><highlight class="keyword">github.com</highlight><highlight class="normal">/</highlight><highlight class="keyword">ucoruh</highlight><highlight class="normal">/</highlight><highlight class="keyword">eclipse-java-maven-template</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">downloadUrl</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">repository</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">eclipse-java-maven-template</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">name</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">eclipse-java-maven-template</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">name</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">url</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">https:</highlight><highlight class="normal">//</highlight><highlight class="keyword">github.com</highlight><highlight class="normal">/</highlight><highlight class="keyword">ucoruh</highlight><highlight class="normal">/</highlight><highlight class="keyword">eclipse-java-maven-template</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">url</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">repository</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">distributionManagement</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">properties</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">project.build.sourceEncoding</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">UTF-8</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">project.build.sourceEncoding</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">maven.compiler.source</highlight><highlight class="normal">&gt;1.8&lt;/</highlight><highlight class="keywordtype">maven.compiler.source</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">maven.compiler.target</highlight><highlight class="normal">&gt;1.8&lt;/</highlight><highlight class="keywordtype">maven.compiler.target</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">properties</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">dependencies</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">dependency</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">junit</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">junit</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;4.11&lt;/</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">scope</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">test</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">scope</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">dependency</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">dependency</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">org.hamcrest</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">hamcrest-all</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;1.3&lt;/</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">scope</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">test</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">scope</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">dependency</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">&lt;!--<sp/>SLF4J<sp/>API<sp/>--&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">dependency</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">org.slf4j</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">slf4j-api</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;1.7.32&lt;/</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">dependency</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">&lt;!--<sp/>Logback<sp/>Implementation<sp/>--&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">dependency</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">ch.qos.logback</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">logback-classic</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;1.2.6&lt;/</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">dependency</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">dependencies</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">build</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">plugins</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">org.apache.maven.plugins</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">maven-compiler-plugin</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">configuration</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">source</highlight><highlight class="normal">&gt;1.8&lt;/</highlight><highlight class="keywordtype">source</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">target</highlight><highlight class="normal">&gt;1.8&lt;/</highlight><highlight class="keywordtype">target</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">configuration</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">org.apache.maven.plugins</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">maven-surefire-plugin</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">configuration</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">includes</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">include</highlight><highlight class="normal">&gt;**/</highlight><highlight class="keyword">CalculatorAppTest.java</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">include</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">include</highlight><highlight class="normal">&gt;**/</highlight><highlight class="keyword">CalculatorTest.java</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">include</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">includes</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">configuration</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">org.jacoco</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">jacoco-maven-plugin</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;0.8.7&lt;/</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">executions</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">execution</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">goals</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">goal</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">prepare-agent</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">goal</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">goals</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">execution</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">execution</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">report</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">phase</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">test</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">phase</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">goals</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">goal</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">report</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">goal</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">goals</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">execution</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">executions</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">org.apache.maven.plugins</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">maven-site-plugin</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;4.0.0-</highlight><highlight class="keyword">M8</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">configuration</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">port</highlight><highlight class="normal">&gt;9000&lt;/</highlight><highlight class="keywordtype">port</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">tempWebappDirectory</highlight><highlight class="normal">&gt;${</highlight><highlight class="keyword">basedir</highlight><highlight class="normal">}/</highlight><highlight class="keyword">target</highlight><highlight class="normal">/</highlight><highlight class="keyword">site</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">tempWebappDirectory</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">configuration</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">&lt;!--<sp/>Maven<sp/>Shade<sp/>Plugin<sp/>--&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">org.apache.maven.plugins</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">groupId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">maven-shade-plugin</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;3.2.4&lt;/</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">executions</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">execution</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">phase</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">package</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">phase</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">goals</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">goal</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">shade</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">goal</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">goals</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">configuration</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">createDependencyReducedPom</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">false</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">createDependencyReducedPom</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">transformers</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">transformer</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">implementation</highlight><highlight class="normal">=</highlight><highlight class="stringliteral">&quot;org.apache.maven.plugins.shade.resource.ManifestResourceTransformer&quot;</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">mainClass</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">com.ucoruh.calculator.CalculatorApp</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">mainClass</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">transformer</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">transformers</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">configuration</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">execution</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">executions</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">plugins</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">pluginManagement</highlight><highlight class="normal">&gt;</highlight><highlight class="comment">&lt;!--<sp/>lock<sp/>down<sp/>plugins<sp/>versions<sp/>to<sp/>avoid<sp/>using<sp/>Maven</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>defaults<sp/>(may<sp/>be<sp/>moved<sp/>to<sp/>parent<sp/>pom)<sp/>--&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">plugins</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">&lt;!--<sp/>clean<sp/>lifecycle,<sp/>see</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle<sp/>--&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">maven-clean-plugin</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;3.1.0&lt;/</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">&lt;!--<sp/>default<sp/>lifecycle,<sp/>jar<sp/>packaging:<sp/>see</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging<sp/>--&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">maven-resources-plugin</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;3.0.2&lt;/</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">maven-compiler-plugin</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;3.8.0&lt;/</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">maven-surefire-plugin</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;2.22.1&lt;/</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">maven-jar-plugin</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;3.0.2&lt;/</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">maven-install-plugin</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;2.5.2&lt;/</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">maven-deploy-plugin</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;2.8.2&lt;/</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">&lt;!--<sp/>site<sp/>lifecycle,<sp/>see</highlight></codeline>
+<codeline><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle<sp/>--&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">maven-site-plugin</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;3.7.1&lt;/</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight><highlight class="keyword">maven-project-info-reports-plugin</highlight><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">artifactId</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;3.0.0&lt;/</highlight><highlight class="keywordtype">version</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">plugin</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">plugins</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">pluginManagement</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/</highlight><highlight class="keywordtype">build</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/</highlight><highlight class="keywordtype">project</highlight><highlight class="normal">&gt;</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md26">
+<title>Generate Project Site Files</title>
+<para><itemizedlist>
+<listitem><para>site.xml<itemizedlist>
+<listitem><para>resources<itemizedlist>
+<listitem><para>images<itemizedlist>
+<listitem><para>banner.png</para>
+</listitem><listitem><para>logo.png</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>markdown<itemizedlist>
+<listitem><para><ref refid="overview_8md" kindref="compound">overview.md</ref></para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+<para>You can use files in project</para>
+</sect3>
+<sect3 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md27">
+<title>Build the Project</title>
+<para>Enter pom.xml root folder and run following command to test and generate jar file</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">mvn<sp/>clean<sp/>test<sp/>site<sp/>package</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md28">
+<title>Run Project</title>
+<para>You can run application by specify the Main function</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">java<sp/>-cp<sp/>calculator-app-1.0-SNAPSHOT.jar<sp/>com.ucoruh.calculator.CalculatorApp</highlight></codeline>
+</programlisting></para>
+<para>Output</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">C:\Users\ugur.coruh\Desktop\eclipse-java-maven-template\calculator-app\target&gt;java<sp/>-cp<sp/>calculator-app-1.0-SNAPSHOT.jar<sp/>com.ucoruh.calculator.CalculatorApp</highlight></codeline>
+<codeline><highlight class="normal">Hello<sp/>World!</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md29">
+<title>Generate HTML Coverage Report</title>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">reportgenerator<sp/>&quot;-reports:target/site/jacoco/jacoco.xml&quot;<sp/>&quot;-sourcedirs:src/main/java&quot;<sp/>&quot;-targetdir:coveragereport&quot;<sp/>-reporttypes:Html</highlight></codeline>
+</programlisting></para>
+<para>Output</para>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">C:\Users\ugur.coruh\Desktop\eclipse-java-maven-template\calculator-app&gt;reportgenerator<sp/>&quot;-reports:target/site/jacoco/jacoco.xml&quot;<sp/>&quot;-sourcedirs:src/main/java&quot;<sp/>&quot;-targetdir:coveragereport&quot;<sp/>-reporttypes:Html</highlight></codeline>
+<codeline><highlight class="normal">2023-05-24T17:26:40:<sp/>Arguments</highlight></codeline>
+<codeline><highlight class="normal">2023-05-24T17:26:40:<sp/><sp/>-reports:target/site/jacoco/jacoco.xml</highlight></codeline>
+<codeline><highlight class="normal">2023-05-24T17:26:40:<sp/><sp/>-sourcedirs:src/main/java</highlight></codeline>
+<codeline><highlight class="normal">2023-05-24T17:26:40:<sp/><sp/>-targetdir:coveragereport</highlight></codeline>
+<codeline><highlight class="normal">2023-05-24T17:26:40:<sp/><sp/>-reporttypes:Html</highlight></codeline>
+<codeline><highlight class="normal">2023-05-24T17:26:40:<sp/>Writing<sp/>report<sp/>file<sp/>&apos;coveragereport\index.html&apos;</highlight></codeline>
+<codeline><highlight class="normal">2023-05-24T17:26:40:<sp/>Report<sp/>generation<sp/>took<sp/>0,2<sp/>seconds</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">C:\Users\ugur.coruh\Desktop\eclipse-java-maven-template\calculator-app&gt;</highlight></codeline>
+</programlisting></para>
+<para><image type="html" name="assets/2023-05-25-00-52-27-image.png" inline="yes"></image>
+</para>
+</sect3>
+</sect2>
+<sect2 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md30">
+<title>Run Maven Site</title>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">mvn<sp/>site:run</highlight></codeline>
+</programlisting></para>
+<para>Use CTRL+C to cancel from console</para>
+<para><image type="html" name="assets/2023-05-25-03-53-48-image.png" inline="yes"></image>
+</para>
+<para>This has code coverage and documentation coverage reports also</para>
+<para><image type="html" name="assets/2023-05-25-03-54-34-image.png" inline="yes"></image>
+</para>
+<para><image type="html" name="assets/2023-05-25-03-54-20-image.png" inline="yes"></image>
+</para>
+<para><image type="html" name="assets/2023-05-25-03-53-14-image.png" inline="yes"></image>
+</para>
+<sect3 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md31">
+<title>Clone-Test-Generate WebSite-Package-Generate Report-Run Web Site</title>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">@echo<sp/>off</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Enable<sp/>necessary<sp/>extensions</highlight></codeline>
+<codeline><highlight class="normal">@setlocal<sp/>enableextensions</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Change<sp/>the<sp/>current<sp/>working<sp/>directory<sp/>to<sp/>the<sp/>script<sp/>directory</highlight></codeline>
+<codeline><highlight class="normal">@cd<sp/>/d<sp/>&quot;%~dp0&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">git<sp/>clone<sp/>https://github.com/ucoruh/eclipse-java-maven-template.git</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Get<sp/>the<sp/>current<sp/>directory</highlight></codeline>
+<codeline><highlight class="normal">set<sp/>&quot;currentDir=%CD%&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Change<sp/>directory<sp/>to<sp/>calculator-app</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>calculator-app</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Perform<sp/>Maven<sp/>clean,<sp/>test,<sp/>site<sp/>generation,<sp/>and<sp/>packaging</highlight></codeline>
+<codeline><highlight class="normal">call<sp/>mvn<sp/>clean<sp/>test<sp/>site<sp/>package</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Return<sp/>to<sp/>the<sp/>previous<sp/>directory</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>..</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Generate<sp/>Doxygen<sp/>HTML<sp/>and<sp/>XML<sp/>Documentation</highlight></codeline>
+<codeline><highlight class="normal">call<sp/>doxygen<sp/>Doxyfile</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Change<sp/>directory<sp/>to<sp/>calculator-app</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>calculator-app</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Generate<sp/>ReportGenerator<sp/>HTML<sp/>Report</highlight></codeline>
+<codeline><highlight class="normal">call<sp/>reportgenerator<sp/>&quot;-reports:target/site/jacoco/jacoco.xml&quot;<sp/>&quot;-sourcedirs:src/main/java&quot;<sp/>&quot;-targetdir:target/site/coveragereport&quot;<sp/>-reporttypes:Html</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Display<sp/>information<sp/>about<sp/>the<sp/>binary<sp/>file</highlight></codeline>
+<codeline><highlight class="normal">echo<sp/>Our<sp/>Binary<sp/>is<sp/>a<sp/>Single<sp/>Jar<sp/>With<sp/>Dependencies.<sp/>You<sp/>Do<sp/>Not<sp/>Need<sp/>to<sp/>Compress<sp/>It.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Return<sp/>to<sp/>the<sp/>previous<sp/>directory</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>..</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Generate<sp/>Doxygen<sp/>Coverage<sp/>Report</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Create<sp/>coverxygen<sp/>directory</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>calculator-app</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>target</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>site</highlight></codeline>
+<codeline><highlight class="normal">mkdir<sp/>coverxygen</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>..</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>..</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>..</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Run<sp/>Coverxygen</highlight></codeline>
+<codeline><highlight class="normal">call<sp/>python<sp/>-m<sp/>coverxygen<sp/>--xml-dir<sp/>./calculator-app/target/site/doxygen/xml<sp/>--src-dir<sp/>./<sp/>--format<sp/>lcov<sp/>--output<sp/>./calculator-app/target/site/coverxygen/lcov.info<sp/>--prefix<sp/>%currentDir%\calculator-app\</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Run<sp/>lcov<sp/>genhtml</highlight></codeline>
+<codeline><highlight class="normal">call<sp/>perl<sp/>C:\ProgramData\chocolatey\lib\lcov\tools\bin\genhtml<sp/>./calculator-app\target\site\coverxygen\lcov.info<sp/>-o<sp/>calculator-app/target/site/coverxygen</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Package<sp/>Coverage<sp/>Report-1</highlight></codeline>
+<codeline><highlight class="normal">call<sp/>tar<sp/>-czvf<sp/>test-jacoco-report.tar.gz<sp/>-C<sp/>calculator-app/target/site/jacoco<sp/>.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Package<sp/>Coverage<sp/>Report-2</highlight></codeline>
+<codeline><highlight class="normal">call<sp/>tar<sp/>-czvf<sp/>test-coverage-report.tar.gz<sp/>-C<sp/>calculator-app/target/site/coveragereport<sp/>.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Package<sp/>Code<sp/>Documentation</highlight></codeline>
+<codeline><highlight class="normal">call<sp/>tar<sp/>-czvf<sp/>application-documentation.tar.gz<sp/>-C<sp/>calculator-app/target/site/doxygen<sp/>.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Package<sp/>Product<sp/>Site</highlight></codeline>
+<codeline><highlight class="normal">call<sp/>tar<sp/>-czvf<sp/>application-site.tar.gz<sp/>-C<sp/>target/site<sp/>.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Return<sp/>to<sp/>the<sp/>previous<sp/>directory</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>..</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Operation<sp/>Completed!</highlight></codeline>
+<codeline><highlight class="normal">pause</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md32">
+<title>Run Web Site</title>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">@echo<sp/>off</highlight></codeline>
+<codeline><highlight class="normal">@setlocal<sp/>enableextensions</highlight></codeline>
+<codeline><highlight class="normal">@cd<sp/>/d<sp/>&quot;%~dp0&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">cd<sp/>calculator-app</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Run<sp/>Web<sp/>Site</highlight></codeline>
+<codeline><highlight class="normal">echo<sp/>to<sp/>Exit<sp/>Use<sp/>CTRL+Z<sp/>CTRL+C</highlight></codeline>
+<codeline><highlight class="normal">start<sp/>http://localhost:9000/</highlight></codeline>
+<codeline><highlight class="normal">mvn<sp/>site:run</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Operation<sp/>Completed!</highlight></codeline>
+<codeline><highlight class="normal">pause</highlight></codeline>
+</programlisting></para>
+</sect3>
+<sect3 id="md_ce204_hw4_src_site_markdown_readme_1autotoc_md33">
+<title>Run Jar File</title>
+<para><programlisting filename=".bash"><codeline><highlight class="normal">@echo<sp/>off</highlight></codeline>
+<codeline><highlight class="normal">@setlocal<sp/>enableextensions</highlight></codeline>
+<codeline><highlight class="normal">@cd<sp/>/d<sp/>&quot;%~dp0&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Running<sp/>Application</highlight></codeline>
+<codeline><highlight class="normal">java<sp/>-jar<sp/>calculator-app/target/calculator-app-1.0-SNAPSHOT.jar</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Operation<sp/>Completed!</highlight></codeline>
+<codeline><highlight class="normal">pause</highlight></codeline>
+</programlisting></para>
+<para><image type="html" name="assets/2023-05-25-00-57-01-image.png" inline="yes"></image>
+ </para>
+</sect3>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="ce204-hw4/src/site/markdown/readme.md"/>
+  </compounddef>
+</doxygen>

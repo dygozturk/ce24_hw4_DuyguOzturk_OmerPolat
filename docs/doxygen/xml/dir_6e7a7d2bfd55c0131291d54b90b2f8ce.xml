@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_6e7a7d2bfd55c0131291d54b90b2f8ce" kind="dir">
+    <compoundname>ce204-hw4/src/test/java/ce204_hw4_MainAppTest</compoundname>
+    <innerfile refid="ce204__hw4___main_app_test_8java">ce204_hw4_MainAppTest.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/test/java/ce204_hw4_MainAppTest/"/>
+  </compounddef>
+</doxygen>

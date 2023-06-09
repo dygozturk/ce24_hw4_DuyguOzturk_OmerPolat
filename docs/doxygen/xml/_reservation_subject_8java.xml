@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_reservation_subject_8java" kind="file" language="Java">
+    <compoundname>ReservationSubject.java</compoundname>
+    <innerclass refid="classce204__hw4__library__observe_method_1_1_reservation_subject" prot="public">ce204_hw4_library_observeMethod::ReservationSubject</innerclass>
+    <innernamespace refid="namespacece204__hw4__library__observe_method">ce204_hw4_library_observeMethod</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_library_observeMethod;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.ArrayList;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.List;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classce204__hw4__library__observe_method_1_1_reservation_subject" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject" kindref="compound">ReservationSubject</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>List&lt;ReservationObserver&gt;<sp/>observers<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>ArrayList&lt;&gt;();</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14" refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa5bc7d55d910b0efcf17d73e4b4208b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa5bc7d55d910b0efcf17d73e4b4208b4" kindref="member">attachObserver</ref>(<ref refid="interfacece204__hw4__library__observe_method_1_1_reservation_observer" kindref="compound">ReservationObserver</ref><sp/>observer)<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>observers.add(observer);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22" refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1ad83da46cd3e6c48892ab9977431a0119" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1ad83da46cd3e6c48892ab9977431a0119" kindref="member">detachObserver</ref>(<ref refid="interfacece204__hw4__library__observe_method_1_1_reservation_observer" kindref="compound">ReservationObserver</ref><sp/>observer)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>observers.remove(observer);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30" refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1a03f17c8905dc7057cb0d5732baa5b6b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1a03f17c8905dc7057cb0d5732baa5b6b6" kindref="member">notifyObservers</ref>(String<sp/>message)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="interfacece204__hw4__library__observe_method_1_1_reservation_observer" kindref="compound">ReservationObserver</ref><sp/>observer<sp/>:<sp/>observers)<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>observer.notifyReservation(message);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40" refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa22630ff680d49ba4b7ac1732673c432" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;ReservationObserver&gt;<sp/><ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa22630ff680d49ba4b7ac1732673c432" kindref="member">getObservers</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>observers;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/ReservationSubject.java"/>
+  </compounddef>
+</doxygen>

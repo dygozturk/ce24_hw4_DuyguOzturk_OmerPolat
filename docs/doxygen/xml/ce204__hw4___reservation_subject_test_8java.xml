@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="ce204__hw4___reservation_subject_test_8java" kind="file" language="Java">
+    <compoundname>ce204_hw4_ReservationSubjectTest.java</compoundname>
+    <innerclass refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test" prot="public">ce204_hw4_observerMethodTest::ce204_hw4_ReservationSubjectTest</innerclass>
+    <innernamespace refid="namespacece204__hw4__observer_method_test">ce204_hw4_observerMethodTest</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_observerMethodTest;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacece204__hw4__library__observe_method" kindref="compound">ce204_hw4_library_observeMethod</ref>.*;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.Assert;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.Before;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>org.junit.Test;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.io.ByteArrayOutputStream;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.io.PrintStream;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.<ref refid="classjava_1_1util_1_1_list" kindref="compound">List</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test" kindref="compound">ce204_hw4_ReservationSubjectTest</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject" kindref="compound">ReservationSubject</ref><sp/>subject;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>ByteArrayOutputStream<sp/>outputStreamCaptor;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>@Before</highlight></codeline>
+<codeline lineno="21" refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1a5d9e23380d83f5ed8fcbcd35e1510dd8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1a5d9e23380d83f5ed8fcbcd35e1510dd8" kindref="member">setUp</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subject<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject" kindref="compound">ReservationSubject</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outputStreamCaptor<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>ByteArrayOutputStream();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.setOut(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>PrintStream(outputStreamCaptor));</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline lineno="31" refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1a120731f7626e8df0c82729bbf4b5d950" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1a120731f7626e8df0c82729bbf4b5d950" kindref="member">testAttachObserver</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Arrange</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interfacece204__hw4__library__observe_method_1_1_reservation_observer" kindref="compound">ReservationObserver</ref><sp/>observer<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__library__observe_method_1_1_user" kindref="compound">User</ref>(</highlight><highlight class="stringliteral">&quot;John&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Act</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subject.<ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa5bc7d55d910b0efcf17d73e4b4208b4" kindref="member">attachObserver</ref>(observer);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Assert</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Assert.assertTrue(subject.<ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa22630ff680d49ba4b7ac1732673c432" kindref="member">getObservers</ref>().contains(observer));</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline lineno="46" refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1afbc57ea7101e9691bd49b78c252fc63e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1afbc57ea7101e9691bd49b78c252fc63e" kindref="member">testDetachObserver</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Arrange</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interfacece204__hw4__library__observe_method_1_1_reservation_observer" kindref="compound">ReservationObserver</ref><sp/>observer<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__library__observe_method_1_1_user" kindref="compound">User</ref>(</highlight><highlight class="stringliteral">&quot;John&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subject.<ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa5bc7d55d910b0efcf17d73e4b4208b4" kindref="member">attachObserver</ref>(observer);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Act</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subject.<ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1ad83da46cd3e6c48892ab9977431a0119" kindref="member">detachObserver</ref>(observer);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Assert</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Assert.assertFalse(subject.<ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa22630ff680d49ba4b7ac1732673c432" kindref="member">getObservers</ref>().contains(observer));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline lineno="62" refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1ac8978c56c9f08d219868d2819c550d22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1ac8978c56c9f08d219868d2819c550d22" kindref="member">testNotifyObservers</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Arrange</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="interfacece204__hw4__library__observe_method_1_1_reservation_observer" kindref="compound">ReservationObserver</ref><sp/>observer1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__library__observe_method_1_1_user" kindref="compound">User</ref>(</highlight><highlight class="stringliteral">&quot;John&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subject.<ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa5bc7d55d910b0efcf17d73e4b4208b4" kindref="member">attachObserver</ref>(observer1);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>message<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Your<sp/>reservation<sp/>is<sp/>confirmed.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Act</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>subject.<ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1a03f17c8905dc7057cb0d5732baa5b6b6" kindref="member">notifyObservers</ref>(message);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Assert</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>expectedOutput<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;John:<sp/>Your<sp/>reservation<sp/>is<sp/>confirmed.<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Assert.assertNotEquals(expectedOutput,<sp/>outputStreamCaptor.toString().trim());</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_ReservationSubjectTest.java"/>
+  </compounddef>
+</doxygen>

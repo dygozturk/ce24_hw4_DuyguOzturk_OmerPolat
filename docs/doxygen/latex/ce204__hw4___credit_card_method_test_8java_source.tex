@@ -1,0 +1,38 @@
+\hypertarget{ce204__hw4___credit_card_method_test_8java_source}{}\doxysection{ce204\+\_\+hw4\+\_\+\+Credit\+Card\+Method\+Test.\+java}
+\label{ce204__hw4___credit_card_method_test_8java_source}\index{ce204-\/hw4/src/test/java/ce204\_hw4\_StrategyMethodTest/ce204\_hw4\_CreditCardMethodTest.java@{ce204-\/hw4/src/test/java/ce204\_hw4\_StrategyMethodTest/ce204\_hw4\_CreditCardMethodTest.java}}
+\mbox{\hyperlink{ce204__hw4___credit_card_method_test_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00001}00001 \textcolor{keyword}{package }ce204\_hw4\_StrategyMethodTest;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00005}00005 \textcolor{keyword}{import} \mbox{\hyperlink{namespacece204__hw4__library__strategy_method}{ce204\_hw4\_library\_strategyMethod}}.*;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00006}00006 \textcolor{keyword}{import} org.junit.Assert;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00007}00007 \textcolor{keyword}{import} org.junit.Test;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00009}00009 \textcolor{keyword}{import} java.io.ByteArrayOutputStream;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00010}00010 \textcolor{keyword}{import} java.io.PrintStream;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00012}\mbox{\hyperlink{classce204__hw4___strategy_method_test_1_1ce204__hw4___credit_card_method_test}{00012}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classce204__hw4___strategy_method_test_1_1ce204__hw4___credit_card_method_test}{ce204\_hw4\_CreditCardMethodTest}} \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00017}00017     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00018}\mbox{\hyperlink{classce204__hw4___strategy_method_test_1_1ce204__hw4___credit_card_method_test_ae0d4c2b1eed8e2fccbcb9a5dea411472}{00018}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___strategy_method_test_1_1ce204__hw4___credit_card_method_test_ae0d4c2b1eed8e2fccbcb9a5dea411472}{testPay}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00019}00019         \textcolor{comment}{// Arrange}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00020}00020         \textcolor{keywordtype}{double} amount = 100.0;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00021}00021         String cardNumber = \textcolor{stringliteral}{"{}1234567890123456"{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00022}00022         String expirationDate = \textcolor{stringliteral}{"{}12/25"{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00023}00023         String cvv = \textcolor{stringliteral}{"{}123"{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00024}00024         \mbox{\hyperlink{interfacece204__hw4__library__strategy_method_1_1_payment_strategy}{PaymentStrategy}} paymentStrategy = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_credit_card_payment}{CreditCardPayment}}(cardNumber, expirationDate, cvv);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00025}00025         ByteArrayOutputStream outputStream = \textcolor{keyword}{new} ByteArrayOutputStream();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00026}00026         System.setOut(\textcolor{keyword}{new} PrintStream(outputStream));}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00028}00028         \textcolor{comment}{// Act}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00029}00029         paymentStrategy.\mbox{\hyperlink{interfacece204__hw4__library__strategy_method_1_1_payment_strategy_af085ea0d70d8419e3ef857d77b4e2202}{pay}}(amount);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00031}00031         \textcolor{comment}{// Assert}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00032}00032         String expectedOutput = \textcolor{stringliteral}{"{}Paying \$100.0 with credit card: 1234567890123456"{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00033}00033         Assert.assertEquals(expectedOutput, outputStream.toString().trim());}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00034}00034     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___credit_card_method_test_8java_source_l00035}00035 \}}
+
+\end{DoxyCode}

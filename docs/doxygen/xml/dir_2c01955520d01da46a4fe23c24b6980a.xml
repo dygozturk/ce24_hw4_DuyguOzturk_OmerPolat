@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_2c01955520d01da46a4fe23c24b6980a" kind="dir">
+    <compoundname>ce204-hw4/src/main/java</compoundname>
+    <innerdir refid="dir_c70208678c22c832bba467ddf3b849e2">ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod</innerdir>
+    <innerdir refid="dir_fcf5408aca3dc87e6bc28b2653172f9c">ce204-hw4/src/main/java/ce204_hw4_library_app</innerdir>
+    <innerdir refid="dir_6da63eafc0293709a9b4f639363a4548">ce204-hw4/src/main/java/ce204_hw4_library_observeMethod</innerdir>
+    <innerdir refid="dir_7dabdd3d3a9bce4f3e16bb59ff7fefc5">ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/main/java/"/>
+  </compounddef>
+</doxygen>

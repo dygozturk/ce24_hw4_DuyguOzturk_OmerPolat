@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_6da63eafc0293709a9b4f639363a4548" kind="dir">
+    <compoundname>ce204-hw4/src/main/java/ce204_hw4_library_observeMethod</compoundname>
+    <innerfile refid="_car_reservation_system_8java">CarReservationSystem.java</innerfile>
+    <innerfile refid="_reservation_observer_8java">ReservationObserver.java</innerfile>
+    <innerfile refid="_reservation_subject_8java">ReservationSubject.java</innerfile>
+    <innerfile refid="_user_8java">User.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/"/>
+  </compounddef>
+</doxygen>

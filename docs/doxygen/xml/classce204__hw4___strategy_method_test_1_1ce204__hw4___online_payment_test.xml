@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classce204__hw4___strategy_method_test_1_1ce204__hw4___online_payment_test" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_StrategyMethodTest::ce204_hw4_OnlinePaymentTest</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4___strategy_method_test_1_1ce204__hw4___online_payment_test_1a9da40a482bc035516e7903334aaec887" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_StrategyMethodTest.ce204_hw4_OnlinePaymentTest.testPay</definition>
+        <argsstring>()</argsstring>
+        <name>testPay</name>
+        <briefdescription>
+<para>Test case for the pay method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_StrategyMethodTest/ce204_hw4_OnlinePaymentTest.java" line="17" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_StrategyMethodTest/ce204_hw4_OnlinePaymentTest.java" bodystart="17" bodyend="32"/>
+        <references refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy_1af085ea0d70d8419e3ef857d77b4e2202">ce204_hw4_library_strategyMethod.PaymentStrategy.pay</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/test/java/ce204_hw4_StrategyMethodTest/ce204_hw4_OnlinePaymentTest.java" line="11" column="7" bodyfile="ce204-hw4/src/test/java/ce204_hw4_StrategyMethodTest/ce204_hw4_OnlinePaymentTest.java" bodystart="11" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___online_payment_test_1a9da40a482bc035516e7903334aaec887" prot="public" virt="non-virtual"><scope>ce204_hw4_StrategyMethodTest::ce204_hw4_OnlinePaymentTest</scope><name>testPay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

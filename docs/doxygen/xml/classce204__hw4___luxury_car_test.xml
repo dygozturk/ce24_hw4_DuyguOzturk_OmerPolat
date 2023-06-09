@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classce204__hw4___luxury_car_test" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_LuxuryCarTest</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4___luxury_car_test_1abf122090bccdf0ad5f18bd422e620a20" prot="private" static="no" mutable="no">
+        <type><ref refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental" kindref="compound">LuxuryCarRental</ref></type>
+        <definition>LuxuryCarRental ce204_hw4_LuxuryCarTest.carRental</definition>
+        <argsstring></argsstring>
+        <name>carRental</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" line="14" column="25" bodyfile="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4___luxury_car_test_1a5ce939467d5c7bbe63ad55da67810d63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_LuxuryCarTest.setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <briefdescription>
+<para>Sets up the test fixture. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" line="20" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___luxury_car_test_1aab651ed914b43db1d62649b41bbf8875" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_LuxuryCarTest.testGetMileage</definition>
+        <argsstring>()</argsstring>
+        <name>testGetMileage</name>
+        <briefdescription>
+<para>Test case for the getMileage() method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" line="28" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" bodystart="28" bodyend="32"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a0dfa71209b6f192a29859d999fe770ec" compoundref="_luxury_car_rental_8java" startline="56" endline="59">ce204_hw4_librar_factoryMethod.LuxuryCarRental.getMileage</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___luxury_car_test_1a0d76585a1eab1cbcdeb97f4071ea9a8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_LuxuryCarTest.testGetBrand</definition>
+        <argsstring>()</argsstring>
+        <name>testGetBrand</name>
+        <briefdescription>
+<para>Test case for the getBrand() method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" line="38" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" bodystart="38" bodyend="42"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1ab2b2f7ebd4613b9a575cf005ef2cfd7c" compoundref="_luxury_car_rental_8java" startline="76" endline="79">ce204_hw4_librar_factoryMethod.LuxuryCarRental.getBrand</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___luxury_car_test_1a7e9b2a38e03d38a0f6042ac12007afd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_LuxuryCarTest.testGetModel</definition>
+        <argsstring>()</argsstring>
+        <name>testGetModel</name>
+        <briefdescription>
+<para>Test case for the getModel() method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" line="48" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" bodystart="48" bodyend="52"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a6f1e819a003d13cc0d88deb27ae1f33d" compoundref="_luxury_car_rental_8java" startline="86" endline="89">ce204_hw4_librar_factoryMethod.LuxuryCarRental.getModel</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___luxury_car_test_1a5fe277a8e5b47ad6da43fc2baa7b2731" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_LuxuryCarTest.testGetYear</definition>
+        <argsstring>()</argsstring>
+        <name>testGetYear</name>
+        <briefdescription>
+<para>Test case for the getYear() method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" line="58" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" bodystart="58" bodyend="62"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1af1f558414033e6fb24b79f7de6c388c3" compoundref="_luxury_car_rental_8java" startline="96" endline="99">ce204_hw4_librar_factoryMethod.LuxuryCarRental.getYear</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___luxury_car_test_1a70936de4dd3a75e42c800b21224efab1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_LuxuryCarTest.testGetFuelType</definition>
+        <argsstring>()</argsstring>
+        <name>testGetFuelType</name>
+        <briefdescription>
+<para>Test case for the getFuelType() method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" line="68" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" bodystart="68" bodyend="72"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a9cbaa8d573e1082d39020d2ab4e507ef" compoundref="_luxury_car_rental_8java" startline="106" endline="109">ce204_hw4_librar_factoryMethod.LuxuryCarRental.getFuelType</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___luxury_car_test_1a2ea7f3c2c59c606d27149591af9326ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_LuxuryCarTest.testGetGear</definition>
+        <argsstring>()</argsstring>
+        <name>testGetGear</name>
+        <briefdescription>
+<para>Test case for the getGear() method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" line="78" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" bodystart="78" bodyend="82"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a489cad10f1f5b047bc4b881eb51f5b34" compoundref="_luxury_car_rental_8java" startline="116" endline="119">ce204_hw4_librar_factoryMethod.LuxuryCarRental.getGear</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___luxury_car_test_1a776631c9e7d4f022e320d9d34dc8ec7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_LuxuryCarTest.testGetColor</definition>
+        <argsstring>()</argsstring>
+        <name>testGetColor</name>
+        <briefdescription>
+<para>Test case for the getColor() method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" line="88" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" bodystart="88" bodyend="92"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a4fa9453e690d04f9f56a7c24331877a5" compoundref="_luxury_car_rental_8java" startline="126" endline="129">ce204_hw4_librar_factoryMethod.LuxuryCarRental.getColor</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___luxury_car_test_1a02624f1341bd5c838a0e5d1ee4ba0237" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_LuxuryCarTest.testGetPrice</definition>
+        <argsstring>()</argsstring>
+        <name>testGetPrice</name>
+        <briefdescription>
+<para>Test case for the getPrice() method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" line="98" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" bodystart="98" bodyend="102"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1af756b8ca1c484d172be16d248ac5c5a1" compoundref="_luxury_car_rental_8java" startline="66" endline="69">ce204_hw4_librar_factoryMethod.LuxuryCarRental.getPrice</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___luxury_car_test_1a120be8ec9717099f925b7abf5a8c4bda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_LuxuryCarTest.testRentCar</definition>
+        <argsstring>()</argsstring>
+        <name>testRentCar</name>
+        <briefdescription>
+<para>Test case for the rentCar() method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" line="108" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" bodystart="108" bodyend="130"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a7815ff6e4d53356749122c6e5da5a1ca" compoundref="_luxury_car_rental_8java" startline="44" endline="49">ce204_hw4_librar_factoryMethod.LuxuryCarRental.rentCar</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classce204__hw4___luxury_car_test_1ae7d5d6b4a398e3eecbf3fcb6e2c8d96c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_LuxuryCarTest.captureSystemOut</definition>
+        <argsstring>(Runnable runnable)</argsstring>
+        <name>captureSystemOut</name>
+        <param>
+          <type>Runnable</type>
+          <declname>runnable</declname>
+        </param>
+        <briefdescription>
+<para>Helper method to capture System.out.println() outputs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>runnable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The runnable object to execute. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The captured output as a string. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" line="137" column="20" bodyfile="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" bodystart="137" bodyend="148"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" line="11" column="7" bodyfile="ce204-hw4/src/test/java/ce204_hw4_LuxuryCarTest.java" bodystart="11" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classce204__hw4___luxury_car_test_1ae7d5d6b4a398e3eecbf3fcb6e2c8d96c" prot="private" virt="non-virtual"><scope>ce204_hw4_LuxuryCarTest</scope><name>captureSystemOut</name></member>
+      <member refid="classce204__hw4___luxury_car_test_1abf122090bccdf0ad5f18bd422e620a20" prot="private" virt="non-virtual"><scope>ce204_hw4_LuxuryCarTest</scope><name>carRental</name></member>
+      <member refid="classce204__hw4___luxury_car_test_1a5ce939467d5c7bbe63ad55da67810d63" prot="public" virt="non-virtual"><scope>ce204_hw4_LuxuryCarTest</scope><name>setUp</name></member>
+      <member refid="classce204__hw4___luxury_car_test_1a0d76585a1eab1cbcdeb97f4071ea9a8a" prot="public" virt="non-virtual"><scope>ce204_hw4_LuxuryCarTest</scope><name>testGetBrand</name></member>
+      <member refid="classce204__hw4___luxury_car_test_1a776631c9e7d4f022e320d9d34dc8ec7d" prot="public" virt="non-virtual"><scope>ce204_hw4_LuxuryCarTest</scope><name>testGetColor</name></member>
+      <member refid="classce204__hw4___luxury_car_test_1a70936de4dd3a75e42c800b21224efab1" prot="public" virt="non-virtual"><scope>ce204_hw4_LuxuryCarTest</scope><name>testGetFuelType</name></member>
+      <member refid="classce204__hw4___luxury_car_test_1a2ea7f3c2c59c606d27149591af9326ba" prot="public" virt="non-virtual"><scope>ce204_hw4_LuxuryCarTest</scope><name>testGetGear</name></member>
+      <member refid="classce204__hw4___luxury_car_test_1aab651ed914b43db1d62649b41bbf8875" prot="public" virt="non-virtual"><scope>ce204_hw4_LuxuryCarTest</scope><name>testGetMileage</name></member>
+      <member refid="classce204__hw4___luxury_car_test_1a7e9b2a38e03d38a0f6042ac12007afd3" prot="public" virt="non-virtual"><scope>ce204_hw4_LuxuryCarTest</scope><name>testGetModel</name></member>
+      <member refid="classce204__hw4___luxury_car_test_1a02624f1341bd5c838a0e5d1ee4ba0237" prot="public" virt="non-virtual"><scope>ce204_hw4_LuxuryCarTest</scope><name>testGetPrice</name></member>
+      <member refid="classce204__hw4___luxury_car_test_1a5fe277a8e5b47ad6da43fc2baa7b2731" prot="public" virt="non-virtual"><scope>ce204_hw4_LuxuryCarTest</scope><name>testGetYear</name></member>
+      <member refid="classce204__hw4___luxury_car_test_1a120be8ec9717099f925b7abf5a8c4bda" prot="public" virt="non-virtual"><scope>ce204_hw4_LuxuryCarTest</scope><name>testRentCar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

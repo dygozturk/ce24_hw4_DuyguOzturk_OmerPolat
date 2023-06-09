@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classce204__hw4__library__strategy_method_1_1_cash_payment" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_library_strategyMethod::CashPayment</compoundname>
+    <basecompoundref refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy" prot="public" virt="non-virtual">ce204_hw4_library_strategyMethod.PaymentStrategy</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__library__strategy_method_1_1_cash_payment_1a9f25c20e9ee799ad9644277a22671e72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library_strategyMethod.CashPayment.pay</definition>
+        <argsstring>(double amount)</argsstring>
+        <name>pay</name>
+        <reimplements refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy_1af085ea0d70d8419e3ef857d77b4e2202">pay</reimplements>
+        <param>
+          <type>double</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Performs a payment transaction using cash.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the amount to be paid </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/CashPayment.java" line="14" column="13" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/CashPayment.java" bodystart="14" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classce204__hw4__library__strategy_method_1_1_cash_payment" kindref="compound">CashPayment</ref> class represents a payment method using cash. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ce204_hw4_library_strategyMethod.CashPayment</label>
+        <link refid="classce204__hw4__library__strategy_method_1_1_cash_payment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_library_strategyMethod.PaymentStrategy</label>
+        <link refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ce204_hw4_library_strategyMethod.CashPayment</label>
+        <link refid="classce204__hw4__library__strategy_method_1_1_cash_payment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_library_strategyMethod.PaymentStrategy</label>
+        <link refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy"/>
+      </node>
+    </collaborationgraph>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/CashPayment.java" line="6" column="7" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/CashPayment.java" bodystart="6" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__library__strategy_method_1_1_cash_payment_1a9f25c20e9ee799ad9644277a22671e72" prot="public" virt="non-virtual"><scope>ce204_hw4_library_strategyMethod::CashPayment</scope><name>pay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

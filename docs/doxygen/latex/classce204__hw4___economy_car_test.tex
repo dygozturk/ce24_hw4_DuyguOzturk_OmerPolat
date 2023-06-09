@@ -1,0 +1,296 @@
+\hypertarget{classce204__hw4___economy_car_test}{}\doxysection{ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test Class Reference}
+\label{classce204__hw4___economy_car_test}\index{ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classce204__hw4___economy_car_test_a65147b18f052e06dbc0de16a10772aa7}{set\+Up}} ()
+\item 
+void \mbox{\hyperlink{classce204__hw4___economy_car_test_aa30760ac87ed8bf2e24eaa85f4e57dff}{test\+Get\+Mileage}} ()
+\item 
+void \mbox{\hyperlink{classce204__hw4___economy_car_test_ac7bbf9835c454f751e8ca422576d3273}{test\+Get\+Brand}} ()
+\item 
+void \mbox{\hyperlink{classce204__hw4___economy_car_test_a4fc1697cdf7e6292f842094c88a7b169}{test\+Get\+Model}} ()
+\item 
+void \mbox{\hyperlink{classce204__hw4___economy_car_test_aaeaee374341c7d448cbd038f42181dbc}{test\+Get\+Year}} ()
+\item 
+void \mbox{\hyperlink{classce204__hw4___economy_car_test_a1e0e0a79a52d8cfb1d7760204d634f0e}{test\+Get\+Fuel\+Type}} ()
+\item 
+void \mbox{\hyperlink{classce204__hw4___economy_car_test_a31a340d636cbcb9a3603aa61c9a676d8}{test\+Get\+Gear}} ()
+\item 
+void \mbox{\hyperlink{classce204__hw4___economy_car_test_a55fd124461993057de5ea700e7a8ed28}{test\+Get\+Color}} ()
+\item 
+void \mbox{\hyperlink{classce204__hw4___economy_car_test_aab3443603af41f3136ceb9e86bf586b5}{test\+Get\+Price}} ()
+\item 
+void \mbox{\hyperlink{classce204__hw4___economy_car_test_ac042a6859b220ad12fcb807230d5b93d}{test\+Rent\+Car}} ()
+\begin{DoxyCompactList}\small\item\em Test case for the rent\+Car() method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source_l00013}{13}} of file \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4___economy_car_test_a65147b18f052e06dbc0de16a10772aa7}\label{classce204__hw4___economy_car_test_a65147b18f052e06dbc0de16a10772aa7}} 
+\index{ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}!setUp@{setUp}}
+\index{setUp@{setUp}!ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+set\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source_l00020}{20}} of file \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00020}00020                         \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00021}00021         carRental = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental}{EconomyCarRental}}(10000, \textcolor{stringliteral}{"{}Toyota"{}}, \textcolor{stringliteral}{"{}Corolla"{}}, 2020, \textcolor{stringliteral}{"{}Gasoline"{}}, \textcolor{stringliteral}{"{}Automatic"{}}, \textcolor{stringliteral}{"{}Red"{}}, 50);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00022}00022     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classce204__hw4___economy_car_test_ac7bbf9835c454f751e8ca422576d3273}\label{classce204__hw4___economy_car_test_ac7bbf9835c454f751e8ca422576d3273}} 
+\index{ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}!testGetBrand@{testGetBrand}}
+\index{testGetBrand@{testGetBrand}!ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}}
+\doxysubsubsection{\texorpdfstring{testGetBrand()}{testGetBrand()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+test\+Get\+Brand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} The expected brand of the car.
+
+Definition at line \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source_l00032}{32}} of file \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00032}00032                                \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00033}00033         String expectedBrand = \textcolor{stringliteral}{"{}Toyota"{}}; }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00034}00034         String actualBrand = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental_af52a381f0d758fb8ae58f735472a9fd8}{getBrand}}();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00035}00035         Assert.assertEquals(expectedBrand, actualBrand);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00036}00036     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_economy_car_rental_8java_source_l00078}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+Economy\+Car\+Rental.\+get\+Brand()}}.
+
+\mbox{\Hypertarget{classce204__hw4___economy_car_test_a55fd124461993057de5ea700e7a8ed28}\label{classce204__hw4___economy_car_test_a55fd124461993057de5ea700e7a8ed28}} 
+\index{ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}!testGetColor@{testGetColor}}
+\index{testGetColor@{testGetColor}!ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}}
+\doxysubsubsection{\texorpdfstring{testGetColor()}{testGetColor()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+test\+Get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} The expected color of the car.
+
+Definition at line \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source_l00067}{67}} of file \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00067}00067                                \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00068}00068         String expectedColor = \textcolor{stringliteral}{"{}Red"{}}; }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00069}00069         String actualColor = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental_ad5e38b0bae601b998e3cd1cff18ca95c}{getColor}}();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00070}00070         Assert.assertEquals(expectedColor, actualColor);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00071}00071     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_economy_car_rental_8java_source_l00128}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+Economy\+Car\+Rental.\+get\+Color()}}.
+
+\mbox{\Hypertarget{classce204__hw4___economy_car_test_a1e0e0a79a52d8cfb1d7760204d634f0e}\label{classce204__hw4___economy_car_test_a1e0e0a79a52d8cfb1d7760204d634f0e}} 
+\index{ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}!testGetFuelType@{testGetFuelType}}
+\index{testGetFuelType@{testGetFuelType}!ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}}
+\doxysubsubsection{\texorpdfstring{testGetFuelType()}{testGetFuelType()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+test\+Get\+Fuel\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} The expected fuel type of the car.
+
+Definition at line \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source_l00053}{53}} of file \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00053}00053                                   \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00054}00054         String expectedFuelType = \textcolor{stringliteral}{"{}Gasoline"{}}; }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00055}00055         String actualFuelType = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental_a8d8edbbc257702d582305b8b03f3d7e3}{getFuelType}}();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00056}00056         Assert.assertEquals(expectedFuelType, actualFuelType);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00057}00057     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_economy_car_rental_8java_source_l00108}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+Economy\+Car\+Rental.\+get\+Fuel\+Type()}}.
+
+\mbox{\Hypertarget{classce204__hw4___economy_car_test_a31a340d636cbcb9a3603aa61c9a676d8}\label{classce204__hw4___economy_car_test_a31a340d636cbcb9a3603aa61c9a676d8}} 
+\index{ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}!testGetGear@{testGetGear}}
+\index{testGetGear@{testGetGear}!ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}}
+\doxysubsubsection{\texorpdfstring{testGetGear()}{testGetGear()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+test\+Get\+Gear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} The expected transmission type of the car.
+
+Definition at line \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source_l00060}{60}} of file \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00060}00060                               \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00061}00061         String expectedGear = \textcolor{stringliteral}{"{}Automatic"{}}; }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00062}00062         String actualGear = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental_aa93287ae84d14ac5e73065b1d937d828}{getGear}}();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00063}00063         Assert.assertEquals(expectedGear, actualGear);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00064}00064     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_economy_car_rental_8java_source_l00118}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+Economy\+Car\+Rental.\+get\+Gear()}}.
+
+\mbox{\Hypertarget{classce204__hw4___economy_car_test_aa30760ac87ed8bf2e24eaa85f4e57dff}\label{classce204__hw4___economy_car_test_aa30760ac87ed8bf2e24eaa85f4e57dff}} 
+\index{ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}!testGetMileage@{testGetMileage}}
+\index{testGetMileage@{testGetMileage}!ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}}
+\doxysubsubsection{\texorpdfstring{testGetMileage()}{testGetMileage()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+test\+Get\+Mileage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} The expected mileage of the car.
+
+Definition at line \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source_l00025}{25}} of file \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00025}00025                                  \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00026}00026         \textcolor{keywordtype}{int} expectedMileage = 10000; }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00027}00027         \textcolor{keywordtype}{int} actualMileage = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental_a4fc29e64fa09a7e8d5b5d9f58fe85c46}{getMileage}}();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00028}00028         Assert.assertEquals(expectedMileage, actualMileage);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00029}00029     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_economy_car_rental_8java_source_l00068}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+Economy\+Car\+Rental.\+get\+Mileage()}}.
+
+\mbox{\Hypertarget{classce204__hw4___economy_car_test_a4fc1697cdf7e6292f842094c88a7b169}\label{classce204__hw4___economy_car_test_a4fc1697cdf7e6292f842094c88a7b169}} 
+\index{ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}!testGetModel@{testGetModel}}
+\index{testGetModel@{testGetModel}!ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}}
+\doxysubsubsection{\texorpdfstring{testGetModel()}{testGetModel()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+test\+Get\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} The expected model of the car.
+
+Definition at line \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source_l00039}{39}} of file \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00039}00039                                \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00040}00040         String expectedModel = \textcolor{stringliteral}{"{}Corolla"{}}; }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00041}00041         String actualModel = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental_a5ac31705b8dea7bbf355f8e50fdcb6f3}{getModel}}();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00042}00042         Assert.assertEquals(expectedModel, actualModel);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00043}00043     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_economy_car_rental_8java_source_l00088}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+Economy\+Car\+Rental.\+get\+Model()}}.
+
+\mbox{\Hypertarget{classce204__hw4___economy_car_test_aab3443603af41f3136ceb9e86bf586b5}\label{classce204__hw4___economy_car_test_aab3443603af41f3136ceb9e86bf586b5}} 
+\index{ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}!testGetPrice@{testGetPrice}}
+\index{testGetPrice@{testGetPrice}!ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}}
+\doxysubsubsection{\texorpdfstring{testGetPrice()}{testGetPrice()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+test\+Get\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} The expected price of the car rental.
+
+Definition at line \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source_l00074}{74}} of file \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00074}00074                                \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00075}00075         \textcolor{keywordtype}{int} expectedPrice = 50; }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00076}00076         \textcolor{keywordtype}{int} actualPrice = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental_a66ceab4b5be5a7b5cf2911143d6ca61f}{getPrice}}();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00077}00077         Assert.assertEquals(expectedPrice, actualPrice);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00078}00078     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_economy_car_rental_8java_source_l00056}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+Economy\+Car\+Rental.\+get\+Price()}}.
+
+\mbox{\Hypertarget{classce204__hw4___economy_car_test_aaeaee374341c7d448cbd038f42181dbc}\label{classce204__hw4___economy_car_test_aaeaee374341c7d448cbd038f42181dbc}} 
+\index{ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}!testGetYear@{testGetYear}}
+\index{testGetYear@{testGetYear}!ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}}
+\doxysubsubsection{\texorpdfstring{testGetYear()}{testGetYear()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+test\+Get\+Year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\texorpdfstring{$<$}{<} The expected year of the car.
+
+Definition at line \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source_l00046}{46}} of file \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00046}00046                               \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00047}00047         \textcolor{keywordtype}{int} expectedYear = 2020; }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00048}00048         \textcolor{keywordtype}{int} actualYear = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental_a779ac8350c666ca29bf8aa38e772cd15}{getYear}}();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00049}00049         Assert.assertEquals(expectedYear, actualYear);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00050}00050     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_economy_car_rental_8java_source_l00098}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+Economy\+Car\+Rental.\+get\+Year()}}.
+
+\mbox{\Hypertarget{classce204__hw4___economy_car_test_ac042a6859b220ad12fcb807230d5b93d}\label{classce204__hw4___economy_car_test_ac042a6859b220ad12fcb807230d5b93d}} 
+\index{ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}!testRentCar@{testRentCar}}
+\index{testRentCar@{testRentCar}!ce204\_hw4\_EconomyCarTest@{ce204\_hw4\_EconomyCarTest}}
+\doxysubsubsection{\texorpdfstring{testRentCar()}{testRentCar()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+test\+Rent\+Car (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test case for the rent\+Car() method. 
+
+\texorpdfstring{$<$}{<} Mileage of the car
+
+\texorpdfstring{$<$}{<} Brand of the car
+
+\texorpdfstring{$<$}{<} Model of the car
+
+\texorpdfstring{$<$}{<} Year of the car
+
+\texorpdfstring{$<$}{<} Fuel type of the car
+
+\texorpdfstring{$<$}{<} Gear type of the car
+
+\texorpdfstring{$<$}{<} Color of the car
+
+\texorpdfstring{$<$}{<} Rental price of the car
+
+Definition at line \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source_l00084}{84}} of file \mbox{\hyperlink{ce204__hw4___economy_car_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00084}00084                               \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00085}00085             }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00086}00086         \textcolor{comment}{// Test data}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00087}00087         \textcolor{keywordtype}{int} mileage = 10000; }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00088}00088         String brand = \textcolor{stringliteral}{"{}Toyota"{}}; }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00089}00089         String model = \textcolor{stringliteral}{"{}Corolla"{}}; }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00090}00090         \textcolor{keywordtype}{int} year = 2020; }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00091}00091         String fuelType = \textcolor{stringliteral}{"{}Gasoline"{}}; }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00092}00092         String gear = \textcolor{stringliteral}{"{}Automatic"{}}; }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00093}00093         String color = \textcolor{stringliteral}{"{}Red"{}}; }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00094}00094         \textcolor{keywordtype}{int} price = 50; }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00096}00096         \textcolor{comment}{// Create an instance of EconomyCarRental}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00097}00097         \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental}{EconomyCarRental}} carRental = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental}{EconomyCarRental}}(mileage, brand, model, year, fuelType, gear, color, price);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00099}00099         \textcolor{comment}{// Expected output}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00100}00100         String expectedOutput = \textcolor{stringliteral}{"{}Brand: Toyota, Model: Corolla, Year: 2020, Fuel Type: Gasoline, Transmission: Automatic, Color: Red, Mileage: 10000, Price: 50"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00102}00102         \textcolor{comment}{// Call rentCar() method and capture the output}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00103}00103         String actualOutput = captureSystemOut(carRental::rentCar);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00104}00104 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00105}00105         \textcolor{comment}{// Compare the expected output with the actual output}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00106}00106         Assert.assertEquals(expectedOutput, actualOutput);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___economy_car_test_l00107}00107     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204-\/hw4/src/test/java/\mbox{\hyperlink{ce204__hw4___economy_car_test_8java}{ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+java}}\end{DoxyCompactItemize}

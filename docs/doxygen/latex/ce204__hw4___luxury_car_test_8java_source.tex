@@ -1,0 +1,121 @@
+\hypertarget{ce204__hw4___luxury_car_test_8java_source}{}\doxysection{ce204\+\_\+hw4\+\_\+\+Luxury\+Car\+Test.\+java}
+\label{ce204__hw4___luxury_car_test_8java_source}\index{ce204-\/hw4/src/test/java/ce204\_hw4\_LuxuryCarTest.java@{ce204-\/hw4/src/test/java/ce204\_hw4\_LuxuryCarTest.java}}
+\mbox{\hyperlink{ce204__hw4___luxury_car_test_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00001}00001 \textcolor{keyword}{import} \textcolor{keyword}{static} org.junit.Assert.*;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00003}00003 \textcolor{keyword}{import} org.junit.After;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00004}00004 \textcolor{keyword}{import} org.junit.Assert;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00005}00005 \textcolor{keyword}{import} org.junit.Before;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00006}00006 \textcolor{keyword}{import} org.junit.Test;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00007}00007 \textcolor{keyword}{import} java.io.ByteArrayOutputStream;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00008}00008 \textcolor{keyword}{import} java.io.PrintStream;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00009}00009 \textcolor{keyword}{import} \mbox{\hyperlink{namespacece204__hw4__librar__factory_method}{ce204\_hw4\_librar\_factoryMethod}}.*;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00011}\mbox{\hyperlink{classce204__hw4___luxury_car_test}{00011}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classce204__hw4___luxury_car_test}{ce204\_hw4\_LuxuryCarTest}} \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00013}00013     }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00014}00014     \textcolor{keyword}{private} \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_luxury_car_rental}{LuxuryCarRental}} carRental;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00019}00019     @Before}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00020}\mbox{\hyperlink{classce204__hw4___luxury_car_test_a5ce939467d5c7bbe63ad55da67810d63}{00020}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___luxury_car_test_a5ce939467d5c7bbe63ad55da67810d63}{setUp}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00021}00021         carRental = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_luxury_car_rental}{LuxuryCarRental}}(10000, \textcolor{stringliteral}{"{}Toyota"{}}, \textcolor{stringliteral}{"{}Corolla"{}}, 2020, \textcolor{stringliteral}{"{}Gasoline"{}}, \textcolor{stringliteral}{"{}Automatic"{}}, \textcolor{stringliteral}{"{}Red"{}}, 50);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00022}00022     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00027}00027     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00028}\mbox{\hyperlink{classce204__hw4___luxury_car_test_aab651ed914b43db1d62649b41bbf8875}{00028}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___luxury_car_test_aab651ed914b43db1d62649b41bbf8875}{testGetMileage}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00029}00029         \textcolor{keywordtype}{int} expectedMileage = 10000;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00030}00030         \textcolor{keywordtype}{int} actualMileage = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_luxury_car_rental_a0dfa71209b6f192a29859d999fe770ec}{getMileage}}();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00031}00031         Assert.assertEquals(expectedMileage, actualMileage);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00032}00032     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00037}00037     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00038}\mbox{\hyperlink{classce204__hw4___luxury_car_test_a0d76585a1eab1cbcdeb97f4071ea9a8a}{00038}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___luxury_car_test_a0d76585a1eab1cbcdeb97f4071ea9a8a}{testGetBrand}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00039}00039         String expectedBrand = \textcolor{stringliteral}{"{}Toyota"{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00040}00040         String actualBrand = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_luxury_car_rental_ab2b2f7ebd4613b9a575cf005ef2cfd7c}{getBrand}}();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00041}00041         Assert.assertEquals(expectedBrand, actualBrand);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00042}00042     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00047}00047     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00048}\mbox{\hyperlink{classce204__hw4___luxury_car_test_a7e9b2a38e03d38a0f6042ac12007afd3}{00048}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___luxury_car_test_a7e9b2a38e03d38a0f6042ac12007afd3}{testGetModel}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00049}00049         String expectedModel = \textcolor{stringliteral}{"{}Corolla"{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00050}00050         String actualModel = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_luxury_car_rental_a6f1e819a003d13cc0d88deb27ae1f33d}{getModel}}();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00051}00051         Assert.assertEquals(expectedModel, actualModel);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00052}00052     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00057}00057     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00058}\mbox{\hyperlink{classce204__hw4___luxury_car_test_a5fe277a8e5b47ad6da43fc2baa7b2731}{00058}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___luxury_car_test_a5fe277a8e5b47ad6da43fc2baa7b2731}{testGetYear}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00059}00059         \textcolor{keywordtype}{int} expectedYear = 2020;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00060}00060         \textcolor{keywordtype}{int} actualYear = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_luxury_car_rental_af1f558414033e6fb24b79f7de6c388c3}{getYear}}();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00061}00061         Assert.assertEquals(expectedYear, actualYear);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00062}00062     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00067}00067     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00068}\mbox{\hyperlink{classce204__hw4___luxury_car_test_a70936de4dd3a75e42c800b21224efab1}{00068}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___luxury_car_test_a70936de4dd3a75e42c800b21224efab1}{testGetFuelType}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00069}00069         String expectedFuelType = \textcolor{stringliteral}{"{}Gasoline"{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00070}00070         String actualFuelType = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_luxury_car_rental_a9cbaa8d573e1082d39020d2ab4e507ef}{getFuelType}}();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00071}00071         Assert.assertEquals(expectedFuelType, actualFuelType);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00072}00072     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00077}00077     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00078}\mbox{\hyperlink{classce204__hw4___luxury_car_test_a2ea7f3c2c59c606d27149591af9326ba}{00078}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___luxury_car_test_a2ea7f3c2c59c606d27149591af9326ba}{testGetGear}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00079}00079         String expectedGear = \textcolor{stringliteral}{"{}Automatic"{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00080}00080         String actualGear = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_luxury_car_rental_a489cad10f1f5b047bc4b881eb51f5b34}{getGear}}();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00081}00081         Assert.assertEquals(expectedGear, actualGear);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00082}00082     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00087}00087     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00088}\mbox{\hyperlink{classce204__hw4___luxury_car_test_a776631c9e7d4f022e320d9d34dc8ec7d}{00088}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___luxury_car_test_a776631c9e7d4f022e320d9d34dc8ec7d}{testGetColor}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00089}00089         String expectedColor = \textcolor{stringliteral}{"{}Red"{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00090}00090         String actualColor = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_luxury_car_rental_a4fa9453e690d04f9f56a7c24331877a5}{getColor}}();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00091}00091         Assert.assertEquals(expectedColor, actualColor);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00092}00092     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00097}00097     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00098}\mbox{\hyperlink{classce204__hw4___luxury_car_test_a02624f1341bd5c838a0e5d1ee4ba0237}{00098}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___luxury_car_test_a02624f1341bd5c838a0e5d1ee4ba0237}{testGetPrice}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00099}00099         \textcolor{keywordtype}{int} expectedPrice = 50;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00100}00100         \textcolor{keywordtype}{int} actualPrice = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_luxury_car_rental_af756b8ca1c484d172be16d248ac5c5a1}{getPrice}}();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00101}00101         Assert.assertEquals(expectedPrice, actualPrice);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00102}00102     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00107}00107     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00108}\mbox{\hyperlink{classce204__hw4___luxury_car_test_a120be8ec9717099f925b7abf5a8c4bda}{00108}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___luxury_car_test_a120be8ec9717099f925b7abf5a8c4bda}{testRentCar}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00109}00109         \textcolor{comment}{// Test data}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00110}00110         \textcolor{keywordtype}{int} mileage = 5000;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00111}00111         String brand = \textcolor{stringliteral}{"{}Mercedes"{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00112}00112         String model = \textcolor{stringliteral}{"{}S-\/Class"{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00113}00113         \textcolor{keywordtype}{int} year = 2022;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00114}00114         String fuelType = \textcolor{stringliteral}{"{}Gasoline"{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00115}00115         String gear = \textcolor{stringliteral}{"{}Automatic"{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00116}00116         String color = \textcolor{stringliteral}{"{}Black"{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00117}00117         \textcolor{keywordtype}{int} price = 100;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00118}00118 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00119}00119         \textcolor{comment}{// Create an instance of LuxuryCarRental}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00120}00120         \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_luxury_car_rental}{LuxuryCarRental}} carRental = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_luxury_car_rental}{LuxuryCarRental}}(mileage, brand, model, year, fuelType, gear, color, price);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00121}00121 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00122}00122         \textcolor{comment}{// Expected output}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00123}00123         String expectedOutput = \textcolor{stringliteral}{"{}Brand: Mercedes, Model: S-\/Class, Year: 2022, Fuel Type: Gasoline, Gear: Automatic, Color: Black, Mileage: 5000, Price: 100"{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00124}00124 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00125}00125         \textcolor{comment}{// Call rentCar() method and capture the output}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00126}00126         String actualOutput = captureSystemOut(() -\/> carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_luxury_car_rental_a7815ff6e4d53356749122c6e5da5a1ca}{rentCar}}());}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00128}00128         \textcolor{comment}{// Compare the expected output with the actual output}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00129}00129         Assert.assertEquals(expectedOutput, actualOutput);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00130}00130     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00131}00131 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00137}00137     \textcolor{keyword}{private} String captureSystemOut(Runnable runnable) \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00138}00138         ByteArrayOutputStream outputStream = \textcolor{keyword}{new} ByteArrayOutputStream();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00139}00139         PrintStream originalOut = System.out;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00140}00140         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00141}00141             System.setOut(\textcolor{keyword}{new} PrintStream(outputStream));}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00142}00142             runnable.run();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00143}00143         \} \textcolor{keywordflow}{finally} \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00144}00144             System.setOut(originalOut);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00145}00145         \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00146}00146 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00147}00147         \textcolor{keywordflow}{return} outputStream.toString().trim();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00148}00148     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00149}00149 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___luxury_car_test_8java_source_l00150}00150 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_observerMethodTest::ce204_hw4_ReservationSubjectTest</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1a562b22547fa060156d270f113420ccc2" prot="private" static="no" mutable="no">
+        <type><ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject" kindref="compound">ReservationSubject</ref></type>
+        <definition>ReservationSubject ce204_hw4_observerMethodTest.ce204_hw4_ReservationSubjectTest.subject</definition>
+        <argsstring></argsstring>
+        <name>subject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_ReservationSubjectTest.java" line="14" column="28" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_ReservationSubjectTest.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1aabd59df3e54df4f96ef489067a318740" prot="private" static="no" mutable="no">
+        <type>ByteArrayOutputStream</type>
+        <definition>ByteArrayOutputStream ce204_hw4_observerMethodTest.ce204_hw4_ReservationSubjectTest.outputStreamCaptor</definition>
+        <argsstring></argsstring>
+        <name>outputStreamCaptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_ReservationSubjectTest.java" line="15" column="35" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_ReservationSubjectTest.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1a5d9e23380d83f5ed8fcbcd35e1510dd8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_observerMethodTest.ce204_hw4_ReservationSubjectTest.setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <briefdescription>
+<para>Set up the test environment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_ReservationSubjectTest.java" line="21" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_ReservationSubjectTest.java" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1a120731f7626e8df0c82729bbf4b5d950" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_observerMethodTest.ce204_hw4_ReservationSubjectTest.testAttachObserver</definition>
+        <argsstring>()</argsstring>
+        <name>testAttachObserver</name>
+        <briefdescription>
+<para>Test case for attaching an observer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_ReservationSubjectTest.java" line="31" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_ReservationSubjectTest.java" bodystart="31" bodyend="40"/>
+        <references refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa5bc7d55d910b0efcf17d73e4b4208b4" compoundref="_reservation_subject_8java" startline="14" endline="16">ce204_hw4_library_observeMethod.ReservationSubject.attachObserver</references>
+        <references refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa22630ff680d49ba4b7ac1732673c432" compoundref="_reservation_subject_8java" startline="40" endline="42">ce204_hw4_library_observeMethod.ReservationSubject.getObservers</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1afbc57ea7101e9691bd49b78c252fc63e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_observerMethodTest.ce204_hw4_ReservationSubjectTest.testDetachObserver</definition>
+        <argsstring>()</argsstring>
+        <name>testDetachObserver</name>
+        <briefdescription>
+<para>Test case for detaching an observer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_ReservationSubjectTest.java" line="46" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_ReservationSubjectTest.java" bodystart="46" bodyend="56"/>
+        <references refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa5bc7d55d910b0efcf17d73e4b4208b4" compoundref="_reservation_subject_8java" startline="14" endline="16">ce204_hw4_library_observeMethod.ReservationSubject.attachObserver</references>
+        <references refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1ad83da46cd3e6c48892ab9977431a0119" compoundref="_reservation_subject_8java" startline="22" endline="24">ce204_hw4_library_observeMethod.ReservationSubject.detachObserver</references>
+        <references refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa22630ff680d49ba4b7ac1732673c432" compoundref="_reservation_subject_8java" startline="40" endline="42">ce204_hw4_library_observeMethod.ReservationSubject.getObservers</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1ac8978c56c9f08d219868d2819c550d22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_observerMethodTest.ce204_hw4_ReservationSubjectTest.testNotifyObservers</definition>
+        <argsstring>()</argsstring>
+        <name>testNotifyObservers</name>
+        <briefdescription>
+<para>Test case for notifying observers. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_ReservationSubjectTest.java" line="62" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_ReservationSubjectTest.java" bodystart="62" bodyend="74"/>
+        <references refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa5bc7d55d910b0efcf17d73e4b4208b4" compoundref="_reservation_subject_8java" startline="14" endline="16">ce204_hw4_library_observeMethod.ReservationSubject.attachObserver</references>
+        <references refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1a03f17c8905dc7057cb0d5732baa5b6b6" compoundref="_reservation_subject_8java" startline="30" endline="34">ce204_hw4_library_observeMethod.ReservationSubject.notifyObservers</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_ReservationSubjectTest.java" line="12" column="7" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_ReservationSubjectTest.java" bodystart="12" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1aabd59df3e54df4f96ef489067a318740" prot="private" virt="non-virtual"><scope>ce204_hw4_observerMethodTest::ce204_hw4_ReservationSubjectTest</scope><name>outputStreamCaptor</name></member>
+      <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1a5d9e23380d83f5ed8fcbcd35e1510dd8" prot="public" virt="non-virtual"><scope>ce204_hw4_observerMethodTest::ce204_hw4_ReservationSubjectTest</scope><name>setUp</name></member>
+      <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1a562b22547fa060156d270f113420ccc2" prot="private" virt="non-virtual"><scope>ce204_hw4_observerMethodTest::ce204_hw4_ReservationSubjectTest</scope><name>subject</name></member>
+      <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1a120731f7626e8df0c82729bbf4b5d950" prot="public" virt="non-virtual"><scope>ce204_hw4_observerMethodTest::ce204_hw4_ReservationSubjectTest</scope><name>testAttachObserver</name></member>
+      <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1afbc57ea7101e9691bd49b78c252fc63e" prot="public" virt="non-virtual"><scope>ce204_hw4_observerMethodTest::ce204_hw4_ReservationSubjectTest</scope><name>testDetachObserver</name></member>
+      <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1ac8978c56c9f08d219868d2819c550d22" prot="public" virt="non-virtual"><scope>ce204_hw4_observerMethodTest::ce204_hw4_ReservationSubjectTest</scope><name>testNotifyObservers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

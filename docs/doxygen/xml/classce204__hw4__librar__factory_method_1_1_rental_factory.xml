@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classce204__hw4__librar__factory_method_1_1_rental_factory" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_librar_factoryMethod::RentalFactory</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_rental_factory_1aa515da981a8c5c23e0a743ec4fc513e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental" kindref="compound">ICarRental</ref></type>
+        <definition>ICarRental ce204_hw4_librar_factoryMethod.RentalFactory.createRental</definition>
+        <argsstring>(String type, int mileage, String brand, String model, int year, String fuelType, String gear, String color, int price)</argsstring>
+        <name>createRental</name>
+        <param>
+          <type>String</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mileage</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>brand</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>fuelType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>gear</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>price</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Creates a car rental based on the specified type and details.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type of the car rental </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mileage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the mileage of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>brand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the brand of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the model of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>year</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the year of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fuelType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the fuel type of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gear</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the transmission type of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the color of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the price of the car rental </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>an instance of the specified car rental type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/RentalFactory.java" line="18" column="19" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/RentalFactory.java" bodystart="18" bodyend="37"/>
+        <referencedby refid="classce204__hw4__library__app_1_1_car_rental_app_1a0aa572d1694837e2aff70ecef4200e0a" compoundref="_car_rental_app_8java" startline="21" endline="135">ce204_hw4_library_app.CarRentalApp.main</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1a0a630f2d36b643d206b32d63dfcd33a1" compoundref="ce204__hw4___rental_factory_test_8java" startline="15" endline="45">ce204_hw4_RentalFactoryTest.testCreateRental_EconomyCar</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1a81f30749cbc899e9b46f74b526493771" compoundref="ce204__hw4___rental_factory_test_8java" startline="51" endline="81">ce204_hw4_RentalFactoryTest.testCreateRental_LuxuryCar</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1ae6a4a1d1f9a715e99fe4cd64af074eb5" compoundref="ce204__hw4___rental_factory_test_8java" startline="87" endline="117">ce204_hw4_RentalFactoryTest.testCreateRental_SuvCar</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/RentalFactory.java" line="3" column="7" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/RentalFactory.java" bodystart="3" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__librar__factory_method_1_1_rental_factory_1aa515da981a8c5c23e0a743ec4fc513e1" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::RentalFactory</scope><name>createRental</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classce204__hw4__library__observe_method_1_1_reservation_subject" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_library_observeMethod::ReservationSubject</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__library__observe_method_1_1_reservation_subject_1addf4be051d0549fe684938ea4129ee4d" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="interfacece204__hw4__library__observe_method_1_1_reservation_observer" kindref="compound">ReservationObserver</ref> &gt;</type>
+        <definition>List&lt;ReservationObserver&gt; ce204_hw4_library_observeMethod.ReservationSubject.observers</definition>
+        <argsstring></argsstring>
+        <name>observers</name>
+        <initializer>= new ArrayList&lt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/ReservationSubject.java" line="7" column="14" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/ReservationSubject.java" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa5bc7d55d910b0efcf17d73e4b4208b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library_observeMethod.ReservationSubject.attachObserver</definition>
+        <argsstring>(ReservationObserver observer)</argsstring>
+        <name>attachObserver</name>
+        <param>
+          <type><ref refid="interfacece204__hw4__library__observe_method_1_1_reservation_observer" kindref="compound">ReservationObserver</ref></type>
+          <declname>observer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Attaches an observer to the reservation subject.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>observer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the observer to be attached </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/ReservationSubject.java" line="14" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/ReservationSubject.java" bodystart="14" bodyend="16"/>
+        <referencedby refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1a8f9bc51a53ddec3a2d671ef1df883b13" compoundref="_car_reservation_system_8java" startline="32" endline="34">ce204_hw4_library_observeMethod.CarReservationSystem.addUser</referencedby>
+        <referencedby refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1a120731f7626e8df0c82729bbf4b5d950" compoundref="ce204__hw4___reservation_subject_test_8java" startline="31" endline="40">ce204_hw4_observerMethodTest.ce204_hw4_ReservationSubjectTest.testAttachObserver</referencedby>
+        <referencedby refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1afbc57ea7101e9691bd49b78c252fc63e" compoundref="ce204__hw4___reservation_subject_test_8java" startline="46" endline="56">ce204_hw4_observerMethodTest.ce204_hw4_ReservationSubjectTest.testDetachObserver</referencedby>
+        <referencedby refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1ac8978c56c9f08d219868d2819c550d22" compoundref="ce204__hw4___reservation_subject_test_8java" startline="62" endline="74">ce204_hw4_observerMethodTest.ce204_hw4_ReservationSubjectTest.testNotifyObservers</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__library__observe_method_1_1_reservation_subject_1ad83da46cd3e6c48892ab9977431a0119" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library_observeMethod.ReservationSubject.detachObserver</definition>
+        <argsstring>(ReservationObserver observer)</argsstring>
+        <name>detachObserver</name>
+        <param>
+          <type><ref refid="interfacece204__hw4__library__observe_method_1_1_reservation_observer" kindref="compound">ReservationObserver</ref></type>
+          <declname>observer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Detaches an observer from the reservation subject.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>observer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the observer to be detached </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/ReservationSubject.java" line="22" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/ReservationSubject.java" bodystart="22" bodyend="24"/>
+        <referencedby refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1ae56b0afc951ea678d41502d0324a12be" compoundref="_car_reservation_system_8java" startline="40" endline="42">ce204_hw4_library_observeMethod.CarReservationSystem.removeUser</referencedby>
+        <referencedby refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1afbc57ea7101e9691bd49b78c252fc63e" compoundref="ce204__hw4___reservation_subject_test_8java" startline="46" endline="56">ce204_hw4_observerMethodTest.ce204_hw4_ReservationSubjectTest.testDetachObserver</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__library__observe_method_1_1_reservation_subject_1a03f17c8905dc7057cb0d5732baa5b6b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library_observeMethod.ReservationSubject.notifyObservers</definition>
+        <argsstring>(String message)</argsstring>
+        <name>notifyObservers</name>
+        <param>
+          <type>String</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies all observers with the specified message.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the message to notify the observers </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/ReservationSubject.java" line="30" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/ReservationSubject.java" bodystart="30" bodyend="34"/>
+        <referencedby refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1a9b84a5f7d8fb4499b3b4d86795266687" compoundref="_car_reservation_system_8java" startline="19" endline="26">ce204_hw4_library_observeMethod.CarReservationSystem.makeReservation</referencedby>
+        <referencedby refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1ac8978c56c9f08d219868d2819c550d22" compoundref="ce204__hw4___reservation_subject_test_8java" startline="62" endline="74">ce204_hw4_observerMethodTest.ce204_hw4_ReservationSubjectTest.testNotifyObservers</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa22630ff680d49ba4b7ac1732673c432" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="interfacece204__hw4__library__observe_method_1_1_reservation_observer" kindref="compound">ReservationObserver</ref> &gt;</type>
+        <definition>List&lt; ReservationObserver &gt; ce204_hw4_library_observeMethod.ReservationSubject.getObservers</definition>
+        <argsstring>()</argsstring>
+        <name>getObservers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a list of observers attached to the reservation subject.</para>
+<para><simplesect kind="return"><para>the list of observers </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/ReservationSubject.java" line="40" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/ReservationSubject.java" bodystart="40" bodyend="42"/>
+        <referencedby refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1a24275a5646ae9592523000203f79a3fc" compoundref="_car_reservation_system_8java" startline="48" endline="50">ce204_hw4_library_observeMethod.CarReservationSystem.getObservers</referencedby>
+        <referencedby refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1a120731f7626e8df0c82729bbf4b5d950" compoundref="ce204__hw4___reservation_subject_test_8java" startline="31" endline="40">ce204_hw4_observerMethodTest.ce204_hw4_ReservationSubjectTest.testAttachObserver</referencedby>
+        <referencedby refid="classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_1afbc57ea7101e9691bd49b78c252fc63e" compoundref="ce204__hw4___reservation_subject_test_8java" startline="46" endline="56">ce204_hw4_observerMethodTest.ce204_hw4_ReservationSubjectTest.testDetachObserver</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/ReservationSubject.java" line="6" column="7" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/ReservationSubject.java" bodystart="6" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa5bc7d55d910b0efcf17d73e4b4208b4" prot="public" virt="non-virtual"><scope>ce204_hw4_library_observeMethod::ReservationSubject</scope><name>attachObserver</name></member>
+      <member refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1ad83da46cd3e6c48892ab9977431a0119" prot="public" virt="non-virtual"><scope>ce204_hw4_library_observeMethod::ReservationSubject</scope><name>detachObserver</name></member>
+      <member refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa22630ff680d49ba4b7ac1732673c432" prot="public" virt="non-virtual"><scope>ce204_hw4_library_observeMethod::ReservationSubject</scope><name>getObservers</name></member>
+      <member refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1a03f17c8905dc7057cb0d5732baa5b6b6" prot="public" virt="non-virtual"><scope>ce204_hw4_library_observeMethod::ReservationSubject</scope><name>notifyObservers</name></member>
+      <member refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1addf4be051d0549fe684938ea4129ee4d" prot="private" virt="non-virtual"><scope>ce204_hw4_library_observeMethod::ReservationSubject</scope><name>observers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

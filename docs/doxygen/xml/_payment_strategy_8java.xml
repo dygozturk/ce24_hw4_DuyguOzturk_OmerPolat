@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_payment_strategy_8java" kind="file" language="Java">
+    <compoundname>PaymentStrategy.java</compoundname>
+    <innerclass refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy" prot="public">ce204_hw4_library_strategyMethod::PaymentStrategy</innerclass>
+    <innernamespace refid="namespacece204__hw4__library__strategy_method">ce204_hw4_library_strategyMethod</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_library_strategyMethod;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">interface<sp/></highlight><highlight class="normal"><ref refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy" kindref="compound">PaymentStrategy</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="13" refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy_1af085ea0d70d8419e3ef857d77b4e2202" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy_1af085ea0d70d8419e3ef857d77b4e2202" kindref="member">pay</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>amount);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/PaymentStrategy.java"/>
+  </compounddef>
+</doxygen>

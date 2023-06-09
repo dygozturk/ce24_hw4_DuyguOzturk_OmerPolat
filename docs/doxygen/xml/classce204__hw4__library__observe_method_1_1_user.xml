@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classce204__hw4__library__observe_method_1_1_user" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_library_observeMethod::User</compoundname>
+    <basecompoundref refid="interfacece204__hw4__library__observe_method_1_1_reservation_observer" prot="public" virt="non-virtual">ce204_hw4_library_observeMethod.ReservationObserver</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__library__observe_method_1_1_user_1a5e05e4467ab34d3248628398dbed6511" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_library_observeMethod.User.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/User.java" line="5" column="16" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/User.java" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__library__observe_method_1_1_user_1a54062c752c12a2fd6e7ad3eff56aed56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_library_observeMethod.User.User</definition>
+        <argsstring>(String name)</argsstring>
+        <name>User</name>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs a <ref refid="classce204__hw4__library__observe_method_1_1_user" kindref="compound">User</ref> object with the specified name.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the user </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/User.java" line="11" column="12" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/User.java" bodystart="11" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__library__observe_method_1_1_user_1a2b5033b9d7ddc2775daf614919fb25b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library_observeMethod.User.notifyReservation</definition>
+        <argsstring>(String message)</argsstring>
+        <name>notifyReservation</name>
+        <reimplements refid="interfacece204__hw4__library__observe_method_1_1_reservation_observer_1a5a8d6fd379819b1f5680db9a68f2335b">notifyReservation</reimplements>
+        <param>
+          <type>String</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies the user about a reservation with the specified message.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the message to notify the user about the reservation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/User.java" line="20" column="13" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/User.java" bodystart="20" bodyend="23"/>
+        <referencedby refid="classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_1af92f848c9f15c25fbe24c44da2ce111c" compoundref="ce204__hw4___user_test_8java" startline="31" endline="41">ce204_hw4_observerMethodTest.ce204_hw4_UserTest.testNotifyReservation1</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ce204_hw4_library_observeMethod.User</label>
+        <link refid="classce204__hw4__library__observe_method_1_1_user"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_library_observeMethod.ReservationObserver</label>
+        <link refid="interfacece204__hw4__library__observe_method_1_1_reservation_observer"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ce204_hw4_library_observeMethod.User</label>
+        <link refid="classce204__hw4__library__observe_method_1_1_user"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_library_observeMethod.ReservationObserver</label>
+        <link refid="interfacece204__hw4__library__observe_method_1_1_reservation_observer"/>
+      </node>
+    </collaborationgraph>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/User.java" line="3" column="7" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/User.java" bodystart="3" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__library__observe_method_1_1_user_1a5e05e4467ab34d3248628398dbed6511" prot="private" virt="non-virtual"><scope>ce204_hw4_library_observeMethod::User</scope><name>name</name></member>
+      <member refid="classce204__hw4__library__observe_method_1_1_user_1a2b5033b9d7ddc2775daf614919fb25b1" prot="public" virt="non-virtual"><scope>ce204_hw4_library_observeMethod::User</scope><name>notifyReservation</name></member>
+      <member refid="classce204__hw4__library__observe_method_1_1_user_1a54062c752c12a2fd6e7ad3eff56aed56" prot="public" virt="non-virtual"><scope>ce204_hw4_library_observeMethod::User</scope><name>User</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

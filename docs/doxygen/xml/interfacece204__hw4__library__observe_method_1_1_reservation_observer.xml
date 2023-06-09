@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="interfacece204__hw4__library__observe_method_1_1_reservation_observer" kind="interface" language="Java" prot="public">
+    <compoundname>ce204_hw4_library_observeMethod::ReservationObserver</compoundname>
+    <derivedcompoundref refid="classce204__hw4__library__observe_method_1_1_user" prot="public" virt="non-virtual">ce204_hw4_library_observeMethod.User</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacece204__hw4__library__observe_method_1_1_reservation_observer_1a5a8d6fd379819b1f5680db9a68f2335b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library_observeMethod.ReservationObserver.notifyReservation</definition>
+        <argsstring>(String message)</argsstring>
+        <name>notifyReservation</name>
+        <reimplementedby refid="classce204__hw4__library__observe_method_1_1_user_1a2b5033b9d7ddc2775daf614919fb25b1">notifyReservation</reimplementedby>
+        <param>
+          <type>String</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Notifies the observer about a reservation with the specified message.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the message to notify the observer about the reservation </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/ReservationObserver.java" line="9" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ce204_hw4_library_observeMethod.ReservationObserver</label>
+        <link refid="interfacece204__hw4__library__observe_method_1_1_reservation_observer"/>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_library_observeMethod.User</label>
+        <link refid="classce204__hw4__library__observe_method_1_1_user"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/ReservationObserver.java" line="3" column="18" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/ReservationObserver.java" bodystart="3" bodyend="10"/>
+    <listofallmembers>
+      <member refid="interfacece204__hw4__library__observe_method_1_1_reservation_observer_1a5a8d6fd379819b1f5680db9a68f2335b" prot="public" virt="non-virtual"><scope>ce204_hw4_library_observeMethod::ReservationObserver</scope><name>notifyReservation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

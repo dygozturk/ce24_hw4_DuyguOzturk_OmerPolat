@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="_car_reservation_system_8java" kind="file" language="Java">
+    <compoundname>CarReservationSystem.java</compoundname>
+    <innerclass refid="classce204__hw4__library__observe_method_1_1_car_reservation_system" prot="public">ce204_hw4_library_observeMethod::CarReservationSystem</innerclass>
+    <innernamespace refid="namespacece204__hw4__library__observe_method">ce204_hw4_library_observeMethod</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacece204__hw4__library__observe_method" refkind="compound"><highlight class="keyword">package<sp/></highlight><highlight class="normal">ce204_hw4_library_observeMethod;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.time.LocalDate;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.time.format.DateTimeFormatter;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.util.List;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classce204__hw4__library__observe_method_1_1_car_reservation_system" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classce204__hw4__library__observe_method_1_1_car_reservation_system" kindref="compound">CarReservationSystem</ref><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject" kindref="compound">ReservationSubject</ref><sp/>reservationSubject<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject" kindref="compound">ReservationSubject</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1a9b84a5f7d8fb4499b3b4d86795266687" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1a9b84a5f7d8fb4499b3b4d86795266687" kindref="member">makeReservation</ref>(LocalDate<sp/>startDate,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rentalDays)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LocalDate<sp/>endDate<sp/>=<sp/>startDate.plusDays(rentalDays);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DateTimeFormatter<sp/>formatter<sp/>=<sp/>DateTimeFormatter.ofPattern(</highlight><highlight class="stringliteral">&quot;dd.MM.yyyy&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>message<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;New<sp/>reservation:<sp/>Your<sp/>rental<sp/>period<sp/>is<sp/>from<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>startDate.format(formatter)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;<sp/>to<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>endDate.format(formatter)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reservationSubject.<ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1a03f17c8905dc7057cb0d5732baa5b6b6" kindref="member">notifyObservers</ref>(message);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32" refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1a8f9bc51a53ddec3a2d671ef1df883b13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1a8f9bc51a53ddec3a2d671ef1df883b13" kindref="member">addUser</ref>(<ref refid="classce204__hw4__library__observe_method_1_1_user" kindref="compound">User</ref><sp/>user)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reservationSubject.<ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa5bc7d55d910b0efcf17d73e4b4208b4" kindref="member">attachObserver</ref>(user);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40" refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1ae56b0afc951ea678d41502d0324a12be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1ae56b0afc951ea678d41502d0324a12be" kindref="member">removeUser</ref>(<ref refid="classce204__hw4__library__observe_method_1_1_user" kindref="compound">User</ref><sp/>user)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reservationSubject.<ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1ad83da46cd3e6c48892ab9977431a0119" kindref="member">detachObserver</ref>(user);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48" refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1a24275a5646ae9592523000203f79a3fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;ReservationObserver&gt;<sp/><ref refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1a24275a5646ae9592523000203f79a3fc" kindref="member">getObservers</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>reservationSubject.<ref refid="classce204__hw4__library__observe_method_1_1_reservation_subject_1aa22630ff680d49ba4b7ac1732673c432" kindref="member">getObservers</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library_observeMethod/CarReservationSystem.java"/>
+  </compounddef>
+</doxygen>

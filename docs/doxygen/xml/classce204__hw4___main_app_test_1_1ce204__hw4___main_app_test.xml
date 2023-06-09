@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_MainAppTest::ce204_hw4_MainAppTest</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1a10455d867794b33da8af566f9e637b18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_MainAppTest.ce204_hw4_MainAppTest.testCarRentalApp1</definition>
+        <argsstring>()</argsstring>
+        <name>testCarRentalApp1</name>
+        <briefdescription>
+<para>Test case for the CarRentalApp with input option 1, payment option 2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_MainAppTest/ce204_hw4_MainAppTest.java" line="33" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_MainAppTest/ce204_hw4_MainAppTest.java" bodystart="33" bodyend="65"/>
+        <references refid="classce204__hw4__library__app_1_1_car_rental_app_1a0aa572d1694837e2aff70ecef4200e0a" compoundref="_car_rental_app_8java" startline="21" endline="135">ce204_hw4_library_app.CarRentalApp.main</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1ae1d481362c6bc5b7db64ddf6cdb0827c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_MainAppTest.ce204_hw4_MainAppTest.testCarRentalApp2</definition>
+        <argsstring>()</argsstring>
+        <name>testCarRentalApp2</name>
+        <briefdescription>
+<para>Test case for the CarRentalApp with input option 2, payment option 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_MainAppTest/ce204_hw4_MainAppTest.java" line="71" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_MainAppTest/ce204_hw4_MainAppTest.java" bodystart="71" bodyend="103"/>
+        <references refid="classce204__hw4__library__app_1_1_car_rental_app_1a0aa572d1694837e2aff70ecef4200e0a" compoundref="_car_rental_app_8java" startline="21" endline="135">ce204_hw4_library_app.CarRentalApp.main</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1acbdae85591ffb77c5189ed25d27720fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_MainAppTest.ce204_hw4_MainAppTest.testCarRentalApp3</definition>
+        <argsstring>()</argsstring>
+        <name>testCarRentalApp3</name>
+        <briefdescription>
+<para>Test case for the CarRentalApp with input option 3, payment option 3. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_MainAppTest/ce204_hw4_MainAppTest.java" line="109" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_MainAppTest/ce204_hw4_MainAppTest.java" bodystart="109" bodyend="144"/>
+        <references refid="classce204__hw4__library__app_1_1_car_rental_app_1a0aa572d1694837e2aff70ecef4200e0a" compoundref="_car_rental_app_8java" startline="21" endline="135">ce204_hw4_library_app.CarRentalApp.main</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1ab976accf861f03d35918ba34663b8e35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_MainAppTest.ce204_hw4_MainAppTest.testCarRentalApp4</definition>
+        <argsstring>()</argsstring>
+        <name>testCarRentalApp4</name>
+        <briefdescription>
+<para>Test case for the CarRentalApp with input option 4, payment option 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_MainAppTest/ce204_hw4_MainAppTest.java" line="150" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_MainAppTest/ce204_hw4_MainAppTest.java" bodystart="150" bodyend="185"/>
+        <references refid="classce204__hw4__library__app_1_1_car_rental_app_1a0aa572d1694837e2aff70ecef4200e0a" compoundref="_car_rental_app_8java" startline="21" endline="135">ce204_hw4_library_app.CarRentalApp.main</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1a6aa62bc4f64fe2173a829b37b23033a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_MainAppTest.ce204_hw4_MainAppTest.testCarRentalApp5</definition>
+        <argsstring>()</argsstring>
+        <name>testCarRentalApp5</name>
+        <briefdescription>
+<para>Test case for the CarRentalApp with incomplete input. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_MainAppTest/ce204_hw4_MainAppTest.java" line="191" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_MainAppTest/ce204_hw4_MainAppTest.java" bodystart="191" bodyend="226"/>
+        <references refid="classce204__hw4__library__app_1_1_car_rental_app_1a0aa572d1694837e2aff70ecef4200e0a" compoundref="_car_rental_app_8java" startline="21" endline="135">ce204_hw4_library_app.CarRentalApp.main</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1aa94ea7388e5f8e9bb3dacf44c584533c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_MainAppTest.ce204_hw4_MainAppTest.testCarRentalWithEconomyCarAndCreditCardPayment</definition>
+        <argsstring>()</argsstring>
+        <name>testCarRentalWithEconomyCarAndCreditCardPayment</name>
+        <briefdescription>
+<para>Test case for CarRentalApp with an economy car and credit card payment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_MainAppTest/ce204_hw4_MainAppTest.java" line="232" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_MainAppTest/ce204_hw4_MainAppTest.java" bodystart="232" bodyend="242"/>
+        <references refid="classce204__hw4__library__app_1_1_car_rental_app_1a0aa572d1694837e2aff70ecef4200e0a" compoundref="_car_rental_app_8java" startline="21" endline="135">ce204_hw4_library_app.CarRentalApp.main</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/test/java/ce204_hw4_MainAppTest/ce204_hw4_MainAppTest.java" line="25" column="7" bodyfile="ce204-hw4/src/test/java/ce204_hw4_MainAppTest/ce204_hw4_MainAppTest.java" bodystart="25" bodyend="247"/>
+    <listofallmembers>
+      <member refid="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1a10455d867794b33da8af566f9e637b18" prot="public" virt="non-virtual"><scope>ce204_hw4_MainAppTest::ce204_hw4_MainAppTest</scope><name>testCarRentalApp1</name></member>
+      <member refid="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1ae1d481362c6bc5b7db64ddf6cdb0827c" prot="public" virt="non-virtual"><scope>ce204_hw4_MainAppTest::ce204_hw4_MainAppTest</scope><name>testCarRentalApp2</name></member>
+      <member refid="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1acbdae85591ffb77c5189ed25d27720fa" prot="public" virt="non-virtual"><scope>ce204_hw4_MainAppTest::ce204_hw4_MainAppTest</scope><name>testCarRentalApp3</name></member>
+      <member refid="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1ab976accf861f03d35918ba34663b8e35" prot="public" virt="non-virtual"><scope>ce204_hw4_MainAppTest::ce204_hw4_MainAppTest</scope><name>testCarRentalApp4</name></member>
+      <member refid="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1a6aa62bc4f64fe2173a829b37b23033a3" prot="public" virt="non-virtual"><scope>ce204_hw4_MainAppTest::ce204_hw4_MainAppTest</scope><name>testCarRentalApp5</name></member>
+      <member refid="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1aa94ea7388e5f8e9bb3dacf44c584533c" prot="public" virt="non-virtual"><scope>ce204_hw4_MainAppTest::ce204_hw4_MainAppTest</scope><name>testCarRentalWithEconomyCarAndCreditCardPayment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

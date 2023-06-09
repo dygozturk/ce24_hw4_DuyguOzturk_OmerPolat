@@ -1,0 +1,1100 @@
+\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md5}{}\doxysection{Overview}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md5}
+You will generate eclipse maven project with Junit4 from CLI and. Also you will generate jar and then you will run your application. For more information you can check examples \href{https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html}{\texttt{ Maven – Maven in 5 Minutes}} and \href{https://books.sonatype.com/mvnref-book/reference/index.html}{\texttt{ The\+NEXUS $\vert$ A Community Project}}\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md6}{}\doxysubsection{Releases}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md6}
+
+\begin{DoxyItemize}
+\item \href{https://github.com/ucoruh/eclipse-java-maven-template/releases/latest}{\texttt{ }}
+\end{DoxyItemize}\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md7}{}\doxysubsection{Platforms}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md7}
+
+\begin{DoxyItemize}
+\item 
+\item 
+\item 
+\end{DoxyItemize}\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md8}{}\doxysubsection{Test Coverage}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md8}
+\href{https://github.com/ucoruh/eclipse-java-maven-template/actions/workflows/release.yml}{\texttt{ }}
+
+{\bfseries{Coverage}}
+
+
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+
+{\bfseries{Branch Coverage}}
+
+
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+
+{\bfseries{Line Coverage}}
+
+
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+
+{\bfseries{Method Coverage}}
+
+
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md9}{}\doxysubsubsection{Install Requirements}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md9}
+
+\begin{DoxyItemize}
+\item Eclipse
+\item Maven
+\item JDK
+\item Lcov
+\begin{DoxyItemize}
+\item \href{https://fredgrott.medium.com/lcov-on-windows-7c58dda07080}{\texttt{ https\+://fredgrott.\+medium.\+com/lcov-\/on-\/windows-\/7c58dda07080}}
+\end{DoxyItemize}
+\item Coverxygen
+\begin{DoxyItemize}
+\item \href{https://pypi.org/project/coverxygen/}{\texttt{ coverxygen · Py\+PI}}
+\item \href{https://github.com/psycofdj/coverxygen}{\texttt{ Git\+Hub -\/ psycofdj/coverxygen\+: Generate doxygen\&\#39;s documentation coverage report}}
+\end{DoxyItemize}
+\item Reportgenerator
+\begin{DoxyItemize}
+\item \href{https://reportgenerator.io/}{\texttt{ https\+://reportgenerator.\+io/}}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{dotnet tool install -\/g dotnet-\/reportgenerator-\/globaltool}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item Choose Licence
+\begin{DoxyItemize}
+\item \href{https://choosealicense.com/appendix/}{\texttt{ Appendix $\vert$ Choose a License}}
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md10}{}\doxyparagraph{Package Manager Windows Setup}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md10}
+We will install required application with package manager on Windows so use following script to install \href{https://chocolatey.org/install}{\texttt{ chocolatey}} and \href{https://scoop.sh/}{\texttt{ scoop}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{@echo off}
+\DoxyCodeLine{@setlocal enableextensions}
+\DoxyCodeLine{@cd /d "{}\%\string~dp0"{}}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Checking if Chocolatey is installed...}
+\DoxyCodeLine{if exist "{}\%ProgramData\%\(\backslash\)Chocolatey\(\backslash\)bin\(\backslash\)choco.exe"{} (}
+\DoxyCodeLine{    echo Chocolatey is already installed.}
+\DoxyCodeLine{) else (}
+\DoxyCodeLine{    echo Installing Chocolatey...}
+\DoxyCodeLine{    powershell -\/Command "{}Set-\/ExecutionPolicy Bypass -\/Scope Process -\/Force; iex ((New-\/Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"{}}
+\DoxyCodeLine{)}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Checking if Scoop is installed...}
+\DoxyCodeLine{where scoop >nul 2>\&1}
+\DoxyCodeLine{if \%errorlevel\%==0 (}
+\DoxyCodeLine{    echo Scoop is already installed.}
+\DoxyCodeLine{) else (}
+\DoxyCodeLine{    echo Scoop is not installed. Installing Scoop...}
+\DoxyCodeLine{    powershell Invoke-\/Expression (New-\/Object System.Net.WebClient).DownloadString('https://get.scoop.sh')}
+\DoxyCodeLine{    powershell Set-\/ExecutionPolicy RemoteSigned -\/scope CurrentUser}
+\DoxyCodeLine{)}
+\DoxyCodeLine{}
+\DoxyCodeLine{pause}
+
+\end{DoxyCode}
+\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md11}{}\doxysubsubsection{Pre-\/\+Commit Code Formatter Astyle Installation}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md11}
+Before each commit also with batch script we will format our code with astyle we need to install it with package manager as following script you can visit package manager web site for more details \href{https://community.chocolatey.org/packages/astyle}{\texttt{ Chocolatey Software $\vert$ Artistic Style 3.\+2.\+1}} and \href{https://astyle.sourceforge.net/}{\texttt{ https\+://astyle.\+sourceforge.\+net/}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{@echo off}
+\DoxyCodeLine{@setlocal enableextensions}
+\DoxyCodeLine{@cd /d "{}\%\string~dp0"{}}
+\DoxyCodeLine{echo Installing Astyle...}
+\DoxyCodeLine{choco install astyle}
+
+\end{DoxyCode}
+
+
+Astyle tool need configuration there is example configuration named {\ttfamily astyle-\/options.\+txt}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\# https://github.com/brchiu/openairinterface5g/blob/master/ci-\/scripts/astyle-\/options.txt}
+\DoxyCodeLine{\# OAI is using a style that is similar to the Google style}
+\DoxyCodeLine{-\/-\/style=google}
+\DoxyCodeLine{\# long options can be written without the preceding '-\/-\/'}
+\DoxyCodeLine{\# Convert tabs to spaces}
+\DoxyCodeLine{convert-\/tabs}
+\DoxyCodeLine{\# Indentation is 2 spaces}
+\DoxyCodeLine{indent=spaces=2}
+\DoxyCodeLine{\# Indent 'switch' blocks so that the 'case X:' statements are indented in the switch block. }
+\DoxyCodeLine{indent-\/switches}
+\DoxyCodeLine{\# Indent preprocessor blocks at bracket level 0.}
+\DoxyCodeLine{indent-\/preproc-\/block}
+\DoxyCodeLine{\# Indent multi-\/line preprocessor \#define statements.}
+\DoxyCodeLine{indent-\/preproc-\/define}
+\DoxyCodeLine{\# Indent C++ comments beginning in column one.}
+\DoxyCodeLine{indent-\/col1-\/comments}
+\DoxyCodeLine{\# Pad empty lines around header blocks}
+\DoxyCodeLine{break-\/blocks}
+\DoxyCodeLine{delete-\/empty-\/lines}
+\DoxyCodeLine{\# Attach a pointer or reference operator (*, \&, or \string^) to the variable name (right)}
+\DoxyCodeLine{align-\/pointer=name}
+\DoxyCodeLine{\# The code line length is 200 characters/columns (this is the maximum allowed by astyle)}
+\DoxyCodeLine{max-\/code-\/length=200}
+\DoxyCodeLine{\# If the line contains logical conditionals they will be placed first on the new line.}
+\DoxyCodeLine{break-\/after-\/logical}
+\DoxyCodeLine{\# Force use of the linux end of line}
+\DoxyCodeLine{\# lineend=linux}
+
+\end{DoxyCode}
+
+
+After installation and config file generation we can format our code with following script this script look for .cs extension and format related files according to configuration in astyle-\/options.\+txt
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{@echo off}
+\DoxyCodeLine{@setlocal enableextensions}
+\DoxyCodeLine{@cd /d "{}\%\string~dp0"{}}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Formatting Code with Astyle...}
+\DoxyCodeLine{}
+\DoxyCodeLine{astyle -\/-\/options="{}astyle-\/options.txt"{} -\/-\/recursive *.cs}
+\DoxyCodeLine{}
+\DoxyCodeLine{pause}
+
+\end{DoxyCode}
+\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md12}{}\doxysubsubsection{Doxygen and Graphviz Setup + Mk\+Docs Material Theme}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md12}
+We will use package manager for this but also we can use several tools I prefer to use following script to install all parties, This setup also use for mkdocs material them documentation generation maybe we can use for project website generation
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{@echo off}
+\DoxyCodeLine{@setlocal enableextensions}
+\DoxyCodeLine{@cd /d "{}\%\string~dp0"{}}
+\DoxyCodeLine{}
+\DoxyCodeLine{rem force re-\/install need "{}-\/-\/force -\/-\/force-\/dependencies -\/y"{} parameters}
+\DoxyCodeLine{}
+\DoxyCodeLine{REM Test if Pandoc is installed}
+\DoxyCodeLine{where pandoc >nul 2>\&1}
+\DoxyCodeLine{if \%errorlevel\%==0 (}
+\DoxyCodeLine{    echo Pandoc is already installed.}
+\DoxyCodeLine{) else (}
+\DoxyCodeLine{    echo Installing Pandoc...}
+\DoxyCodeLine{    choco install pandoc -\/y}
+\DoxyCodeLine{)}
+\DoxyCodeLine{}
+\DoxyCodeLine{REM Test if rsvg-\/convert is installed}
+\DoxyCodeLine{where rsvg-\/convert >nul 2>\&1}
+\DoxyCodeLine{if \%errorlevel\%==0 (}
+\DoxyCodeLine{    echo rsvg-\/convert is already installed.}
+\DoxyCodeLine{) else (}
+\DoxyCodeLine{    echo Installing rsvg-\/convert...}
+\DoxyCodeLine{    choco install rsvg-\/convert -\/y}
+\DoxyCodeLine{)}
+\DoxyCodeLine{}
+\DoxyCodeLine{REM Test if Python is installed}
+\DoxyCodeLine{where python >nul 2>\&1}
+\DoxyCodeLine{if \%errorlevel\%==0 (}
+\DoxyCodeLine{    echo Python is already installed.}
+\DoxyCodeLine{) else (}
+\DoxyCodeLine{    echo Installing Python...}
+\DoxyCodeLine{    choco install python -\/y}
+\DoxyCodeLine{)}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{REM Test if Miktex is installed}
+\DoxyCodeLine{where miktex >nul 2>\&1}
+\DoxyCodeLine{if \%errorlevel\%==0 (}
+\DoxyCodeLine{    echo Miktex is already installed.}
+\DoxyCodeLine{) else (}
+\DoxyCodeLine{    echo Installing Miktex...}
+\DoxyCodeLine{    choco install miktex -\/y}
+\DoxyCodeLine{)}
+\DoxyCodeLine{}
+\DoxyCodeLine{REM Test if CuRL is installed}
+\DoxyCodeLine{where curl >nul 2>\&1}
+\DoxyCodeLine{if \%errorlevel\%==0 (}
+\DoxyCodeLine{    echo curl is already installed.}
+\DoxyCodeLine{) else (}
+\DoxyCodeLine{    echo Installing CuRL...}
+\DoxyCodeLine{    choco install curl -\/y}
+\DoxyCodeLine{)}
+\DoxyCodeLine{}
+\DoxyCodeLine{REM Test if MARP-\/CLI is installed}
+\DoxyCodeLine{where marp >nul 2>\&1}
+\DoxyCodeLine{if \%errorlevel\%==0 (}
+\DoxyCodeLine{    echo MARP-\/CLI is already installed.}
+\DoxyCodeLine{) else (}
+\DoxyCodeLine{    echo Installing MARP-\/CLI...}
+\DoxyCodeLine{    choco install marp-\/cli -\/y}
+\DoxyCodeLine{)}
+\DoxyCodeLine{}
+\DoxyCodeLine{REM Test if Doxygen is installed}
+\DoxyCodeLine{where doxygen >nul 2>\&1}
+\DoxyCodeLine{if \%errorlevel\%==0 (}
+\DoxyCodeLine{    echo MARP-\/CLI is already installed.}
+\DoxyCodeLine{) else (}
+\DoxyCodeLine{    echo Installing Doxygen...}
+\DoxyCodeLine{    choco install doxygen.install -\/y}
+\DoxyCodeLine{)}
+\DoxyCodeLine{}
+\DoxyCodeLine{REM Test if Doxygen is installed}
+\DoxyCodeLine{where dot >nul 2>\&1}
+\DoxyCodeLine{if \%errorlevel\%==0 (}
+\DoxyCodeLine{    echo Graphviz is already installed.}
+\DoxyCodeLine{) else (}
+\DoxyCodeLine{    echo Installing Graphviz...}
+\DoxyCodeLine{    choco install graphviz -\/y}
+\DoxyCodeLine{)}
+\DoxyCodeLine{}
+\DoxyCodeLine{pip install mkdocs}
+\DoxyCodeLine{pip install pymdown-\/extensions}
+\DoxyCodeLine{pip install mkdocs-\/material}
+\DoxyCodeLine{pip install mkdocs-\/material-\/extensions}
+\DoxyCodeLine{pip install mkdocs-\/simple-\/hooks}
+\DoxyCodeLine{pip install mkdocs-\/video}
+\DoxyCodeLine{pip install mkdocs-\/minify-\/plugin}
+\DoxyCodeLine{pip install mkdocs-\/git-\/revision-\/date-\/localized-\/plugin}
+\DoxyCodeLine{pip install mkdocs-\/minify-\/plugin}
+\DoxyCodeLine{pip install mkdocs-\/static-\/i18n}
+\DoxyCodeLine{pip install mkdocs-\/with-\/pdf}
+\DoxyCodeLine{pip install qrcode}
+\DoxyCodeLine{pip install mkdocs-\/awesome-\/pages-\/plugin}
+\DoxyCodeLine{pip install mkdocs-\/embed-\/external-\/markdown}
+\DoxyCodeLine{pip install mkdocs-\/include-\/markdown-\/plugin}
+\DoxyCodeLine{pip install mkdocs-\/ezlinks-\/plugin}
+\DoxyCodeLine{pip install mkdocs-\/git-\/authors-\/plugin}
+\DoxyCodeLine{pip install mkdocs-\/git-\/committers-\/plugin}
+\DoxyCodeLine{pip install mkdocs-\/exclude}
+\DoxyCodeLine{}
+\DoxyCodeLine{pip install pptx2md}
+\DoxyCodeLine{pause}
+
+\end{DoxyCode}
+
+
+After doxygen installation create default doxygen file with -\/g option
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{doxygen -\/g}
+
+\end{DoxyCode}
+
+
+This will create Doxyfile for us to modify. Use Doxywizard to modify file. Be sure that your output directory should be $\ast$$\ast$./docs$\ast$$\ast$ and all warnings should be opened and warnings stop operations.\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md13}{}\doxyparagraph{Report\+Generator Setup}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md13}
+We need to install \href{https://reportgenerator.io/}{\texttt{ reportgenerator}} for creation of HTML test reports, we will use choco to install visit package manager web site \href{https://community.chocolatey.org/packages/reportgenerator.portable}{\texttt{ Chocolatey Software $\vert$ Report\+Generator (Portable) -\/ Generates reports for various code coverage tools 5.\+1.\+20}}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{@echo off}
+\DoxyCodeLine{@setlocal enableextensions}
+\DoxyCodeLine{@cd /d "{}\%\string~dp0"{}}
+\DoxyCodeLine{echo Installing Report Generator...}
+\DoxyCodeLine{choco install reportgenerator.portable}
+
+\end{DoxyCode}
+\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md14}{}\doxysubsection{Repository Setup}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md14}
+\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md15}{}\doxyparagraph{Github Repositoy Creation}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md15}
+First create a empty project in github and clone it to your PC,\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md16}{}\doxyparagraph{Pre-\/\+Commit Action Restrictions}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md16}
+Use following pre-\/commit script and replace it with {\ttfamily .git/hook/precommit}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#!/bin/bash}
+\DoxyCodeLine{\# Installation:}
+\DoxyCodeLine{\#   Copy this script as pre-\/commit to .git/hooks folder}
+\DoxyCodeLine{}
+\DoxyCodeLine{OPTIONS="{}-\/-\/options=astyle-\/options.txt"{}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Check if .gitignore file exists}
+\DoxyCodeLine{if [ ! -\/f astyle-\/options.txt ]; then}
+\DoxyCodeLine{    echo "{}[!] astyle-\/options.txt file not found. Please make sure the astyle-\/options.txt file is present."{} >\&2}
+\DoxyCodeLine{    exit 1}
+\DoxyCodeLine{fi}
+\DoxyCodeLine{}
+\DoxyCodeLine{RETURN=0}
+\DoxyCodeLine{ASTYLE=\$(command -\/v astyle)}
+\DoxyCodeLine{if [ \$? -\/ne 0 ]; then}
+\DoxyCodeLine{    echo "{}[!] AStyle is not installed. Unable to check source file format policy."{} >\&2}
+\DoxyCodeLine{    exit 1}
+\DoxyCodeLine{fi}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Check if .gitignore file exists}
+\DoxyCodeLine{if [ ! -\/f .gitignore ]; then}
+\DoxyCodeLine{    echo "{}[!] .gitignore file not found. Please make sure the .gitignore file is present."{} >\&2}
+\DoxyCodeLine{    exit 1}
+\DoxyCodeLine{fi}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Check if README.md file exists}
+\DoxyCodeLine{if [ ! -\/f README.md ]; then}
+\DoxyCodeLine{    echo "{}[!] README.md file not found. Please make sure the README.md file is present."{} >\&2}
+\DoxyCodeLine{    exit 1}
+\DoxyCodeLine{fi}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Check if .gitignore file exists}
+\DoxyCodeLine{if [ ! -\/f Doxyfile ]; then}
+\DoxyCodeLine{    echo "{}[!] Doxyfile file not found. Please make sure the Doxyfile file is present."{} >\&2}
+\DoxyCodeLine{    exit 1}
+\DoxyCodeLine{fi}
+\DoxyCodeLine{}
+\DoxyCodeLine{FILES=\$(git diff -\/-\/cached -\/-\/name-\/only -\/-\/diff-\/filter=ACMRTUXB | grep -\/E "{}\(\backslash\).(cs|java|c|cpp|h)\$"{})}
+\DoxyCodeLine{for FILE in \$FILES; do}
+\DoxyCodeLine{    FORMATTED=\$( "{}\$ASTYLE"{} \$OPTIONS < "{}\$FILE"{} 2>\&1 )}
+\DoxyCodeLine{    if [ \$? -\/ne 0 ]; then}
+\DoxyCodeLine{        echo "{}[!] Error formatting \$FILE:"{} >\&2}
+\DoxyCodeLine{        echo "{}\$FORMATTED"{} >\&2}
+\DoxyCodeLine{        RETURN=1}
+\DoxyCodeLine{    elif [ -\/n "{}\$FORMATTED"{} ]; then}
+\DoxyCodeLine{        echo "{}Formatted \$FILE"{}}
+\DoxyCodeLine{        echo "{}\$FORMATTED"{}}
+\DoxyCodeLine{        echo "{}"{}}
+\DoxyCodeLine{        echo "{}\$FORMATTED"{} > "{}\$FILE"{}}
+\DoxyCodeLine{        git add "{}\$FILE"{}}
+\DoxyCodeLine{    fi}
+\DoxyCodeLine{done}
+\DoxyCodeLine{}
+\DoxyCodeLine{if [ \$RETURN -\/eq 1 ]; then}
+\DoxyCodeLine{    echo "{}"{} >\&2}
+\DoxyCodeLine{    echo "{}Make sure you have run AStyle with the following options:"{} >\&2}
+\DoxyCodeLine{    echo \$OPTIONS >\&2}
+\DoxyCodeLine{fi}
+\DoxyCodeLine{}
+\DoxyCodeLine{exit \$RETURN}
+
+\end{DoxyCode}
+
+
+This script will check astyle-\/options.\+txt file, gitignore file, \mbox{\hyperlink{readme_8md}{README.\+md}} file and Doxyfile is exist if not it will be terminate your commit operation. Also after {\ttfamily astyle} installation and {\ttfamily astyle-\/options.\+txt} generation it will automatically format your source code before each commit. Formatting configuration will be stored in {\ttfamily astyle-\/options.\+txt} .\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md17}{}\doxyparagraph{Create .\+gitignore with TOPTAL API via batch script}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md17}
+Use the following script to generate .gitignore file, you can change gitignore file by changing the configuration after {\ttfamily \href{https://www.toptal.com/developers/gitignore/api}{\texttt{ https\+://www.\+toptal.\+com/developers/gitignore/api}}}
+
+This is the selected configuration
+
+{\ttfamily c,csharp,vs,visualstudio,visualstudiocode,java,maven,c++,cmake,eclipse,netbeans}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{@echo off}
+\DoxyCodeLine{}
+\DoxyCodeLine{set API\_URL=https://www.toptal.com/developers/gitignore/api/c,csharp,vs,visualstudio,visualstudiocode,java,maven,c++,cmake,eclipse,netbeans}
+\DoxyCodeLine{set OUTPUT\_FILE=.gitignore}
+\DoxyCodeLine{}
+\DoxyCodeLine{REM Set the running folder to the current working folder}
+\DoxyCodeLine{cd /d "{}\%\string~dp0"{}}
+\DoxyCodeLine{}
+\DoxyCodeLine{REM Download the API results using curl}
+\DoxyCodeLine{curl -\/s -\/o \%OUTPUT\_FILE\% \%API\_URL\%}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Downloaded .gitignore file from \%API\_URL\% and saved as \%OUTPUT\_FILE\%}
+\DoxyCodeLine{}
+\DoxyCodeLine{pause}
+
+\end{DoxyCode}
+\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md18}{}\doxyparagraph{Create an Empty README.\+md file}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md18}
+Create and EMPTY {\ttfamily \mbox{\hyperlink{readme_8md}{README.\+md}}} file and during project fill required parts\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md19}{}\doxyparagraph{Create Default Doxyfile}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md19}
+Use following command to generate default {\ttfamily Doxyfile} if you didn\textquotesingle{}t create or you can use pre-\/configured configuration and you can edit over this configurations. Be sure that your output directory should be $\ast$$\ast$./docs$\ast$$\ast$ and all warnings should be opened and warnings stop operations.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{doxygen -\/g}
+
+\end{DoxyCode}
+\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md20}{}\doxyparagraph{First commit is ready, You can commit and push your work.}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md20}
+You can use gitextension to commit your work, check if you get any error than return steps and check missing parts.
+
+\DoxyHorRuler{0}
+\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md22}{}\doxysubsection{Creating a Project}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md22}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mvn archetype:generate -\/DgroupId=com.ucoruh.calculator -\/DartifactId=calculator-\/app -\/DarchetypeArtifactId=maven-\/archetype-\/quickstart -\/DarchetypeVersion=1.4 -\/DinteractiveMode=false}
+
+\end{DoxyCode}
+\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md23}{}\doxysubsubsection{Import Project to Eclipse}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md23}
+Use import existing maven project option to import project to Eclipse\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md24}{}\doxysubsubsection{Rename Files}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md24}
+Rename App.\+java to Calculator\+App.\+java and App\+Test.\+java to Calculator\+App\+Test.\+java and Generate Calculator.\+java and Calculator\+Test.\+java
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{package }com.ucoruh.calculator;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{import} org.slf4j.LoggerFactory;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{import} ch.qos.logback.classic.Logger;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{public} \textcolor{keyword}{class }Calculator \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \textcolor{keyword}{static} \textcolor{keyword}{final} Logger logger = (Logger) LoggerFactory.getLogger(Calculator.class);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keywordtype}{int} add(\textcolor{keywordtype}{int} a, \textcolor{keywordtype}{int} b) \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{        logger.info(\textcolor{stringliteral}{"{}Logging message"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{        logger.error(\textcolor{stringliteral}{"{}Error message"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{return} a + b;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{package }com.ucoruh.calculator;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{import} java.io.IOException;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{import} org.slf4j.LoggerFactory;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{import} ch.qos.logback.classic.Logger;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{public} \textcolor{keyword}{class }CalculatorApp \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{private} \textcolor{keyword}{static} \textcolor{keyword}{final} Logger logger = (Logger) LoggerFactory.getLogger(CalculatorApp.class);}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} main(String[] args) \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{        logger.info(\textcolor{stringliteral}{"{}Logging message"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{        logger.error(\textcolor{stringliteral}{"{}Error message"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{        System.out.println(\textcolor{stringliteral}{"{}Hello World!"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{            \textcolor{keywordflow}{if}(args.length>0)}
+\DoxyCodeLine{            \{}
+\DoxyCodeLine{                \textcolor{keywordflow}{if}(args[0].equals(\textcolor{stringliteral}{"{}1"{}}))}
+\DoxyCodeLine{                \{}
+\DoxyCodeLine{                    \textcolor{keywordflow}{throw} \textcolor{keyword}{new} IOException(\textcolor{stringliteral}{"{}Dummy Exception..."{}});}
+\DoxyCodeLine{                \}}
+\DoxyCodeLine{            \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{            System.out.println(\textcolor{stringliteral}{"{}Press Enter to Continue..."{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{            System.in.read();}
+\DoxyCodeLine{}
+\DoxyCodeLine{            System.out.println(\textcolor{stringliteral}{"{}Thank you..."{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \} \textcolor{keywordflow}{catch} (IOException e) \{}
+\DoxyCodeLine{            logger.error(e.toString());}
+\DoxyCodeLine{            e.printStackTrace();}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Generate test with add new unit test feature in Eclipse
+
+
+
+
+
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{package }com.ucoruh.calculator;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{import} \textcolor{keyword}{static} org.junit.Assert.*;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{import} org.junit.After;}
+\DoxyCodeLine{\textcolor{keyword}{import} org.junit.AfterClass;}
+\DoxyCodeLine{\textcolor{keyword}{import} org.junit.Before;}
+\DoxyCodeLine{\textcolor{keyword}{import} org.junit.BeforeClass;}
+\DoxyCodeLine{\textcolor{keyword}{import} org.junit.Test;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{public} \textcolor{keyword}{class }CalculatorTest \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{    @BeforeClass}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} setUpBeforeClass() throws Exception \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    @AfterClass}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} tearDownAfterClass() throws Exception \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    @Before}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keywordtype}{void} setUp() throws Exception \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    @After}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keywordtype}{void} tearDown() throws Exception \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    @Test}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keywordtype}{void} testAddition() \{}
+\DoxyCodeLine{        Calculator calculator = \textcolor{keyword}{new} Calculator();}
+\DoxyCodeLine{        \textcolor{keywordtype}{int} result = calculator.add(2, 3);}
+\DoxyCodeLine{        assertEquals(5, result);}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{package }com.ucoruh.calculator;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{import} \textcolor{keyword}{static} org.junit.Assert.*;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{import} java.io.InputStream;}
+\DoxyCodeLine{\textcolor{keyword}{import} java.io.PrintStream;}
+\DoxyCodeLine{\textcolor{keyword}{import} java.io.ByteArrayInputStream;}
+\DoxyCodeLine{\textcolor{keyword}{import} java.io.ByteArrayOutputStream;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{import} org.junit.After;}
+\DoxyCodeLine{\textcolor{keyword}{import} org.junit.AfterClass;}
+\DoxyCodeLine{\textcolor{keyword}{import} org.junit.Before;}
+\DoxyCodeLine{\textcolor{keyword}{import} org.junit.BeforeClass;}
+\DoxyCodeLine{\textcolor{keyword}{import} org.junit.Test;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{public} \textcolor{keyword}{class }CalculatorAppTest \{}
+\DoxyCodeLine{}
+\DoxyCodeLine{    @BeforeClass}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} setUpBeforeClass() throws Exception \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    @AfterClass}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} tearDownAfterClass() throws Exception \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    @Before}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keywordtype}{void} setUp() throws Exception \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    @After}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keywordtype}{void} tearDown() throws Exception \{}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{    @Test}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keywordtype}{void} testMainSuccess() \{}
+\DoxyCodeLine{        \textcolor{comment}{// Redirect System.in and System.out}}
+\DoxyCodeLine{        InputStream originalIn = System.in;}
+\DoxyCodeLine{        PrintStream originalOut = System.out;}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// Create a ByteArrayInputStream with the desired input}}
+\DoxyCodeLine{        String input = System.lineSeparator(); \textcolor{comment}{// Pressing "{}Enter"{} key}}
+\DoxyCodeLine{        ByteArrayInputStream inputStream = \textcolor{keyword}{new} ByteArrayInputStream(input.getBytes());}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// Redirect System.in to the ByteArrayInputStream}}
+\DoxyCodeLine{        System.setIn(inputStream);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// Create a ByteArrayOutputStream to capture the output}}
+\DoxyCodeLine{        ByteArrayOutputStream outputStream = \textcolor{keyword}{new} ByteArrayOutputStream();}
+\DoxyCodeLine{        System.setOut(\textcolor{keyword}{new} PrintStream(outputStream));}
+\DoxyCodeLine{}
+\DoxyCodeLine{        String[] args = \textcolor{keyword}{new} String[] \{\textcolor{stringliteral}{"{}0"{}}\};}
+\DoxyCodeLine{        \textcolor{comment}{// Call the main method of CalculatorApp}}
+\DoxyCodeLine{        CalculatorApp.main(args);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// Restore original System.in and System.out}}
+\DoxyCodeLine{        System.setIn(originalIn);}
+\DoxyCodeLine{        System.setOut(originalOut);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// Assert the desired behavior based on the output}}
+\DoxyCodeLine{        assertTrue(\textcolor{keyword}{true});}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    @Test}
+\DoxyCodeLine{    \textcolor{keyword}{public} \textcolor{keywordtype}{void} testMainError() \{}
+\DoxyCodeLine{        \textcolor{comment}{// Redirect System.in and System.out}}
+\DoxyCodeLine{        InputStream originalIn = System.in;}
+\DoxyCodeLine{        PrintStream originalOut = System.out;}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// Create a ByteArrayInputStream with the desired input}}
+\DoxyCodeLine{        String input = System.lineSeparator(); \textcolor{comment}{// Pressing "{}Enter"{} key}}
+\DoxyCodeLine{        ByteArrayInputStream inputStream = \textcolor{keyword}{new} ByteArrayInputStream(input.getBytes());}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// Redirect System.in to the ByteArrayInputStream}}
+\DoxyCodeLine{        System.setIn(inputStream);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// Create a ByteArrayOutputStream to capture the output}}
+\DoxyCodeLine{        ByteArrayOutputStream outputStream = \textcolor{keyword}{new} ByteArrayOutputStream();}
+\DoxyCodeLine{        System.setOut(\textcolor{keyword}{new} PrintStream(outputStream));}
+\DoxyCodeLine{}
+\DoxyCodeLine{        String[] args = \textcolor{keyword}{new} String[] \{\textcolor{stringliteral}{"{}1"{}}\};}
+\DoxyCodeLine{        \textcolor{comment}{// Call the main method of CalculatorApp}}
+\DoxyCodeLine{        CalculatorApp.main(args);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// Restore original System.in and System.out}}
+\DoxyCodeLine{        System.setIn(originalIn);}
+\DoxyCodeLine{        System.setOut(originalOut);}
+\DoxyCodeLine{}
+\DoxyCodeLine{        \textcolor{comment}{// Assert the desired behavior based on the output}}
+\DoxyCodeLine{        assertTrue(\textcolor{keyword}{true});}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md25}{}\doxysubsubsection{Update pom.\+xml}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md25}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?\textcolor{keyword}{xml} \textcolor{keyword}{version}=\textcolor{stringliteral}{"{}1.0"{}} \textcolor{keyword}{encoding}=\textcolor{stringliteral}{"{}UTF-\/8"{}}?>}
+\DoxyCodeLine{}
+\DoxyCodeLine{<\textcolor{keywordtype}{project} \textcolor{keyword}{xmlns}=\textcolor{stringliteral}{"{}http://maven.apache.org/POM/4.0.0"{}}}
+\DoxyCodeLine{    \textcolor{keyword}{xmlns:xsi}=\textcolor{stringliteral}{"{}http://www.w3.org/2001/XMLSchema-\/instance"{}}}
+\DoxyCodeLine{    \textcolor{keyword}{xsi:schemaLocation}=\textcolor{stringliteral}{"{}http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-\/4.0.0.xsd"{}}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{modelVersion}>4.0.0</\textcolor{keywordtype}{modelVersion}>}
+\DoxyCodeLine{    \textcolor{comment}{<!-\/-\/ The Basics -\/-\/>}}
+\DoxyCodeLine{    <\textcolor{keywordtype}{groupId}>\textcolor{keyword}{com.ucoruh.calculator}</\textcolor{keywordtype}{groupId}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{artifactId}>\textcolor{keyword}{calculator-\/app}</\textcolor{keywordtype}{artifactId}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{version}>1.0-\/\textcolor{keyword}{SNAPSHOT}</\textcolor{keywordtype}{version}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{packaging}>\textcolor{keyword}{jar}</\textcolor{keywordtype}{packaging}>}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{comment}{<!-\/-\/ More Project Information -\/-\/>}}
+\DoxyCodeLine{    <\textcolor{keywordtype}{name}>\textcolor{keyword}{calculator-\/app}</\textcolor{keywordtype}{name}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{url}>\textcolor{keyword}{https:}//\textcolor{keyword}{github.com}/\textcolor{keyword}{ucoruh}/\textcolor{keyword}{eclipse-\/java-\/maven-\/template}</\textcolor{keywordtype}{url}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{scm}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{url}>\textcolor{keyword}{https:}//\textcolor{keyword}{github.com}/\textcolor{keyword}{ucoruh}/\textcolor{keyword}{eclipse-\/java-\/maven-\/template}</\textcolor{keywordtype}{url}>}
+\DoxyCodeLine{    </\textcolor{keywordtype}{scm}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{inceptionYear}>2023</\textcolor{keywordtype}{inceptionYear}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{developers}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{developer}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{name}>\textcolor{keyword}{Asst.} \textcolor{keyword}{Prof.} \textcolor{keyword}{Dr.} \textcolor{keyword}{Ugur} \textcolor{keyword}{CORUH}</\textcolor{keywordtype}{name}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{organization}>\textcolor{keyword}{RTEU}</\textcolor{keywordtype}{organization}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{email}>\textcolor{keyword}{ugur.coruh}@\textcolor{keyword}{erdogan.edu.tr}</\textcolor{keywordtype}{email}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{roles}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{role}>\textcolor{keyword}{Developer}</\textcolor{keywordtype}{role}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{role}>\textcolor{keyword}{Designer}</\textcolor{keywordtype}{role}>}
+\DoxyCodeLine{            </\textcolor{keywordtype}{roles}>}
+\DoxyCodeLine{        </\textcolor{keywordtype}{developer}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{developer}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{name}>\textcolor{keyword}{Other} \textcolor{keyword}{Person}</\textcolor{keywordtype}{name}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{organization}>\textcolor{keyword}{RTEU}</\textcolor{keywordtype}{organization}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{email}>\textcolor{keyword}{mail}@\textcolor{keyword}{gmail.com}</\textcolor{keywordtype}{email}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{roles}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{role}>\textcolor{keyword}{Developer}</\textcolor{keywordtype}{role}>}
+\DoxyCodeLine{            </\textcolor{keywordtype}{roles}>}
+\DoxyCodeLine{        </\textcolor{keywordtype}{developer}>}
+\DoxyCodeLine{    </\textcolor{keywordtype}{developers}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{contributors}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{contributor}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{name}>\textcolor{keyword}{Asst.} \textcolor{keyword}{Prof.} \textcolor{keyword}{Dr.} \textcolor{keyword}{Ugur} \textcolor{keyword}{CORUH}</\textcolor{keywordtype}{name}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{email}>\textcolor{keyword}{ugur.coruh}@\textcolor{keyword}{erdogan.edu.tr}</\textcolor{keywordtype}{email}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{organization}>\textcolor{keyword}{RTEU}</\textcolor{keywordtype}{organization}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{roles}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{role}>\textcolor{keyword}{Developer}</\textcolor{keywordtype}{role}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{role}>\textcolor{keyword}{Designer}</\textcolor{keywordtype}{role}>}
+\DoxyCodeLine{            </\textcolor{keywordtype}{roles}>}
+\DoxyCodeLine{        </\textcolor{keywordtype}{contributor}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{contributor}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{name}>\textcolor{keyword}{Other} \textcolor{keyword}{Person}</\textcolor{keywordtype}{name}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{organization}>\textcolor{keyword}{RTEU}</\textcolor{keywordtype}{organization}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{email}>\textcolor{keyword}{mail}@\textcolor{keyword}{gmail.com}</\textcolor{keywordtype}{email}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{roles}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{role}>\textcolor{keyword}{Developer}</\textcolor{keywordtype}{role}>}
+\DoxyCodeLine{            </\textcolor{keywordtype}{roles}>}
+\DoxyCodeLine{        </\textcolor{keywordtype}{contributor}>}
+\DoxyCodeLine{    </\textcolor{keywordtype}{contributors}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{description}>\textcolor{keyword}{Maven} \textcolor{keyword}{Example} \textcolor{keyword}{Template} \textcolor{keyword}{Project}</\textcolor{keywordtype}{description}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{organization}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{name}>\textcolor{keyword}{Recep} \textcolor{keyword}{Tayyip} \textcolor{keyword}{Erdogan} \textcolor{keyword}{University}</\textcolor{keywordtype}{name}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{url}>\textcolor{keyword}{www.erdogan.edu.tr}</\textcolor{keywordtype}{url}>}
+\DoxyCodeLine{    </\textcolor{keywordtype}{organization}>}
+\DoxyCodeLine{    \textcolor{comment}{<!-\/-\/ Environment Settings -\/-\/>}}
+\DoxyCodeLine{    <\textcolor{keywordtype}{issueManagement}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{system}>\textcolor{keyword}{Github}</\textcolor{keywordtype}{system}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{url}>\textcolor{keyword}{https:}//\textcolor{keyword}{github.com}/\textcolor{keyword}{ucoruh}/\textcolor{keyword}{eclipse-\/java-\/maven-\/template}</\textcolor{keywordtype}{url}>}
+\DoxyCodeLine{    </\textcolor{keywordtype}{issueManagement}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{ciManagement}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{system}>\textcolor{keyword}{Github}</\textcolor{keywordtype}{system}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{notifiers}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{notifier}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{address}>\textcolor{keyword}{ugur.coruh}@\textcolor{keyword}{erdogan.edu.tr}</\textcolor{keywordtype}{address}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{sendOnSuccess}>\textcolor{keyword}{true}</\textcolor{keywordtype}{sendOnSuccess}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{sendOnError}>\textcolor{keyword}{true}</\textcolor{keywordtype}{sendOnError}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{sendOnFailure}>\textcolor{keyword}{true}</\textcolor{keywordtype}{sendOnFailure}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{sendOnWarning}>\textcolor{keyword}{true}</\textcolor{keywordtype}{sendOnWarning}>}
+\DoxyCodeLine{            </\textcolor{keywordtype}{notifier}>}
+\DoxyCodeLine{        </\textcolor{keywordtype}{notifiers}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{url}>\textcolor{keyword}{https:}//\textcolor{keyword}{github.com}/\textcolor{keyword}{ucoruh}/\textcolor{keyword}{eclipse-\/java-\/maven-\/template}</\textcolor{keywordtype}{url}>}
+\DoxyCodeLine{    </\textcolor{keywordtype}{ciManagement}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{repositories}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{repository}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{id}>\textcolor{keyword}{eclipse-\/java-\/maven-\/template}</\textcolor{keywordtype}{id}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{name}>\textcolor{keyword}{eclipse-\/java-\/maven-\/template}</\textcolor{keywordtype}{name}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{url}>\textcolor{keyword}{https:}//\textcolor{keyword}{github.com}/\textcolor{keyword}{ucoruh}/\textcolor{keyword}{eclipse-\/java-\/maven-\/template}</\textcolor{keywordtype}{url}>}
+\DoxyCodeLine{        </\textcolor{keywordtype}{repository}>}
+\DoxyCodeLine{    </\textcolor{keywordtype}{repositories}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{distributionManagement}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{site}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{name}>\textcolor{keyword}{https:}//\textcolor{keyword}{github.com}/\textcolor{keyword}{ucoruh}/\textcolor{keyword}{eclipse-\/java-\/maven-\/template}</\textcolor{keywordtype}{name}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{id}>\textcolor{keyword}{eclipse-\/java-\/maven-\/template}</\textcolor{keywordtype}{id}>}
+\DoxyCodeLine{        </\textcolor{keywordtype}{site}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{downloadUrl}>\textcolor{keyword}{https:}//\textcolor{keyword}{github.com}/\textcolor{keyword}{ucoruh}/\textcolor{keyword}{eclipse-\/java-\/maven-\/template}</\textcolor{keywordtype}{downloadUrl}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{repository}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{id}>\textcolor{keyword}{eclipse-\/java-\/maven-\/template}</\textcolor{keywordtype}{id}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{name}>\textcolor{keyword}{eclipse-\/java-\/maven-\/template}</\textcolor{keywordtype}{name}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{url}>\textcolor{keyword}{https:}//\textcolor{keyword}{github.com}/\textcolor{keyword}{ucoruh}/\textcolor{keyword}{eclipse-\/java-\/maven-\/template}</\textcolor{keywordtype}{url}>}
+\DoxyCodeLine{        </\textcolor{keywordtype}{repository}>}
+\DoxyCodeLine{    </\textcolor{keywordtype}{distributionManagement}>}
+\DoxyCodeLine{    <\textcolor{keywordtype}{properties}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{project.build.sourceEncoding}>\textcolor{keyword}{UTF-\/8}</\textcolor{keywordtype}{project.build.sourceEncoding}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{maven.compiler.source}>1.8</\textcolor{keywordtype}{maven.compiler.source}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{maven.compiler.target}>1.8</\textcolor{keywordtype}{maven.compiler.target}>}
+\DoxyCodeLine{    </\textcolor{keywordtype}{properties}>}
+\DoxyCodeLine{}
+\DoxyCodeLine{    <\textcolor{keywordtype}{dependencies}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{dependency}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{groupId}>\textcolor{keyword}{junit}</\textcolor{keywordtype}{groupId}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{artifactId}>\textcolor{keyword}{junit}</\textcolor{keywordtype}{artifactId}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{version}>4.11</\textcolor{keywordtype}{version}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{scope}>\textcolor{keyword}{test}</\textcolor{keywordtype}{scope}>}
+\DoxyCodeLine{        </\textcolor{keywordtype}{dependency}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{dependency}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{groupId}>\textcolor{keyword}{org.hamcrest}</\textcolor{keywordtype}{groupId}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{artifactId}>\textcolor{keyword}{hamcrest-\/all}</\textcolor{keywordtype}{artifactId}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{version}>1.3</\textcolor{keywordtype}{version}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{scope}>\textcolor{keyword}{test}</\textcolor{keywordtype}{scope}>}
+\DoxyCodeLine{        </\textcolor{keywordtype}{dependency}>}
+\DoxyCodeLine{        \textcolor{comment}{<!-\/-\/ SLF4J API -\/-\/>}}
+\DoxyCodeLine{        <\textcolor{keywordtype}{dependency}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{groupId}>\textcolor{keyword}{org.slf4j}</\textcolor{keywordtype}{groupId}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{artifactId}>\textcolor{keyword}{slf4j-\/api}</\textcolor{keywordtype}{artifactId}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{version}>1.7.32</\textcolor{keywordtype}{version}>}
+\DoxyCodeLine{        </\textcolor{keywordtype}{dependency}>}
+\DoxyCodeLine{        \textcolor{comment}{<!-\/-\/ Logback Implementation -\/-\/>}}
+\DoxyCodeLine{        <\textcolor{keywordtype}{dependency}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{groupId}>\textcolor{keyword}{ch.qos.logback}</\textcolor{keywordtype}{groupId}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{artifactId}>\textcolor{keyword}{logback-\/classic}</\textcolor{keywordtype}{artifactId}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{version}>1.2.6</\textcolor{keywordtype}{version}>}
+\DoxyCodeLine{        </\textcolor{keywordtype}{dependency}>}
+\DoxyCodeLine{    </\textcolor{keywordtype}{dependencies}>}
+\DoxyCodeLine{}
+\DoxyCodeLine{    <\textcolor{keywordtype}{build}>}
+\DoxyCodeLine{        <\textcolor{keywordtype}{plugins}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{groupId}>\textcolor{keyword}{org.apache.maven.plugins}</\textcolor{keywordtype}{groupId}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{artifactId}>\textcolor{keyword}{maven-\/compiler-\/plugin}</\textcolor{keywordtype}{artifactId}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{configuration}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{source}>1.8</\textcolor{keywordtype}{source}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{target}>1.8</\textcolor{keywordtype}{target}>}
+\DoxyCodeLine{                </\textcolor{keywordtype}{configuration}>}
+\DoxyCodeLine{            </\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{groupId}>\textcolor{keyword}{org.apache.maven.plugins}</\textcolor{keywordtype}{groupId}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{artifactId}>\textcolor{keyword}{maven-\/surefire-\/plugin}</\textcolor{keywordtype}{artifactId}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{configuration}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{includes}>}
+\DoxyCodeLine{                        <\textcolor{keywordtype}{include}>**/\textcolor{keyword}{CalculatorAppTest.java}</\textcolor{keywordtype}{include}>}
+\DoxyCodeLine{                        <\textcolor{keywordtype}{include}>**/\textcolor{keyword}{CalculatorTest.java}</\textcolor{keywordtype}{include}>}
+\DoxyCodeLine{                    </\textcolor{keywordtype}{includes}>}
+\DoxyCodeLine{                </\textcolor{keywordtype}{configuration}>}
+\DoxyCodeLine{            </\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{groupId}>\textcolor{keyword}{org.jacoco}</\textcolor{keywordtype}{groupId}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{artifactId}>\textcolor{keyword}{jacoco-\/maven-\/plugin}</\textcolor{keywordtype}{artifactId}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{version}>0.8.7</\textcolor{keywordtype}{version}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{executions}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{execution}>}
+\DoxyCodeLine{                        <\textcolor{keywordtype}{goals}>}
+\DoxyCodeLine{                            <\textcolor{keywordtype}{goal}>\textcolor{keyword}{prepare-\/agent}</\textcolor{keywordtype}{goal}>}
+\DoxyCodeLine{                        </\textcolor{keywordtype}{goals}>}
+\DoxyCodeLine{                    </\textcolor{keywordtype}{execution}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{execution}>}
+\DoxyCodeLine{                        <\textcolor{keywordtype}{id}>\textcolor{keyword}{report}</\textcolor{keywordtype}{id}>}
+\DoxyCodeLine{                        <\textcolor{keywordtype}{phase}>\textcolor{keyword}{test}</\textcolor{keywordtype}{phase}>}
+\DoxyCodeLine{                        <\textcolor{keywordtype}{goals}>}
+\DoxyCodeLine{                            <\textcolor{keywordtype}{goal}>\textcolor{keyword}{report}</\textcolor{keywordtype}{goal}>}
+\DoxyCodeLine{                        </\textcolor{keywordtype}{goals}>}
+\DoxyCodeLine{                    </\textcolor{keywordtype}{execution}>}
+\DoxyCodeLine{                </\textcolor{keywordtype}{executions}>}
+\DoxyCodeLine{            </\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{            <\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{groupId}>\textcolor{keyword}{org.apache.maven.plugins}</\textcolor{keywordtype}{groupId}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{artifactId}>\textcolor{keyword}{maven-\/site-\/plugin}</\textcolor{keywordtype}{artifactId}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{version}>4.0.0-\/\textcolor{keyword}{M8}</\textcolor{keywordtype}{version}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{configuration}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{port}>9000</\textcolor{keywordtype}{port}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{tempWebappDirectory}>\$\{\textcolor{keyword}{basedir}\}/\textcolor{keyword}{target}/\textcolor{keyword}{site}</\textcolor{keywordtype}{tempWebappDirectory}>}
+\DoxyCodeLine{                </\textcolor{keywordtype}{configuration}>}
+\DoxyCodeLine{            </\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{            \textcolor{comment}{<!-\/-\/ Maven Shade Plugin -\/-\/>}}
+\DoxyCodeLine{            <\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{groupId}>\textcolor{keyword}{org.apache.maven.plugins}</\textcolor{keywordtype}{groupId}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{artifactId}>\textcolor{keyword}{maven-\/shade-\/plugin}</\textcolor{keywordtype}{artifactId}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{version}>3.2.4</\textcolor{keywordtype}{version}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{executions}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{execution}>}
+\DoxyCodeLine{                        <\textcolor{keywordtype}{phase}>\textcolor{keyword}{package}</\textcolor{keywordtype}{phase}>}
+\DoxyCodeLine{                        <\textcolor{keywordtype}{goals}>}
+\DoxyCodeLine{                            <\textcolor{keywordtype}{goal}>\textcolor{keyword}{shade}</\textcolor{keywordtype}{goal}>}
+\DoxyCodeLine{                        </\textcolor{keywordtype}{goals}>}
+\DoxyCodeLine{                        <\textcolor{keywordtype}{configuration}>}
+\DoxyCodeLine{                            <\textcolor{keywordtype}{createDependencyReducedPom}>\textcolor{keyword}{false}</\textcolor{keywordtype}{createDependencyReducedPom}>}
+\DoxyCodeLine{                            <\textcolor{keywordtype}{transformers}>}
+\DoxyCodeLine{                                <\textcolor{keywordtype}{transformer}}
+\DoxyCodeLine{                                    \textcolor{keyword}{implementation}=\textcolor{stringliteral}{"{}org.apache.maven.plugins.shade.resource.ManifestResourceTransformer"{}}>}
+\DoxyCodeLine{                                    <\textcolor{keywordtype}{mainClass}>}
+\DoxyCodeLine{                                        \textcolor{keyword}{com.ucoruh.calculator.CalculatorApp}</\textcolor{keywordtype}{mainClass}>}
+\DoxyCodeLine{                                </\textcolor{keywordtype}{transformer}>}
+\DoxyCodeLine{                            </\textcolor{keywordtype}{transformers}>}
+\DoxyCodeLine{                        </\textcolor{keywordtype}{configuration}>}
+\DoxyCodeLine{                    </\textcolor{keywordtype}{execution}>}
+\DoxyCodeLine{                </\textcolor{keywordtype}{executions}>}
+\DoxyCodeLine{            </\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{        </\textcolor{keywordtype}{plugins}>}
+\DoxyCodeLine{}
+\DoxyCodeLine{        <\textcolor{keywordtype}{pluginManagement}>\textcolor{comment}{<!-\/-\/ lock down plugins versions to avoid using Maven}}
+\DoxyCodeLine{\textcolor{comment}{            defaults (may be moved to parent pom) -\/-\/>}}
+\DoxyCodeLine{            <\textcolor{keywordtype}{plugins}>}
+\DoxyCodeLine{                \textcolor{comment}{<!-\/-\/ clean lifecycle, see}}
+\DoxyCodeLine{\textcolor{comment}{                https://maven.apache.org/ref/current/maven-\/core/lifecycles.html\#clean\_Lifecycle -\/-\/>}}
+\DoxyCodeLine{                <\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{artifactId}>\textcolor{keyword}{maven-\/clean-\/plugin}</\textcolor{keywordtype}{artifactId}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{version}>3.1.0</\textcolor{keywordtype}{version}>}
+\DoxyCodeLine{                </\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                \textcolor{comment}{<!-\/-\/ default lifecycle, jar packaging: see}}
+\DoxyCodeLine{\textcolor{comment}{                https://maven.apache.org/ref/current/maven-\/core/default-\/bindings.html\#Plugin\_bindings\_for\_jar\_packaging -\/-\/>}}
+\DoxyCodeLine{                <\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{artifactId}>\textcolor{keyword}{maven-\/resources-\/plugin}</\textcolor{keywordtype}{artifactId}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{version}>3.0.2</\textcolor{keywordtype}{version}>}
+\DoxyCodeLine{                </\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{artifactId}>\textcolor{keyword}{maven-\/compiler-\/plugin}</\textcolor{keywordtype}{artifactId}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{version}>3.8.0</\textcolor{keywordtype}{version}>}
+\DoxyCodeLine{                </\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{artifactId}>\textcolor{keyword}{maven-\/surefire-\/plugin}</\textcolor{keywordtype}{artifactId}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{version}>2.22.1</\textcolor{keywordtype}{version}>}
+\DoxyCodeLine{                </\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{artifactId}>\textcolor{keyword}{maven-\/jar-\/plugin}</\textcolor{keywordtype}{artifactId}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{version}>3.0.2</\textcolor{keywordtype}{version}>}
+\DoxyCodeLine{                </\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{artifactId}>\textcolor{keyword}{maven-\/install-\/plugin}</\textcolor{keywordtype}{artifactId}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{version}>2.5.2</\textcolor{keywordtype}{version}>}
+\DoxyCodeLine{                </\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{artifactId}>\textcolor{keyword}{maven-\/deploy-\/plugin}</\textcolor{keywordtype}{artifactId}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{version}>2.8.2</\textcolor{keywordtype}{version}>}
+\DoxyCodeLine{                </\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                \textcolor{comment}{<!-\/-\/ site lifecycle, see}}
+\DoxyCodeLine{\textcolor{comment}{                https://maven.apache.org/ref/current/maven-\/core/lifecycles.html\#site\_Lifecycle -\/-\/>}}
+\DoxyCodeLine{                <\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{artifactId}>\textcolor{keyword}{maven-\/site-\/plugin}</\textcolor{keywordtype}{artifactId}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{version}>3.7.1</\textcolor{keywordtype}{version}>}
+\DoxyCodeLine{                </\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                <\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{artifactId}>\textcolor{keyword}{maven-\/project-\/info-\/reports-\/plugin}</\textcolor{keywordtype}{artifactId}>}
+\DoxyCodeLine{                    <\textcolor{keywordtype}{version}>3.0.0</\textcolor{keywordtype}{version}>}
+\DoxyCodeLine{                </\textcolor{keywordtype}{plugin}>}
+\DoxyCodeLine{            </\textcolor{keywordtype}{plugins}>}
+\DoxyCodeLine{        </\textcolor{keywordtype}{pluginManagement}>}
+\DoxyCodeLine{    </\textcolor{keywordtype}{build}>}
+\DoxyCodeLine{</\textcolor{keywordtype}{project}>}
+
+\end{DoxyCode}
+\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md26}{}\doxysubsubsection{Generate Project Site Files}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md26}
+
+\begin{DoxyItemize}
+\item site.\+xml
+\begin{DoxyItemize}
+\item resources
+\begin{DoxyItemize}
+\item images
+\begin{DoxyItemize}
+\item banner.\+png
+\item logo.\+png
+\end{DoxyItemize}
+\item markdown
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{overview_8md}{overview.\+md}}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+You can use files in project\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md27}{}\doxysubsubsection{Build the Project}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md27}
+Enter pom.\+xml root folder and run following command to test and generate jar file
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mvn clean test site package}
+
+\end{DoxyCode}
+\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md28}{}\doxysubsubsection{Run Project}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md28}
+You can run application by specify the Main function
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{java -\/cp calculator-\/app-\/1.0-\/SNAPSHOT.jar com.ucoruh.calculator.CalculatorApp}
+
+\end{DoxyCode}
+
+
+Output
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{C:\(\backslash\)Users\(\backslash\)ugur.coruh\(\backslash\)Desktop\(\backslash\)eclipse-\/java-\/maven-\/template\(\backslash\)calculator-\/app\(\backslash\)target>java -\/cp calculator-\/app-\/1.0-\/SNAPSHOT.jar com.ucoruh.calculator.CalculatorApp}
+\DoxyCodeLine{Hello World!}
+
+\end{DoxyCode}
+\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md29}{}\doxysubsubsection{Generate HTML Coverage Report}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md29}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{reportgenerator "{}-\/reports:target/site/jacoco/jacoco.xml"{} "{}-\/sourcedirs:src/main/java"{} "{}-\/targetdir:coveragereport"{} -\/reporttypes:Html}
+
+\end{DoxyCode}
+
+
+Output
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{C:\(\backslash\)Users\(\backslash\)ugur.coruh\(\backslash\)Desktop\(\backslash\)eclipse-\/java-\/maven-\/template\(\backslash\)calculator-\/app>reportgenerator "{}-\/reports:target/site/jacoco/jacoco.xml"{} "{}-\/sourcedirs:src/main/java"{} "{}-\/targetdir:coveragereport"{} -\/reporttypes:Html}
+\DoxyCodeLine{2023-\/05-\/24T17:26:40: Arguments}
+\DoxyCodeLine{2023-\/05-\/24T17:26:40:  -\/reports:target/site/jacoco/jacoco.xml}
+\DoxyCodeLine{2023-\/05-\/24T17:26:40:  -\/sourcedirs:src/main/java}
+\DoxyCodeLine{2023-\/05-\/24T17:26:40:  -\/targetdir:coveragereport}
+\DoxyCodeLine{2023-\/05-\/24T17:26:40:  -\/reporttypes:Html}
+\DoxyCodeLine{2023-\/05-\/24T17:26:40: Writing report file 'coveragereport\(\backslash\)index.html'}
+\DoxyCodeLine{2023-\/05-\/24T17:26:40: Report generation took 0,2 seconds}
+\DoxyCodeLine{}
+\DoxyCodeLine{C:\(\backslash\)Users\(\backslash\)ugur.coruh\(\backslash\)Desktop\(\backslash\)eclipse-\/java-\/maven-\/template\(\backslash\)calculator-\/app>}
+
+\end{DoxyCode}
+
+
+\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md30}{}\doxysubsection{Run Maven Site}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md30}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mvn site:run}
+
+\end{DoxyCode}
+
+
+Use CTRL+C to cancel from console
+
+
+
+This has code coverage and documentation coverage reports also
+
+
+
+
+
+\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md31}{}\doxysubsubsection{Clone-\/\+Test-\/\+Generate Web\+Site-\/\+Package-\/\+Generate Report-\/\+Run Web Site}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md31}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{@echo off}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Enable necessary extensions}
+\DoxyCodeLine{@setlocal enableextensions}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Change the current working directory to the script directory}
+\DoxyCodeLine{@cd /d "{}\%\string~dp0"{}}
+\DoxyCodeLine{}
+\DoxyCodeLine{git clone https://github.com/ucoruh/eclipse-\/java-\/maven-\/template.git}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Get the current directory}
+\DoxyCodeLine{set "{}currentDir=\%CD\%"{}}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Change directory to calculator-\/app}
+\DoxyCodeLine{cd calculator-\/app}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Perform Maven clean, test, site generation, and packaging}
+\DoxyCodeLine{call mvn clean test site package}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Return to the previous directory}
+\DoxyCodeLine{cd ..}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Generate Doxygen HTML and XML Documentation}
+\DoxyCodeLine{call doxygen Doxyfile}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Change directory to calculator-\/app}
+\DoxyCodeLine{cd calculator-\/app}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Generate ReportGenerator HTML Report}
+\DoxyCodeLine{call reportgenerator "{}-\/reports:target/site/jacoco/jacoco.xml"{} "{}-\/sourcedirs:src/main/java"{} "{}-\/targetdir:target/site/coveragereport"{} -\/reporttypes:Html}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Display information about the binary file}
+\DoxyCodeLine{echo Our Binary is a Single Jar With Dependencies. You Do Not Need to Compress It.}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Return to the previous directory}
+\DoxyCodeLine{cd ..}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Generate Doxygen Coverage Report}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Create coverxygen directory}
+\DoxyCodeLine{cd calculator-\/app}
+\DoxyCodeLine{cd target}
+\DoxyCodeLine{cd site}
+\DoxyCodeLine{mkdir coverxygen}
+\DoxyCodeLine{cd ..}
+\DoxyCodeLine{cd ..}
+\DoxyCodeLine{cd ..}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Run Coverxygen}
+\DoxyCodeLine{call python -\/m coverxygen -\/-\/xml-\/dir ./calculator-\/app/target/site/doxygen/xml -\/-\/src-\/dir ./ -\/-\/format lcov -\/-\/output ./calculator-\/app/target/site/coverxygen/lcov.info -\/-\/prefix \%currentDir\%\(\backslash\)calculator-\/app\(\backslash\)}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Run lcov genhtml}
+\DoxyCodeLine{call perl C:\(\backslash\)ProgramData\(\backslash\)chocolatey\(\backslash\)lib\(\backslash\)lcov\(\backslash\)tools\(\backslash\)bin\(\backslash\)genhtml ./calculator-\/app\(\backslash\)target\(\backslash\)site\(\backslash\)coverxygen\(\backslash\)lcov.info -\/o calculator-\/app/target/site/coverxygen}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Package Coverage Report-\/1}
+\DoxyCodeLine{call tar -\/czvf test-\/jacoco-\/report.tar.gz -\/C calculator-\/app/target/site/jacoco .}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Package Coverage Report-\/2}
+\DoxyCodeLine{call tar -\/czvf test-\/coverage-\/report.tar.gz -\/C calculator-\/app/target/site/coveragereport .}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Package Code Documentation}
+\DoxyCodeLine{call tar -\/czvf application-\/documentation.tar.gz -\/C calculator-\/app/target/site/doxygen .}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Package Product Site}
+\DoxyCodeLine{call tar -\/czvf application-\/site.tar.gz -\/C target/site .}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Return to the previous directory}
+\DoxyCodeLine{cd ..}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Operation Completed!}
+\DoxyCodeLine{pause}
+
+\end{DoxyCode}
+\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md32}{}\doxysubsubsection{Run Web Site}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md32}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{@echo off}
+\DoxyCodeLine{@setlocal enableextensions}
+\DoxyCodeLine{@cd /d "{}\%\string~dp0"{}}
+\DoxyCodeLine{}
+\DoxyCodeLine{cd calculator-\/app}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Run Web Site}
+\DoxyCodeLine{echo to Exit Use CTRL+Z CTRL+C}
+\DoxyCodeLine{start http://localhost:9000/}
+\DoxyCodeLine{mvn site:run}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Operation Completed!}
+\DoxyCodeLine{pause}
+
+\end{DoxyCode}
+\hypertarget{md_ce204_hw4_src_site_markdown_readme_autotoc_md33}{}\doxysubsubsection{Run Jar File}\label{md_ce204_hw4_src_site_markdown_readme_autotoc_md33}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{@echo off}
+\DoxyCodeLine{@setlocal enableextensions}
+\DoxyCodeLine{@cd /d "{}\%\string~dp0"{}}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Running Application}
+\DoxyCodeLine{java -\/jar calculator-\/app/target/calculator-\/app-\/1.0-\/SNAPSHOT.jar}
+\DoxyCodeLine{}
+\DoxyCodeLine{echo Operation Completed!}
+\DoxyCodeLine{pause}
+
+\end{DoxyCode}
+
+
+ 

@@ -1,0 +1,81 @@
+\hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test}{}\doxysection{ce204\+\_\+hw4\+\_\+observer\+Method\+Test.\+ce204\+\_\+hw4\+\_\+\+User\+Test Class Reference}
+\label{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test}\index{ce204\_hw4\_observerMethodTest.ce204\_hw4\_UserTest@{ce204\_hw4\_observerMethodTest.ce204\_hw4\_UserTest}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_a6344aa4ffc082a1f7295ea112aafdeaf}{setup}} ()
+\begin{DoxyCompactList}\small\item\em Set up the test environment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_af92f848c9f15c25fbe24c44da2ce111c}{test\+Notify\+Reservation1}} ()
+\begin{DoxyCompactList}\small\item\em Test case for notifying a reservation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ce204__hw4___user_test_8java_source_l00011}{11}} of file \mbox{\hyperlink{ce204__hw4___user_test_8java_source}{ce204\+\_\+hw4\+\_\+\+User\+Test.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_a6344aa4ffc082a1f7295ea112aafdeaf}\label{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_a6344aa4ffc082a1f7295ea112aafdeaf}} 
+\index{ce204\_hw4\_observerMethodTest.ce204\_hw4\_UserTest@{ce204\_hw4\_observerMethodTest.ce204\_hw4\_UserTest}!setup@{setup}}
+\index{setup@{setup}!ce204\_hw4\_observerMethodTest.ce204\_hw4\_UserTest@{ce204\_hw4\_observerMethodTest.ce204\_hw4\_UserTest}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+observer\+Method\+Test.\+ce204\+\_\+hw4\+\_\+\+User\+Test.\+setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set up the test environment. 
+
+
+
+Definition at line \mbox{\hyperlink{ce204__hw4___user_test_8java_source_l00020}{20}} of file \mbox{\hyperlink{ce204__hw4___user_test_8java_source}{ce204\+\_\+hw4\+\_\+\+User\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_l00020}00020                         \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_l00021}00021         user = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_user}{User}}(\textcolor{stringliteral}{"{}John"{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_l00023}00023         outputStreamCaptor = \textcolor{keyword}{new} ByteArrayOutputStream();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_l00024}00024         System.setOut(\textcolor{keyword}{new} PrintStream(outputStreamCaptor));}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_l00025}00025     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_af92f848c9f15c25fbe24c44da2ce111c}\label{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_af92f848c9f15c25fbe24c44da2ce111c}} 
+\index{ce204\_hw4\_observerMethodTest.ce204\_hw4\_UserTest@{ce204\_hw4\_observerMethodTest.ce204\_hw4\_UserTest}!testNotifyReservation1@{testNotifyReservation1}}
+\index{testNotifyReservation1@{testNotifyReservation1}!ce204\_hw4\_observerMethodTest.ce204\_hw4\_UserTest@{ce204\_hw4\_observerMethodTest.ce204\_hw4\_UserTest}}
+\doxysubsubsection{\texorpdfstring{testNotifyReservation1()}{testNotifyReservation1()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+observer\+Method\+Test.\+ce204\+\_\+hw4\+\_\+\+User\+Test.\+test\+Notify\+Reservation1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test case for notifying a reservation. 
+
+
+
+Definition at line \mbox{\hyperlink{ce204__hw4___user_test_8java_source_l00031}{31}} of file \mbox{\hyperlink{ce204__hw4___user_test_8java_source}{ce204\+\_\+hw4\+\_\+\+User\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_l00031}00031                                          \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_l00032}00032         \textcolor{comment}{// Arrange}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_l00033}00033         \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_user}{User}} user = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_user}{User}}(\textcolor{stringliteral}{"{}John"{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_l00034}00034         String expectedOutput = \textcolor{stringliteral}{"{}John: Your reservation is confirmed."{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_l00036}00036         \textcolor{comment}{// Act}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_l00037}00037         user.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_user_a2b5033b9d7ddc2775daf614919fb25b1}{notifyReservation}}(\textcolor{stringliteral}{"{}Your reservation is confirmed."{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_l00039}00039         \textcolor{comment}{// Assert}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_l00040}00040         Assert.assertEquals(expectedOutput, outputStreamCaptor.toString().trim());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_l00041}00041     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_user_8java_source_l00020}{ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method.\+User.\+notify\+Reservation()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204-\/hw4/src/test/java/ce204\+\_\+hw4\+\_\+observer\+Method\+Test/\mbox{\hyperlink{ce204__hw4___user_test_8java}{ce204\+\_\+hw4\+\_\+\+User\+Test.\+java}}\end{DoxyCompactItemize}

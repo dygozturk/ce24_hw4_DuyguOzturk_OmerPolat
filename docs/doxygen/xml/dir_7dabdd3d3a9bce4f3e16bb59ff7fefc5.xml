@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_7dabdd3d3a9bce4f3e16bb59ff7fefc5" kind="dir">
+    <compoundname>ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod</compoundname>
+    <innerfile refid="_cash_payment_8java">CashPayment.java</innerfile>
+    <innerfile refid="_credit_card_payment_8java">CreditCardPayment.java</innerfile>
+    <innerfile refid="_online_payment_8java">OnlinePayment.java</innerfile>
+    <innerfile refid="_payment_processor_8java">PaymentProcessor.java</innerfile>
+    <innerfile refid="_payment_strategy_8java">PaymentStrategy.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/"/>
+  </compounddef>
+</doxygen>

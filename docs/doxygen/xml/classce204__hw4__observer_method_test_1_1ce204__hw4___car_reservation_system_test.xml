@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_observerMethodTest::ce204_hw4_CarReservationSystemTest</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1ab4156cdc03d4309ceb1d3e51ff51ef5c" prot="private" static="no" mutable="no">
+        <type><ref refid="classce204__hw4__library__observe_method_1_1_car_reservation_system" kindref="compound">CarReservationSystem</ref></type>
+        <definition>CarReservationSystem ce204_hw4_observerMethodTest.ce204_hw4_CarReservationSystemTest.carReservationSystem</definition>
+        <argsstring></argsstring>
+        <name>carReservationSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" line="19" column="31" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1ab3775cc5d05046cf6dd621a95523e907" prot="private" static="no" mutable="no">
+        <type>ByteArrayOutputStream</type>
+        <definition>ByteArrayOutputStream ce204_hw4_observerMethodTest.ce204_hw4_CarReservationSystemTest.outputStreamCaptor</definition>
+        <argsstring></argsstring>
+        <name>outputStreamCaptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" line="20" column="35" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1ae57dc98d613b522f1111461615c33236" prot="private" static="no" mutable="no">
+        <type><ref refid="classce204__hw4__library__observe_method_1_1_car_reservation_system" kindref="compound">CarReservationSystem</ref></type>
+        <definition>CarReservationSystem ce204_hw4_observerMethodTest.ce204_hw4_CarReservationSystemTest.reservationSystem</definition>
+        <argsstring></argsstring>
+        <name>reservationSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" line="55" column="34" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1a2ed47f3854331d3d7516b75e84ad49b9" prot="private" static="no" mutable="no">
+        <type><ref refid="classce204__hw4__library__observe_method_1_1_user" kindref="compound">User</ref></type>
+        <definition>User ce204_hw4_observerMethodTest.ce204_hw4_CarReservationSystemTest.user1</definition>
+        <argsstring></argsstring>
+        <name>user1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" line="56" column="18" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1a526dd5dc21d72126aed6396cb2eb67bf" prot="private" static="no" mutable="no">
+        <type><ref refid="classce204__hw4__library__observe_method_1_1_user" kindref="compound">User</ref></type>
+        <definition>User ce204_hw4_observerMethodTest.ce204_hw4_CarReservationSystemTest.user2</definition>
+        <argsstring></argsstring>
+        <name>user2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" line="57" column="18" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1a8e98972581ac490c0115a4b5f5780426" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_observerMethodTest.ce204_hw4_CarReservationSystemTest.setup</definition>
+        <argsstring>()</argsstring>
+        <name>setup</name>
+        <briefdescription>
+<para>Set up the test environment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" line="26" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1a80cf919a6ba2f585d906511ee03a7a26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_observerMethodTest.ce204_hw4_CarReservationSystemTest.testMakeReservation</definition>
+        <argsstring>()</argsstring>
+        <name>testMakeReservation</name>
+        <briefdescription>
+<para>Test case for making a reservation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" line="36" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" bodystart="36" bodyend="53"/>
+        <references refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1a8f9bc51a53ddec3a2d671ef1df883b13" compoundref="_car_reservation_system_8java" startline="32" endline="34">ce204_hw4_library_observeMethod.CarReservationSystem.addUser</references>
+        <references refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1a9b84a5f7d8fb4499b3b4d86795266687" compoundref="_car_reservation_system_8java" startline="19" endline="26">ce204_hw4_library_observeMethod.CarReservationSystem.makeReservation</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1a864c80b64a3407f9ced5e1b6baa5c95f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_observerMethodTest.ce204_hw4_CarReservationSystemTest.setup1</definition>
+        <argsstring>()</argsstring>
+        <name>setup1</name>
+        <briefdescription>
+<para>Set up the test environment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" line="63" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" bodystart="63" bodyend="69"/>
+        <references refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1a8f9bc51a53ddec3a2d671ef1df883b13" compoundref="_car_reservation_system_8java" startline="32" endline="34">ce204_hw4_library_observeMethod.CarReservationSystem.addUser</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1af82d044ad14d449beab4b4ab908093f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_observerMethodTest.ce204_hw4_CarReservationSystemTest.testRemoveUser</definition>
+        <argsstring>()</argsstring>
+        <name>testRemoveUser</name>
+        <briefdescription>
+<para>Test case for removing a user. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" line="75" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" bodystart="75" bodyend="84"/>
+        <references refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1a24275a5646ae9592523000203f79a3fc" compoundref="_car_reservation_system_8java" startline="48" endline="50">ce204_hw4_library_observeMethod.CarReservationSystem.getObservers</references>
+        <references refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1ae56b0afc951ea678d41502d0324a12be" compoundref="_car_reservation_system_8java" startline="40" endline="42">ce204_hw4_library_observeMethod.CarReservationSystem.removeUser</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" line="17" column="7" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_CarReservationSystemTest.java" bodystart="17" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1ab4156cdc03d4309ceb1d3e51ff51ef5c" prot="private" virt="non-virtual"><scope>ce204_hw4_observerMethodTest::ce204_hw4_CarReservationSystemTest</scope><name>carReservationSystem</name></member>
+      <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1ab3775cc5d05046cf6dd621a95523e907" prot="private" virt="non-virtual"><scope>ce204_hw4_observerMethodTest::ce204_hw4_CarReservationSystemTest</scope><name>outputStreamCaptor</name></member>
+      <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1ae57dc98d613b522f1111461615c33236" prot="private" virt="non-virtual"><scope>ce204_hw4_observerMethodTest::ce204_hw4_CarReservationSystemTest</scope><name>reservationSystem</name></member>
+      <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1a8e98972581ac490c0115a4b5f5780426" prot="public" virt="non-virtual"><scope>ce204_hw4_observerMethodTest::ce204_hw4_CarReservationSystemTest</scope><name>setup</name></member>
+      <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1a864c80b64a3407f9ced5e1b6baa5c95f" prot="public" virt="non-virtual"><scope>ce204_hw4_observerMethodTest::ce204_hw4_CarReservationSystemTest</scope><name>setup1</name></member>
+      <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1a80cf919a6ba2f585d906511ee03a7a26" prot="public" virt="non-virtual"><scope>ce204_hw4_observerMethodTest::ce204_hw4_CarReservationSystemTest</scope><name>testMakeReservation</name></member>
+      <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1af82d044ad14d449beab4b4ab908093f5" prot="public" virt="non-virtual"><scope>ce204_hw4_observerMethodTest::ce204_hw4_CarReservationSystemTest</scope><name>testRemoveUser</name></member>
+      <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1a2ed47f3854331d3d7516b75e84ad49b9" prot="private" virt="non-virtual"><scope>ce204_hw4_observerMethodTest::ce204_hw4_CarReservationSystemTest</scope><name>user1</name></member>
+      <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___car_reservation_system_test_1a526dd5dc21d72126aed6396cb2eb67bf" prot="private" virt="non-virtual"><scope>ce204_hw4_observerMethodTest::ce204_hw4_CarReservationSystemTest</scope><name>user2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

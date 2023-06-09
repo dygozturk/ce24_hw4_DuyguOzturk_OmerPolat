@@ -1,0 +1,185 @@
+\hypertarget{classce204__hw4___rental_factory_test}{}\doxysection{ce204\+\_\+hw4\+\_\+\+Rental\+Factory\+Test Class Reference}
+\label{classce204__hw4___rental_factory_test}\index{ce204\_hw4\_RentalFactoryTest@{ce204\_hw4\_RentalFactoryTest}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classce204__hw4___rental_factory_test_a0a630f2d36b643d206b32d63dfcd33a1}{test\+Create\+Rental\+\_\+\+Economy\+Car}} ()
+\begin{DoxyCompactList}\small\item\em Test case for creating an economy car rental. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4___rental_factory_test_a81f30749cbc899e9b46f74b526493771}{test\+Create\+Rental\+\_\+\+Luxury\+Car}} ()
+\begin{DoxyCompactList}\small\item\em Test case for creating a luxury car rental. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4___rental_factory_test_ae6a4a1d1f9a715e99fe4cd64af074eb5}{test\+Create\+Rental\+\_\+\+Suv\+Car}} ()
+\begin{DoxyCompactList}\small\item\em Test case for creating an SUV car rental. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ce204__hw4___rental_factory_test_8java_source_l00009}{9}} of file \mbox{\hyperlink{ce204__hw4___rental_factory_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Rental\+Factory\+Test.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4___rental_factory_test_a0a630f2d36b643d206b32d63dfcd33a1}\label{classce204__hw4___rental_factory_test_a0a630f2d36b643d206b32d63dfcd33a1}} 
+\index{ce204\_hw4\_RentalFactoryTest@{ce204\_hw4\_RentalFactoryTest}!testCreateRental\_EconomyCar@{testCreateRental\_EconomyCar}}
+\index{testCreateRental\_EconomyCar@{testCreateRental\_EconomyCar}!ce204\_hw4\_RentalFactoryTest@{ce204\_hw4\_RentalFactoryTest}}
+\doxysubsubsection{\texorpdfstring{testCreateRental\_EconomyCar()}{testCreateRental\_EconomyCar()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+\+Rental\+Factory\+Test.\+test\+Create\+Rental\+\_\+\+Economy\+Car (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test case for creating an economy car rental. 
+
+
+
+Definition at line \mbox{\hyperlink{ce204__hw4___rental_factory_test_8java_source_l00015}{15}} of file \mbox{\hyperlink{ce204__hw4___rental_factory_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Rental\+Factory\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00015}00015                                               \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00016}00016         \textcolor{comment}{// Test data}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00017}00017         String type = \textcolor{stringliteral}{"{}economy"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00018}00018         \textcolor{keywordtype}{int} mileage = 10000;}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00019}00019         String brand = \textcolor{stringliteral}{"{}Toyota"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00020}00020         String model = \textcolor{stringliteral}{"{}Corolla"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00021}00021         \textcolor{keywordtype}{int} year = 2020;}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00022}00022         String fuelType = \textcolor{stringliteral}{"{}Gasoline"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00023}00023         String gear = \textcolor{stringliteral}{"{}Automatic"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00024}00024         String color = \textcolor{stringliteral}{"{}Red"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00025}00025         \textcolor{keywordtype}{int} price = 50;}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00027}00027         \textcolor{comment}{// Create an instance of RentalFactory}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00028}00028         \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_rental_factory}{RentalFactory}} rentalFactory = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_rental_factory}{RentalFactory}}();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00030}00030         \textcolor{comment}{// Create an economy car rental using the factory}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00031}00031         \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental}{ICarRental}} carRental = rentalFactory.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_rental_factory_aa515da981a8c5c23e0a743ec4fc513e1}{createRental}}(type, mileage, brand, model, year, fuelType, gear, color, price);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00033}00033         \textcolor{comment}{// Assert that the carRental instance is of type EconomyCarRental}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00034}00034         Assert.assertTrue(carRental instanceof \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental}{EconomyCarRental}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00036}00036         \textcolor{comment}{// Assert the property values of the carRental instance}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00037}00037         Assert.assertEquals(mileage, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ab08a61a94185cc2967d9cb975514a479}{getMileage}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00038}00038         Assert.assertEquals(brand, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_a263723196391b6845e85098c395d0513}{getBrand}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00039}00039         Assert.assertEquals(model, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_aad1fe28068b41bf28eea614dfdc3b28d}{getModel}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00040}00040         Assert.assertEquals(year, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ac2b7d6af3ddb7a42e59f5659daa591f2}{getYear}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00041}00041         Assert.assertEquals(fuelType, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_a6f00dcc4543718dc14f88892a5f3f8a0}{getFuelType}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00042}00042         Assert.assertEquals(gear, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ac7f6764c5548aee0a4ec38ae7e60f64a}{getGear}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00043}00043         Assert.assertEquals(color, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_a582d42c11aecaa28201f588e983348a0}{getColor}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00044}00044         Assert.assertEquals(price, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ab945e114f5aa7b0236b6a702037cd2fd}{getPrice}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00045}00045     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_rental_factory_8java_source_l00018}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+Rental\+Factory.\+create\+Rental()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_a263723196391b6845e85098c395d0513}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Brand()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_a582d42c11aecaa28201f588e983348a0}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Color()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_a6f00dcc4543718dc14f88892a5f3f8a0}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Fuel\+Type()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ac7f6764c5548aee0a4ec38ae7e60f64a}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Gear()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ab08a61a94185cc2967d9cb975514a479}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Mileage()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_aad1fe28068b41bf28eea614dfdc3b28d}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Model()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ab945e114f5aa7b0236b6a702037cd2fd}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Price()}}, and \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ac2b7d6af3ddb7a42e59f5659daa591f2}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Year()}}.
+
+\mbox{\Hypertarget{classce204__hw4___rental_factory_test_a81f30749cbc899e9b46f74b526493771}\label{classce204__hw4___rental_factory_test_a81f30749cbc899e9b46f74b526493771}} 
+\index{ce204\_hw4\_RentalFactoryTest@{ce204\_hw4\_RentalFactoryTest}!testCreateRental\_LuxuryCar@{testCreateRental\_LuxuryCar}}
+\index{testCreateRental\_LuxuryCar@{testCreateRental\_LuxuryCar}!ce204\_hw4\_RentalFactoryTest@{ce204\_hw4\_RentalFactoryTest}}
+\doxysubsubsection{\texorpdfstring{testCreateRental\_LuxuryCar()}{testCreateRental\_LuxuryCar()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+\+Rental\+Factory\+Test.\+test\+Create\+Rental\+\_\+\+Luxury\+Car (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test case for creating a luxury car rental. 
+
+
+
+Definition at line \mbox{\hyperlink{ce204__hw4___rental_factory_test_8java_source_l00051}{51}} of file \mbox{\hyperlink{ce204__hw4___rental_factory_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Rental\+Factory\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00051}00051                                              \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00052}00052         \textcolor{comment}{// Test data}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00053}00053         String type = \textcolor{stringliteral}{"{}luxury"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00054}00054         \textcolor{keywordtype}{int} mileage = 5000;}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00055}00055         String brand = \textcolor{stringliteral}{"{}Mercedes"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00056}00056         String model = \textcolor{stringliteral}{"{}S-\/Class"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00057}00057         \textcolor{keywordtype}{int} year = 2022;}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00058}00058         String fuelType = \textcolor{stringliteral}{"{}Diesel"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00059}00059         String gear = \textcolor{stringliteral}{"{}Automatic"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00060}00060         String color = \textcolor{stringliteral}{"{}Black"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00061}00061         \textcolor{keywordtype}{int} price = 150;}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00063}00063         \textcolor{comment}{// Create an instance of RentalFactory}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00064}00064         \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_rental_factory}{RentalFactory}} rentalFactory = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_rental_factory}{RentalFactory}}();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00066}00066         \textcolor{comment}{// Create a luxury car rental using the factory}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00067}00067         \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental}{ICarRental}} carRental = rentalFactory.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_rental_factory_aa515da981a8c5c23e0a743ec4fc513e1}{createRental}}(type, mileage, brand, model, year, fuelType, gear, color, price);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00069}00069         \textcolor{comment}{// Assert that the carRental instance is of type LuxuryCarRental}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00070}00070         Assert.assertTrue(carRental instanceof \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_luxury_car_rental}{LuxuryCarRental}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00072}00072         \textcolor{comment}{// Assert the property values of the carRental instance}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00073}00073         Assert.assertEquals(mileage, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ab08a61a94185cc2967d9cb975514a479}{getMileage}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00074}00074         Assert.assertEquals(brand, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_a263723196391b6845e85098c395d0513}{getBrand}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00075}00075         Assert.assertEquals(model, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_aad1fe28068b41bf28eea614dfdc3b28d}{getModel}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00076}00076         Assert.assertEquals(year, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ac2b7d6af3ddb7a42e59f5659daa591f2}{getYear}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00077}00077         Assert.assertEquals(fuelType, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_a6f00dcc4543718dc14f88892a5f3f8a0}{getFuelType}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00078}00078         Assert.assertEquals(gear, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ac7f6764c5548aee0a4ec38ae7e60f64a}{getGear}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00079}00079         Assert.assertEquals(color, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_a582d42c11aecaa28201f588e983348a0}{getColor}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00080}00080         Assert.assertEquals(price, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ab945e114f5aa7b0236b6a702037cd2fd}{getPrice}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00081}00081     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_rental_factory_8java_source_l00018}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+Rental\+Factory.\+create\+Rental()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_a263723196391b6845e85098c395d0513}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Brand()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_a582d42c11aecaa28201f588e983348a0}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Color()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_a6f00dcc4543718dc14f88892a5f3f8a0}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Fuel\+Type()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ac7f6764c5548aee0a4ec38ae7e60f64a}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Gear()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ab08a61a94185cc2967d9cb975514a479}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Mileage()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_aad1fe28068b41bf28eea614dfdc3b28d}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Model()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ab945e114f5aa7b0236b6a702037cd2fd}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Price()}}, and \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ac2b7d6af3ddb7a42e59f5659daa591f2}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Year()}}.
+
+\mbox{\Hypertarget{classce204__hw4___rental_factory_test_ae6a4a1d1f9a715e99fe4cd64af074eb5}\label{classce204__hw4___rental_factory_test_ae6a4a1d1f9a715e99fe4cd64af074eb5}} 
+\index{ce204\_hw4\_RentalFactoryTest@{ce204\_hw4\_RentalFactoryTest}!testCreateRental\_SuvCar@{testCreateRental\_SuvCar}}
+\index{testCreateRental\_SuvCar@{testCreateRental\_SuvCar}!ce204\_hw4\_RentalFactoryTest@{ce204\_hw4\_RentalFactoryTest}}
+\doxysubsubsection{\texorpdfstring{testCreateRental\_SuvCar()}{testCreateRental\_SuvCar()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+\+Rental\+Factory\+Test.\+test\+Create\+Rental\+\_\+\+Suv\+Car (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test case for creating an SUV car rental. 
+
+
+
+Definition at line \mbox{\hyperlink{ce204__hw4___rental_factory_test_8java_source_l00087}{87}} of file \mbox{\hyperlink{ce204__hw4___rental_factory_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Rental\+Factory\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00087}00087                                           \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00088}00088         \textcolor{comment}{// Test data}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00089}00089         String type = \textcolor{stringliteral}{"{}suv"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00090}00090         \textcolor{keywordtype}{int} mileage = 20000;}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00091}00091         String brand = \textcolor{stringliteral}{"{}Jeep"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00092}00092         String model = \textcolor{stringliteral}{"{}Wrangler"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00093}00093         \textcolor{keywordtype}{int} year = 2021;}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00094}00094         String fuelType = \textcolor{stringliteral}{"{}Gasoline"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00095}00095         String gear = \textcolor{stringliteral}{"{}Manual"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00096}00096         String color = \textcolor{stringliteral}{"{}Yellow"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00097}00097         \textcolor{keywordtype}{int} price = 80;}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00099}00099         \textcolor{comment}{// Create an instance of RentalFactory}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00100}00100         \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_rental_factory}{RentalFactory}} rentalFactory = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_rental_factory}{RentalFactory}}();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00102}00102         \textcolor{comment}{// Create an SUV car rental using the factory}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00103}00103         \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental}{ICarRental}} carRental = rentalFactory.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_rental_factory_aa515da981a8c5c23e0a743ec4fc513e1}{createRental}}(type, mileage, brand, model, year, fuelType, gear, color, price);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00104}00104 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00105}00105         \textcolor{comment}{// Assert that the carRental instance is of type SuvCarRental}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00106}00106         Assert.assertTrue(carRental instanceof \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_suv_car_rental}{SuvCarRental}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00107}00107 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00108}00108         \textcolor{comment}{// Assert the property values of the carRental instance}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00109}00109         Assert.assertEquals(mileage, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ab08a61a94185cc2967d9cb975514a479}{getMileage}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00110}00110         Assert.assertEquals(brand, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_a263723196391b6845e85098c395d0513}{getBrand}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00111}00111         Assert.assertEquals(model, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_aad1fe28068b41bf28eea614dfdc3b28d}{getModel}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00112}00112         Assert.assertEquals(year, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ac2b7d6af3ddb7a42e59f5659daa591f2}{getYear}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00113}00113         Assert.assertEquals(fuelType, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_a6f00dcc4543718dc14f88892a5f3f8a0}{getFuelType}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00114}00114         Assert.assertEquals(gear, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ac7f6764c5548aee0a4ec38ae7e60f64a}{getGear}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00115}00115         Assert.assertEquals(color, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_a582d42c11aecaa28201f588e983348a0}{getColor}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00116}00116         Assert.assertEquals(price, carRental.\mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ab945e114f5aa7b0236b6a702037cd2fd}{getPrice}}());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___rental_factory_test_l00117}00117     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_rental_factory_8java_source_l00018}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+Rental\+Factory.\+create\+Rental()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_a263723196391b6845e85098c395d0513}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Brand()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_a582d42c11aecaa28201f588e983348a0}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Color()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_a6f00dcc4543718dc14f88892a5f3f8a0}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Fuel\+Type()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ac7f6764c5548aee0a4ec38ae7e60f64a}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Gear()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ab08a61a94185cc2967d9cb975514a479}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Mileage()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_aad1fe28068b41bf28eea614dfdc3b28d}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Model()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ab945e114f5aa7b0236b6a702037cd2fd}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Price()}}, and \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ac2b7d6af3ddb7a42e59f5659daa591f2}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Year()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204-\/hw4/src/test/java/\mbox{\hyperlink{ce204__hw4___rental_factory_test_8java}{ce204\+\_\+hw4\+\_\+\+Rental\+Factory\+Test.\+java}}\end{DoxyCompactItemize}

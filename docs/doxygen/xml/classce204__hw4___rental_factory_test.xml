@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classce204__hw4___rental_factory_test" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_RentalFactoryTest</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4___rental_factory_test_1a0a630f2d36b643d206b32d63dfcd33a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_RentalFactoryTest.testCreateRental_EconomyCar</definition>
+        <argsstring>()</argsstring>
+        <name>testCreateRental_EconomyCar</name>
+        <briefdescription>
+<para>Test case for creating an economy car rental. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_RentalFactoryTest.java" line="15" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_RentalFactoryTest.java" bodystart="15" bodyend="45"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_rental_factory_1aa515da981a8c5c23e0a743ec4fc513e1" compoundref="_rental_factory_8java" startline="18" endline="37">ce204_hw4_librar_factoryMethod.RentalFactory.createRental</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a263723196391b6845e85098c395d0513">ce204_hw4_librar_factoryMethod.ICarRental.getBrand</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a582d42c11aecaa28201f588e983348a0">ce204_hw4_librar_factoryMethod.ICarRental.getColor</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a6f00dcc4543718dc14f88892a5f3f8a0">ce204_hw4_librar_factoryMethod.ICarRental.getFuelType</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac7f6764c5548aee0a4ec38ae7e60f64a">ce204_hw4_librar_factoryMethod.ICarRental.getGear</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab08a61a94185cc2967d9cb975514a479">ce204_hw4_librar_factoryMethod.ICarRental.getMileage</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1aad1fe28068b41bf28eea614dfdc3b28d">ce204_hw4_librar_factoryMethod.ICarRental.getModel</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab945e114f5aa7b0236b6a702037cd2fd">ce204_hw4_librar_factoryMethod.ICarRental.getPrice</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac2b7d6af3ddb7a42e59f5659daa591f2">ce204_hw4_librar_factoryMethod.ICarRental.getYear</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___rental_factory_test_1a81f30749cbc899e9b46f74b526493771" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_RentalFactoryTest.testCreateRental_LuxuryCar</definition>
+        <argsstring>()</argsstring>
+        <name>testCreateRental_LuxuryCar</name>
+        <briefdescription>
+<para>Test case for creating a luxury car rental. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_RentalFactoryTest.java" line="51" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_RentalFactoryTest.java" bodystart="51" bodyend="81"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_rental_factory_1aa515da981a8c5c23e0a743ec4fc513e1" compoundref="_rental_factory_8java" startline="18" endline="37">ce204_hw4_librar_factoryMethod.RentalFactory.createRental</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a263723196391b6845e85098c395d0513">ce204_hw4_librar_factoryMethod.ICarRental.getBrand</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a582d42c11aecaa28201f588e983348a0">ce204_hw4_librar_factoryMethod.ICarRental.getColor</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a6f00dcc4543718dc14f88892a5f3f8a0">ce204_hw4_librar_factoryMethod.ICarRental.getFuelType</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac7f6764c5548aee0a4ec38ae7e60f64a">ce204_hw4_librar_factoryMethod.ICarRental.getGear</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab08a61a94185cc2967d9cb975514a479">ce204_hw4_librar_factoryMethod.ICarRental.getMileage</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1aad1fe28068b41bf28eea614dfdc3b28d">ce204_hw4_librar_factoryMethod.ICarRental.getModel</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab945e114f5aa7b0236b6a702037cd2fd">ce204_hw4_librar_factoryMethod.ICarRental.getPrice</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac2b7d6af3ddb7a42e59f5659daa591f2">ce204_hw4_librar_factoryMethod.ICarRental.getYear</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___rental_factory_test_1ae6a4a1d1f9a715e99fe4cd64af074eb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_RentalFactoryTest.testCreateRental_SuvCar</definition>
+        <argsstring>()</argsstring>
+        <name>testCreateRental_SuvCar</name>
+        <briefdescription>
+<para>Test case for creating an SUV car rental. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_RentalFactoryTest.java" line="87" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_RentalFactoryTest.java" bodystart="87" bodyend="117"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_rental_factory_1aa515da981a8c5c23e0a743ec4fc513e1" compoundref="_rental_factory_8java" startline="18" endline="37">ce204_hw4_librar_factoryMethod.RentalFactory.createRental</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a263723196391b6845e85098c395d0513">ce204_hw4_librar_factoryMethod.ICarRental.getBrand</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a582d42c11aecaa28201f588e983348a0">ce204_hw4_librar_factoryMethod.ICarRental.getColor</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a6f00dcc4543718dc14f88892a5f3f8a0">ce204_hw4_librar_factoryMethod.ICarRental.getFuelType</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac7f6764c5548aee0a4ec38ae7e60f64a">ce204_hw4_librar_factoryMethod.ICarRental.getGear</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab08a61a94185cc2967d9cb975514a479">ce204_hw4_librar_factoryMethod.ICarRental.getMileage</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1aad1fe28068b41bf28eea614dfdc3b28d">ce204_hw4_librar_factoryMethod.ICarRental.getModel</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab945e114f5aa7b0236b6a702037cd2fd">ce204_hw4_librar_factoryMethod.ICarRental.getPrice</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac2b7d6af3ddb7a42e59f5659daa591f2">ce204_hw4_librar_factoryMethod.ICarRental.getYear</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/test/java/ce204_hw4_RentalFactoryTest.java" line="9" column="7" bodyfile="ce204-hw4/src/test/java/ce204_hw4_RentalFactoryTest.java" bodystart="9" bodyend="123"/>
+    <listofallmembers>
+      <member refid="classce204__hw4___rental_factory_test_1a0a630f2d36b643d206b32d63dfcd33a1" prot="public" virt="non-virtual"><scope>ce204_hw4_RentalFactoryTest</scope><name>testCreateRental_EconomyCar</name></member>
+      <member refid="classce204__hw4___rental_factory_test_1a81f30749cbc899e9b46f74b526493771" prot="public" virt="non-virtual"><scope>ce204_hw4_RentalFactoryTest</scope><name>testCreateRental_LuxuryCar</name></member>
+      <member refid="classce204__hw4___rental_factory_test_1ae6a4a1d1f9a715e99fe4cd64af074eb5" prot="public" virt="non-virtual"><scope>ce204_hw4_RentalFactoryTest</scope><name>testCreateRental_SuvCar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

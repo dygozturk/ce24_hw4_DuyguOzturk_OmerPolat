@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classce204__hw4___strategy_method_test_1_1ce204__hw4___payment_processor_test" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_StrategyMethodTest::ce204_hw4_PaymentProcessorTest</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4___strategy_method_test_1_1ce204__hw4___payment_processor_test_1ad2370fed2956fa049091ce868e3a786e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_StrategyMethodTest.ce204_hw4_PaymentProcessorTest.testProcessPayment</definition>
+        <argsstring>()</argsstring>
+        <name>testProcessPayment</name>
+        <briefdescription>
+<para>Test case for the processPayment method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_StrategyMethodTest/ce204_hw4_PaymentProcessorTest.java" line="15" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_StrategyMethodTest/ce204_hw4_PaymentProcessorTest.java" bodystart="15" bodyend="30"/>
+        <references refid="classce204__hw4__library__strategy_method_1_1_payment_processor_1a2e7706e302f4ff51acba5b91216919b5" compoundref="_payment_processor_8java" startline="22" endline="24">ce204_hw4_library_strategyMethod.PaymentProcessor.processPayment</references>
+        <references refid="classce204__hw4__library__strategy_method_1_1_payment_processor_1a0c510654f245fc801112034e836abffa" compoundref="_payment_processor_8java" startline="14" endline="16">ce204_hw4_library_strategyMethod.PaymentProcessor.setPaymentStrategy</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/test/java/ce204_hw4_StrategyMethodTest/ce204_hw4_PaymentProcessorTest.java" line="9" column="7" bodyfile="ce204-hw4/src/test/java/ce204_hw4_StrategyMethodTest/ce204_hw4_PaymentProcessorTest.java" bodystart="9" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___payment_processor_test_1ad2370fed2956fa049091ce868e3a786e" prot="public" virt="non-virtual"><scope>ce204_hw4_StrategyMethodTest::ce204_hw4_PaymentProcessorTest</scope><name>testProcessPayment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

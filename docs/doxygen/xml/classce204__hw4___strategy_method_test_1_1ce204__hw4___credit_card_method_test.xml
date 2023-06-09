@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classce204__hw4___strategy_method_test_1_1ce204__hw4___credit_card_method_test" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_StrategyMethodTest::ce204_hw4_CreditCardMethodTest</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4___strategy_method_test_1_1ce204__hw4___credit_card_method_test_1ae0d4c2b1eed8e2fccbcb9a5dea411472" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_StrategyMethodTest.ce204_hw4_CreditCardMethodTest.testPay</definition>
+        <argsstring>()</argsstring>
+        <name>testPay</name>
+        <briefdescription>
+<para>Test case for the pay method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_StrategyMethodTest/ce204_hw4_CreditCardMethodTest.java" line="18" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_StrategyMethodTest/ce204_hw4_CreditCardMethodTest.java" bodystart="18" bodyend="34"/>
+        <references refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy_1af085ea0d70d8419e3ef857d77b4e2202">ce204_hw4_library_strategyMethod.PaymentStrategy.pay</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/test/java/ce204_hw4_StrategyMethodTest/ce204_hw4_CreditCardMethodTest.java" line="12" column="7" bodyfile="ce204-hw4/src/test/java/ce204_hw4_StrategyMethodTest/ce204_hw4_CreditCardMethodTest.java" bodystart="12" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classce204__hw4___strategy_method_test_1_1ce204__hw4___credit_card_method_test_1ae0d4c2b1eed8e2fccbcb9a5dea411472" prot="public" virt="non-virtual"><scope>ce204_hw4_StrategyMethodTest::ce204_hw4_CreditCardMethodTest</scope><name>testPay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

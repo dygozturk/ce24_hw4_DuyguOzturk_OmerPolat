@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classce204__hw4__observer_method_test_1_1ce204__hw4___user_test" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_observerMethodTest::ce204_hw4_UserTest</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_1a0bcd3abed384708b8483ca9eec5e3680" prot="private" static="no" mutable="no">
+        <type><ref refid="classce204__hw4__library__observe_method_1_1_user" kindref="compound">User</ref></type>
+        <definition>User ce204_hw4_observerMethodTest.ce204_hw4_UserTest.user</definition>
+        <argsstring></argsstring>
+        <name>user</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_UserTest.java" line="13" column="14" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_UserTest.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_1ab2d17e04c1a3e9666b10c8973077389a" prot="private" static="no" mutable="no">
+        <type>ByteArrayOutputStream</type>
+        <definition>ByteArrayOutputStream ce204_hw4_observerMethodTest.ce204_hw4_UserTest.outputStreamCaptor</definition>
+        <argsstring></argsstring>
+        <name>outputStreamCaptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_UserTest.java" line="14" column="35" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_UserTest.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_1a6344aa4ffc082a1f7295ea112aafdeaf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_observerMethodTest.ce204_hw4_UserTest.setup</definition>
+        <argsstring>()</argsstring>
+        <name>setup</name>
+        <briefdescription>
+<para>Set up the test environment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_UserTest.java" line="20" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_UserTest.java" bodystart="20" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_1af92f848c9f15c25fbe24c44da2ce111c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_observerMethodTest.ce204_hw4_UserTest.testNotifyReservation1</definition>
+        <argsstring>()</argsstring>
+        <name>testNotifyReservation1</name>
+        <briefdescription>
+<para>Test case for notifying a reservation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_UserTest.java" line="31" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_UserTest.java" bodystart="31" bodyend="41"/>
+        <references refid="classce204__hw4__library__observe_method_1_1_user_1a2b5033b9d7ddc2775daf614919fb25b1" compoundref="_user_8java" startline="20" endline="23">ce204_hw4_library_observeMethod.User.notifyReservation</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_UserTest.java" line="11" column="7" bodyfile="ce204-hw4/src/test/java/ce204_hw4_observerMethodTest/ce204_hw4_UserTest.java" bodystart="11" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_1ab2d17e04c1a3e9666b10c8973077389a" prot="private" virt="non-virtual"><scope>ce204_hw4_observerMethodTest::ce204_hw4_UserTest</scope><name>outputStreamCaptor</name></member>
+      <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_1a6344aa4ffc082a1f7295ea112aafdeaf" prot="public" virt="non-virtual"><scope>ce204_hw4_observerMethodTest::ce204_hw4_UserTest</scope><name>setup</name></member>
+      <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_1af92f848c9f15c25fbe24c44da2ce111c" prot="public" virt="non-virtual"><scope>ce204_hw4_observerMethodTest::ce204_hw4_UserTest</scope><name>testNotifyReservation1</name></member>
+      <member refid="classce204__hw4__observer_method_test_1_1ce204__hw4___user_test_1a0bcd3abed384708b8483ca9eec5e3680" prot="private" virt="non-virtual"><scope>ce204_hw4_observerMethodTest::ce204_hw4_UserTest</scope><name>user</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

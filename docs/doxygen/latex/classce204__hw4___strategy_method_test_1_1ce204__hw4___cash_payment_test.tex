@@ -1,0 +1,58 @@
+\hypertarget{classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test}{}\doxysection{ce204\+\_\+hw4\+\_\+\+Strategy\+Method\+Test.\+ce204\+\_\+hw4\+\_\+\+Cash\+Payment\+Test Class Reference}
+\label{classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test}\index{ce204\_hw4\_StrategyMethodTest.ce204\_hw4\_CashPaymentTest@{ce204\_hw4\_StrategyMethodTest.ce204\_hw4\_CashPaymentTest}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test_acf691a5be2da8edcf40953fcef780a35}{test\+Pay}} ()
+\begin{DoxyCompactList}\small\item\em Test case for the pay method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ce204__hw4___cash_payment_test_8java_source_l00011}{11}} of file \mbox{\hyperlink{ce204__hw4___cash_payment_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Cash\+Payment\+Test.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test_acf691a5be2da8edcf40953fcef780a35}\label{classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test_acf691a5be2da8edcf40953fcef780a35}} 
+\index{ce204\_hw4\_StrategyMethodTest.ce204\_hw4\_CashPaymentTest@{ce204\_hw4\_StrategyMethodTest.ce204\_hw4\_CashPaymentTest}!testPay@{testPay}}
+\index{testPay@{testPay}!ce204\_hw4\_StrategyMethodTest.ce204\_hw4\_CashPaymentTest@{ce204\_hw4\_StrategyMethodTest.ce204\_hw4\_CashPaymentTest}}
+\doxysubsubsection{\texorpdfstring{testPay()}{testPay()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+\+Strategy\+Method\+Test.\+ce204\+\_\+hw4\+\_\+\+Cash\+Payment\+Test.\+test\+Pay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test case for the pay method. 
+
+
+
+Definition at line \mbox{\hyperlink{ce204__hw4___cash_payment_test_8java_source_l00017}{17}} of file \mbox{\hyperlink{ce204__hw4___cash_payment_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Cash\+Payment\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test_l00017}00017                           \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test_l00018}00018         \textcolor{comment}{// Arrange}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test_l00019}00019         \textcolor{keywordtype}{double} amount = 50.0;}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test_l00020}00020         \mbox{\hyperlink{interfacece204__hw4__library__strategy_method_1_1_payment_strategy}{PaymentStrategy}} paymentStrategy = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_cash_payment}{CashPayment}}();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test_l00021}00021         ByteArrayOutputStream outputStream = \textcolor{keyword}{new} ByteArrayOutputStream();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test_l00022}00022         System.setOut(\textcolor{keyword}{new} PrintStream(outputStream));}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test_l00024}00024         \textcolor{comment}{// Act}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test_l00025}00025         paymentStrategy.\mbox{\hyperlink{interfacece204__hw4__library__strategy_method_1_1_payment_strategy_af085ea0d70d8419e3ef857d77b4e2202}{pay}}(amount);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test_l00027}00027         \textcolor{comment}{// Assert}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test_l00028}00028         String expectedOutput = \textcolor{stringliteral}{"{}Paying \$50.0 in cash"{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test_l00029}00029         Assert.assertEquals(expectedOutput, outputStream.toString().trim());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4___strategy_method_test_1_1ce204__hw4___cash_payment_test_l00030}00030     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{interfacece204__hw4__library__strategy_method_1_1_payment_strategy_af085ea0d70d8419e3ef857d77b4e2202}{ce204\+\_\+hw4\+\_\+library\+\_\+strategy\+Method.\+Payment\+Strategy.\+pay()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204-\/hw4/src/test/java/ce204\+\_\+hw4\+\_\+\+Strategy\+Method\+Test/\mbox{\hyperlink{ce204__hw4___cash_payment_test_8java}{ce204\+\_\+hw4\+\_\+\+Cash\+Payment\+Test.\+java}}\end{DoxyCompactItemize}

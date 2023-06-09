@@ -1,0 +1,1119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="readme_8md" kind="file" language="Markdown">
+    <compoundname>readme.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>eclipse-java-maven-template</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Overview</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>will<sp/>generate<sp/>eclipse<sp/>maven<sp/>project<sp/>with<sp/>Junit4<sp/>from<sp/>CLI<sp/>and.<sp/>Also<sp/>you<sp/>will<sp/>generate<sp/>jar<sp/>and<sp/>then<sp/>you<sp/>will<sp/>run<sp/>your<sp/>application.<sp/>For<sp/>more<sp/>information<sp/>you<sp/>can<sp/>check<sp/>examples<sp/>[Maven<sp/>–<sp/>Maven<sp/>in<sp/>5<sp/>Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)<sp/>and<sp/>[TheNEXUS<sp/>|<sp/>A<sp/>Community<sp/>Project](https://books.sonatype.com/mvnref-book/reference/index.html)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Releases</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>[![GitHub<sp/>release<sp/>badge](https://badgen.net/github/release/ucoruh/eclipse-java-maven-template)](https://github.com/ucoruh/eclipse-java-maven-template/releases/latest)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Platforms</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>![Ubuntu<sp/>badge](assets/badge-ubuntu.svg)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>![macOS<sp/>badge](assets/badge-macos.svg)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>![Windows<sp/>badge](assets/badge-windows.svg)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Test<sp/>Coverage</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[![Release](https://github.com/ucoruh/eclipse-java-maven-template/actions/workflows/release.yml/badge.svg)](https://github.com/ucoruh/eclipse-java-maven-template/actions/workflows/release.yml)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Coverage**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>![All](assets/badge_combined.svg)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Branch<sp/>Coverage**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>![Branch<sp/>Coverage](assets/badge_branchcoverage.svg)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Line<sp/>Coverage**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>![Line<sp/>Coverage](assets/badge_linecoverage.svg)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Method<sp/>Coverage**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>![Method<sp/>Coverage](assets/badge_methodcoverage.svg)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Install<sp/>Requirements</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Eclipse</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Maven</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>JDK</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Lcov</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>https://fredgrott.medium.com/lcov-on-windows-7c58dda07080</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Coverxygen</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>[coverxygen<sp/>·<sp/>PyPI](https://pypi.org/project/coverxygen/)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>[GitHub<sp/>-<sp/>psycofdj/coverxygen:<sp/>Generate<sp/>doxygen&amp;#39;s<sp/>documentation<sp/>coverage<sp/>report](https://github.com/psycofdj/coverxygen)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Reportgenerator</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>https://reportgenerator.io/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">dotnet<sp/>tool<sp/>install<sp/>-g<sp/>dotnet-reportgenerator-globaltool</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Choose<sp/>Licence</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>[Appendix<sp/>|<sp/>Choose<sp/>a<sp/>License](https://choosealicense.com/appendix/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Package<sp/>Manager<sp/>Windows<sp/>Setup</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>will<sp/>install<sp/>required<sp/>application<sp/>with<sp/>package<sp/>manager<sp/>on<sp/>Windows<sp/>so<sp/>use<sp/>following<sp/>script<sp/>to<sp/>install<sp/>[chocolatey](https://chocolatey.org/install)<sp/>and<sp/>[scoop](https://scoop.sh/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```batch</highlight></codeline>
+<codeline><highlight class="normal">@echo<sp/>off</highlight></codeline>
+<codeline><highlight class="normal">@setlocal<sp/>enableextensions</highlight></codeline>
+<codeline><highlight class="normal">@cd<sp/>/d<sp/>&quot;%~dp0&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Checking<sp/>if<sp/>Chocolatey<sp/>is<sp/>installed...</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>exist<sp/>&quot;%ProgramData%\Chocolatey\bin\choco.exe&quot;<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Chocolatey<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Installing<sp/>Chocolatey...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>powershell<sp/>-Command<sp/>&quot;Set-ExecutionPolicy<sp/>Bypass<sp/>-Scope<sp/>Process<sp/>-Force;<sp/>iex<sp/>((New-Object<sp/>System.Net.WebClient).DownloadString(&apos;https://chocolatey.org/install.ps1&apos;))&quot;</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Checking<sp/>if<sp/>Scoop<sp/>is<sp/>installed...</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>scoop<sp/>&gt;nul<sp/>2&gt;&amp;1</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>%errorlevel%==0<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Scoop<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Scoop<sp/>is<sp/>not<sp/>installed.<sp/>Installing<sp/>Scoop...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>powershell<sp/>Invoke-Expression<sp/>(New-Object<sp/>System.Net.WebClient).DownloadString(&apos;https://get.scoop.sh&apos;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>powershell<sp/>Set-ExecutionPolicy<sp/>RemoteSigned<sp/>-scope<sp/>CurrentUser</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">pause</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Pre-Commit<sp/>Code<sp/>Formatter<sp/>Astyle<sp/>Installation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Before<sp/>each<sp/>commit<sp/>also<sp/>with<sp/>batch<sp/>script<sp/>we<sp/>will<sp/>format<sp/>our<sp/>code<sp/>with<sp/>astyle<sp/>we<sp/>need<sp/>to<sp/>install<sp/>it<sp/>with<sp/>package<sp/>manager<sp/>as<sp/>following<sp/>script<sp/>you<sp/>can<sp/>visit<sp/>package<sp/>manager<sp/>web<sp/>site<sp/>for<sp/>more<sp/>details<sp/>[Chocolatey<sp/>Software<sp/>|<sp/>Artistic<sp/>Style<sp/>3.2.1](https://community.chocolatey.org/packages/astyle)<sp/>and<sp/>[https://astyle.sourceforge.net/](https://astyle.sourceforge.net/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```batch</highlight></codeline>
+<codeline><highlight class="normal">@echo<sp/>off</highlight></codeline>
+<codeline><highlight class="normal">@setlocal<sp/>enableextensions</highlight></codeline>
+<codeline><highlight class="normal">@cd<sp/>/d<sp/>&quot;%~dp0&quot;</highlight></codeline>
+<codeline><highlight class="normal">echo<sp/>Installing<sp/>Astyle...</highlight></codeline>
+<codeline><highlight class="normal">choco<sp/>install<sp/>astyle</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Astyle<sp/>tool<sp/>need<sp/>configuration<sp/>there<sp/>is<sp/>example<sp/>configuration<sp/>named<sp/>`astyle-options.txt`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```yaml</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>https://github.com/brchiu/openairinterface5g/blob/master/ci-scripts/astyle-options.txt</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>OAI<sp/>is<sp/>using<sp/>a<sp/>style<sp/>that<sp/>is<sp/>similar<sp/>to<sp/>the<sp/>Google<sp/>style</highlight></codeline>
+<codeline><highlight class="normal">--style=google</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>long<sp/>options<sp/>can<sp/>be<sp/>written<sp/>without<sp/>the<sp/>preceding<sp/>&apos;--&apos;</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Convert<sp/>tabs<sp/>to<sp/>spaces</highlight></codeline>
+<codeline><highlight class="normal">convert-tabs</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Indentation<sp/>is<sp/>2<sp/>spaces</highlight></codeline>
+<codeline><highlight class="normal">indent=spaces=2</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Indent<sp/>&apos;switch&apos;<sp/>blocks<sp/>so<sp/>that<sp/>the<sp/>&apos;case<sp/>X:&apos;<sp/>statements<sp/>are<sp/>indented<sp/>in<sp/>the<sp/>switch<sp/>block.<sp/></highlight></codeline>
+<codeline><highlight class="normal">indent-switches</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Indent<sp/>preprocessor<sp/>blocks<sp/>at<sp/>bracket<sp/>level<sp/>0.</highlight></codeline>
+<codeline><highlight class="normal">indent-preproc-block</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Indent<sp/>multi-line<sp/>preprocessor<sp/>#define<sp/>statements.</highlight></codeline>
+<codeline><highlight class="normal">indent-preproc-define</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Indent<sp/>C++<sp/>comments<sp/>beginning<sp/>in<sp/>column<sp/>one.</highlight></codeline>
+<codeline><highlight class="normal">indent-col1-comments</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Pad<sp/>empty<sp/>lines<sp/>around<sp/>header<sp/>blocks</highlight></codeline>
+<codeline><highlight class="normal">break-blocks</highlight></codeline>
+<codeline><highlight class="normal">delete-empty-lines</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Attach<sp/>a<sp/>pointer<sp/>or<sp/>reference<sp/>operator<sp/>(*,<sp/>&amp;,<sp/>or<sp/>^)<sp/>to<sp/>the<sp/>variable<sp/>name<sp/>(right)</highlight></codeline>
+<codeline><highlight class="normal">align-pointer=name</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>The<sp/>code<sp/>line<sp/>length<sp/>is<sp/>200<sp/>characters/columns<sp/>(this<sp/>is<sp/>the<sp/>maximum<sp/>allowed<sp/>by<sp/>astyle)</highlight></codeline>
+<codeline><highlight class="normal">max-code-length=200</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>If<sp/>the<sp/>line<sp/>contains<sp/>logical<sp/>conditionals<sp/>they<sp/>will<sp/>be<sp/>placed<sp/>first<sp/>on<sp/>the<sp/>new<sp/>line.</highlight></codeline>
+<codeline><highlight class="normal">break-after-logical</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Force<sp/>use<sp/>of<sp/>the<sp/>linux<sp/>end<sp/>of<sp/>line</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>lineend=linux</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">After<sp/>installation<sp/>and<sp/>config<sp/>file<sp/>generation<sp/>we<sp/>can<sp/>format<sp/>our<sp/>code<sp/>with<sp/>following<sp/>script<sp/>this<sp/>script<sp/>look<sp/>for<sp/>.cs<sp/>extension<sp/>and<sp/>format<sp/>related<sp/>files<sp/>according<sp/>to<sp/>configuration<sp/>in<sp/>astyle-options.txt</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```batch</highlight></codeline>
+<codeline><highlight class="normal">@echo<sp/>off</highlight></codeline>
+<codeline><highlight class="normal">@setlocal<sp/>enableextensions</highlight></codeline>
+<codeline><highlight class="normal">@cd<sp/>/d<sp/>&quot;%~dp0&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Formatting<sp/>Code<sp/>with<sp/>Astyle...</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">astyle<sp/>--options=&quot;astyle-options.txt&quot;<sp/>--recursive<sp/>*.cs</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">pause</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Doxygen<sp/>and<sp/>Graphviz<sp/>Setup<sp/>+<sp/>MkDocs<sp/>Material<sp/>Theme</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>will<sp/>use<sp/>package<sp/>manager<sp/>for<sp/>this<sp/>but<sp/>also<sp/>we<sp/>can<sp/>use<sp/>several<sp/>tools<sp/>I<sp/>prefer<sp/>to<sp/>use<sp/>following<sp/>script<sp/>to<sp/>install<sp/>all<sp/>parties,<sp/>This<sp/>setup<sp/>also<sp/>use<sp/>for<sp/>mkdocs<sp/>material<sp/>them<sp/>documentation<sp/>generation<sp/>maybe<sp/>we<sp/>can<sp/>use<sp/>for<sp/>project<sp/>website<sp/>generation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```batch</highlight></codeline>
+<codeline><highlight class="normal">@echo<sp/>off</highlight></codeline>
+<codeline><highlight class="normal">@setlocal<sp/>enableextensions</highlight></codeline>
+<codeline><highlight class="normal">@cd<sp/>/d<sp/>&quot;%~dp0&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">rem<sp/>force<sp/>re-install<sp/>need<sp/>&quot;--force<sp/>--force-dependencies<sp/>-y&quot;<sp/>parameters</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Test<sp/>if<sp/>Pandoc<sp/>is<sp/>installed</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>pandoc<sp/>&gt;nul<sp/>2&gt;&amp;1</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>%errorlevel%==0<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Pandoc<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Installing<sp/>Pandoc...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>choco<sp/>install<sp/>pandoc<sp/>-y</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Test<sp/>if<sp/>rsvg-convert<sp/>is<sp/>installed</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>rsvg-convert<sp/>&gt;nul<sp/>2&gt;&amp;1</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>%errorlevel%==0<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>rsvg-convert<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Installing<sp/>rsvg-convert...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>choco<sp/>install<sp/>rsvg-convert<sp/>-y</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Test<sp/>if<sp/>Python<sp/>is<sp/>installed</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>python<sp/>&gt;nul<sp/>2&gt;&amp;1</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>%errorlevel%==0<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Python<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Installing<sp/>Python...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>choco<sp/>install<sp/>python<sp/>-y</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Test<sp/>if<sp/>Miktex<sp/>is<sp/>installed</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>miktex<sp/>&gt;nul<sp/>2&gt;&amp;1</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>%errorlevel%==0<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Miktex<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Installing<sp/>Miktex...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>choco<sp/>install<sp/>miktex<sp/>-y</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Test<sp/>if<sp/>CuRL<sp/>is<sp/>installed</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>curl<sp/>&gt;nul<sp/>2&gt;&amp;1</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>%errorlevel%==0<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>curl<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Installing<sp/>CuRL...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>choco<sp/>install<sp/>curl<sp/>-y</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Test<sp/>if<sp/>MARP-CLI<sp/>is<sp/>installed</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>marp<sp/>&gt;nul<sp/>2&gt;&amp;1</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>%errorlevel%==0<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>MARP-CLI<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Installing<sp/>MARP-CLI...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>choco<sp/>install<sp/>marp-cli<sp/>-y</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Test<sp/>if<sp/>Doxygen<sp/>is<sp/>installed</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>doxygen<sp/>&gt;nul<sp/>2&gt;&amp;1</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>%errorlevel%==0<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>MARP-CLI<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Installing<sp/>Doxygen...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>choco<sp/>install<sp/>doxygen.install<sp/>-y</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Test<sp/>if<sp/>Doxygen<sp/>is<sp/>installed</highlight></codeline>
+<codeline><highlight class="normal">where<sp/>dot<sp/>&gt;nul<sp/>2&gt;&amp;1</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>%errorlevel%==0<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Graphviz<sp/>is<sp/>already<sp/>installed.</highlight></codeline>
+<codeline><highlight class="normal">)<sp/>else<sp/>(</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>Installing<sp/>Graphviz...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>choco<sp/>install<sp/>graphviz<sp/>-y</highlight></codeline>
+<codeline><highlight class="normal">)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>pymdown-extensions</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-material</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-material-extensions</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-simple-hooks</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-video</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-minify-plugin</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-git-revision-date-localized-plugin</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-minify-plugin</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-static-i18n</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-with-pdf</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>qrcode</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-awesome-pages-plugin</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-embed-external-markdown</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-include-markdown-plugin</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-ezlinks-plugin</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-git-authors-plugin</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-git-committers-plugin</highlight></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>mkdocs-exclude</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">pip<sp/>install<sp/>pptx2md</highlight></codeline>
+<codeline><highlight class="normal">pause</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">After<sp/>doxygen<sp/>installation<sp/>create<sp/>default<sp/>doxygen<sp/>file<sp/>with<sp/>-g<sp/>option</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```batch</highlight></codeline>
+<codeline><highlight class="normal">doxygen<sp/>-g</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>will<sp/>create<sp/>Doxyfile<sp/>for<sp/>us<sp/>to<sp/>modify.<sp/>Use<sp/>Doxywizard<sp/>to<sp/>modify<sp/>file.<sp/>Be<sp/>sure<sp/>that<sp/>your<sp/>output<sp/>directory<sp/>should<sp/>be<sp/>**./docs**<sp/>and<sp/>all<sp/>warnings<sp/>should<sp/>be<sp/>opened<sp/>and<sp/>warnings<sp/>stop<sp/>operations.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>ReportGenerator<sp/>Setup</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>need<sp/>to<sp/>install<sp/>[reportgenerator](https://reportgenerator.io/)<sp/>for<sp/>creation<sp/>of<sp/>HTML<sp/>test<sp/>reports,<sp/>we<sp/>will<sp/>use<sp/>choco<sp/>to<sp/>install<sp/>visit<sp/>package<sp/>manager<sp/>web<sp/>site<sp/>[Chocolatey<sp/>Software<sp/>|<sp/>ReportGenerator<sp/>(Portable)<sp/>-<sp/>Generates<sp/>reports<sp/>for<sp/>various<sp/>code<sp/>coverage<sp/>tools<sp/>5.1.20](https://community.chocolatey.org/packages/reportgenerator.portable)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```batch</highlight></codeline>
+<codeline><highlight class="normal">@echo<sp/>off</highlight></codeline>
+<codeline><highlight class="normal">@setlocal<sp/>enableextensions</highlight></codeline>
+<codeline><highlight class="normal">@cd<sp/>/d<sp/>&quot;%~dp0&quot;</highlight></codeline>
+<codeline><highlight class="normal">echo<sp/>Installing<sp/>Report<sp/>Generator...</highlight></codeline>
+<codeline><highlight class="normal">choco<sp/>install<sp/>reportgenerator.portable</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Repository<sp/>Setup</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Github<sp/>Repositoy<sp/>Creation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">First<sp/>create<sp/>a<sp/>empty<sp/>project<sp/>in<sp/>github<sp/>and<sp/>clone<sp/>it<sp/>to<sp/>your<sp/>PC,</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Pre-Commit<sp/>Action<sp/>Restrictions</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Use<sp/>following<sp/>pre-commit<sp/>script<sp/>and<sp/>replace<sp/>it<sp/>with<sp/>`.git/hook/precommit`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">#!/bin/bash</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Installation:</highlight></codeline>
+<codeline><highlight class="normal">#<sp/><sp/><sp/>Copy<sp/>this<sp/>script<sp/>as<sp/>pre-commit<sp/>to<sp/>.git/hooks<sp/>folder</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">OPTIONS=&quot;--options=astyle-options.txt&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Check<sp/>if<sp/>.gitignore<sp/>file<sp/>exists</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>[<sp/>!<sp/>-f<sp/>astyle-options.txt<sp/>];<sp/>then</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>&quot;[!]<sp/>astyle-options.txt<sp/>file<sp/>not<sp/>found.<sp/>Please<sp/>make<sp/>sure<sp/>the<sp/>astyle-options.txt<sp/>file<sp/>is<sp/>present.&quot;<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>exit<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">fi</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">RETURN=0</highlight></codeline>
+<codeline><highlight class="normal">ASTYLE=$(command<sp/>-v<sp/>astyle)</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>[<sp/>$?<sp/>-ne<sp/>0<sp/>];<sp/>then</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>&quot;[!]<sp/>AStyle<sp/>is<sp/>not<sp/>installed.<sp/>Unable<sp/>to<sp/>check<sp/>source<sp/>file<sp/>format<sp/>policy.&quot;<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>exit<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">fi</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Check<sp/>if<sp/>.gitignore<sp/>file<sp/>exists</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>[<sp/>!<sp/>-f<sp/>.gitignore<sp/>];<sp/>then</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>&quot;[!]<sp/>.gitignore<sp/>file<sp/>not<sp/>found.<sp/>Please<sp/>make<sp/>sure<sp/>the<sp/>.gitignore<sp/>file<sp/>is<sp/>present.&quot;<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>exit<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">fi</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Check<sp/>if<sp/>README.md<sp/>file<sp/>exists</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>[<sp/>!<sp/>-f<sp/>README.md<sp/>];<sp/>then</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>&quot;[!]<sp/>README.md<sp/>file<sp/>not<sp/>found.<sp/>Please<sp/>make<sp/>sure<sp/>the<sp/>README.md<sp/>file<sp/>is<sp/>present.&quot;<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>exit<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">fi</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Check<sp/>if<sp/>.gitignore<sp/>file<sp/>exists</highlight></codeline>
+<codeline><highlight class="normal">if<sp/>[<sp/>!<sp/>-f<sp/>Doxyfile<sp/>];<sp/>then</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>&quot;[!]<sp/>Doxyfile<sp/>file<sp/>not<sp/>found.<sp/>Please<sp/>make<sp/>sure<sp/>the<sp/>Doxyfile<sp/>file<sp/>is<sp/>present.&quot;<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>exit<sp/>1</highlight></codeline>
+<codeline><highlight class="normal">fi</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">FILES=$(git<sp/>diff<sp/>--cached<sp/>--name-only<sp/>--diff-filter=ACMRTUXB<sp/>|<sp/>grep<sp/>-E<sp/>&quot;\.(cs|java|c|cpp|h)$&quot;)</highlight></codeline>
+<codeline><highlight class="normal">for<sp/>FILE<sp/>in<sp/>$FILES;<sp/>do</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>FORMATTED=$(<sp/>&quot;$ASTYLE&quot;<sp/>$OPTIONS<sp/>&lt;<sp/>&quot;$FILE&quot;<sp/>2&gt;&amp;1<sp/>)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>[<sp/>$?<sp/>-ne<sp/>0<sp/>];<sp/>then</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/>&quot;[!]<sp/>Error<sp/>formatting<sp/>$FILE:&quot;<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/>&quot;$FORMATTED&quot;<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RETURN=1</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>elif<sp/>[<sp/>-n<sp/>&quot;$FORMATTED&quot;<sp/>];<sp/>then</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/>&quot;Formatted<sp/>$FILE&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/>&quot;$FORMATTED&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/>&quot;&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/>&quot;$FORMATTED&quot;<sp/>&gt;<sp/>&quot;$FILE&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>git<sp/>add<sp/>&quot;$FILE&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>fi</highlight></codeline>
+<codeline><highlight class="normal">done</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">if<sp/>[<sp/>$RETURN<sp/>-eq<sp/>1<sp/>];<sp/>then</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>&quot;&quot;<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>&quot;Make<sp/>sure<sp/>you<sp/>have<sp/>run<sp/>AStyle<sp/>with<sp/>the<sp/>following<sp/>options:&quot;<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>$OPTIONS<sp/>&gt;&amp;2</highlight></codeline>
+<codeline><highlight class="normal">fi</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">exit<sp/>$RETURN</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>script<sp/>will<sp/>check<sp/>astyle-options.txt<sp/>file,<sp/>gitignore<sp/>file,<sp/>README.md<sp/>file<sp/>and<sp/>Doxyfile<sp/>is<sp/>exist<sp/>if<sp/>not<sp/>it<sp/>will<sp/>be<sp/>terminate<sp/>your<sp/>commit<sp/>operation.<sp/>Also<sp/>after<sp/>`astyle`<sp/>installation<sp/>and<sp/>`astyle-options.txt`<sp/>generation<sp/>it<sp/>will<sp/>automatically<sp/>format<sp/>your<sp/>source<sp/>code<sp/>before<sp/>each<sp/>commit.<sp/>Formatting<sp/>configuration<sp/>will<sp/>be<sp/>stored<sp/>in<sp/>`astyle-options.txt`<sp/>.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Create<sp/>.gitignore<sp/>with<sp/>TOPTAL<sp/>API<sp/>via<sp/>batch<sp/>script</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Use<sp/>the<sp/>following<sp/>script<sp/>to<sp/>generate<sp/>.gitignore<sp/>file,<sp/>you<sp/>can<sp/>change<sp/>gitignore<sp/>file<sp/>by<sp/>changing<sp/>the<sp/>configuration<sp/>after<sp/>`https://www.toptal.com/developers/gitignore/api`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>is<sp/>the<sp/>selected<sp/>configuration</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">`c,csharp,vs,visualstudio,visualstudiocode,java,maven,c++,cmake,eclipse,netbeans`</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```batch</highlight></codeline>
+<codeline><highlight class="normal">@echo<sp/>off</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">set<sp/>API_URL=https://www.toptal.com/developers/gitignore/api/c,csharp,vs,visualstudio,visualstudiocode,java,maven,c++,cmake,eclipse,netbeans</highlight></codeline>
+<codeline><highlight class="normal">set<sp/>OUTPUT_FILE=.gitignore</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Set<sp/>the<sp/>running<sp/>folder<sp/>to<sp/>the<sp/>current<sp/>working<sp/>folder</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>/d<sp/>&quot;%~dp0&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">REM<sp/>Download<sp/>the<sp/>API<sp/>results<sp/>using<sp/>curl</highlight></codeline>
+<codeline><highlight class="normal">curl<sp/>-s<sp/>-o<sp/>%OUTPUT_FILE%<sp/>%API_URL%</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Downloaded<sp/>.gitignore<sp/>file<sp/>from<sp/>%API_URL%<sp/>and<sp/>saved<sp/>as<sp/>%OUTPUT_FILE%</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">pause</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Create<sp/>an<sp/>Empty<sp/>README.md<sp/>file</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Create<sp/>and<sp/>EMPTY<sp/>`README.md`<sp/>file<sp/>and<sp/>during<sp/>project<sp/>fill<sp/>required<sp/>parts</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Create<sp/>Default<sp/>Doxyfile</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Use<sp/>following<sp/>command<sp/>to<sp/>generate<sp/>default<sp/>`Doxyfile`<sp/>if<sp/>you<sp/>didn&apos;t<sp/>create<sp/>or<sp/>you<sp/>can<sp/>use<sp/>pre-configured<sp/>configuration<sp/>and<sp/>you<sp/>can<sp/>edit<sp/>over<sp/>this<sp/>configurations.<sp/>Be<sp/>sure<sp/>that<sp/>your<sp/>output<sp/>directory<sp/>should<sp/>be<sp/>**./docs**<sp/>and<sp/>all<sp/>warnings<sp/>should<sp/>be<sp/>opened<sp/>and<sp/>warnings<sp/>stop<sp/>operations.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```batch</highlight></codeline>
+<codeline><highlight class="normal">doxygen<sp/>-g</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>First<sp/>commit<sp/>is<sp/>ready,<sp/>You<sp/>can<sp/>commit<sp/>and<sp/>push<sp/>your<sp/>work.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>use<sp/>gitextension<sp/>to<sp/>commit<sp/>your<sp/>work,<sp/>check<sp/>if<sp/>you<sp/>get<sp/>any<sp/>error<sp/>than<sp/>return<sp/>steps<sp/>and<sp/>check<sp/>missing<sp/>parts.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Creating<sp/>a<sp/>Project</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">mvn<sp/>archetype:generate<sp/>-DgroupId=com.ucoruh.calculator<sp/>-DartifactId=calculator-app<sp/>-DarchetypeArtifactId=maven-archetype-quickstart<sp/>-DarchetypeVersion=1.4<sp/>-DinteractiveMode=false</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Import<sp/>Project<sp/>to<sp/>Eclipse</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Use<sp/>import<sp/>existing<sp/>maven<sp/>project<sp/>option<sp/>to<sp/>import<sp/>project<sp/>to<sp/>Eclipse</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Rename<sp/>Files</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Rename<sp/>App.java<sp/>to<sp/>CalculatorApp.java<sp/>and<sp/>AppTest.java<sp/>to<sp/>CalculatorAppTest.java<sp/>and<sp/>Generate<sp/>Calculator.java<sp/>and<sp/>CalculatorTest.java</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```java</highlight></codeline>
+<codeline><highlight class="normal">package<sp/>com.ucoruh.calculator;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">import<sp/>org.slf4j.LoggerFactory;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">import<sp/>ch.qos.logback.classic.Logger;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">public<sp/>class<sp/>Calculator<sp/>{</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>private<sp/>static<sp/>final<sp/>Logger<sp/>logger<sp/>=<sp/>(Logger)<sp/>LoggerFactory.getLogger(Calculator.class);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>a</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>b</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*<sp/>@return</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/>int<sp/>add(int<sp/>a,<sp/>int<sp/>b)<sp/>{</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.info(&quot;Logging<sp/>message&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.error(&quot;Error<sp/>message&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>a<sp/>+<sp/>b;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```java</highlight></codeline>
+<codeline><highlight class="normal">package<sp/>com.ucoruh.calculator;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">import<sp/>java.io.IOException;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">import<sp/>org.slf4j.LoggerFactory;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">import<sp/>ch.qos.logback.classic.Logger;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Hello<sp/>world!</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">public<sp/>class<sp/>CalculatorApp<sp/>{</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>private<sp/>static<sp/>final<sp/>Logger<sp/>logger<sp/>=<sp/>(Logger)<sp/>LoggerFactory.getLogger(CalculatorApp.class);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/>static<sp/>void<sp/>main(String[]<sp/>args)<sp/>{</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.info(&quot;Logging<sp/>message&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.error(&quot;Error<sp/>message&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(&quot;Hello<sp/>World!&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>try<sp/>{</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(args.length&gt;0)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if(args[0].equals(&quot;1&quot;))</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>throw<sp/>new<sp/>IOException(&quot;Dummy<sp/>Exception...&quot;);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(&quot;Press<sp/>Enter<sp/>to<sp/>Continue...&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.in.read();</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.out.println(&quot;Thank<sp/>you...&quot;);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>catch<sp/>(IOException<sp/>e)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>logger.error(e.toString());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e.printStackTrace();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Generate<sp/>test<sp/>with<sp/>add<sp/>new<sp/>unit<sp/>test<sp/>feature<sp/>in<sp/>Eclipse<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![](assets/2023-05-24-16-48-59-image.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![](assets/2023-05-24-16-49-11-image.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![](assets/2023-05-24-16-49-27-image.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```java</highlight></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">package<sp/>com.ucoruh.calculator;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">import<sp/>static<sp/>org.junit.Assert.*;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">import<sp/>org.junit.After;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>org.junit.AfterClass;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>org.junit.Before;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>org.junit.BeforeClass;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>org.junit.Test;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>@author<sp/>ugur.coruh</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">public<sp/>class<sp/>CalculatorTest<sp/>{</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*<sp/>@throws<sp/>java.lang.Exception</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@BeforeClass</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/>static<sp/>void<sp/>setUpBeforeClass()<sp/>throws<sp/>Exception<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*<sp/>@throws<sp/>java.lang.Exception</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@AfterClass</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/>static<sp/>void<sp/>tearDownAfterClass()<sp/>throws<sp/>Exception<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*<sp/>@throws<sp/>java.lang.Exception</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@Before</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/>void<sp/>setUp()<sp/>throws<sp/>Exception<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*<sp/>@throws<sp/>java.lang.Exception</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*/</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@After</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/>void<sp/>tearDown()<sp/>throws<sp/>Exception<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/>void<sp/>testAddition()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Calculator<sp/>calculator<sp/>=<sp/>new<sp/>Calculator();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>result<sp/>=<sp/>calculator.add(2,<sp/>3);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEquals(5,<sp/>result);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```java</highlight></codeline>
+<codeline><highlight class="normal">package<sp/>com.ucoruh.calculator;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">import<sp/>static<sp/>org.junit.Assert.*;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">import<sp/>java.io.InputStream;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>java.io.PrintStream;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>java.io.ByteArrayInputStream;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>java.io.ByteArrayOutputStream;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">import<sp/>org.junit.After;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>org.junit.AfterClass;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>org.junit.Before;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>org.junit.BeforeClass;</highlight></codeline>
+<codeline><highlight class="normal">import<sp/>org.junit.Test;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">public<sp/>class<sp/>CalculatorAppTest<sp/>{</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@BeforeClass</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/>static<sp/>void<sp/>setUpBeforeClass()<sp/>throws<sp/>Exception<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@AfterClass</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/>static<sp/>void<sp/>tearDownAfterClass()<sp/>throws<sp/>Exception<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@Before</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/>void<sp/>setUp()<sp/>throws<sp/>Exception<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@After</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/>void<sp/>tearDown()<sp/>throws<sp/>Exception<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/>void<sp/>testMainSuccess()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Redirect<sp/>System.in<sp/>and<sp/>System.out</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputStream<sp/>originalIn<sp/>=<sp/>System.in;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PrintStream<sp/>originalOut<sp/>=<sp/>System.out;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Create<sp/>a<sp/>ByteArrayInputStream<sp/>with<sp/>the<sp/>desired<sp/>input</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>input<sp/>=<sp/>System.lineSeparator();<sp/>//<sp/>Pressing<sp/>&quot;Enter&quot;<sp/>key</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ByteArrayInputStream<sp/>inputStream<sp/>=<sp/>new<sp/>ByteArrayInputStream(input.getBytes());</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Redirect<sp/>System.in<sp/>to<sp/>the<sp/>ByteArrayInputStream</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.setIn(inputStream);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Create<sp/>a<sp/>ByteArrayOutputStream<sp/>to<sp/>capture<sp/>the<sp/>output</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ByteArrayOutputStream<sp/>outputStream<sp/>=<sp/>new<sp/>ByteArrayOutputStream();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.setOut(new<sp/>PrintStream(outputStream));</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String[]<sp/>args<sp/>=<sp/>new<sp/>String[]<sp/>{&quot;0&quot;};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Call<sp/>the<sp/>main<sp/>method<sp/>of<sp/>CalculatorApp</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CalculatorApp.main(args);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Restore<sp/>original<sp/>System.in<sp/>and<sp/>System.out</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.setIn(originalIn);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.setOut(originalOut);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Assert<sp/>the<sp/>desired<sp/>behavior<sp/>based<sp/>on<sp/>the<sp/>output</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertTrue(true);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>@Test</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>public<sp/>void<sp/>testMainError()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Redirect<sp/>System.in<sp/>and<sp/>System.out</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>InputStream<sp/>originalIn<sp/>=<sp/>System.in;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PrintStream<sp/>originalOut<sp/>=<sp/>System.out;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Create<sp/>a<sp/>ByteArrayInputStream<sp/>with<sp/>the<sp/>desired<sp/>input</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/>input<sp/>=<sp/>System.lineSeparator();<sp/>//<sp/>Pressing<sp/>&quot;Enter&quot;<sp/>key</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ByteArrayInputStream<sp/>inputStream<sp/>=<sp/>new<sp/>ByteArrayInputStream(input.getBytes());</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Redirect<sp/>System.in<sp/>to<sp/>the<sp/>ByteArrayInputStream</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.setIn(inputStream);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Create<sp/>a<sp/>ByteArrayOutputStream<sp/>to<sp/>capture<sp/>the<sp/>output</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ByteArrayOutputStream<sp/>outputStream<sp/>=<sp/>new<sp/>ByteArrayOutputStream();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.setOut(new<sp/>PrintStream(outputStream));</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String[]<sp/>args<sp/>=<sp/>new<sp/>String[]<sp/>{&quot;1&quot;};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Call<sp/>the<sp/>main<sp/>method<sp/>of<sp/>CalculatorApp</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CalculatorApp.main(args);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Restore<sp/>original<sp/>System.in<sp/>and<sp/>System.out</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.setIn(originalIn);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.setOut(originalOut);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Assert<sp/>the<sp/>desired<sp/>behavior<sp/>based<sp/>on<sp/>the<sp/>output</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertTrue(true);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Update<sp/>pom.xml</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```xml</highlight></codeline>
+<codeline><highlight class="normal">&lt;?xml<sp/>version=&quot;1.0&quot;<sp/>encoding=&quot;UTF-8&quot;?&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;project<sp/>xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0<sp/>http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;!--<sp/>The<sp/>Basics<sp/>--&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;groupId&gt;com.ucoruh.calculator&lt;/groupId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;artifactId&gt;calculator-app&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;packaging&gt;jar&lt;/packaging&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;!--<sp/>More<sp/>Project<sp/>Information<sp/>--&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;name&gt;calculator-app&lt;/name&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;url&gt;https://github.com/ucoruh/eclipse-java-maven-template&lt;/url&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;scm&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;url&gt;https://github.com/ucoruh/eclipse-java-maven-template&lt;/url&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/scm&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;inceptionYear&gt;2023&lt;/inceptionYear&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;developers&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;developer&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;name&gt;Asst.<sp/>Prof.<sp/>Dr.<sp/>Ugur<sp/>CORUH&lt;/name&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;organization&gt;RTEU&lt;/organization&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;email&gt;ugur.coruh@erdogan.edu.tr&lt;/email&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;roles&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;role&gt;Developer&lt;/role&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;role&gt;Designer&lt;/role&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/roles&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/developer&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;developer&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;name&gt;Other<sp/>Person&lt;/name&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;organization&gt;RTEU&lt;/organization&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;email&gt;mail@gmail.com&lt;/email&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;roles&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;role&gt;Developer&lt;/role&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/roles&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/developer&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/developers&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;contributors&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;contributor&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;name&gt;Asst.<sp/>Prof.<sp/>Dr.<sp/>Ugur<sp/>CORUH&lt;/name&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;email&gt;ugur.coruh@erdogan.edu.tr&lt;/email&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;organization&gt;RTEU&lt;/organization&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;roles&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;role&gt;Developer&lt;/role&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;role&gt;Designer&lt;/role&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/roles&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/contributor&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;contributor&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;name&gt;Other<sp/>Person&lt;/name&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;organization&gt;RTEU&lt;/organization&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;email&gt;mail@gmail.com&lt;/email&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;roles&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;role&gt;Developer&lt;/role&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/roles&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/contributor&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/contributors&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;description&gt;Maven<sp/>Example<sp/>Template<sp/>Project&lt;/description&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;organization&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;name&gt;Recep<sp/>Tayyip<sp/>Erdogan<sp/>University&lt;/name&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;url&gt;www.erdogan.edu.tr&lt;/url&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/organization&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;!--<sp/>Environment<sp/>Settings<sp/>--&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;issueManagement&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;system&gt;Github&lt;/system&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;url&gt;https://github.com/ucoruh/eclipse-java-maven-template&lt;/url&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/issueManagement&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;ciManagement&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;system&gt;Github&lt;/system&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;notifiers&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;notifier&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;address&gt;ugur.coruh@erdogan.edu.tr&lt;/address&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;sendOnSuccess&gt;true&lt;/sendOnSuccess&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;sendOnError&gt;true&lt;/sendOnError&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;sendOnFailure&gt;true&lt;/sendOnFailure&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;sendOnWarning&gt;true&lt;/sendOnWarning&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/notifier&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/notifiers&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;url&gt;https://github.com/ucoruh/eclipse-java-maven-template&lt;/url&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/ciManagement&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;repositories&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;repository&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;id&gt;eclipse-java-maven-template&lt;/id&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;name&gt;eclipse-java-maven-template&lt;/name&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;url&gt;https://github.com/ucoruh/eclipse-java-maven-template&lt;/url&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/repository&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/repositories&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;distributionManagement&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;site&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;name&gt;https://github.com/ucoruh/eclipse-java-maven-template&lt;/name&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;id&gt;eclipse-java-maven-template&lt;/id&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/site&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;downloadUrl&gt;https://github.com/ucoruh/eclipse-java-maven-template&lt;/downloadUrl&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;repository&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;id&gt;eclipse-java-maven-template&lt;/id&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;name&gt;eclipse-java-maven-template&lt;/name&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;url&gt;https://github.com/ucoruh/eclipse-java-maven-template&lt;/url&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/repository&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/distributionManagement&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;properties&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;maven.compiler.source&gt;1.8&lt;/maven.compiler.source&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;maven.compiler.target&gt;1.8&lt;/maven.compiler.target&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/properties&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;dependencies&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;dependency&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;groupId&gt;junit&lt;/groupId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;artifactId&gt;junit&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;version&gt;4.11&lt;/version&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;scope&gt;test&lt;/scope&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/dependency&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;dependency&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;groupId&gt;org.hamcrest&lt;/groupId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;artifactId&gt;hamcrest-all&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;version&gt;1.3&lt;/version&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;scope&gt;test&lt;/scope&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/dependency&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;!--<sp/>SLF4J<sp/>API<sp/>--&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;dependency&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;groupId&gt;org.slf4j&lt;/groupId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;artifactId&gt;slf4j-api&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;version&gt;1.7.32&lt;/version&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/dependency&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;!--<sp/>Logback<sp/>Implementation<sp/>--&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;dependency&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;groupId&gt;ch.qos.logback&lt;/groupId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;artifactId&gt;logback-classic&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;version&gt;1.2.6&lt;/version&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/dependency&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/dependencies&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;build&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;plugins&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;configuration&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;source&gt;1.8&lt;/source&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;target&gt;1.8&lt;/target&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/configuration&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;configuration&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;includes&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;include&gt;**/CalculatorAppTest.java&lt;/include&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;include&gt;**/CalculatorTest.java&lt;/include&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/includes&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/configuration&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;groupId&gt;org.jacoco&lt;/groupId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;artifactId&gt;jacoco-maven-plugin&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;version&gt;0.8.7&lt;/version&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;executions&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;execution&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;goals&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;goal&gt;prepare-agent&lt;/goal&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/goals&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/execution&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;execution&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;id&gt;report&lt;/id&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;phase&gt;test&lt;/phase&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;goals&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;goal&gt;report&lt;/goal&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/goals&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/execution&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/executions&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;artifactId&gt;maven-site-plugin&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;version&gt;4.0.0-M8&lt;/version&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;configuration&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;port&gt;9000&lt;/port&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tempWebappDirectory&gt;${basedir}/target/site&lt;/tempWebappDirectory&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/configuration&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;!--<sp/>Maven<sp/>Shade<sp/>Plugin<sp/>--&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;artifactId&gt;maven-shade-plugin&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;version&gt;3.2.4&lt;/version&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;executions&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;execution&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;phase&gt;package&lt;/phase&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;goals&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;goal&gt;shade&lt;/goal&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/goals&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;configuration&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;createDependencyReducedPom&gt;false&lt;/createDependencyReducedPom&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;transformers&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;transformer</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>implementation=&quot;org.apache.maven.plugins.shade.resource.ManifestResourceTransformer&quot;&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;mainClass&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>com.ucoruh.calculator.CalculatorApp&lt;/mainClass&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/transformer&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/transformers&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/configuration&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/execution&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/executions&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/plugins&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;pluginManagement&gt;&lt;!--<sp/>lock<sp/>down<sp/>plugins<sp/>versions<sp/>to<sp/>avoid<sp/>using<sp/>Maven</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>defaults<sp/>(may<sp/>be<sp/>moved<sp/>to<sp/>parent<sp/>pom)<sp/>--&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;plugins&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;!--<sp/>clean<sp/>lifecycle,<sp/>see</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle<sp/>--&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;artifactId&gt;maven-clean-plugin&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;version&gt;3.1.0&lt;/version&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;!--<sp/>default<sp/>lifecycle,<sp/>jar<sp/>packaging:<sp/>see</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging<sp/>--&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;artifactId&gt;maven-resources-plugin&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;version&gt;3.0.2&lt;/version&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;version&gt;3.8.0&lt;/version&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;artifactId&gt;maven-surefire-plugin&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;version&gt;2.22.1&lt;/version&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;artifactId&gt;maven-jar-plugin&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;version&gt;3.0.2&lt;/version&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;artifactId&gt;maven-install-plugin&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;version&gt;2.5.2&lt;/version&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;artifactId&gt;maven-deploy-plugin&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;version&gt;2.8.2&lt;/version&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;!--<sp/>site<sp/>lifecycle,<sp/>see</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle<sp/>--&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;artifactId&gt;maven-site-plugin&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;version&gt;3.7.1&lt;/version&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;artifactId&gt;maven-project-info-reports-plugin&lt;/artifactId&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;version&gt;3.0.0&lt;/version&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/plugin&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/plugins&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/pluginManagement&gt;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&lt;/build&gt;</highlight></codeline>
+<codeline><highlight class="normal">&lt;/project&gt;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Generate<sp/>Project<sp/>Site<sp/>Files</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>site.xml</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>resources</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>images</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>banner.png</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>logo.png</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>-<sp/>markdown</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>overview.md</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>use<sp/>files<sp/>in<sp/>project</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Build<sp/>the<sp/>Project</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Enter<sp/>pom.xml<sp/>root<sp/>folder<sp/>and<sp/>run<sp/>following<sp/>command<sp/>to<sp/>test<sp/>and<sp/>generate<sp/>jar<sp/>file</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">mvn<sp/>clean<sp/>test<sp/>site<sp/>package</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Run<sp/>Project</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>run<sp/>application<sp/>by<sp/>specify<sp/>the<sp/>Main<sp/>function</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">java<sp/>-cp<sp/>calculator-app-1.0-SNAPSHOT.jar<sp/>com.ucoruh.calculator.CalculatorApp</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Output</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">C:\Users\ugur.coruh\Desktop\eclipse-java-maven-template\calculator-app\target&gt;java<sp/>-cp<sp/>calculator-app-1.0-SNAPSHOT.jar<sp/>com.ucoruh.calculator.CalculatorApp</highlight></codeline>
+<codeline><highlight class="normal">Hello<sp/>World!</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Generate<sp/>HTML<sp/>Coverage<sp/>Report</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">reportgenerator<sp/>&quot;-reports:target/site/jacoco/jacoco.xml&quot;<sp/>&quot;-sourcedirs:src/main/java&quot;<sp/>&quot;-targetdir:coveragereport&quot;<sp/>-reporttypes:Html</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Output</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">C:\Users\ugur.coruh\Desktop\eclipse-java-maven-template\calculator-app&gt;reportgenerator<sp/>&quot;-reports:target/site/jacoco/jacoco.xml&quot;<sp/>&quot;-sourcedirs:src/main/java&quot;<sp/>&quot;-targetdir:coveragereport&quot;<sp/>-reporttypes:Html</highlight></codeline>
+<codeline><highlight class="normal">2023-05-24T17:26:40:<sp/>Arguments</highlight></codeline>
+<codeline><highlight class="normal">2023-05-24T17:26:40:<sp/><sp/>-reports:target/site/jacoco/jacoco.xml</highlight></codeline>
+<codeline><highlight class="normal">2023-05-24T17:26:40:<sp/><sp/>-sourcedirs:src/main/java</highlight></codeline>
+<codeline><highlight class="normal">2023-05-24T17:26:40:<sp/><sp/>-targetdir:coveragereport</highlight></codeline>
+<codeline><highlight class="normal">2023-05-24T17:26:40:<sp/><sp/>-reporttypes:Html</highlight></codeline>
+<codeline><highlight class="normal">2023-05-24T17:26:40:<sp/>Writing<sp/>report<sp/>file<sp/>&apos;coveragereport\index.html&apos;</highlight></codeline>
+<codeline><highlight class="normal">2023-05-24T17:26:40:<sp/>Report<sp/>generation<sp/>took<sp/>0,2<sp/>seconds</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">C:\Users\ugur.coruh\Desktop\eclipse-java-maven-template\calculator-app&gt;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![](assets/2023-05-25-00-52-27-image.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Run<sp/>Maven<sp/>Site</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">mvn<sp/>site:run</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Use<sp/>CTRL+C<sp/>to<sp/>cancel<sp/>from<sp/>console</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![](assets/2023-05-25-03-53-48-image.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>has<sp/>code<sp/>coverage<sp/>and<sp/>documentation<sp/>coverage<sp/>reports<sp/>also</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![](assets/2023-05-25-03-54-34-image.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![](assets/2023-05-25-03-54-20-image.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![](assets/2023-05-25-03-53-14-image.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Clone-Test-Generate<sp/>WebSite-Package-Generate<sp/>Report-Run<sp/>Web<sp/>Site</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">@echo<sp/>off</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Enable<sp/>necessary<sp/>extensions</highlight></codeline>
+<codeline><highlight class="normal">@setlocal<sp/>enableextensions</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Change<sp/>the<sp/>current<sp/>working<sp/>directory<sp/>to<sp/>the<sp/>script<sp/>directory</highlight></codeline>
+<codeline><highlight class="normal">@cd<sp/>/d<sp/>&quot;%~dp0&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">git<sp/>clone<sp/>https://github.com/ucoruh/eclipse-java-maven-template.git</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Get<sp/>the<sp/>current<sp/>directory</highlight></codeline>
+<codeline><highlight class="normal">set<sp/>&quot;currentDir=%CD%&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Change<sp/>directory<sp/>to<sp/>calculator-app</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>calculator-app</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Perform<sp/>Maven<sp/>clean,<sp/>test,<sp/>site<sp/>generation,<sp/>and<sp/>packaging</highlight></codeline>
+<codeline><highlight class="normal">call<sp/>mvn<sp/>clean<sp/>test<sp/>site<sp/>package</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Return<sp/>to<sp/>the<sp/>previous<sp/>directory</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>..</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Generate<sp/>Doxygen<sp/>HTML<sp/>and<sp/>XML<sp/>Documentation</highlight></codeline>
+<codeline><highlight class="normal">call<sp/>doxygen<sp/>Doxyfile</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Change<sp/>directory<sp/>to<sp/>calculator-app</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>calculator-app</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Generate<sp/>ReportGenerator<sp/>HTML<sp/>Report</highlight></codeline>
+<codeline><highlight class="normal">call<sp/>reportgenerator<sp/>&quot;-reports:target/site/jacoco/jacoco.xml&quot;<sp/>&quot;-sourcedirs:src/main/java&quot;<sp/>&quot;-targetdir:target/site/coveragereport&quot;<sp/>-reporttypes:Html</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Display<sp/>information<sp/>about<sp/>the<sp/>binary<sp/>file</highlight></codeline>
+<codeline><highlight class="normal">echo<sp/>Our<sp/>Binary<sp/>is<sp/>a<sp/>Single<sp/>Jar<sp/>With<sp/>Dependencies.<sp/>You<sp/>Do<sp/>Not<sp/>Need<sp/>to<sp/>Compress<sp/>It.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Return<sp/>to<sp/>the<sp/>previous<sp/>directory</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>..</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Generate<sp/>Doxygen<sp/>Coverage<sp/>Report</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Create<sp/>coverxygen<sp/>directory</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>calculator-app</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>target</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>site</highlight></codeline>
+<codeline><highlight class="normal">mkdir<sp/>coverxygen</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>..</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>..</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>..</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Run<sp/>Coverxygen</highlight></codeline>
+<codeline><highlight class="normal">call<sp/>python<sp/>-m<sp/>coverxygen<sp/>--xml-dir<sp/>./calculator-app/target/site/doxygen/xml<sp/>--src-dir<sp/>./<sp/>--format<sp/>lcov<sp/>--output<sp/>./calculator-app/target/site/coverxygen/lcov.info<sp/>--prefix<sp/>%currentDir%\calculator-app\</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Run<sp/>lcov<sp/>genhtml</highlight></codeline>
+<codeline><highlight class="normal">call<sp/>perl<sp/>C:\ProgramData\chocolatey\lib\lcov\tools\bin\genhtml<sp/>./calculator-app\target\site\coverxygen\lcov.info<sp/>-o<sp/>calculator-app/target/site/coverxygen</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Package<sp/>Coverage<sp/>Report-1</highlight></codeline>
+<codeline><highlight class="normal">call<sp/>tar<sp/>-czvf<sp/>test-jacoco-report.tar.gz<sp/>-C<sp/>calculator-app/target/site/jacoco<sp/>.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Package<sp/>Coverage<sp/>Report-2</highlight></codeline>
+<codeline><highlight class="normal">call<sp/>tar<sp/>-czvf<sp/>test-coverage-report.tar.gz<sp/>-C<sp/>calculator-app/target/site/coveragereport<sp/>.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Package<sp/>Code<sp/>Documentation</highlight></codeline>
+<codeline><highlight class="normal">call<sp/>tar<sp/>-czvf<sp/>application-documentation.tar.gz<sp/>-C<sp/>calculator-app/target/site/doxygen<sp/>.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Package<sp/>Product<sp/>Site</highlight></codeline>
+<codeline><highlight class="normal">call<sp/>tar<sp/>-czvf<sp/>application-site.tar.gz<sp/>-C<sp/>target/site<sp/>.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Return<sp/>to<sp/>the<sp/>previous<sp/>directory</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>..</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Operation<sp/>Completed!</highlight></codeline>
+<codeline><highlight class="normal">pause</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Run<sp/>Web<sp/>Site</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">@echo<sp/>off</highlight></codeline>
+<codeline><highlight class="normal">@setlocal<sp/>enableextensions</highlight></codeline>
+<codeline><highlight class="normal">@cd<sp/>/d<sp/>&quot;%~dp0&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">cd<sp/>calculator-app</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Run<sp/>Web<sp/>Site</highlight></codeline>
+<codeline><highlight class="normal">echo<sp/>to<sp/>Exit<sp/>Use<sp/>CTRL+Z<sp/>CTRL+C</highlight></codeline>
+<codeline><highlight class="normal">start<sp/>http://localhost:9000/</highlight></codeline>
+<codeline><highlight class="normal">mvn<sp/>site:run</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Operation<sp/>Completed!</highlight></codeline>
+<codeline><highlight class="normal">pause</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Run<sp/>Jar<sp/>File</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">@echo<sp/>off</highlight></codeline>
+<codeline><highlight class="normal">@setlocal<sp/>enableextensions</highlight></codeline>
+<codeline><highlight class="normal">@cd<sp/>/d<sp/>&quot;%~dp0&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Running<sp/>Application</highlight></codeline>
+<codeline><highlight class="normal">java<sp/>-jar<sp/>calculator-app/target/calculator-app-1.0-SNAPSHOT.jar</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">echo<sp/>Operation<sp/>Completed!</highlight></codeline>
+<codeline><highlight class="normal">pause</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![](assets/2023-05-25-00-57-01-image.png)</highlight></codeline>
+    </programlisting>
+    <location file="ce204-hw4/src/site/markdown/readme.md"/>
+  </compounddef>
+</doxygen>

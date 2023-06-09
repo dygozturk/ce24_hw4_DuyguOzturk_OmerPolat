@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classce204__hw4__librar__factory_method_1_1_suv_car_rental" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_librar_factoryMethod::SuvCarRental</compoundname>
+    <basecompoundref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental" prot="public" virt="non-virtual">ce204_hw4_librar_factoryMethod.ICarRental</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a794265b4f9aa218ce658522b9f975216" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ce204_hw4_librar_factoryMethod.SuvCarRental.mileage</definition>
+        <argsstring></argsstring>
+        <name>mileage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" line="5" column="13" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a57e59e7e362a641ed18836e6e433497b" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.SuvCarRental.brand</definition>
+        <argsstring></argsstring>
+        <name>brand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" line="6" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ace371e52c892431ddd3356bf0267810e" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.SuvCarRental.model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" line="7" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a4eb587afcc6a84dec104f8dd8c1cec7b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ce204_hw4_librar_factoryMethod.SuvCarRental.year</definition>
+        <argsstring></argsstring>
+        <name>year</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" line="8" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ae79f2aab4078ea9438677394dfe81de1" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.SuvCarRental.fuelType</definition>
+        <argsstring></argsstring>
+        <name>fuelType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" line="9" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a3dead6254e6a64a938c8fdb487093786" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.SuvCarRental.gear</definition>
+        <argsstring></argsstring>
+        <name>gear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" line="10" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a231123c1499a4b9c632100e3ba99ac4e" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.SuvCarRental.color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" line="11" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ad8e7724563eeb4931fa9fa6790f1d710" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ce204_hw4_librar_factoryMethod.SuvCarRental.price</definition>
+        <argsstring></argsstring>
+        <name>price</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" line="12" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a59b24d2942eaa09af5ca885fd81bf726" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_librar_factoryMethod.SuvCarRental.SuvCarRental</definition>
+        <argsstring>(int mileage, String brand, String model, int year, String fuelType, String gear, String color, int price)</argsstring>
+        <name>SuvCarRental</name>
+        <param>
+          <type>int</type>
+          <declname>mileage</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>brand</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>fuelType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>gear</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>price</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs a new <ref refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental" kindref="compound">SuvCarRental</ref> object with the specified details.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mileage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the mileage of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>brand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the brand of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the model of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>year</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the year of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fuelType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the fuel type of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gear</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the transmission type of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the color of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the price of the car rental </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" line="25" column="12" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" bodystart="25" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a2e5a8f6ba64d7677bf5c8318036f614f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_librar_factoryMethod.SuvCarRental.rentCar</definition>
+        <argsstring>()</argsstring>
+        <name>rentCar</name>
+        <reimplements refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a470564ae1acc72a56f9da859e7fbe544">rentCar</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rents the SUV car and prints its details. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" line="40" column="13" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" bodystart="40" bodyend="45"/>
+        <referencedby refid="classce204__hw4___s_u_v_car_test_1ac923a39513b4b95899ee8071db4aa973" compoundref="ce204__hw4___s_u_v_car_test_8java" startline="109" endline="126">ce204_hw4_SUVCarTest.testRentCar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ada8ece9a8aa91d4c76c0387ef51e4054" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ce204_hw4_librar_factoryMethod.SuvCarRental.getPrice</definition>
+        <argsstring>()</argsstring>
+        <name>getPrice</name>
+        <reimplements refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab945e114f5aa7b0236b6a702037cd2fd">getPrice</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the price of the SUV car rental.</para>
+<para><simplesect kind="return"><para>the price of the car rental </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" line="52" column="12" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" bodystart="52" bodyend="55"/>
+        <referencedby refid="classce204__hw4___s_u_v_car_test_1ac8fd696065f8a5198e27a05cd0bae20a" compoundref="ce204__hw4___s_u_v_car_test_8java" startline="99" endline="103">ce204_hw4_SUVCarTest.testGetPrice</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a323e477c1f6203f6b25cd8419a659537" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ce204_hw4_librar_factoryMethod.SuvCarRental.getMileage</definition>
+        <argsstring>()</argsstring>
+        <name>getMileage</name>
+        <reimplements refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab08a61a94185cc2967d9cb975514a479">getMileage</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the mileage of the SUV car.</para>
+<para><simplesect kind="return"><para>the mileage of the car </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" line="62" column="12" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" bodystart="62" bodyend="65"/>
+        <referencedby refid="classce204__hw4___s_u_v_car_test_1a2d0b3d498f8ecc607d4e33d214cb451b" compoundref="ce204__hw4___s_u_v_car_test_8java" startline="29" endline="33">ce204_hw4_SUVCarTest.testGetMileage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ab2bcfff54b8b56723990077de1deb436" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.SuvCarRental.getBrand</definition>
+        <argsstring>()</argsstring>
+        <name>getBrand</name>
+        <reimplements refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a263723196391b6845e85098c395d0513">getBrand</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the brand of the SUV car.</para>
+<para><simplesect kind="return"><para>the brand of the car </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" line="72" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" bodystart="72" bodyend="75"/>
+        <referencedby refid="classce204__hw4___s_u_v_car_test_1ae20cf799e8724f24dca814f850e8181a" compoundref="ce204__hw4___s_u_v_car_test_8java" startline="39" endline="43">ce204_hw4_SUVCarTest.testGetBrand</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1aa60b9df84332fad51befd8693bbea361" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.SuvCarRental.getModel</definition>
+        <argsstring>()</argsstring>
+        <name>getModel</name>
+        <reimplements refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1aad1fe28068b41bf28eea614dfdc3b28d">getModel</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the model of the SUV car.</para>
+<para><simplesect kind="return"><para>the model of the car </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" line="82" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" bodystart="82" bodyend="85"/>
+        <referencedby refid="classce204__hw4___s_u_v_car_test_1a2ff3e3c685b3f5f040d2af8ec358f936" compoundref="ce204__hw4___s_u_v_car_test_8java" startline="49" endline="53">ce204_hw4_SUVCarTest.testGetModel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ad5dd663b5569480d534eb684aaaaabd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ce204_hw4_librar_factoryMethod.SuvCarRental.getYear</definition>
+        <argsstring>()</argsstring>
+        <name>getYear</name>
+        <reimplements refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac2b7d6af3ddb7a42e59f5659daa591f2">getYear</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the year of the SUV car.</para>
+<para><simplesect kind="return"><para>the year of the car </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" line="92" column="12" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" bodystart="92" bodyend="95"/>
+        <referencedby refid="classce204__hw4___s_u_v_car_test_1a844c4e10542d37a6bf07c6596f2d409d" compoundref="ce204__hw4___s_u_v_car_test_8java" startline="59" endline="63">ce204_hw4_SUVCarTest.testGetYear</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ad72b42e7d98fe280c62605dc99f65fb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.SuvCarRental.getFuelType</definition>
+        <argsstring>()</argsstring>
+        <name>getFuelType</name>
+        <reimplements refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a6f00dcc4543718dc14f88892a5f3f8a0">getFuelType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the fuel type of the SUV car.</para>
+<para><simplesect kind="return"><para>the fuel type of the car </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" line="102" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" bodystart="102" bodyend="105"/>
+        <referencedby refid="classce204__hw4___s_u_v_car_test_1a5fd1fd4fe81c1bd6ff62caf8ae2f3087" compoundref="ce204__hw4___s_u_v_car_test_8java" startline="69" endline="73">ce204_hw4_SUVCarTest.testGetFuelType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ad206fb8962d1558e56ff79f12066a0c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.SuvCarRental.getGear</definition>
+        <argsstring>()</argsstring>
+        <name>getGear</name>
+        <reimplements refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac7f6764c5548aee0a4ec38ae7e60f64a">getGear</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the transmission type of the SUV car.</para>
+<para><simplesect kind="return"><para>the transmission type of the car </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" line="112" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" bodystart="112" bodyend="115"/>
+        <referencedby refid="classce204__hw4___s_u_v_car_test_1a9c23a880ef20516a0285d83fc109cc3c" compoundref="ce204__hw4___s_u_v_car_test_8java" startline="79" endline="83">ce204_hw4_SUVCarTest.testGetGear</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a8e9828b9833dbaebba25dd29e1781c74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.SuvCarRental.getColor</definition>
+        <argsstring>()</argsstring>
+        <name>getColor</name>
+        <reimplements refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a582d42c11aecaa28201f588e983348a0">getColor</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the color of the SUV car.</para>
+<para><simplesect kind="return"><para>the color of the car </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" line="122" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" bodystart="122" bodyend="125"/>
+        <referencedby refid="classce204__hw4___s_u_v_car_test_1a541b4e37d9c4d29f84a18e38a496828a" compoundref="ce204__hw4___s_u_v_car_test_8java" startline="89" endline="93">ce204_hw4_SUVCarTest.testGetColor</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ce204_hw4_librar_factoryMethod.SuvCarRental</label>
+        <link refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_librar_factoryMethod.ICarRental</label>
+        <link refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ce204_hw4_librar_factoryMethod.SuvCarRental</label>
+        <link refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_librar_factoryMethod.ICarRental</label>
+        <link refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental"/>
+      </node>
+    </collaborationgraph>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" line="3" column="7" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/SuvCarRental.java" bodystart="3" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a57e59e7e362a641ed18836e6e433497b" prot="private" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::SuvCarRental</scope><name>brand</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a231123c1499a4b9c632100e3ba99ac4e" prot="private" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::SuvCarRental</scope><name>color</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ae79f2aab4078ea9438677394dfe81de1" prot="private" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::SuvCarRental</scope><name>fuelType</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a3dead6254e6a64a938c8fdb487093786" prot="private" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::SuvCarRental</scope><name>gear</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ab2bcfff54b8b56723990077de1deb436" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::SuvCarRental</scope><name>getBrand</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a8e9828b9833dbaebba25dd29e1781c74" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::SuvCarRental</scope><name>getColor</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ad72b42e7d98fe280c62605dc99f65fb8" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::SuvCarRental</scope><name>getFuelType</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ad206fb8962d1558e56ff79f12066a0c7" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::SuvCarRental</scope><name>getGear</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a323e477c1f6203f6b25cd8419a659537" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::SuvCarRental</scope><name>getMileage</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1aa60b9df84332fad51befd8693bbea361" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::SuvCarRental</scope><name>getModel</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ada8ece9a8aa91d4c76c0387ef51e4054" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::SuvCarRental</scope><name>getPrice</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ad5dd663b5569480d534eb684aaaaabd3" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::SuvCarRental</scope><name>getYear</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a794265b4f9aa218ce658522b9f975216" prot="private" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::SuvCarRental</scope><name>mileage</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ace371e52c892431ddd3356bf0267810e" prot="private" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::SuvCarRental</scope><name>model</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ad8e7724563eeb4931fa9fa6790f1d710" prot="private" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::SuvCarRental</scope><name>price</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a2e5a8f6ba64d7677bf5c8318036f614f" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::SuvCarRental</scope><name>rentCar</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a59b24d2942eaa09af5ca885fd81bf726" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::SuvCarRental</scope><name>SuvCarRental</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a4eb587afcc6a84dec104f8dd8c1cec7b" prot="private" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::SuvCarRental</scope><name>year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

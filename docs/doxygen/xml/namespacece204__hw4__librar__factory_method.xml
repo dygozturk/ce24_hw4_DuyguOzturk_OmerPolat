@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="namespacece204__hw4__librar__factory_method" kind="namespace" language="Java">
+    <compoundname>ce204_hw4_librar_factoryMethod</compoundname>
+    <innerclass refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental" prot="public">ce204_hw4_librar_factoryMethod::EconomyCarRental</innerclass>
+    <innerclass refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental" prot="public">ce204_hw4_librar_factoryMethod::ICarRental</innerclass>
+    <innerclass refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental" prot="public">ce204_hw4_librar_factoryMethod::LuxuryCarRental</innerclass>
+    <innerclass refid="classce204__hw4__librar__factory_method_1_1_rental_factory" prot="public">ce204_hw4_librar_factoryMethod::RentalFactory</innerclass>
+    <innerclass refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental" prot="public">ce204_hw4_librar_factoryMethod::SuvCarRental</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

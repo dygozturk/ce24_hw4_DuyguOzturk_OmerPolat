@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classce204__hw4___s_u_v_car_test" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_SUVCarTest</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4___s_u_v_car_test_1ade97a7ef1552a439dbbc61251544ba0d" prot="private" static="no" mutable="no">
+        <type><ref refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental" kindref="compound">SuvCarRental</ref></type>
+        <definition>SuvCarRental ce204_hw4_SUVCarTest.carRental</definition>
+        <argsstring></argsstring>
+        <name>carRental</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" line="15" column="22" bodyfile="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4___s_u_v_car_test_1a4fc04bc1db274b387a919e33c27ec211" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_SUVCarTest.setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <briefdescription>
+<para>Set up the test environment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" line="21" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___s_u_v_car_test_1a2d0b3d498f8ecc607d4e33d214cb451b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_SUVCarTest.testGetMileage</definition>
+        <argsstring>()</argsstring>
+        <name>testGetMileage</name>
+        <briefdescription>
+<para>Test case for getting the mileage. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" line="29" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" bodystart="29" bodyend="33"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a323e477c1f6203f6b25cd8419a659537" compoundref="_suv_car_rental_8java" startline="62" endline="65">ce204_hw4_librar_factoryMethod.SuvCarRental.getMileage</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___s_u_v_car_test_1ae20cf799e8724f24dca814f850e8181a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_SUVCarTest.testGetBrand</definition>
+        <argsstring>()</argsstring>
+        <name>testGetBrand</name>
+        <briefdescription>
+<para>Test case for getting the brand. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" line="39" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" bodystart="39" bodyend="43"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ab2bcfff54b8b56723990077de1deb436" compoundref="_suv_car_rental_8java" startline="72" endline="75">ce204_hw4_librar_factoryMethod.SuvCarRental.getBrand</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___s_u_v_car_test_1a2ff3e3c685b3f5f040d2af8ec358f936" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_SUVCarTest.testGetModel</definition>
+        <argsstring>()</argsstring>
+        <name>testGetModel</name>
+        <briefdescription>
+<para>Test case for getting the model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" line="49" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" bodystart="49" bodyend="53"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1aa60b9df84332fad51befd8693bbea361" compoundref="_suv_car_rental_8java" startline="82" endline="85">ce204_hw4_librar_factoryMethod.SuvCarRental.getModel</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___s_u_v_car_test_1a844c4e10542d37a6bf07c6596f2d409d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_SUVCarTest.testGetYear</definition>
+        <argsstring>()</argsstring>
+        <name>testGetYear</name>
+        <briefdescription>
+<para>Test case for getting the year. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" line="59" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" bodystart="59" bodyend="63"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ad5dd663b5569480d534eb684aaaaabd3" compoundref="_suv_car_rental_8java" startline="92" endline="95">ce204_hw4_librar_factoryMethod.SuvCarRental.getYear</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___s_u_v_car_test_1a5fd1fd4fe81c1bd6ff62caf8ae2f3087" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_SUVCarTest.testGetFuelType</definition>
+        <argsstring>()</argsstring>
+        <name>testGetFuelType</name>
+        <briefdescription>
+<para>Test case for getting the fuel type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" line="69" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" bodystart="69" bodyend="73"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ad72b42e7d98fe280c62605dc99f65fb8" compoundref="_suv_car_rental_8java" startline="102" endline="105">ce204_hw4_librar_factoryMethod.SuvCarRental.getFuelType</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___s_u_v_car_test_1a9c23a880ef20516a0285d83fc109cc3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_SUVCarTest.testGetGear</definition>
+        <argsstring>()</argsstring>
+        <name>testGetGear</name>
+        <briefdescription>
+<para>Test case for getting the gear. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" line="79" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" bodystart="79" bodyend="83"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ad206fb8962d1558e56ff79f12066a0c7" compoundref="_suv_car_rental_8java" startline="112" endline="115">ce204_hw4_librar_factoryMethod.SuvCarRental.getGear</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___s_u_v_car_test_1a541b4e37d9c4d29f84a18e38a496828a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_SUVCarTest.testGetColor</definition>
+        <argsstring>()</argsstring>
+        <name>testGetColor</name>
+        <briefdescription>
+<para>Test case for getting the color. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" line="89" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" bodystart="89" bodyend="93"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a8e9828b9833dbaebba25dd29e1781c74" compoundref="_suv_car_rental_8java" startline="122" endline="125">ce204_hw4_librar_factoryMethod.SuvCarRental.getColor</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___s_u_v_car_test_1ac8fd696065f8a5198e27a05cd0bae20a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_SUVCarTest.testGetPrice</definition>
+        <argsstring>()</argsstring>
+        <name>testGetPrice</name>
+        <briefdescription>
+<para>Test case for getting the price. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" line="99" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" bodystart="99" bodyend="103"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ada8ece9a8aa91d4c76c0387ef51e4054" compoundref="_suv_car_rental_8java" startline="52" endline="55">ce204_hw4_librar_factoryMethod.SuvCarRental.getPrice</references>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4___s_u_v_car_test_1ac923a39513b4b95899ee8071db4aa973" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_SUVCarTest.testRentCar</definition>
+        <argsstring>()</argsstring>
+        <name>testRentCar</name>
+        <briefdescription>
+<para>Test case for renting a car. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" line="109" column="17" bodyfile="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" bodystart="109" bodyend="126"/>
+        <references refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a2e5a8f6ba64d7677bf5c8318036f614f" compoundref="_suv_car_rental_8java" startline="40" endline="45">ce204_hw4_librar_factoryMethod.SuvCarRental.rentCar</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classce204__hw4___s_u_v_car_test_1a5a5b2539e5fb417f4d1158e7c9d1bda2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_SUVCarTest.captureSystemOut</definition>
+        <argsstring>(Runnable runnable)</argsstring>
+        <name>captureSystemOut</name>
+        <param>
+          <type>Runnable</type>
+          <declname>runnable</declname>
+        </param>
+        <briefdescription>
+<para>Captures the output of System.out.println(). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" line="131" column="20" bodyfile="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" bodystart="131" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" line="13" column="7" bodyfile="ce204-hw4/src/test/java/ce204_hw4_SUVCarTest.java" bodystart="13" bodyend="144"/>
+    <listofallmembers>
+      <member refid="classce204__hw4___s_u_v_car_test_1a5a5b2539e5fb417f4d1158e7c9d1bda2" prot="private" virt="non-virtual"><scope>ce204_hw4_SUVCarTest</scope><name>captureSystemOut</name></member>
+      <member refid="classce204__hw4___s_u_v_car_test_1ade97a7ef1552a439dbbc61251544ba0d" prot="private" virt="non-virtual"><scope>ce204_hw4_SUVCarTest</scope><name>carRental</name></member>
+      <member refid="classce204__hw4___s_u_v_car_test_1a4fc04bc1db274b387a919e33c27ec211" prot="public" virt="non-virtual"><scope>ce204_hw4_SUVCarTest</scope><name>setUp</name></member>
+      <member refid="classce204__hw4___s_u_v_car_test_1ae20cf799e8724f24dca814f850e8181a" prot="public" virt="non-virtual"><scope>ce204_hw4_SUVCarTest</scope><name>testGetBrand</name></member>
+      <member refid="classce204__hw4___s_u_v_car_test_1a541b4e37d9c4d29f84a18e38a496828a" prot="public" virt="non-virtual"><scope>ce204_hw4_SUVCarTest</scope><name>testGetColor</name></member>
+      <member refid="classce204__hw4___s_u_v_car_test_1a5fd1fd4fe81c1bd6ff62caf8ae2f3087" prot="public" virt="non-virtual"><scope>ce204_hw4_SUVCarTest</scope><name>testGetFuelType</name></member>
+      <member refid="classce204__hw4___s_u_v_car_test_1a9c23a880ef20516a0285d83fc109cc3c" prot="public" virt="non-virtual"><scope>ce204_hw4_SUVCarTest</scope><name>testGetGear</name></member>
+      <member refid="classce204__hw4___s_u_v_car_test_1a2d0b3d498f8ecc607d4e33d214cb451b" prot="public" virt="non-virtual"><scope>ce204_hw4_SUVCarTest</scope><name>testGetMileage</name></member>
+      <member refid="classce204__hw4___s_u_v_car_test_1a2ff3e3c685b3f5f040d2af8ec358f936" prot="public" virt="non-virtual"><scope>ce204_hw4_SUVCarTest</scope><name>testGetModel</name></member>
+      <member refid="classce204__hw4___s_u_v_car_test_1ac8fd696065f8a5198e27a05cd0bae20a" prot="public" virt="non-virtual"><scope>ce204_hw4_SUVCarTest</scope><name>testGetPrice</name></member>
+      <member refid="classce204__hw4___s_u_v_car_test_1a844c4e10542d37a6bf07c6596f2d409d" prot="public" virt="non-virtual"><scope>ce204_hw4_SUVCarTest</scope><name>testGetYear</name></member>
+      <member refid="classce204__hw4___s_u_v_car_test_1ac923a39513b4b95899ee8071db4aa973" prot="public" virt="non-virtual"><scope>ce204_hw4_SUVCarTest</scope><name>testRentCar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_c70208678c22c832bba467ddf3b849e2" kind="dir">
+    <compoundname>ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod</compoundname>
+    <innerfile refid="_economy_car_rental_8java">EconomyCarRental.java</innerfile>
+    <innerfile refid="_i_car_rental_8java">ICarRental.java</innerfile>
+    <innerfile refid="_luxury_car_rental_8java">LuxuryCarRental.java</innerfile>
+    <innerfile refid="_rental_factory_8java">RentalFactory.java</innerfile>
+    <innerfile refid="_suv_car_rental_8java">SuvCarRental.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/"/>
+  </compounddef>
+</doxygen>

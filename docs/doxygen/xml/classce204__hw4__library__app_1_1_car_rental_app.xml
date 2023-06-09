@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classce204__hw4__library__app_1_1_car_rental_app" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_library_app::CarRentalApp</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classce204__hw4__library__app_1_1_car_rental_app_1a0aa572d1694837e2aff70ecef4200e0a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ce204_hw4_library_app.CarRentalApp.main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <param>
+          <type>String[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The main method is the entry point for the Car Rental App. It interacts with the user to select a car type, choose a payment method, and make a reservation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The command-line arguments (not used). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library_app/CarRentalApp.java" line="21" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_app/CarRentalApp.java" bodystart="21" bodyend="135"/>
+        <references refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1a8f9bc51a53ddec3a2d671ef1df883b13" compoundref="_car_reservation_system_8java" startline="32" endline="34">ce204_hw4_library_observeMethod.CarReservationSystem.addUser</references>
+        <references refid="classce204__hw4__librar__factory_method_1_1_rental_factory_1aa515da981a8c5c23e0a743ec4fc513e1" compoundref="_rental_factory_8java" startline="18" endline="37">ce204_hw4_librar_factoryMethod.RentalFactory.createRental</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab945e114f5aa7b0236b6a702037cd2fd">ce204_hw4_librar_factoryMethod.ICarRental.getPrice</references>
+        <references refid="classce204__hw4__library__observe_method_1_1_car_reservation_system_1a9b84a5f7d8fb4499b3b4d86795266687" compoundref="_car_reservation_system_8java" startline="19" endline="26">ce204_hw4_library_observeMethod.CarReservationSystem.makeReservation</references>
+        <references refid="classce204__hw4__library__strategy_method_1_1_payment_processor_1a2e7706e302f4ff51acba5b91216919b5" compoundref="_payment_processor_8java" startline="22" endline="24">ce204_hw4_library_strategyMethod.PaymentProcessor.processPayment</references>
+        <references refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a470564ae1acc72a56f9da859e7fbe544">ce204_hw4_librar_factoryMethod.ICarRental.rentCar</references>
+        <references refid="classce204__hw4__library__strategy_method_1_1_payment_processor_1a0c510654f245fc801112034e836abffa" compoundref="_payment_processor_8java" startline="14" endline="16">ce204_hw4_library_strategyMethod.PaymentProcessor.setPaymentStrategy</references>
+        <referencedby refid="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1a10455d867794b33da8af566f9e637b18" compoundref="ce204__hw4___main_app_test_8java" startline="33" endline="65">ce204_hw4_MainAppTest.ce204_hw4_MainAppTest.testCarRentalApp1</referencedby>
+        <referencedby refid="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1ae1d481362c6bc5b7db64ddf6cdb0827c" compoundref="ce204__hw4___main_app_test_8java" startline="71" endline="103">ce204_hw4_MainAppTest.ce204_hw4_MainAppTest.testCarRentalApp2</referencedby>
+        <referencedby refid="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1acbdae85591ffb77c5189ed25d27720fa" compoundref="ce204__hw4___main_app_test_8java" startline="109" endline="144">ce204_hw4_MainAppTest.ce204_hw4_MainAppTest.testCarRentalApp3</referencedby>
+        <referencedby refid="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1ab976accf861f03d35918ba34663b8e35" compoundref="ce204__hw4___main_app_test_8java" startline="150" endline="185">ce204_hw4_MainAppTest.ce204_hw4_MainAppTest.testCarRentalApp4</referencedby>
+        <referencedby refid="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1a6aa62bc4f64fe2173a829b37b23033a3" compoundref="ce204__hw4___main_app_test_8java" startline="191" endline="226">ce204_hw4_MainAppTest.ce204_hw4_MainAppTest.testCarRentalApp5</referencedby>
+        <referencedby refid="classce204__hw4___main_app_test_1_1ce204__hw4___main_app_test_1aa94ea7388e5f8e9bb3dacf44c584533c" compoundref="ce204__hw4___main_app_test_8java" startline="232" endline="242">ce204_hw4_MainAppTest.ce204_hw4_MainAppTest.testCarRentalWithEconomyCarAndCreditCardPayment</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classce204__hw4__library__app_1_1_car_rental_app" kindref="compound">CarRentalApp</ref> class represents the main entry point for the Car Rental App. It allows users to select a car type, choose a payment method, and make a reservation. </para>
+    </detaileddescription>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library_app/CarRentalApp.java" line="14" column="7" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_app/CarRentalApp.java" bodystart="14" bodyend="136"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__library__app_1_1_car_rental_app_1a0aa572d1694837e2aff70ecef4200e0a" prot="public" virt="non-virtual"><scope>ce204_hw4_library_app::CarRentalApp</scope><name>main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,161 @@
+\hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system}{}\doxysection{ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method.\+Car\+Reservation\+System Class Reference}
+\label{classce204__hw4__library__observe_method_1_1_car_reservation_system}\index{ce204\_hw4\_library\_observeMethod.CarReservationSystem@{ce204\_hw4\_library\_observeMethod.CarReservationSystem}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system_a9b84a5f7d8fb4499b3b4d86795266687}{make\+Reservation}} (Local\+Date start\+Date, int rental\+Days)
+\item 
+void \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system_a8f9bc51a53ddec3a2d671ef1df883b13}{add\+User}} (\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_user}{User}} user)
+\item 
+void \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system_ae56b0afc951ea678d41502d0324a12be}{remove\+User}} (\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_user}{User}} user)
+\item 
+List$<$ \mbox{\hyperlink{interfacece204__hw4__library__observe_method_1_1_reservation_observer}{Reservation\+Observer}} $>$ \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system_a24275a5646ae9592523000203f79a3fc}{get\+Observers}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system}{Car\+Reservation\+System}} class represents a car reservation system. 
+
+Definition at line \mbox{\hyperlink{_car_reservation_system_8java_source_l00010}{10}} of file \mbox{\hyperlink{_car_reservation_system_8java_source}{Car\+Reservation\+System.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_a8f9bc51a53ddec3a2d671ef1df883b13}\label{classce204__hw4__library__observe_method_1_1_car_reservation_system_a8f9bc51a53ddec3a2d671ef1df883b13}} 
+\index{ce204\_hw4\_library\_observeMethod.CarReservationSystem@{ce204\_hw4\_library\_observeMethod.CarReservationSystem}!addUser@{addUser}}
+\index{addUser@{addUser}!ce204\_hw4\_library\_observeMethod.CarReservationSystem@{ce204\_hw4\_library\_observeMethod.CarReservationSystem}}
+\doxysubsubsection{\texorpdfstring{addUser()}{addUser()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method.\+Car\+Reservation\+System.\+add\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_user}{User}}}]{user }\end{DoxyParamCaption})}
+
+Adds a user as an observer to the reservation subject.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & the user to be added \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_car_reservation_system_8java_source_l00032}{32}} of file \mbox{\hyperlink{_car_reservation_system_8java_source}{Car\+Reservation\+System.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_l00032}00032                                    \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_l00033}00033         reservationSubject.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_reservation_subject_aa5bc7d55d910b0efcf17d73e4b4208b4}{attachObserver}}(user);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_l00034}00034     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_reservation_subject_8java_source_l00014}{ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method.\+Reservation\+Subject.\+attach\+Observer()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_car_rental_app_8java_source_l00021}{ce204\+\_\+hw4\+\_\+library\+\_\+app.\+Car\+Rental\+App.\+main()}}, \mbox{\hyperlink{ce204__hw4___car_reservation_system_test_8java_source_l00063}{ce204\+\_\+hw4\+\_\+observer\+Method\+Test.\+ce204\+\_\+hw4\+\_\+\+Car\+Reservation\+System\+Test.\+setup1()}}, and \mbox{\hyperlink{ce204__hw4___car_reservation_system_test_8java_source_l00036}{ce204\+\_\+hw4\+\_\+observer\+Method\+Test.\+ce204\+\_\+hw4\+\_\+\+Car\+Reservation\+System\+Test.\+test\+Make\+Reservation()}}.
+
+\mbox{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_a24275a5646ae9592523000203f79a3fc}\label{classce204__hw4__library__observe_method_1_1_car_reservation_system_a24275a5646ae9592523000203f79a3fc}} 
+\index{ce204\_hw4\_library\_observeMethod.CarReservationSystem@{ce204\_hw4\_library\_observeMethod.CarReservationSystem}!getObservers@{getObservers}}
+\index{getObservers@{getObservers}!ce204\_hw4\_library\_observeMethod.CarReservationSystem@{ce204\_hw4\_library\_observeMethod.CarReservationSystem}}
+\doxysubsubsection{\texorpdfstring{getObservers()}{getObservers()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{interfacece204__hw4__library__observe_method_1_1_reservation_observer}{Reservation\+Observer}} $>$ ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method.\+Car\+Reservation\+System.\+get\+Observers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns a list of observers attached to the reservation subject.
+
+\begin{DoxyReturn}{Returns}
+the list of observers 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_car_reservation_system_8java_source_l00048}{48}} of file \mbox{\hyperlink{_car_reservation_system_8java_source}{Car\+Reservation\+System.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_l00048}00048                                                     \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_l00049}00049         \textcolor{keywordflow}{return} reservationSubject.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_reservation_subject_aa22630ff680d49ba4b7ac1732673c432}{getObservers}}();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_l00050}00050     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_reservation_subject_8java_source_l00040}{ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method.\+Reservation\+Subject.\+get\+Observers()}}.
+
+
+
+Referenced by \mbox{\hyperlink{ce204__hw4___car_reservation_system_test_8java_source_l00075}{ce204\+\_\+hw4\+\_\+observer\+Method\+Test.\+ce204\+\_\+hw4\+\_\+\+Car\+Reservation\+System\+Test.\+test\+Remove\+User()}}.
+
+\mbox{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_a9b84a5f7d8fb4499b3b4d86795266687}\label{classce204__hw4__library__observe_method_1_1_car_reservation_system_a9b84a5f7d8fb4499b3b4d86795266687}} 
+\index{ce204\_hw4\_library\_observeMethod.CarReservationSystem@{ce204\_hw4\_library\_observeMethod.CarReservationSystem}!makeReservation@{makeReservation}}
+\index{makeReservation@{makeReservation}!ce204\_hw4\_library\_observeMethod.CarReservationSystem@{ce204\_hw4\_library\_observeMethod.CarReservationSystem}}
+\doxysubsubsection{\texorpdfstring{makeReservation()}{makeReservation()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method.\+Car\+Reservation\+System.\+make\+Reservation (\begin{DoxyParamCaption}\item[{Local\+Date}]{start\+Date,  }\item[{int}]{rental\+Days }\end{DoxyParamCaption})}
+
+Makes a car reservation with the specified start date and rental days.
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Date} & the start date of the reservation \\
+\hline
+{\em rental\+Days} & the number of rental days \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_car_reservation_system_8java_source_l00019}{19}} of file \mbox{\hyperlink{_car_reservation_system_8java_source}{Car\+Reservation\+System.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_l00019}00019                                                                      \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_l00020}00020         LocalDate endDate = startDate.plusDays(rentalDays);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_l00021}00021         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(\textcolor{stringliteral}{"{}dd.MM.yyyy"{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_l00023}00023         String message = \textcolor{stringliteral}{"{}New reservation: Your rental period is from "{}}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_l00024}00024                 + startDate.format(formatter) + \textcolor{stringliteral}{"{} to "{}} + endDate.format(formatter) + \textcolor{stringliteral}{"{}."{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_l00025}00025         reservationSubject.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_reservation_subject_a03f17c8905dc7057cb0d5732baa5b6b6}{notifyObservers}}(message);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_l00026}00026     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_reservation_subject_8java_source_l00030}{ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method.\+Reservation\+Subject.\+notify\+Observers()}}.
+
+
+
+Referenced by \mbox{\hyperlink{_car_rental_app_8java_source_l00021}{ce204\+\_\+hw4\+\_\+library\+\_\+app.\+Car\+Rental\+App.\+main()}}, and \mbox{\hyperlink{ce204__hw4___car_reservation_system_test_8java_source_l00036}{ce204\+\_\+hw4\+\_\+observer\+Method\+Test.\+ce204\+\_\+hw4\+\_\+\+Car\+Reservation\+System\+Test.\+test\+Make\+Reservation()}}.
+
+\mbox{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_ae56b0afc951ea678d41502d0324a12be}\label{classce204__hw4__library__observe_method_1_1_car_reservation_system_ae56b0afc951ea678d41502d0324a12be}} 
+\index{ce204\_hw4\_library\_observeMethod.CarReservationSystem@{ce204\_hw4\_library\_observeMethod.CarReservationSystem}!removeUser@{removeUser}}
+\index{removeUser@{removeUser}!ce204\_hw4\_library\_observeMethod.CarReservationSystem@{ce204\_hw4\_library\_observeMethod.CarReservationSystem}}
+\doxysubsubsection{\texorpdfstring{removeUser()}{removeUser()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method.\+Car\+Reservation\+System.\+remove\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_user}{User}}}]{user }\end{DoxyParamCaption})}
+
+Removes a user from the reservation subject.
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & the user to be removed \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_car_reservation_system_8java_source_l00040}{40}} of file \mbox{\hyperlink{_car_reservation_system_8java_source}{Car\+Reservation\+System.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_l00040}00040                                       \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_l00041}00041         reservationSubject.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_reservation_subject_ad83da46cd3e6c48892ab9977431a0119}{detachObserver}}(user);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__observe_method_1_1_car_reservation_system_l00042}00042     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_reservation_subject_8java_source_l00022}{ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method.\+Reservation\+Subject.\+detach\+Observer()}}.
+
+
+
+Referenced by \mbox{\hyperlink{ce204__hw4___car_reservation_system_test_8java_source_l00075}{ce204\+\_\+hw4\+\_\+observer\+Method\+Test.\+ce204\+\_\+hw4\+\_\+\+Car\+Reservation\+System\+Test.\+test\+Remove\+User()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204-\/hw4/src/main/java/ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method/\mbox{\hyperlink{_car_reservation_system_8java}{Car\+Reservation\+System.\+java}}\end{DoxyCompactItemize}

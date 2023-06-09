@@ -1,0 +1,164 @@
+\hypertarget{classce204__hw4__library__app_1_1_car_rental_app}{}\doxysection{ce204\+\_\+hw4\+\_\+library\+\_\+app.\+Car\+Rental\+App Class Reference}
+\label{classce204__hw4__library__app_1_1_car_rental_app}\index{ce204\_hw4\_library\_app.CarRentalApp@{ce204\_hw4\_library\_app.CarRentalApp}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classce204__hw4__library__app_1_1_car_rental_app_a0aa572d1694837e2aff70ecef4200e0a}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classce204__hw4__library__app_1_1_car_rental_app}{Car\+Rental\+App}} class represents the main entry point for the Car Rental App. It allows users to select a car type, choose a payment method, and make a reservation. 
+
+Definition at line \mbox{\hyperlink{_car_rental_app_8java_source_l00014}{14}} of file \mbox{\hyperlink{_car_rental_app_8java_source}{Car\+Rental\+App.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_a0aa572d1694837e2aff70ecef4200e0a}\label{classce204__hw4__library__app_1_1_car_rental_app_a0aa572d1694837e2aff70ecef4200e0a}} 
+\index{ce204\_hw4\_library\_app.CarRentalApp@{ce204\_hw4\_library\_app.CarRentalApp}!main@{main}}
+\index{main@{main}!ce204\_hw4\_library\_app.CarRentalApp@{ce204\_hw4\_library\_app.CarRentalApp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void ce204\+\_\+hw4\+\_\+library\+\_\+app.\+Car\+Rental\+App.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+The main method is the entry point for the Car Rental App. It interacts with the user to select a car type, choose a payment method, and make a reservation. 
+\begin{DoxyParams}{Parameters}
+{\em args} & The command-\/line arguments (not used). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_car_rental_app_8java_source_l00021}{21}} of file \mbox{\hyperlink{_car_rental_app_8java_source}{Car\+Rental\+App.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00021}00021                                            \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00022}00022         }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00023}00023         Scanner scanner = \textcolor{keyword}{new} Scanner(System.in);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00024}00024         RentalFactory rentalFactory = \textcolor{keyword}{new} RentalFactory();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00025}00025         \mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_payment_processor}{PaymentProcessor}} paymentProcessor = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_payment_processor}{PaymentProcessor}}();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00027}00027         \textcolor{keywordtype}{int} totalPrice;}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00028}00028         String cardNumber, cvv, expirationDate;}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00029}00029         String email, password;}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00031}00031         System.out.println(\textcolor{stringliteral}{"{}Please enter the user name: "{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00032}00032         String userName = scanner.next();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00033}00033         scanner.nextLine();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00035}00035         System.out.println(\textcolor{stringliteral}{"{}How many days do you want to rent?"{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00036}00036         \textcolor{keywordtype}{int} day = scanner.nextInt();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00037}00037         scanner.nextLine();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00039}00039         System.out.println(\textcolor{stringliteral}{"{}After how many days does the rental start?"{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00040}00040         \textcolor{keywordtype}{int} startDay = scanner.nextInt();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00041}00041         scanner.nextLine();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00043}00043         \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_user}{User}} user = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_user}{User}}(userName);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00044}00044         \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system}{CarReservationSystem}} reservationSystem = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system}{CarReservationSystem}}();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00045}00045         reservationSystem.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system_a8f9bc51a53ddec3a2d671ef1df883b13}{addUser}}(user);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00047}00047         \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00048}00048             }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00049}00049             }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00050}00050                     System.out.println(\textcolor{stringliteral}{"{}Welcome to the Car Rental App!"{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00051}00051                     System.out.println(\textcolor{stringliteral}{"{}Please select a car type:"{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00052}00052                     System.out.println(\textcolor{stringliteral}{"{}1. Economy"{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00053}00053                     System.out.println(\textcolor{stringliteral}{"{}2. Luxury"{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00054}00054                     System.out.println(\textcolor{stringliteral}{"{}3. SUV"{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00056}00056                     \textcolor{keywordtype}{int} carType = scanner.nextInt();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00057}00057                     scanner.nextLine();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00059}00059                     ICarRental carRental;}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00060}00060                     \textcolor{keywordflow}{switch} (carType) \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00061}00061                         \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00062}00062                             ICarRental economyRental = rentalFactory.createRental(\textcolor{stringliteral}{"{}economy"{}}, 50000, \textcolor{stringliteral}{"{}Honda"{}}, \textcolor{stringliteral}{"{}Civic"{}}, 2022, \textcolor{stringliteral}{"{}Gasoline"{}}, \textcolor{stringliteral}{"{}Automatic"{}}, \textcolor{stringliteral}{"{}Red"{}}, 500);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00063}00063                             economyRental.rentCar();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00064}00064                             totalPrice = economyRental.getPrice() * day;}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00065}00065                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00066}00066                         \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00067}00067                             ICarRental luxuryRental = rentalFactory.createRental(\textcolor{stringliteral}{"{}luxury"{}}, 20000, \textcolor{stringliteral}{"{}Mercedes-\/Benz"{}}, \textcolor{stringliteral}{"{}S-\/Class"{}}, 2021, \textcolor{stringliteral}{"{}Diesel"{}}, \textcolor{stringliteral}{"{}Automatic"{}}, \textcolor{stringliteral}{"{}Black"{}}, 4000);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00068}00068                             luxuryRental.rentCar();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00069}00069                             totalPrice = luxuryRental.getPrice() * day;}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00070}00070                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00071}00071                         \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00072}00072                             ICarRental suvRental = rentalFactory.createRental(\textcolor{stringliteral}{"{}suv"{}}, 10000, \textcolor{stringliteral}{"{}Toyota"{}}, \textcolor{stringliteral}{"{}Land Cruiser"{}}, 2023, \textcolor{stringliteral}{"{}Gasoline"{}}, \textcolor{stringliteral}{"{}Automatic"{}}, \textcolor{stringliteral}{"{}Silver"{}}, 1500);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00073}00073                             suvRental.rentCar();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00074}00074                             totalPrice = suvRental.getPrice() * day;}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00075}00075                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00076}00076                         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00077}00077                             System.out.println(\textcolor{stringliteral}{"{}Invalid car type. Please try again."{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00078}00078                             \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00079}00079                     \}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00081}00081                     System.out.println(\textcolor{stringliteral}{"{}Please choose the payment method:"{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00082}00082                     System.out.println(\textcolor{stringliteral}{"{}1. Credit Card"{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00083}00083                     System.out.println(\textcolor{stringliteral}{"{}2. Cash"{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00084}00084                     System.out.println(\textcolor{stringliteral}{"{}3. Online Payment"{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00086}00086                     System.out.print(\textcolor{stringliteral}{"{}Select a payment option: "{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00087}00087                     \textcolor{keywordtype}{int} paymentOption = scanner.nextInt();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00089}00089                     \textcolor{keywordflow}{switch} (paymentOption) \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00090}00090                         \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00091}00091                             System.out.println(\textcolor{stringliteral}{"{}Credit Card payment selected."{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00092}00092                             System.out.println(\textcolor{stringliteral}{"{}Credit Card Number: "{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00093}00093                             cardNumber = scanner.next();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00094}00094                             scanner.nextLine();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00095}00095                             System.out.println(\textcolor{stringliteral}{"{}CVV Number: "{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00096}00096                             cvv = scanner.next();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00097}00097                             scanner.nextLine();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00098}00098                             System.out.println(\textcolor{stringliteral}{"{}Expiration Date: "{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00099}00099                             expirationDate = scanner.next();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00100}00100                             scanner.nextLine();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00101}00101                             \mbox{\hyperlink{interfacece204__hw4__library__strategy_method_1_1_payment_strategy}{PaymentStrategy}} creditCardPayment = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_credit_card_payment}{CreditCardPayment}}(cardNumber, cvv, expirationDate);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00102}00102                             paymentProcessor.\mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_payment_processor_a0c510654f245fc801112034e836abffa}{setPaymentStrategy}}(creditCardPayment);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00103}00103                             paymentProcessor.\mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_payment_processor_a2e7706e302f4ff51acba5b91216919b5}{processPayment}}(totalPrice);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00104}00104                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00105}00105                         \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00106}00106                             System.out.println(\textcolor{stringliteral}{"{}Cash payment selected."{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00107}00107                             \mbox{\hyperlink{interfacece204__hw4__library__strategy_method_1_1_payment_strategy}{PaymentStrategy}} cashPayment = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_cash_payment}{CashPayment}}();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00108}00108                             paymentProcessor.\mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_payment_processor_a0c510654f245fc801112034e836abffa}{setPaymentStrategy}}(cashPayment);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00109}00109                             paymentProcessor.\mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_payment_processor_a2e7706e302f4ff51acba5b91216919b5}{processPayment}}(totalPrice);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00110}00110                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00111}00111                         \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00112}00112                             System.out.println(\textcolor{stringliteral}{"{}Online Payment selected."{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00113}00113                             System.out.println(\textcolor{stringliteral}{"{}E-\/mail: "{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00114}00114                             email = scanner.next();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00115}00115                             scanner.nextLine();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00116}00116                             System.out.println(\textcolor{stringliteral}{"{}Password: "{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00117}00117                             password = scanner.next();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00118}00118                             scanner.nextLine();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00119}00119                             \mbox{\hyperlink{interfacece204__hw4__library__strategy_method_1_1_payment_strategy}{PaymentStrategy}} onlinePayment = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_online_payment}{OnlinePayment}}(email, password);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00120}00120                             paymentProcessor.\mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_payment_processor_a0c510654f245fc801112034e836abffa}{setPaymentStrategy}}(onlinePayment);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00121}00121                             paymentProcessor.\mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_payment_processor_a2e7706e302f4ff51acba5b91216919b5}{processPayment}}(totalPrice);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00122}00122                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00123}00123                         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00124}00124                             System.out.println(\textcolor{stringliteral}{"{}Invalid payment option selected."{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00125}00125                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00126}00126                     \}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00128}00128                     LocalDate reservationStartDate = LocalDate.now();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00129}00129                     LocalDate newReservationStartDate = LocalDate.now().plusDays(startDay);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00130}00130 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00131}00131                     reservationSystem.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_car_reservation_system_a9b84a5f7d8fb4499b3b4d86795266687}{makeReservation}}(newReservationStartDate, day);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00132}00132                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00133}00133                 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00134}00134         \}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__library__app_1_1_car_rental_app_l00135}00135     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_car_reservation_system_8java_source_l00032}{ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method.\+Car\+Reservation\+System.\+add\+User()}}, \mbox{\hyperlink{_rental_factory_8java_source_l00018}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+Rental\+Factory.\+create\+Rental()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_ab945e114f5aa7b0236b6a702037cd2fd}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+get\+Price()}}, \mbox{\hyperlink{_car_reservation_system_8java_source_l00019}{ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method.\+Car\+Reservation\+System.\+make\+Reservation()}}, \mbox{\hyperlink{_payment_processor_8java_source_l00022}{ce204\+\_\+hw4\+\_\+library\+\_\+strategy\+Method.\+Payment\+Processor.\+process\+Payment()}}, \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental_a470564ae1acc72a56f9da859e7fbe544}{ce204\+\_\+hw4\+\_\+librar\+\_\+factory\+Method.\+ICar\+Rental.\+rent\+Car()}}, and \mbox{\hyperlink{_payment_processor_8java_source_l00014}{ce204\+\_\+hw4\+\_\+library\+\_\+strategy\+Method.\+Payment\+Processor.\+set\+Payment\+Strategy()}}.
+
+
+
+Referenced by \mbox{\hyperlink{ce204__hw4___main_app_test_8java_source_l00033}{ce204\+\_\+hw4\+\_\+\+Main\+App\+Test.\+ce204\+\_\+hw4\+\_\+\+Main\+App\+Test.\+test\+Car\+Rental\+App1()}}, \mbox{\hyperlink{ce204__hw4___main_app_test_8java_source_l00071}{ce204\+\_\+hw4\+\_\+\+Main\+App\+Test.\+ce204\+\_\+hw4\+\_\+\+Main\+App\+Test.\+test\+Car\+Rental\+App2()}}, \mbox{\hyperlink{ce204__hw4___main_app_test_8java_source_l00109}{ce204\+\_\+hw4\+\_\+\+Main\+App\+Test.\+ce204\+\_\+hw4\+\_\+\+Main\+App\+Test.\+test\+Car\+Rental\+App3()}}, \mbox{\hyperlink{ce204__hw4___main_app_test_8java_source_l00150}{ce204\+\_\+hw4\+\_\+\+Main\+App\+Test.\+ce204\+\_\+hw4\+\_\+\+Main\+App\+Test.\+test\+Car\+Rental\+App4()}}, \mbox{\hyperlink{ce204__hw4___main_app_test_8java_source_l00191}{ce204\+\_\+hw4\+\_\+\+Main\+App\+Test.\+ce204\+\_\+hw4\+\_\+\+Main\+App\+Test.\+test\+Car\+Rental\+App5()}}, and \mbox{\hyperlink{ce204__hw4___main_app_test_8java_source_l00232}{ce204\+\_\+hw4\+\_\+\+Main\+App\+Test.\+ce204\+\_\+hw4\+\_\+\+Main\+App\+Test.\+test\+Car\+Rental\+With\+Economy\+Car\+And\+Credit\+Card\+Payment()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204-\/hw4/src/main/java/ce204\+\_\+hw4\+\_\+library\+\_\+app/\mbox{\hyperlink{_car_rental_app_8java}{Car\+Rental\+App.\+java}}\end{DoxyCompactItemize}

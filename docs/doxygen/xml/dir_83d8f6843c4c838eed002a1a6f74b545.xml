@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_83d8f6843c4c838eed002a1a6f74b545" kind="dir">
+    <compoundname>ce204-hw4/src/test/java/ce204_hw4_StrategyMethodTest</compoundname>
+    <innerfile refid="ce204__hw4___cash_payment_test_8java">ce204_hw4_CashPaymentTest.java</innerfile>
+    <innerfile refid="ce204__hw4___credit_card_method_test_8java">ce204_hw4_CreditCardMethodTest.java</innerfile>
+    <innerfile refid="ce204__hw4___online_payment_test_8java">ce204_hw4_OnlinePaymentTest.java</innerfile>
+    <innerfile refid="ce204__hw4___payment_processor_test_8java">ce204_hw4_PaymentProcessorTest.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/test/java/ce204_hw4_StrategyMethodTest/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="md_ce204_hw4_src_site_markdown_overview" kind="page">
+    <compoundname>md_ce204_hw4_src_site_markdown_overview</compoundname>
+    <title>My Project</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Welcome to my project! This project is designed to [describe the purpose and goals of your project].</para>
+<sect1 id="md_ce204_hw4_src_site_markdown_overview_1autotoc_md1">
+<title>Features</title>
+<para><itemizedlist>
+<listitem><para>Feature 1</para>
+</listitem><listitem><para>Feature 2</para>
+</listitem><listitem><para>Feature 3</para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="md_ce204_hw4_src_site_markdown_overview_1autotoc_md2">
+<title>Usage</title>
+<para>To use this project, follow these steps:</para>
+<para><orderedlist>
+<listitem><para>Step 1</para>
+</listitem><listitem><para>Step 2</para>
+</listitem><listitem><para>Step 3</para>
+</listitem></orderedlist>
+</para>
+</sect1>
+<sect1 id="md_ce204_hw4_src_site_markdown_overview_1autotoc_md3">
+<title>Documentation</title>
+<para>For more detailed information, refer to the <ulink url="./docs">documentation</ulink>. </para>
+</sect1>
+    </detaileddescription>
+    <location file="ce204-hw4/src/site/markdown/overview.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,443 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classce204__hw4__librar__factory_method_1_1_economy_car_rental" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_librar_factoryMethod::EconomyCarRental</compoundname>
+    <basecompoundref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental" prot="public" virt="non-virtual">ce204_hw4_librar_factoryMethod.ICarRental</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1ae9c3312bd3def00028ce026860644fed" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ce204_hw4_librar_factoryMethod.EconomyCarRental.mileage</definition>
+        <argsstring></argsstring>
+        <name>mileage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="6" column="13" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1aa8ab6be3fe3ea6ccde9499ccb783ca50" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.EconomyCarRental.brand</definition>
+        <argsstring></argsstring>
+        <name>brand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="7" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1ad3b73d7540561d55e316c0b8c5eba5ea" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.EconomyCarRental.model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="8" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1ab68fbda9997d70e7a9e01ebf6e430a6f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ce204_hw4_librar_factoryMethod.EconomyCarRental.year</definition>
+        <argsstring></argsstring>
+        <name>year</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="9" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1accb3ce32a48c693db20651f4208c12eb" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.EconomyCarRental.fuelType</definition>
+        <argsstring></argsstring>
+        <name>fuelType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="10" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1acc9d0badf0262b338de40a985b5abb00" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.EconomyCarRental.gear</definition>
+        <argsstring></argsstring>
+        <name>gear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="11" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a39748d879426a5f34dd42c8365a9ae12" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.EconomyCarRental.color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="12" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a07f37e934bb8c2e61ff34f6faa6d746e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ce204_hw4_librar_factoryMethod.EconomyCarRental.price</definition>
+        <argsstring></argsstring>
+        <name>price</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="13" column="17" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a6d7d6a6a98aba6e57a0ed37020e990ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_librar_factoryMethod.EconomyCarRental.EconomyCarRental</definition>
+        <argsstring>(int mileage, String brand, String model, int year, String fuelType, String gear, String color, int price)</argsstring>
+        <name>EconomyCarRental</name>
+        <param>
+          <type>int</type>
+          <declname>mileage</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>brand</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>fuelType</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>gear</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>price</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs an <ref refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental" kindref="compound">EconomyCarRental</ref> object with the specified details.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mileage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the mileage of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>brand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the brand of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the model of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>year</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the year of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fuelType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the fuel type of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gear</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the transmission type of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the color of the car </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>price</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the price of the car rental </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="26" column="12" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" bodystart="26" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1ac88ed002b6c5afca106922c8c4019006" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_librar_factoryMethod.EconomyCarRental.rentCar</definition>
+        <argsstring>()</argsstring>
+        <name>rentCar</name>
+        <reimplements refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a470564ae1acc72a56f9da859e7fbe544">rentCar</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rents the economy car. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="44" column="13" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" bodystart="44" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a66ceab4b5be5a7b5cf2911143d6ca61f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ce204_hw4_librar_factoryMethod.EconomyCarRental.getPrice</definition>
+        <argsstring>()</argsstring>
+        <name>getPrice</name>
+        <reimplements refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab945e114f5aa7b0236b6a702037cd2fd">getPrice</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the price of the car rental.</para>
+<para><simplesect kind="return"><para>the price of the car rental </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="56" column="12" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" bodystart="56" bodyend="59"/>
+        <referencedby refid="classce204__hw4___economy_car_test_1aab3443603af41f3136ceb9e86bf586b5" compoundref="ce204__hw4___economy_car_test_8java" startline="74" endline="78">ce204_hw4_EconomyCarTest.testGetPrice</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a4fc29e64fa09a7e8d5b5d9f58fe85c46" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ce204_hw4_librar_factoryMethod.EconomyCarRental.getMileage</definition>
+        <argsstring>()</argsstring>
+        <name>getMileage</name>
+        <reimplements refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab08a61a94185cc2967d9cb975514a479">getMileage</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the mileage of the car.</para>
+<para><simplesect kind="return"><para>the mileage of the car </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="68" column="12" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" bodystart="68" bodyend="71"/>
+        <referencedby refid="classce204__hw4___economy_car_test_1aa30760ac87ed8bf2e24eaa85f4e57dff" compoundref="ce204__hw4___economy_car_test_8java" startline="25" endline="29">ce204_hw4_EconomyCarTest.testGetMileage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1af52a381f0d758fb8ae58f735472a9fd8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.EconomyCarRental.getBrand</definition>
+        <argsstring>()</argsstring>
+        <name>getBrand</name>
+        <reimplements refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a263723196391b6845e85098c395d0513">getBrand</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the brand of the car.</para>
+<para><simplesect kind="return"><para>the brand of the car </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="78" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" bodystart="78" bodyend="81"/>
+        <referencedby refid="classce204__hw4___economy_car_test_1ac7bbf9835c454f751e8ca422576d3273" compoundref="ce204__hw4___economy_car_test_8java" startline="32" endline="36">ce204_hw4_EconomyCarTest.testGetBrand</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a5ac31705b8dea7bbf355f8e50fdcb6f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.EconomyCarRental.getModel</definition>
+        <argsstring>()</argsstring>
+        <name>getModel</name>
+        <reimplements refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1aad1fe28068b41bf28eea614dfdc3b28d">getModel</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the model of the car.</para>
+<para><simplesect kind="return"><para>the model of the car </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="88" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" bodystart="88" bodyend="91"/>
+        <referencedby refid="classce204__hw4___economy_car_test_1a4fc1697cdf7e6292f842094c88a7b169" compoundref="ce204__hw4___economy_car_test_8java" startline="39" endline="43">ce204_hw4_EconomyCarTest.testGetModel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a779ac8350c666ca29bf8aa38e772cd15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ce204_hw4_librar_factoryMethod.EconomyCarRental.getYear</definition>
+        <argsstring>()</argsstring>
+        <name>getYear</name>
+        <reimplements refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac2b7d6af3ddb7a42e59f5659daa591f2">getYear</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the year of the car.</para>
+<para><simplesect kind="return"><para>the year of the car </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="98" column="12" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" bodystart="98" bodyend="101"/>
+        <referencedby refid="classce204__hw4___economy_car_test_1aaeaee374341c7d448cbd038f42181dbc" compoundref="ce204__hw4___economy_car_test_8java" startline="46" endline="50">ce204_hw4_EconomyCarTest.testGetYear</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a8d8edbbc257702d582305b8b03f3d7e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.EconomyCarRental.getFuelType</definition>
+        <argsstring>()</argsstring>
+        <name>getFuelType</name>
+        <reimplements refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a6f00dcc4543718dc14f88892a5f3f8a0">getFuelType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the fuel type of the car.</para>
+<para><simplesect kind="return"><para>the fuel type of the car </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="108" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" bodystart="108" bodyend="111"/>
+        <referencedby refid="classce204__hw4___economy_car_test_1a1e0e0a79a52d8cfb1d7760204d634f0e" compoundref="ce204__hw4___economy_car_test_8java" startline="53" endline="57">ce204_hw4_EconomyCarTest.testGetFuelType</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1aa93287ae84d14ac5e73065b1d937d828" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.EconomyCarRental.getGear</definition>
+        <argsstring>()</argsstring>
+        <name>getGear</name>
+        <reimplements refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac7f6764c5548aee0a4ec38ae7e60f64a">getGear</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the gear type of the car.</para>
+<para><simplesect kind="return"><para>the gear type of the car </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="118" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" bodystart="118" bodyend="121"/>
+        <referencedby refid="classce204__hw4___economy_car_test_1a31a340d636cbcb9a3603aa61c9a676d8" compoundref="ce204__hw4___economy_car_test_8java" startline="60" endline="64">ce204_hw4_EconomyCarTest.testGetGear</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1ad5e38b0bae601b998e3cd1cff18ca95c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.EconomyCarRental.getColor</definition>
+        <argsstring>()</argsstring>
+        <name>getColor</name>
+        <reimplements refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a582d42c11aecaa28201f588e983348a0">getColor</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the color of the car.</para>
+<para><simplesect kind="return"><para>the color of the car </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="128" column="15" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" bodystart="128" bodyend="131"/>
+        <referencedby refid="classce204__hw4___economy_car_test_1a55fd124461993057de5ea700e7a8ed28" compoundref="ce204__hw4___economy_car_test_8java" startline="67" endline="71">ce204_hw4_EconomyCarTest.testGetColor</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ce204_hw4_librar_factoryMethod.EconomyCarRental</label>
+        <link refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_librar_factoryMethod.ICarRental</label>
+        <link refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ce204_hw4_librar_factoryMethod.EconomyCarRental</label>
+        <link refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_librar_factoryMethod.ICarRental</label>
+        <link refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental"/>
+      </node>
+    </collaborationgraph>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" line="3" column="7" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/EconomyCarRental.java" bodystart="3" bodyend="133"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1aa8ab6be3fe3ea6ccde9499ccb783ca50" prot="private" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::EconomyCarRental</scope><name>brand</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a39748d879426a5f34dd42c8365a9ae12" prot="private" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::EconomyCarRental</scope><name>color</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a6d7d6a6a98aba6e57a0ed37020e990ed" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::EconomyCarRental</scope><name>EconomyCarRental</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1accb3ce32a48c693db20651f4208c12eb" prot="private" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::EconomyCarRental</scope><name>fuelType</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1acc9d0badf0262b338de40a985b5abb00" prot="private" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::EconomyCarRental</scope><name>gear</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1af52a381f0d758fb8ae58f735472a9fd8" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::EconomyCarRental</scope><name>getBrand</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1ad5e38b0bae601b998e3cd1cff18ca95c" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::EconomyCarRental</scope><name>getColor</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a8d8edbbc257702d582305b8b03f3d7e3" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::EconomyCarRental</scope><name>getFuelType</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1aa93287ae84d14ac5e73065b1d937d828" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::EconomyCarRental</scope><name>getGear</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a4fc29e64fa09a7e8d5b5d9f58fe85c46" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::EconomyCarRental</scope><name>getMileage</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a5ac31705b8dea7bbf355f8e50fdcb6f3" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::EconomyCarRental</scope><name>getModel</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a66ceab4b5be5a7b5cf2911143d6ca61f" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::EconomyCarRental</scope><name>getPrice</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a779ac8350c666ca29bf8aa38e772cd15" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::EconomyCarRental</scope><name>getYear</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1ae9c3312bd3def00028ce026860644fed" prot="private" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::EconomyCarRental</scope><name>mileage</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1ad3b73d7540561d55e316c0b8c5eba5ea" prot="private" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::EconomyCarRental</scope><name>model</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a07f37e934bb8c2e61ff34f6faa6d746e" prot="private" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::EconomyCarRental</scope><name>price</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1ac88ed002b6c5afca106922c8c4019006" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::EconomyCarRental</scope><name>rentCar</name></member>
+      <member refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1ab68fbda9997d70e7a9e01ebf6e430a6f" prot="private" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::EconomyCarRental</scope><name>year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

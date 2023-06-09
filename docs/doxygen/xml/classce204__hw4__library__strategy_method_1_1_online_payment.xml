@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="classce204__hw4__library__strategy_method_1_1_online_payment" kind="class" language="Java" prot="public">
+    <compoundname>ce204_hw4_library_strategyMethod::OnlinePayment</compoundname>
+    <basecompoundref refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy" prot="public" virt="non-virtual">ce204_hw4_library_strategyMethod.PaymentStrategy</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classce204__hw4__library__strategy_method_1_1_online_payment_1a24e8ec06893bbb7e52cec4ac13aace49" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_library_strategyMethod.OnlinePayment.email</definition>
+        <argsstring></argsstring>
+        <name>email</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/OnlinePayment.java" line="8" column="16" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/OnlinePayment.java" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classce204__hw4__library__strategy_method_1_1_online_payment_1a1e5ea10308151b056166ecb98e6a33c8" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String ce204_hw4_library_strategyMethod.OnlinePayment.password</definition>
+        <argsstring></argsstring>
+        <name>password</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/OnlinePayment.java" line="9" column="20" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/OnlinePayment.java" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classce204__hw4__library__strategy_method_1_1_online_payment_1a72535300863efe84a2e573c7bda36bfb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ce204_hw4_library_strategyMethod.OnlinePayment.OnlinePayment</definition>
+        <argsstring>(String email, String password)</argsstring>
+        <name>OnlinePayment</name>
+        <param>
+          <type>String</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs an <ref refid="classce204__hw4__library__strategy_method_1_1_online_payment" kindref="compound">OnlinePayment</ref> object with the specified email and password.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the email associated with the online payment </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the password associated with the online payment </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/OnlinePayment.java" line="17" column="12" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/OnlinePayment.java" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classce204__hw4__library__strategy_method_1_1_online_payment_1a21c226a27a34e195dfefba2b5cd5ac05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_library_strategyMethod.OnlinePayment.pay</definition>
+        <argsstring>(double amount)</argsstring>
+        <name>pay</name>
+        <reimplements refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy_1af085ea0d70d8419e3ef857d77b4e2202">pay</reimplements>
+        <param>
+          <type>double</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Performs a payment transaction online.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the amount to be paid </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/OnlinePayment.java" line="27" column="13" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/OnlinePayment.java" bodystart="27" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The <ref refid="classce204__hw4__library__strategy_method_1_1_online_payment" kindref="compound">OnlinePayment</ref> class represents a payment method made online. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ce204_hw4_library_strategyMethod.OnlinePayment</label>
+        <link refid="classce204__hw4__library__strategy_method_1_1_online_payment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_library_strategyMethod.PaymentStrategy</label>
+        <link refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ce204_hw4_library_strategyMethod.OnlinePayment</label>
+        <link refid="classce204__hw4__library__strategy_method_1_1_online_payment"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_library_strategyMethod.PaymentStrategy</label>
+        <link refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy"/>
+      </node>
+    </collaborationgraph>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/OnlinePayment.java" line="6" column="7" bodyfile="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/OnlinePayment.java" bodystart="6" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classce204__hw4__library__strategy_method_1_1_online_payment_1a24e8ec06893bbb7e52cec4ac13aace49" prot="private" virt="non-virtual"><scope>ce204_hw4_library_strategyMethod::OnlinePayment</scope><name>email</name></member>
+      <member refid="classce204__hw4__library__strategy_method_1_1_online_payment_1a72535300863efe84a2e573c7bda36bfb" prot="public" virt="non-virtual"><scope>ce204_hw4_library_strategyMethod::OnlinePayment</scope><name>OnlinePayment</name></member>
+      <member refid="classce204__hw4__library__strategy_method_1_1_online_payment_1a1e5ea10308151b056166ecb98e6a33c8" prot="private" virt="non-virtual"><scope>ce204_hw4_library_strategyMethod::OnlinePayment</scope><name>password</name></member>
+      <member refid="classce204__hw4__library__strategy_method_1_1_online_payment_1a21c226a27a34e195dfefba2b5cd5ac05" prot="public" virt="non-virtual"><scope>ce204_hw4_library_strategyMethod::OnlinePayment</scope><name>pay</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

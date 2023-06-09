@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="interfacece204__hw4__librar__factory_method_1_1_i_car_rental" kind="interface" language="Java" prot="public">
+    <compoundname>ce204_hw4_librar_factoryMethod::ICarRental</compoundname>
+    <derivedcompoundref refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental" prot="public" virt="non-virtual">ce204_hw4_librar_factoryMethod.EconomyCarRental</derivedcompoundref>
+    <derivedcompoundref refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental" prot="public" virt="non-virtual">ce204_hw4_librar_factoryMethod.LuxuryCarRental</derivedcompoundref>
+    <derivedcompoundref refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental" prot="public" virt="non-virtual">ce204_hw4_librar_factoryMethod.SuvCarRental</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a470564ae1acc72a56f9da859e7fbe544" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ce204_hw4_librar_factoryMethod.ICarRental.rentCar</definition>
+        <argsstring>()</argsstring>
+        <name>rentCar</name>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1ac88ed002b6c5afca106922c8c4019006">rentCar</reimplementedby>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a7815ff6e4d53356749122c6e5da5a1ca">rentCar</reimplementedby>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a2e5a8f6ba64d7677bf5c8318036f614f">rentCar</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   //The code defines an interface named ICarRental. An interface is a contract that defines a set of methods that a class implementing the interface must provide.
+</verbatim> The interface declares several method signatures: <ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a470564ae1acc72a56f9da859e7fbe544" kindref="member">rentCar()</ref> is a method without a return type (void). It represents the action of renting a car. <ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab08a61a94185cc2967d9cb975514a479" kindref="member">getMileage()</ref> is a method that returns an integer. It represents getting the mileage of the car. <ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a263723196391b6845e85098c395d0513" kindref="member">getBrand()</ref> is a method that returns a string. It represents getting the brand of the car. <ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1aad1fe28068b41bf28eea614dfdc3b28d" kindref="member">getModel()</ref> is a method that returns a string. It represents getting the model of the car. <ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac2b7d6af3ddb7a42e59f5659daa591f2" kindref="member">getYear()</ref> is a method that returns an integer. It represents getting the year of the car. <ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a6f00dcc4543718dc14f88892a5f3f8a0" kindref="member">getFuelType()</ref> is a method that returns a string. It represents getting the fuel type of the car. <ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac7f6764c5548aee0a4ec38ae7e60f64a" kindref="member">getGear()</ref> is a method that returns a string. It represents getting the gear type of the car. <ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a582d42c11aecaa28201f588e983348a0" kindref="member">getColor()</ref> is a method that returns a string. It represents getting the color of the car. <ref refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab945e114f5aa7b0236b6a702037cd2fd" kindref="member">getPrice()</ref> is a method that returns an integer. It represents getting the price of the car rental. The purpose of this interface is to provide a contract or blueprint for classes that represent different types of car rentals. By implementing this interface, a class must provide implementations for all the methods declared in the interface. In other words, any class that wants to be considered a car rental must implement these methods to define how renting a car works and how to retrieve specific details of the car. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/ICarRental.java" line="24" column="6"/>
+        <referencedby refid="classce204__hw4__library__app_1_1_car_rental_app_1a0aa572d1694837e2aff70ecef4200e0a" compoundref="_car_rental_app_8java" startline="21" endline="135">ce204_hw4_library_app.CarRentalApp.main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab08a61a94185cc2967d9cb975514a479" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ce204_hw4_librar_factoryMethod.ICarRental.getMileage</definition>
+        <argsstring>()</argsstring>
+        <name>getMileage</name>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a4fc29e64fa09a7e8d5b5d9f58fe85c46">getMileage</reimplementedby>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a0dfa71209b6f192a29859d999fe770ec">getMileage</reimplementedby>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a323e477c1f6203f6b25cd8419a659537">getMileage</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/ICarRental.java" line="25" column="9"/>
+        <referencedby refid="classce204__hw4___rental_factory_test_1a0a630f2d36b643d206b32d63dfcd33a1" compoundref="ce204__hw4___rental_factory_test_8java" startline="15" endline="45">ce204_hw4_RentalFactoryTest.testCreateRental_EconomyCar</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1a81f30749cbc899e9b46f74b526493771" compoundref="ce204__hw4___rental_factory_test_8java" startline="51" endline="81">ce204_hw4_RentalFactoryTest.testCreateRental_LuxuryCar</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1ae6a4a1d1f9a715e99fe4cd64af074eb5" compoundref="ce204__hw4___rental_factory_test_8java" startline="87" endline="117">ce204_hw4_RentalFactoryTest.testCreateRental_SuvCar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a263723196391b6845e85098c395d0513" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.ICarRental.getBrand</definition>
+        <argsstring>()</argsstring>
+        <name>getBrand</name>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1af52a381f0d758fb8ae58f735472a9fd8">getBrand</reimplementedby>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1ab2b2f7ebd4613b9a575cf005ef2cfd7c">getBrand</reimplementedby>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ab2bcfff54b8b56723990077de1deb436">getBrand</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/ICarRental.java" line="26" column="12"/>
+        <referencedby refid="classce204__hw4___rental_factory_test_1a0a630f2d36b643d206b32d63dfcd33a1" compoundref="ce204__hw4___rental_factory_test_8java" startline="15" endline="45">ce204_hw4_RentalFactoryTest.testCreateRental_EconomyCar</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1a81f30749cbc899e9b46f74b526493771" compoundref="ce204__hw4___rental_factory_test_8java" startline="51" endline="81">ce204_hw4_RentalFactoryTest.testCreateRental_LuxuryCar</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1ae6a4a1d1f9a715e99fe4cd64af074eb5" compoundref="ce204__hw4___rental_factory_test_8java" startline="87" endline="117">ce204_hw4_RentalFactoryTest.testCreateRental_SuvCar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1aad1fe28068b41bf28eea614dfdc3b28d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.ICarRental.getModel</definition>
+        <argsstring>()</argsstring>
+        <name>getModel</name>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a5ac31705b8dea7bbf355f8e50fdcb6f3">getModel</reimplementedby>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a6f1e819a003d13cc0d88deb27ae1f33d">getModel</reimplementedby>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1aa60b9df84332fad51befd8693bbea361">getModel</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/ICarRental.java" line="27" column="12"/>
+        <referencedby refid="classce204__hw4___rental_factory_test_1a0a630f2d36b643d206b32d63dfcd33a1" compoundref="ce204__hw4___rental_factory_test_8java" startline="15" endline="45">ce204_hw4_RentalFactoryTest.testCreateRental_EconomyCar</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1a81f30749cbc899e9b46f74b526493771" compoundref="ce204__hw4___rental_factory_test_8java" startline="51" endline="81">ce204_hw4_RentalFactoryTest.testCreateRental_LuxuryCar</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1ae6a4a1d1f9a715e99fe4cd64af074eb5" compoundref="ce204__hw4___rental_factory_test_8java" startline="87" endline="117">ce204_hw4_RentalFactoryTest.testCreateRental_SuvCar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac2b7d6af3ddb7a42e59f5659daa591f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ce204_hw4_librar_factoryMethod.ICarRental.getYear</definition>
+        <argsstring>()</argsstring>
+        <name>getYear</name>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a779ac8350c666ca29bf8aa38e772cd15">getYear</reimplementedby>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1af1f558414033e6fb24b79f7de6c388c3">getYear</reimplementedby>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ad5dd663b5569480d534eb684aaaaabd3">getYear</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/ICarRental.java" line="28" column="9"/>
+        <referencedby refid="classce204__hw4___rental_factory_test_1a0a630f2d36b643d206b32d63dfcd33a1" compoundref="ce204__hw4___rental_factory_test_8java" startline="15" endline="45">ce204_hw4_RentalFactoryTest.testCreateRental_EconomyCar</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1a81f30749cbc899e9b46f74b526493771" compoundref="ce204__hw4___rental_factory_test_8java" startline="51" endline="81">ce204_hw4_RentalFactoryTest.testCreateRental_LuxuryCar</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1ae6a4a1d1f9a715e99fe4cd64af074eb5" compoundref="ce204__hw4___rental_factory_test_8java" startline="87" endline="117">ce204_hw4_RentalFactoryTest.testCreateRental_SuvCar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a6f00dcc4543718dc14f88892a5f3f8a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.ICarRental.getFuelType</definition>
+        <argsstring>()</argsstring>
+        <name>getFuelType</name>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a8d8edbbc257702d582305b8b03f3d7e3">getFuelType</reimplementedby>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a9cbaa8d573e1082d39020d2ab4e507ef">getFuelType</reimplementedby>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ad72b42e7d98fe280c62605dc99f65fb8">getFuelType</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/ICarRental.java" line="29" column="12"/>
+        <referencedby refid="classce204__hw4___rental_factory_test_1a0a630f2d36b643d206b32d63dfcd33a1" compoundref="ce204__hw4___rental_factory_test_8java" startline="15" endline="45">ce204_hw4_RentalFactoryTest.testCreateRental_EconomyCar</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1a81f30749cbc899e9b46f74b526493771" compoundref="ce204__hw4___rental_factory_test_8java" startline="51" endline="81">ce204_hw4_RentalFactoryTest.testCreateRental_LuxuryCar</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1ae6a4a1d1f9a715e99fe4cd64af074eb5" compoundref="ce204__hw4___rental_factory_test_8java" startline="87" endline="117">ce204_hw4_RentalFactoryTest.testCreateRental_SuvCar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac7f6764c5548aee0a4ec38ae7e60f64a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.ICarRental.getGear</definition>
+        <argsstring>()</argsstring>
+        <name>getGear</name>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1aa93287ae84d14ac5e73065b1d937d828">getGear</reimplementedby>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a489cad10f1f5b047bc4b881eb51f5b34">getGear</reimplementedby>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ad206fb8962d1558e56ff79f12066a0c7">getGear</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/ICarRental.java" line="30" column="12"/>
+        <referencedby refid="classce204__hw4___rental_factory_test_1a0a630f2d36b643d206b32d63dfcd33a1" compoundref="ce204__hw4___rental_factory_test_8java" startline="15" endline="45">ce204_hw4_RentalFactoryTest.testCreateRental_EconomyCar</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1a81f30749cbc899e9b46f74b526493771" compoundref="ce204__hw4___rental_factory_test_8java" startline="51" endline="81">ce204_hw4_RentalFactoryTest.testCreateRental_LuxuryCar</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1ae6a4a1d1f9a715e99fe4cd64af074eb5" compoundref="ce204__hw4___rental_factory_test_8java" startline="87" endline="117">ce204_hw4_RentalFactoryTest.testCreateRental_SuvCar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a582d42c11aecaa28201f588e983348a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String ce204_hw4_librar_factoryMethod.ICarRental.getColor</definition>
+        <argsstring>()</argsstring>
+        <name>getColor</name>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1ad5e38b0bae601b998e3cd1cff18ca95c">getColor</reimplementedby>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1a4fa9453e690d04f9f56a7c24331877a5">getColor</reimplementedby>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1a8e9828b9833dbaebba25dd29e1781c74">getColor</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/ICarRental.java" line="31" column="12"/>
+        <referencedby refid="classce204__hw4___rental_factory_test_1a0a630f2d36b643d206b32d63dfcd33a1" compoundref="ce204__hw4___rental_factory_test_8java" startline="15" endline="45">ce204_hw4_RentalFactoryTest.testCreateRental_EconomyCar</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1a81f30749cbc899e9b46f74b526493771" compoundref="ce204__hw4___rental_factory_test_8java" startline="51" endline="81">ce204_hw4_RentalFactoryTest.testCreateRental_LuxuryCar</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1ae6a4a1d1f9a715e99fe4cd64af074eb5" compoundref="ce204__hw4___rental_factory_test_8java" startline="87" endline="117">ce204_hw4_RentalFactoryTest.testCreateRental_SuvCar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab945e114f5aa7b0236b6a702037cd2fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ce204_hw4_librar_factoryMethod.ICarRental.getPrice</definition>
+        <argsstring>()</argsstring>
+        <name>getPrice</name>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental_1a66ceab4b5be5a7b5cf2911143d6ca61f">getPrice</reimplementedby>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental_1af756b8ca1c484d172be16d248ac5c5a1">getPrice</reimplementedby>
+        <reimplementedby refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental_1ada8ece9a8aa91d4c76c0387ef51e4054">getPrice</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/ICarRental.java" line="32" column="9"/>
+        <referencedby refid="classce204__hw4__library__app_1_1_car_rental_app_1a0aa572d1694837e2aff70ecef4200e0a" compoundref="_car_rental_app_8java" startline="21" endline="135">ce204_hw4_library_app.CarRentalApp.main</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1a0a630f2d36b643d206b32d63dfcd33a1" compoundref="ce204__hw4___rental_factory_test_8java" startline="15" endline="45">ce204_hw4_RentalFactoryTest.testCreateRental_EconomyCar</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1a81f30749cbc899e9b46f74b526493771" compoundref="ce204__hw4___rental_factory_test_8java" startline="51" endline="81">ce204_hw4_RentalFactoryTest.testCreateRental_LuxuryCar</referencedby>
+        <referencedby refid="classce204__hw4___rental_factory_test_1ae6a4a1d1f9a715e99fe4cd64af074eb5" compoundref="ce204__hw4___rental_factory_test_8java" startline="87" endline="117">ce204_hw4_RentalFactoryTest.testCreateRental_SuvCar</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>opola </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ce204_hw4_librar_factoryMethod.ICarRental</label>
+        <link refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental"/>
+      </node>
+      <node id="2">
+        <label>ce204_hw4_librar_factoryMethod.EconomyCarRental</label>
+        <link refid="classce204__hw4__librar__factory_method_1_1_economy_car_rental"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ce204_hw4_librar_factoryMethod.LuxuryCarRental</label>
+        <link refid="classce204__hw4__librar__factory_method_1_1_luxury_car_rental"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ce204_hw4_librar_factoryMethod.SuvCarRental</label>
+        <link refid="classce204__hw4__librar__factory_method_1_1_suv_car_rental"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/ICarRental.java" line="8" column="18" bodyfile="ce204-hw4/src/main/java/ce204_hw4_librar_factoryMethod/ICarRental.java" bodystart="8" bodyend="33"/>
+    <listofallmembers>
+      <member refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a263723196391b6845e85098c395d0513" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::ICarRental</scope><name>getBrand</name></member>
+      <member refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a582d42c11aecaa28201f588e983348a0" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::ICarRental</scope><name>getColor</name></member>
+      <member refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a6f00dcc4543718dc14f88892a5f3f8a0" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::ICarRental</scope><name>getFuelType</name></member>
+      <member refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac7f6764c5548aee0a4ec38ae7e60f64a" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::ICarRental</scope><name>getGear</name></member>
+      <member refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab08a61a94185cc2967d9cb975514a479" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::ICarRental</scope><name>getMileage</name></member>
+      <member refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1aad1fe28068b41bf28eea614dfdc3b28d" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::ICarRental</scope><name>getModel</name></member>
+      <member refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ab945e114f5aa7b0236b6a702037cd2fd" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::ICarRental</scope><name>getPrice</name></member>
+      <member refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1ac2b7d6af3ddb7a42e59f5659daa591f2" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::ICarRental</scope><name>getYear</name></member>
+      <member refid="interfacece204__hw4__librar__factory_method_1_1_i_car_rental_1a470564ae1acc72a56f9da859e7fbe544" prot="public" virt="non-virtual"><scope>ce204_hw4_librar_factoryMethod::ICarRental</scope><name>rentCar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

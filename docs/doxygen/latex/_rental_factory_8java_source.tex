@@ -1,0 +1,31 @@
+\hypertarget{_rental_factory_8java_source}{}\doxysection{Rental\+Factory.\+java}
+\label{_rental_factory_8java_source}\index{ce204-\/hw4/src/main/java/ce204\_hw4\_librar\_factoryMethod/RentalFactory.java@{ce204-\/hw4/src/main/java/ce204\_hw4\_librar\_factoryMethod/RentalFactory.java}}
+\mbox{\hyperlink{_rental_factory_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00001}00001 \textcolor{keyword}{package }ce204\_hw4\_librar\_factoryMethod;}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00003}\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_rental_factory}{00003}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_rental_factory}{RentalFactory}} \{}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00018}\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_rental_factory_aa515da981a8c5c23e0a743ec4fc513e1}{00018}}     \textcolor{keyword}{public} \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental}{ICarRental}} \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_rental_factory_aa515da981a8c5c23e0a743ec4fc513e1}{createRental}}(String type, \textcolor{keywordtype}{int} mileage, String brand, String model, \textcolor{keywordtype}{int} year, String fuelType, String gear, String color, \textcolor{keywordtype}{int} price) \{}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00019}00019         \mbox{\hyperlink{interfacece204__hw4__librar__factory_method_1_1_i_car_rental}{ICarRental}} carRental = \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00021}00021         \textcolor{keywordflow}{switch} (type) \{}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00022}00022             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"{}economy"{}}:}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00023}00023                  \textcolor{comment}{// Creates an instance of EconomyCarRental}}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00024}00024                 carRental = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental}{EconomyCarRental}}(mileage, brand, model, year, fuelType, gear, color, price);}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00025}00025                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00026}00026             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"{}luxury"{}}:}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00027}00027                  \textcolor{comment}{// Creates an instance of LuxuryCarRental}}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00028}00028                 carRental = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_luxury_car_rental}{LuxuryCarRental}}(mileage, brand, model, year, fuelType, gear, color, price);}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00029}00029                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00030}00030             \textcolor{keywordflow}{case} \textcolor{stringliteral}{"{}suv"{}}:}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00031}00031                 \textcolor{comment}{// Creates an instance of SuvCarRental}}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00032}00032                 carRental = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_suv_car_rental}{SuvCarRental}}(mileage, brand, model, year, fuelType, gear, color, price);}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00033}00033                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00034}00034         \}}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00036}00036         \textcolor{keywordflow}{return} carRental;}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00037}00037     \}}
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_rental_factory_8java_source_l00039}00039 \}}
+
+\end{DoxyCode}

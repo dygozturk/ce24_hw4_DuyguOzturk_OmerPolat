@@ -1,0 +1,131 @@
+\hypertarget{ce204__hw4___economy_car_test_8java_source}{}\doxysection{ce204\+\_\+hw4\+\_\+\+Economy\+Car\+Test.\+java}
+\label{ce204__hw4___economy_car_test_8java_source}\index{ce204-\/hw4/src/test/java/ce204\_hw4\_EconomyCarTest.java@{ce204-\/hw4/src/test/java/ce204\_hw4\_EconomyCarTest.java}}
+\mbox{\hyperlink{ce204__hw4___economy_car_test_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00001}00001 \textcolor{keyword}{import} \textcolor{keyword}{static} org.junit.Assert.*;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00003}00003 \textcolor{keyword}{import} org.junit.After;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00004}00004 \textcolor{keyword}{import} org.junit.Assert;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00005}00005 \textcolor{keyword}{import} org.junit.Before;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00006}00006 \textcolor{keyword}{import} org.junit.Test;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00007}00007 \textcolor{keyword}{import} java.io.ByteArrayOutputStream;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00008}00008 \textcolor{keyword}{import} java.io.PrintStream;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00011}00011 \textcolor{keyword}{import} \mbox{\hyperlink{namespacece204__hw4__librar__factory_method}{ce204\_hw4\_librar\_factoryMethod}}.*;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00013}\mbox{\hyperlink{classce204__hw4___economy_car_test}{00013}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classce204__hw4___economy_car_test}{ce204\_hw4\_EconomyCarTest}} \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00015}00015     }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00017}00017     \textcolor{keyword}{private} \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental}{EconomyCarRental}} carRental; }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00019}00019     @Before}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00020}\mbox{\hyperlink{classce204__hw4___economy_car_test_a65147b18f052e06dbc0de16a10772aa7}{00020}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___economy_car_test_a65147b18f052e06dbc0de16a10772aa7}{setUp}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00021}00021         carRental = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental}{EconomyCarRental}}(10000, \textcolor{stringliteral}{"{}Toyota"{}}, \textcolor{stringliteral}{"{}Corolla"{}}, 2020, \textcolor{stringliteral}{"{}Gasoline"{}}, \textcolor{stringliteral}{"{}Automatic"{}}, \textcolor{stringliteral}{"{}Red"{}}, 50);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00022}00022     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00024}00024     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00025}\mbox{\hyperlink{classce204__hw4___economy_car_test_aa30760ac87ed8bf2e24eaa85f4e57dff}{00025}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___economy_car_test_aa30760ac87ed8bf2e24eaa85f4e57dff}{testGetMileage}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00026}00026         \textcolor{keywordtype}{int} expectedMileage = 10000; }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00027}00027         \textcolor{keywordtype}{int} actualMileage = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental_a4fc29e64fa09a7e8d5b5d9f58fe85c46}{getMileage}}();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00028}00028         Assert.assertEquals(expectedMileage, actualMileage);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00029}00029     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00031}00031     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00032}\mbox{\hyperlink{classce204__hw4___economy_car_test_ac7bbf9835c454f751e8ca422576d3273}{00032}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___economy_car_test_ac7bbf9835c454f751e8ca422576d3273}{testGetBrand}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00033}00033         String expectedBrand = \textcolor{stringliteral}{"{}Toyota"{}}; }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00034}00034         String actualBrand = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental_af52a381f0d758fb8ae58f735472a9fd8}{getBrand}}();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00035}00035         Assert.assertEquals(expectedBrand, actualBrand);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00036}00036     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00038}00038     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00039}\mbox{\hyperlink{classce204__hw4___economy_car_test_a4fc1697cdf7e6292f842094c88a7b169}{00039}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___economy_car_test_a4fc1697cdf7e6292f842094c88a7b169}{testGetModel}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00040}00040         String expectedModel = \textcolor{stringliteral}{"{}Corolla"{}}; }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00041}00041         String actualModel = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental_a5ac31705b8dea7bbf355f8e50fdcb6f3}{getModel}}();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00042}00042         Assert.assertEquals(expectedModel, actualModel);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00043}00043     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00045}00045     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00046}\mbox{\hyperlink{classce204__hw4___economy_car_test_aaeaee374341c7d448cbd038f42181dbc}{00046}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___economy_car_test_aaeaee374341c7d448cbd038f42181dbc}{testGetYear}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00047}00047         \textcolor{keywordtype}{int} expectedYear = 2020; }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00048}00048         \textcolor{keywordtype}{int} actualYear = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental_a779ac8350c666ca29bf8aa38e772cd15}{getYear}}();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00049}00049         Assert.assertEquals(expectedYear, actualYear);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00050}00050     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00052}00052     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00053}\mbox{\hyperlink{classce204__hw4___economy_car_test_a1e0e0a79a52d8cfb1d7760204d634f0e}{00053}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___economy_car_test_a1e0e0a79a52d8cfb1d7760204d634f0e}{testGetFuelType}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00054}00054         String expectedFuelType = \textcolor{stringliteral}{"{}Gasoline"{}}; }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00055}00055         String actualFuelType = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental_a8d8edbbc257702d582305b8b03f3d7e3}{getFuelType}}();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00056}00056         Assert.assertEquals(expectedFuelType, actualFuelType);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00057}00057     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00059}00059     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00060}\mbox{\hyperlink{classce204__hw4___economy_car_test_a31a340d636cbcb9a3603aa61c9a676d8}{00060}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___economy_car_test_a31a340d636cbcb9a3603aa61c9a676d8}{testGetGear}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00061}00061         String expectedGear = \textcolor{stringliteral}{"{}Automatic"{}}; }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00062}00062         String actualGear = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental_aa93287ae84d14ac5e73065b1d937d828}{getGear}}();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00063}00063         Assert.assertEquals(expectedGear, actualGear);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00064}00064     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00066}00066     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00067}\mbox{\hyperlink{classce204__hw4___economy_car_test_a55fd124461993057de5ea700e7a8ed28}{00067}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___economy_car_test_a55fd124461993057de5ea700e7a8ed28}{testGetColor}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00068}00068         String expectedColor = \textcolor{stringliteral}{"{}Red"{}}; }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00069}00069         String actualColor = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental_ad5e38b0bae601b998e3cd1cff18ca95c}{getColor}}();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00070}00070         Assert.assertEquals(expectedColor, actualColor);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00071}00071     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00073}00073     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00074}\mbox{\hyperlink{classce204__hw4___economy_car_test_aab3443603af41f3136ceb9e86bf586b5}{00074}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___economy_car_test_aab3443603af41f3136ceb9e86bf586b5}{testGetPrice}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00075}00075         \textcolor{keywordtype}{int} expectedPrice = 50; }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00076}00076         \textcolor{keywordtype}{int} actualPrice = carRental.\mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental_a66ceab4b5be5a7b5cf2911143d6ca61f}{getPrice}}();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00077}00077         Assert.assertEquals(expectedPrice, actualPrice);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00078}00078     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00079}00079     }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00083}00083     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00084}\mbox{\hyperlink{classce204__hw4___economy_car_test_ac042a6859b220ad12fcb807230d5b93d}{00084}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___economy_car_test_ac042a6859b220ad12fcb807230d5b93d}{testRentCar}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00085}00085             }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00086}00086         \textcolor{comment}{// Test data}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00087}00087         \textcolor{keywordtype}{int} mileage = 10000; }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00088}00088         String brand = \textcolor{stringliteral}{"{}Toyota"{}}; }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00089}00089         String model = \textcolor{stringliteral}{"{}Corolla"{}}; }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00090}00090         \textcolor{keywordtype}{int} year = 2020; }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00091}00091         String fuelType = \textcolor{stringliteral}{"{}Gasoline"{}}; }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00092}00092         String gear = \textcolor{stringliteral}{"{}Automatic"{}}; }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00093}00093         String color = \textcolor{stringliteral}{"{}Red"{}}; }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00094}00094         \textcolor{keywordtype}{int} price = 50; }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00096}00096         \textcolor{comment}{// Create an instance of EconomyCarRental}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00097}00097         \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental}{EconomyCarRental}} carRental = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__librar__factory_method_1_1_economy_car_rental}{EconomyCarRental}}(mileage, brand, model, year, fuelType, gear, color, price);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00099}00099         \textcolor{comment}{// Expected output}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00100}00100         String expectedOutput = \textcolor{stringliteral}{"{}Brand: Toyota, Model: Corolla, Year: 2020, Fuel Type: Gasoline, Transmission: Automatic, Color: Red, Mileage: 10000, Price: 50"{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00102}00102         \textcolor{comment}{// Call rentCar() method and capture the output}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00103}00103         String actualOutput = captureSystemOut(carRental::rentCar);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00104}00104 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00105}00105         \textcolor{comment}{// Compare the expected output with the actual output}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00106}00106         Assert.assertEquals(expectedOutput, actualOutput);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00107}00107     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00108}00108 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00114}00114     \textcolor{keyword}{private} String captureSystemOut(Runnable runnable) \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00115}00115         \textcolor{comment}{// Backup the previous System.out object}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00116}00116         PrintStream originalOut = System.out;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00117}00117 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00118}00118         \textcolor{comment}{// Use ByteArrayOutputStream to capture the output}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00119}00119         ByteArrayOutputStream outputStream = \textcolor{keyword}{new} ByteArrayOutputStream();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00120}00120         System.setOut(\textcolor{keyword}{new} PrintStream(outputStream));}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00121}00121 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00122}00122         \textcolor{comment}{// Run the Runnable (captures System.out.println() calls)}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00123}00123         runnable.run();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00124}00124 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00125}00125         \textcolor{comment}{// Convert the captured output to a string and trim it}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00126}00126         String capturedOutput = outputStream.toString().trim();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00128}00128         \textcolor{comment}{// Restore System.out to the original object}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00129}00129         System.setOut(originalOut);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00130}00130 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00131}00131         \textcolor{comment}{// Return the captured output}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00132}00132         \textcolor{keywordflow}{return} capturedOutput;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00133}00133     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00134}00134 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___economy_car_test_8java_source_l00135}00135 \}}
+
+\end{DoxyCode}

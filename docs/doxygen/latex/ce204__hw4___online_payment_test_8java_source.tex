@@ -1,0 +1,38 @@
+\hypertarget{ce204__hw4___online_payment_test_8java_source}{}\doxysection{ce204\+\_\+hw4\+\_\+\+Online\+Payment\+Test.\+java}
+\label{ce204__hw4___online_payment_test_8java_source}\index{ce204-\/hw4/src/test/java/ce204\_hw4\_StrategyMethodTest/ce204\_hw4\_OnlinePaymentTest.java@{ce204-\/hw4/src/test/java/ce204\_hw4\_StrategyMethodTest/ce204\_hw4\_OnlinePaymentTest.java}}
+\mbox{\hyperlink{ce204__hw4___online_payment_test_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00001}00001 \textcolor{keyword}{package }ce204\_hw4\_StrategyMethodTest;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00003}00003 \textcolor{keyword}{import} \textcolor{keyword}{static} org.junit.Assert.*;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00005}00005 \textcolor{keyword}{import} \mbox{\hyperlink{namespacece204__hw4__library__strategy_method}{ce204\_hw4\_library\_strategyMethod}}.*;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00006}00006 \textcolor{keyword}{import} org.junit.Assert;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00007}00007 \textcolor{keyword}{import} org.junit.Test;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00008}00008 \textcolor{keyword}{import} java.io.ByteArrayOutputStream;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00009}00009 \textcolor{keyword}{import} java.io.PrintStream;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00011}\mbox{\hyperlink{classce204__hw4___strategy_method_test_1_1ce204__hw4___online_payment_test}{00011}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classce204__hw4___strategy_method_test_1_1ce204__hw4___online_payment_test}{ce204\_hw4\_OnlinePaymentTest}} \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00016}00016     @Test}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00017}\mbox{\hyperlink{classce204__hw4___strategy_method_test_1_1ce204__hw4___online_payment_test_a9da40a482bc035516e7903334aaec887}{00017}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4___strategy_method_test_1_1ce204__hw4___online_payment_test_a9da40a482bc035516e7903334aaec887}{testPay}}() \{}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00018}00018         \textcolor{comment}{// Arrange}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00019}00019         \textcolor{keywordtype}{double} amount = 200.0;}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00020}00020         String email = \textcolor{stringliteral}{"{}example@example.com"{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00021}00021         String password = \textcolor{stringliteral}{"{}password"{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00022}00022         \mbox{\hyperlink{interfacece204__hw4__library__strategy_method_1_1_payment_strategy}{PaymentStrategy}} paymentStrategy = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_online_payment}{OnlinePayment}}(email, password);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00023}00023         ByteArrayOutputStream outputStream = \textcolor{keyword}{new} ByteArrayOutputStream();}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00024}00024         System.setOut(\textcolor{keyword}{new} PrintStream(outputStream));}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00026}00026         \textcolor{comment}{// Act}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00027}00027         paymentStrategy.\mbox{\hyperlink{interfacece204__hw4__library__strategy_method_1_1_payment_strategy_af085ea0d70d8419e3ef857d77b4e2202}{pay}}(amount);}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00029}00029         \textcolor{comment}{// Assert}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00030}00030         String expectedOutput = \textcolor{stringliteral}{"{}Paying \$200.0 online with email: example@example.com"{}};}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00031}00031         Assert.assertEquals(expectedOutput, outputStream.toString().trim());}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00032}00032     \}}
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{ce204__hw4___online_payment_test_8java_source_l00035}00035 \}}
+
+\end{DoxyCode}

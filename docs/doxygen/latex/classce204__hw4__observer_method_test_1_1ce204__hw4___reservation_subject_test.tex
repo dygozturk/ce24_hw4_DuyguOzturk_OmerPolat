@@ -1,0 +1,151 @@
+\hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test}{}\doxysection{ce204\+\_\+hw4\+\_\+observer\+Method\+Test.\+ce204\+\_\+hw4\+\_\+\+Reservation\+Subject\+Test Class Reference}
+\label{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test}\index{ce204\_hw4\_observerMethodTest.ce204\_hw4\_ReservationSubjectTest@{ce204\_hw4\_observerMethodTest.ce204\_hw4\_ReservationSubjectTest}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_a5d9e23380d83f5ed8fcbcd35e1510dd8}{set\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Set up the test environment. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_a120731f7626e8df0c82729bbf4b5d950}{test\+Attach\+Observer}} ()
+\begin{DoxyCompactList}\small\item\em Test case for attaching an observer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_afbc57ea7101e9691bd49b78c252fc63e}{test\+Detach\+Observer}} ()
+\begin{DoxyCompactList}\small\item\em Test case for detaching an observer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_ac8978c56c9f08d219868d2819c550d22}{test\+Notify\+Observers}} ()
+\begin{DoxyCompactList}\small\item\em Test case for notifying observers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ce204__hw4___reservation_subject_test_8java_source_l00012}{12}} of file \mbox{\hyperlink{ce204__hw4___reservation_subject_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Reservation\+Subject\+Test.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_a5d9e23380d83f5ed8fcbcd35e1510dd8}\label{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_a5d9e23380d83f5ed8fcbcd35e1510dd8}} 
+\index{ce204\_hw4\_observerMethodTest.ce204\_hw4\_ReservationSubjectTest@{ce204\_hw4\_observerMethodTest.ce204\_hw4\_ReservationSubjectTest}!setUp@{setUp}}
+\index{setUp@{setUp}!ce204\_hw4\_observerMethodTest.ce204\_hw4\_ReservationSubjectTest@{ce204\_hw4\_observerMethodTest.ce204\_hw4\_ReservationSubjectTest}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+observer\+Method\+Test.\+ce204\+\_\+hw4\+\_\+\+Reservation\+Subject\+Test.\+set\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set up the test environment. 
+
+
+
+Definition at line \mbox{\hyperlink{ce204__hw4___reservation_subject_test_8java_source_l00021}{21}} of file \mbox{\hyperlink{ce204__hw4___reservation_subject_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Reservation\+Subject\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00021}00021                         \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00022}00022         subject = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_reservation_subject}{ReservationSubject}}();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00023}00023         outputStreamCaptor = \textcolor{keyword}{new} ByteArrayOutputStream();}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00024}00024         System.setOut(\textcolor{keyword}{new} PrintStream(outputStreamCaptor));}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00025}00025     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_a120731f7626e8df0c82729bbf4b5d950}\label{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_a120731f7626e8df0c82729bbf4b5d950}} 
+\index{ce204\_hw4\_observerMethodTest.ce204\_hw4\_ReservationSubjectTest@{ce204\_hw4\_observerMethodTest.ce204\_hw4\_ReservationSubjectTest}!testAttachObserver@{testAttachObserver}}
+\index{testAttachObserver@{testAttachObserver}!ce204\_hw4\_observerMethodTest.ce204\_hw4\_ReservationSubjectTest@{ce204\_hw4\_observerMethodTest.ce204\_hw4\_ReservationSubjectTest}}
+\doxysubsubsection{\texorpdfstring{testAttachObserver()}{testAttachObserver()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+observer\+Method\+Test.\+ce204\+\_\+hw4\+\_\+\+Reservation\+Subject\+Test.\+test\+Attach\+Observer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test case for attaching an observer. 
+
+
+
+Definition at line \mbox{\hyperlink{ce204__hw4___reservation_subject_test_8java_source_l00031}{31}} of file \mbox{\hyperlink{ce204__hw4___reservation_subject_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Reservation\+Subject\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00031}00031                                      \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00032}00032         \textcolor{comment}{// Arrange}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00033}00033         \mbox{\hyperlink{interfacece204__hw4__library__observe_method_1_1_reservation_observer}{ReservationObserver}} observer = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_user}{User}}(\textcolor{stringliteral}{"{}John"{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00035}00035         \textcolor{comment}{// Act}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00036}00036         subject.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_reservation_subject_aa5bc7d55d910b0efcf17d73e4b4208b4}{attachObserver}}(observer);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00038}00038         \textcolor{comment}{// Assert}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00039}00039         Assert.assertTrue(subject.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_reservation_subject_aa22630ff680d49ba4b7ac1732673c432}{getObservers}}().contains(observer));}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00040}00040     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_reservation_subject_8java_source_l00014}{ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method.\+Reservation\+Subject.\+attach\+Observer()}}, and \mbox{\hyperlink{_reservation_subject_8java_source_l00040}{ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method.\+Reservation\+Subject.\+get\+Observers()}}.
+
+\mbox{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_afbc57ea7101e9691bd49b78c252fc63e}\label{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_afbc57ea7101e9691bd49b78c252fc63e}} 
+\index{ce204\_hw4\_observerMethodTest.ce204\_hw4\_ReservationSubjectTest@{ce204\_hw4\_observerMethodTest.ce204\_hw4\_ReservationSubjectTest}!testDetachObserver@{testDetachObserver}}
+\index{testDetachObserver@{testDetachObserver}!ce204\_hw4\_observerMethodTest.ce204\_hw4\_ReservationSubjectTest@{ce204\_hw4\_observerMethodTest.ce204\_hw4\_ReservationSubjectTest}}
+\doxysubsubsection{\texorpdfstring{testDetachObserver()}{testDetachObserver()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+observer\+Method\+Test.\+ce204\+\_\+hw4\+\_\+\+Reservation\+Subject\+Test.\+test\+Detach\+Observer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test case for detaching an observer. 
+
+
+
+Definition at line \mbox{\hyperlink{ce204__hw4___reservation_subject_test_8java_source_l00046}{46}} of file \mbox{\hyperlink{ce204__hw4___reservation_subject_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Reservation\+Subject\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00046}00046                                      \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00047}00047         \textcolor{comment}{// Arrange}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00048}00048         \mbox{\hyperlink{interfacece204__hw4__library__observe_method_1_1_reservation_observer}{ReservationObserver}} observer = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_user}{User}}(\textcolor{stringliteral}{"{}John"{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00049}00049         subject.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_reservation_subject_aa5bc7d55d910b0efcf17d73e4b4208b4}{attachObserver}}(observer);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00051}00051         \textcolor{comment}{// Act}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00052}00052         subject.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_reservation_subject_ad83da46cd3e6c48892ab9977431a0119}{detachObserver}}(observer);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00054}00054         \textcolor{comment}{// Assert}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00055}00055         Assert.assertFalse(subject.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_reservation_subject_aa22630ff680d49ba4b7ac1732673c432}{getObservers}}().contains(observer));}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00056}00056     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_reservation_subject_8java_source_l00014}{ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method.\+Reservation\+Subject.\+attach\+Observer()}}, \mbox{\hyperlink{_reservation_subject_8java_source_l00022}{ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method.\+Reservation\+Subject.\+detach\+Observer()}}, and \mbox{\hyperlink{_reservation_subject_8java_source_l00040}{ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method.\+Reservation\+Subject.\+get\+Observers()}}.
+
+\mbox{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_ac8978c56c9f08d219868d2819c550d22}\label{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_ac8978c56c9f08d219868d2819c550d22}} 
+\index{ce204\_hw4\_observerMethodTest.ce204\_hw4\_ReservationSubjectTest@{ce204\_hw4\_observerMethodTest.ce204\_hw4\_ReservationSubjectTest}!testNotifyObservers@{testNotifyObservers}}
+\index{testNotifyObservers@{testNotifyObservers}!ce204\_hw4\_observerMethodTest.ce204\_hw4\_ReservationSubjectTest@{ce204\_hw4\_observerMethodTest.ce204\_hw4\_ReservationSubjectTest}}
+\doxysubsubsection{\texorpdfstring{testNotifyObservers()}{testNotifyObservers()}}
+{\footnotesize\ttfamily void ce204\+\_\+hw4\+\_\+observer\+Method\+Test.\+ce204\+\_\+hw4\+\_\+\+Reservation\+Subject\+Test.\+test\+Notify\+Observers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Test case for notifying observers. 
+
+
+
+Definition at line \mbox{\hyperlink{ce204__hw4___reservation_subject_test_8java_source_l00062}{62}} of file \mbox{\hyperlink{ce204__hw4___reservation_subject_test_8java_source}{ce204\+\_\+hw4\+\_\+\+Reservation\+Subject\+Test.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00062}00062                                       \{}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00063}00063         \textcolor{comment}{// Arrange}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00064}00064         \mbox{\hyperlink{interfacece204__hw4__library__observe_method_1_1_reservation_observer}{ReservationObserver}} observer1 = \textcolor{keyword}{new} \mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_user}{User}}(\textcolor{stringliteral}{"{}John"{}});}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00065}00065         subject.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_reservation_subject_aa5bc7d55d910b0efcf17d73e4b4208b4}{attachObserver}}(observer1);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00066}00066         String message = \textcolor{stringliteral}{"{}Your reservation is confirmed."{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00068}00068         \textcolor{comment}{// Act}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00069}00069         subject.\mbox{\hyperlink{classce204__hw4__library__observe_method_1_1_reservation_subject_a03f17c8905dc7057cb0d5732baa5b6b6}{notifyObservers}}(message);}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00071}00071         \textcolor{comment}{// Assert}}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00072}00072         String expectedOutput = \textcolor{stringliteral}{"{}John: Your reservation is confirmed. "{}};}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00073}00073         Assert.assertNotEquals(expectedOutput, outputStreamCaptor.toString().trim());}
+\DoxyCodeLine{\Hypertarget{classce204__hw4__observer_method_test_1_1ce204__hw4___reservation_subject_test_l00074}00074     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_reservation_subject_8java_source_l00014}{ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method.\+Reservation\+Subject.\+attach\+Observer()}}, and \mbox{\hyperlink{_reservation_subject_8java_source_l00030}{ce204\+\_\+hw4\+\_\+library\+\_\+observe\+Method.\+Reservation\+Subject.\+notify\+Observers()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ce204-\/hw4/src/test/java/ce204\+\_\+hw4\+\_\+observer\+Method\+Test/\mbox{\hyperlink{ce204__hw4___reservation_subject_test_8java}{ce204\+\_\+hw4\+\_\+\+Reservation\+Subject\+Test.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="namespacece204__hw4__library__strategy_method" kind="namespace" language="Java">
+    <compoundname>ce204_hw4_library_strategyMethod</compoundname>
+    <innerclass refid="classce204__hw4__library__strategy_method_1_1_cash_payment" prot="public">ce204_hw4_library_strategyMethod::CashPayment</innerclass>
+    <innerclass refid="classce204__hw4__library__strategy_method_1_1_credit_card_payment" prot="public">ce204_hw4_library_strategyMethod::CreditCardPayment</innerclass>
+    <innerclass refid="classce204__hw4__library__strategy_method_1_1_online_payment" prot="public">ce204_hw4_library_strategyMethod::OnlinePayment</innerclass>
+    <innerclass refid="classce204__hw4__library__strategy_method_1_1_payment_processor" prot="public">ce204_hw4_library_strategyMethod::PaymentProcessor</innerclass>
+    <innerclass refid="interfacece204__hw4__library__strategy_method_1_1_payment_strategy" prot="public">ce204_hw4_library_strategyMethod::PaymentStrategy</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ce204-hw4/src/main/java/ce204_hw4_library_strategyMethod/CashPayment.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

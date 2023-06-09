@@ -1,0 +1,18 @@
+\hypertarget{_payment_processor_8java_source}{}\doxysection{Payment\+Processor.\+java}
+\label{_payment_processor_8java_source}\index{ce204-\/hw4/src/main/java/ce204\_hw4\_library\_strategyMethod/PaymentProcessor.java@{ce204-\/hw4/src/main/java/ce204\_hw4\_library\_strategyMethod/PaymentProcessor.java}}
+\mbox{\hyperlink{_payment_processor_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_payment_processor_8java_source_l00001}00001 \textcolor{keyword}{package }ce204\_hw4\_library\_strategyMethod;}
+\DoxyCodeLine{\Hypertarget{_payment_processor_8java_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{_payment_processor_8java_source_l00006}\mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_payment_processor}{00006}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_payment_processor}{PaymentProcessor}} \{}
+\DoxyCodeLine{\Hypertarget{_payment_processor_8java_source_l00007}00007     \textcolor{keyword}{private} \mbox{\hyperlink{interfacece204__hw4__library__strategy_method_1_1_payment_strategy}{PaymentStrategy}} paymentStrategy;}
+\DoxyCodeLine{\Hypertarget{_payment_processor_8java_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_payment_processor_8java_source_l00014}\mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_payment_processor_a0c510654f245fc801112034e836abffa}{00014}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_payment_processor_a0c510654f245fc801112034e836abffa}{setPaymentStrategy}}(\mbox{\hyperlink{interfacece204__hw4__library__strategy_method_1_1_payment_strategy}{PaymentStrategy}} paymentStrategy) \{}
+\DoxyCodeLine{\Hypertarget{_payment_processor_8java_source_l00015}00015         this.paymentStrategy = paymentStrategy;}
+\DoxyCodeLine{\Hypertarget{_payment_processor_8java_source_l00016}00016     \}}
+\DoxyCodeLine{\Hypertarget{_payment_processor_8java_source_l00022}\mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_payment_processor_a2e7706e302f4ff51acba5b91216919b5}{00022}}     \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{classce204__hw4__library__strategy_method_1_1_payment_processor_a2e7706e302f4ff51acba5b91216919b5}{processPayment}}(\textcolor{keywordtype}{double} amount) \{}
+\DoxyCodeLine{\Hypertarget{_payment_processor_8java_source_l00023}00023         paymentStrategy.\mbox{\hyperlink{interfacece204__hw4__library__strategy_method_1_1_payment_strategy_af085ea0d70d8419e3ef857d77b4e2202}{pay}}(amount);}
+\DoxyCodeLine{\Hypertarget{_payment_processor_8java_source_l00024}00024     \}}
+\DoxyCodeLine{\Hypertarget{_payment_processor_8java_source_l00025}00025 \}}
+
+\end{DoxyCode}
